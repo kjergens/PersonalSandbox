@@ -28,16 +28,67 @@ The one you made is in the folder "TeamC"
 		<form>
 					<input class="form-text-box" type="text" name="username" id="username" value="" placeholder="username">
 					<input class="form-text-box" type="password" data-clear-btn="true" name="password" id="password" value="" placeholder="password" autocomplete="off">
-					<a href="#joblist" class="ui-btn">Sign In</a>
+					<a href="#joblist" class="ui-btn ui-shadow">Sign In</a>
 					<a href="#register">Register</a>
 		</form>
 		<a href="#joblist"><img src = "img/dream_logo.png" width="365px"> </a>
+
+	
 	</div><!-- /content -->
 
 	<div data-role="footer">
 		<h4>Dreamers</h4>
 	</div><!-- /footer -->
-</div><!-- /page -->
+</div><!-- /page End of Sign in page -->
+
+
+<div data-role="page" id="register">
+	<div data-role="header">
+		<h1>Registration</h1>
+			<a href="#menu" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">
+			</a>
+
+	</div>
+	<div role="main" class="ui-content">
+		<div class="ui-field-contain">
+			<form> 
+					<label for="name">Name</label>
+					<input class="form-text-box" type="text" name="name" id="name" value="" placeholder="name">
+					<label for="username">Username</label>
+					<input class="form-text-box" type="text" name="username" id="username" value="" placeholder="username">
+					<label for="password">Password</label>
+					<input class="form-text-box" type="password" data-clear-btn="true" name="password" id="password" value="" placeholder="password" autocomplete="off">
+					<label for="email_address">Email Address</label> 
+					<input class="form-text-box" type="text" name="email_address" id="email_address" placeholder="Email Address"> 
+	
+
+					<div class="ui-field-contain">
+						<label for="careergoal">Career Goal</label>
+						<select name="select-native-1" id="careergoal">
+						<option value="1">Business</option>
+						<option value="2">Government</option>
+						<option value="3">Academic</option>
+						<option value="4">Social Work</option>
+						<option value="5">Technology</option>
+						<option value="6">Undecided</option>
+						</select> <!--/select-->
+					</div>
+
+					<a href="#" class="ui-btn ui-shadow zui-btn-inline zui-btn-right">Register</a>
+			</form>
+		</div>
+	</div>
+<div data-role="panel" id="menu">
+    <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+    </ul>
+    <br><br>
+    <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
+</div><!-- /panel -->
+</div>
+
 
 <div data-role="page" id="joblist">
 	<div data-role="header">
@@ -51,7 +102,7 @@ The one you made is in the folder "TeamC"
 			<label for="select-native-1">Filter by career:</label>
 			<select name="select-native-1" id="select-native-1">
 			<option value="1">Business</option>
-			<option value="2">Government</option>
+			<option value="2">Government</option>f
 			<option value="3">Academic</option>
 			<option value="4">Social Work</option>
 			<option value="5">Technology</option>
