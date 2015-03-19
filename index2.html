@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dreamers</title>
+		<link rel = "stylesheet" type = "text/css" href = "http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+		<link rel = "stylesheet" type = "text/css" href = "css/dreamers.css"> 
+
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+<body background="img/dream_logo.png">
+
+		<!-- Start of first page -->
+<div data-role="page" id="signin">
+	<div data-role="header">
+		<h1>Dreamers</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<form>
+					<input class="form-text-box" type="text" name="username" id="username" value="" placeholder="username">
+					<input class="form-text-box" type="password" data-clear-btn="true" name="password" id="password" value="" placeholder="password" autocomplete="off">
+					<a href="#joblist" class="ui-btn">Sign In</a>
+					<a href="#register">Register</a>
+		</form>
+		<a href="#joblist"><img src = "img/dream_logo.png" width="365px"> </a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Dreamers</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+
+<div data-role="page" id="joblist">
+	<div data-role="header">
+		<h1>Dreamers Job List</h1>
+			<a href="#menu" class="jqm-navmenu-link ui-nodisc-icon ui-alt-icon ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">
+			</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<div class="ui-field-contain">
+			<label for="select-native-1">Filter by career:</label>
+			<select name="select-native-1" id="select-native-1">
+			<option value="1">Business</option>
+			<option value="2">Government</option>
+			<option value="3">Academic</option>
+			<option value="4">Social Work</option>
+			<option value="5">Technology</option>
+			</select> <!--/select-->
+		</div>
+		<br><br>
+		<div class="ui-field-contain">
+			<ul data-role="listview">
+				<li><a href="#">Data entry</a></li>
+				<li><a href="#">Social media updates</a></li>
+				<li><a href="#">Test website</a></li>
+				<li><a href="#">Sales calls</a></li>
+				<li><a href="#">Shop for company picnic</a></li>
+			</ul>
+		</div> <!--/listview-->
+
+		<a href="#joblist"><img src = "img/dream_logo.png" width="265px"> </a>
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<h4>Dreamers Job List</h4>
+	</div><!-- /footer -->
+
+	<div data-role="panel" id="menu">
+    <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+    </ul>
+</div><!-- /panel -->
+</div><!-- /page -->
+
+</body>
+</html>
