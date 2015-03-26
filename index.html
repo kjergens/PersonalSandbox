@@ -70,7 +70,6 @@ It uses pages to simulate several pages in on html file.
 					<label for="email_address">Email Address</label> 
 					<input class="form-text-box" type="text" name="email_address" id="email_address" placeholder="email address"> 
 				</div>
-	
 
 					<div class="ui-field-contain">
 						<label for="careergoal">Career Goal</label>
@@ -148,13 +147,48 @@ It uses pages to simulate several pages in on html file.
 		</div>
 		<br><br>
 		<div class="ui-field-contain">
-			<ul data-role="listview">
-				<li><a href="#">Data entry</a></li>
-				<li><a href="#">Social media updates</a></li>
-				<li><a href="#">Test website</a></li>
-				<li><a href="#">Sales calls</a></li>
-				<li><a href="#">Shop for company picnic</a></li>
-			</ul>
+
+			<table data-role="table" id="table-custom-2" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
+											<thead>
+												<tr class="ui-bar-d">
+													<th data-priority="2">Fee</th>
+													<th>Task</th>
+													<th data-priority="3">Time needed to Complete</th>
+												</tr>
+													<tbody>
+														<tr>
+															<td> Free </td>
+															<td> <a href="#job_detail"> Data Entry </a> </td>
+															<td> 20 minutes </td>
+														</tr>
+														<tr>
+															<td> $10 </td>
+															<td> Social Media Updates </td>
+															<td> 3 times a day for 1 month </td>
+														</tr>
+														<tr>
+															<td> Free </td>
+															<td> Test Website </td>
+															<td> 3 hours </td>
+														</tr>
+														<tr>
+															<td> $15 </td>
+															<td> Sales Calls </td>
+															<td> 4 hours </td>
+														</tr>
+														<tr>
+															<td> $25 </td>
+															<td> Shop for Company Picnic </td>
+															<td> 5 hours </td>
+														<tr>
+															<td> Free </td>
+															<td> Edit Pictures for Studio </td>
+															<td> 2 hours </td>
+														</tr>
+														</tr>
+													</tbody>
+											</thead>
+										</table>
 		</div> <!--/listview-->
 
 		<a href="#joblist"><img src = "img/dream_logo.png" width="265px"> </a>
@@ -174,6 +208,34 @@ It uses pages to simulate several pages in on html file.
     <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
 </div><!-- /panel -->
 </div><!-- /Job List page -->
+
+<!-- Start of Job Detail page -->
+<div data-role="page" id="job_detail">
+	<div data-role="header">
+		<h1> Job Detail </h1>
+		<a href="#job_detail_menu" class="ui-nodisc-icon ui-btn ui-btn-b ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+	</div> 
+
+	<div role="main" class="ui-content">
+			<div class="ui-field-contain">
+			
+			</div>
+	</div>
+
+	<div data-role="footer">
+		<h4>Dreamers</h4>
+	</div>
+
+	<div data-role="panel" id="job_detail_menu">
+   	 <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+   	 </ul>
+   	 <br><br>
+    	<a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
+	</div><!-- /panel -->
+</div><!-- /Job Detail-->
 
 </body>
 </html>
