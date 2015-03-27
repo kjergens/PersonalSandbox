@@ -4,15 +4,14 @@ Dreamers job-finding web app.
 
 It uses pages to simulate several pages in on html file.
 -->
-<html class="ui-mobile portrait min-width-320px min-width-480px min-width-768px min-width-1024px">
+<html class="ui-mobile">
 	<head>
 		<title>Dreamers</title>
 		<neta name="viewport" content="width=device-width, minimum-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/jQueryMobile-1.4.5.min.css">
 		<link rel = "stylesheet" type = "text/css" href = "css/dreamers.css"> 
-
 		<script src="js/jQuery-v2.1.3.min.js"></script>
-	<script src="js/jQueryMobile-1.4.5.min.js"></script>
+	  <script src="js/jQueryMobile-1.4.5.min.js"></script>
 	</head>
 <body background="img/dream_logo.png">
 
@@ -239,4 +238,10 @@ It uses pages to simulate several pages in on html file.
 </div><!-- /Job Detail-->
 
 </body>
+
+<script type="text/javascript">
+$(window).resize( function(){
+    $('html').toggleClass('landscape, portrait');
+});
+</script>
 </html>
