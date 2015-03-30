@@ -3,13 +3,49 @@
 		<link rel="stylesheet" type="text/css" href="css/oa.css">
 	</head>
 	<body>
+	<style>
+
+	.reading_btn_container {
+	}
+	#start_reading_btn, #done_reading_btn, #start_questions_btn {
+		cursor:pointer;
+		color: #fff;
+		padding: 20px;
+		font: 20px arial;
+		zposition:absolute;
+		text-align: center;
+		background-color: #4a8ac7;
+		z-index: 3;
+		zmin-height: 300px;
+	}
+
+	#start_reading_btn:hover, #done_reading_btn:hover, #start_questions_btn:hover {
+		background: #6ea1d2;
+	}
+
+	#start_reading_btn {
+		top: 25%;
+		left: 15%;
+	}
+
+	#done_reading_btn {
+		zbottom: 10%;
+		zright: 20%;
+	}
+
+	#start_questions_btn {
+		top: 25%;
+		right: 15%;
+	}
+
+	</style>
 
 	<!-- Highlight -->
-    <div id="annotate_menu" style="display: none">
+    <div id="annotate_menu" class="hidden">
         <div class="title">Highlight</div>
         <hr/>
-        <input class="unhighlight_button" type="button" value="none" onclick="removeHighlightFromSelectedText();">
-        <input class="highlight_button" type="button" onclick="highlightSelectedText();">
+        <input class="unhighlight_button" type="button" style="border-width:0px;" value="none" onclick="removeHighlightFromSelectedText();">
+        <input class="highlight_button" type="button" style="border-width:0px;" onclick="highlightSelectedText();">
         <div class="hoverDiv"></div>
         <div class="arrow"></div>
     </div>
@@ -24,7 +60,7 @@
 		<span id="buttonsContainer">
 			<span class="studentName">Sample</span>
 			<span class="instructions">
-				<button class="instructions"></button>
+				<button class="instructions" onclick="highlightSelectedText();"></button>
 			</span>
 			<span id="finishLater">
 				<button class="finishLater"></button>
@@ -46,9 +82,16 @@
 		</div>
 	</div> <!-- /gray nav bar-->
 
-	<!--passage and questions-->
+	<!--passage and questions panels-->
 	<div id="passageAndQuestionContainer" class="passageContentResize">
-		<div id="passageContainer" class="passageContainer noBorderRight">
+
+		<!-- Fluency controls -->
+		<div id="start_reading_btn" onclick="begin_reading()">Begin reading</div>
+		<div id="start_questions_btn" onclick="start_questions()" zclass="hidden">Click when done</div>
+		<!-- /Fluency controls -->
+		
+    <!-- start passage container-->
+		<div id="passageContainer" class="passageContainer noBorderRight hidden">
 
 			<!-- Start passage instructions -->
 			<div id="passageInstructions">
@@ -56,7 +99,7 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" style="height: 47px;">
+			<div id="passageContent" zstyle="height: 47px;">
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
@@ -80,58 +123,155 @@
 					  z-index: 9999999;
 					  position: absolute;
 					  background: black;
-					  padding-top: 7px;
+					  padding-top: 2px;
 					  text-align: center;
-					  color: #fff;
+					  color: #4a8ac7;
 					  top: 30%;
-					  width: 40px;
-					  height: 54px;
+					  width: 50px;
+					  height: 50px;
 					  box-sizing: border-box;
-					  font-size: 2em;
+					  font-size: 30px;
 					  cursor: pointer;
-					  background: #154a67;
+					  background: #fff;
 					  -moz-box-sizing: border-box;
-					  font-family: 'SSStandard', 'Helvetica', 'Arial', sans-serif;
+					  font-family: 'Helvetica', 'Arial', sans-serif;
+					  border: 1px solid #4a8ac7;
+					  border-radius: 25px;
+					  font-weight: lighter;
 					}
 
 					.turn_btn:hover {
-						background: #265b7a;
+						background: #dae7f3;
 					}
 
 					.prev {
   					left: 0px;
-  					box-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
   				}
 
   				.next {
   					right: 0px;
-  					box-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
   				}
+
+  				.turn_btn > p {
+  					font-size: 12px;
+  				}
+
+  				.line_numbers {
+  					list-style-type: none;
+  				}
+
+  				.line_numbers li {
+						counter-increment: line_number;
+  				}
+
+  				.line_numbers li::before {
+    				content: counter(line_number);
+    				font-size: 14px;
+    				color: #b4b4b4;
+    				margin-left: -30px;
+    			}
+
+  				#paired_passage_header ul {
+						list-style: none;
+						padding:0;
+						margin:0;
+					}
+
+					#paired_passage_header li {
+						float: left;
+						border: 1px solid #abcdef;
+						border-bottom-width: 0;
+						margin: 0 0.5em 0 0;
+						background-color: #ecf3f9;
+						font-size: 20px;
+						font-family: 'Helvetica' , 'Arial', sans-serif;
+						padding: 2px;
+					}
+
+					#paired_passage_header li a {
+						padding: 0 1em;
+						text-decoration: none;
+					}
+
+					#paired_passage_header li a:visited {
+						color: gray;
+					}
+
+					#paired_passage_header .selected_passage {
+						position: relative;
+						top: 2px;
+						background: white;
+					}
+
+					h1 {
+						margin: 0;
+						padding: 0 0 1em 0;
+					} 
 
 					</style>
 
 					<script type="text/javascript">
 				<!--
-				    function turn_page(id1, id2) {
-				       document.getElementById(id1).style.display = 'none';
-				       document.getElementById(id2).style.display = 'block';
+				    function turn_page(page_to_hide, page_to_show) {
+				       document.getElementById(page_to_hide).style.display = 'none';
+				       document.getElementById(page_to_show).style.display = 'block';
+				    }
+
+				    function switch_passage(passage_to_hide, passage_to_show, menu_to_hide, menu_to_show) {
+				       document.getElementById(passage_to_hide).className = "hidden";
+				       document.getElementById(passage_to_show).className = "";
+				       document.getElementById(menu_to_hide).className = "";
+				       document.getElementById(menu_to_show).className = "selected_passage";
 				    }
 
 				//-->
 				</script>
-					<!-- Start of Cover Page -->
-					<div class="page" id="coverpage" style="display:block">
-						<span class="turn_btn next" onclick="turn_page('coverpage', 'page1');">></span>
-						<img src="img/oibImageA.jpeg" width="100%">
+
+					<!-- paired passage menu -->
+					<div id="paired_passage_header" style="display:block"> 
+					<ul>
+						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage 2</a></li>
+						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">Passage 1</a></li>
+					</ul>
+
+					</div>
+          <br>
+
+					<!-- Start of Picnic -->
+					<div id="passage2">
+					<div class="page" id="p2_page1">
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+							<br><center><b>The Picnic</b></center>
+							<ol class="line_numbers">
+								<li>
+									<span class="indent">
+									A picnic is an excursion at which a meal is eaten outdoors (al fresco or en plein air), ideally taking place in a beautiful landscape such as a park, beside a lake or with an interesting view and possibly at a public event such as before an open-air theatre performance, and usually in summer. </span> </li>
+								<li>
+									<span class="indent">Descriptions of picnics show that the idea of a meal that was jointly contributed and was enjoyed out-of-doors were essential to a picnic from the early 19th century.</span></li>
+								<li>
+									<span class="indent">
+									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
+
+							</ol>
+						</div> <! --/text -->
+					</div> <!--/page-->
+				</div> <!--/passage2-->
+
+					<!-- Start of Best Field Trip Ever -->
+					<div id="passage1" class="hidden">
+					<div class="page" id="p1_coverpage">
+						<span class="turn_btn next" onclick="turn_page('p1_coverpage', 'p1_page1');">><p>turn page</p></span>
+						<img src="img/oibImageA.jpeg" width="90%">
 					</div> <!--/cover page-->
 
 					<!-- Start of Page 1 -->
-					<div class="page" id="page1" style="display:none">
+					<br>
+					<div class="page" id="p1_page1" style="display:none">
 
-						<span class="turn_btn" onclick="turn_page('page1', 'coverpage');"><</span>
-						<span class="turn_btn next" onclick="turn_page('page1', 'page2');">></span>
+						<span class="turn_btn prev" onclick="turn_page('p1_page1', 'p1_coverpage');"><<p>turn page</p></span>
+						<span class="turn_btn next" onclick="turn_page('p1_page1', 'p1_page2');">><p>turn page</p></span>
 						
-						<div class="text">
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
 								<span class="indent">Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.</span>
 								<br>
 								<span class="indent">
@@ -147,16 +287,16 @@
 								<img src="img/oibImageB.png" width="100%">
 							</div> <!--text-->
 						
-					</div> 
-					<!--/page1-->
+					</div> <!--/page1-->
 
 					<!-- Start of Page 2 -->
-					<div class="page" id="page2" style="display:none">
+					<br>
+					<div class="page" id="p1_page2" style="display:none">
 
-						<span class="turn_btn" onclick="turn_page('page2', 'page1')"><</span>
-						<span class="turn_btn next" onclick="turn_page('page2', 'coverpage')">></span>
+						<span class="turn_btn prev" onclick="turn_page('p1_page2', 'p1_page1')"><<p>turn page</p></span>
+						<span class="turn_btn next" onclick="turn_page('p1_page2', 'p1_coverpage')">><p>turn page</p></span>
 						
-						<div class="text">
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
 								<span class="indent">
 								On Tuesday, the class took the bus to the Science Center.</span>
 								<br><span class="indent">
@@ -167,11 +307,14 @@
 						</div> <! --/text -->
 						
 					</div> <!--/page2-->
+
+				</div> <!--/passage1-->
 				</div> <!--/passageAlign-->
 			</div> <!-- /passageContent-->
+			 <div id="done_reading_btn" onclick="done_reading()" zclass="hidden">Done reading</div>
 		</div> <!-- /passageContainer -->
 
-		<div class="questionContainer">
+		<div class="questionContainer hidden" id="questionContainer">
 			<div id="questionContent">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
@@ -186,7 +329,7 @@
 						<!-- itemHead-->
 						<div class="itemHead">
 							<div class="indexButton">
-								<button class="largePill" onclick="highlightSelectedText();">1</button>
+								<button class="largePill">1</button>
 								<div class="indexOf"> of 2 </div>
 							</div> <!--/indexButton -->
 							<div class="itemBody">
@@ -197,7 +340,7 @@
 						</div> <!--/itemHead -->
 
 						<!-- response_0 -->
-						<div id="response_0" class="response">
+						<div id="response_0" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this);" onclick="toggleSelectedResponse(this);">
 							<div class="responseLetter">
 								<div class="centerLetter">A</div>
 							</div> <!-- /responseLetter -->
@@ -208,7 +351,7 @@
 						</div> <!-- /response_0-->
 
 						<!-- response_1 -->
-						<div id="response_1" class="response">
+						<div id="response_1" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
 							<div class="responseLetter">
 								<div class="centerLetter">B</div>
 							</div> <!-- /responseLetter -->
@@ -221,7 +364,7 @@
 						</div> <!-- /response_1-->
 
 						<!-- response_2 -->
-						<div id="response_2" class="response">
+						<div id="response_2" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
 							<div class="responseLetter">
 								<div class="centerLetter">C</div>
 							</div> <!-- /responseLetter -->
@@ -234,7 +377,7 @@
 						</div> <!-- /response_2 -->
 
 						<!-- response_3 -->
-						<div id="response_3" class="response">
+						<div id="response_3" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
 							<div class="responseLetter">
 								<div class="centerLetter">D</div>
 							</div>
@@ -266,8 +409,8 @@
 						</div> <!-- itemBody -->
 					</div>
 
-					<div id="response_0" class="response">
-						<div class="responseLetter">
+					<div id="response_0" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
+						<div class="responseLetter" >
 							<div class="centerLetter">A</div>
 						</div> <!-- /responseLetter-->
 						<div class="responseContent">
@@ -276,7 +419,7 @@
 						</div> <!-- /responseContent -->
 					</div> <!-- /response_0 -->
 
-					<div id="response_1" class="response">
+					<div id="response_1" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
 						<div class="responseLetter">
 							<div class="centerLetter">B</div>
 						</div> <!-- /responseLetter-->
@@ -286,7 +429,7 @@
 						</div> <!-- /responseContent -->
 					</div> <!-- /response_1 -->
 
-					<div id="response_2" class="response">
+					<div id="response_2" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
 						<div class="responseLetter">
 							<div class="centerLetter">C</div>
 						</div> <!-- /responseLetter-->
@@ -296,7 +439,7 @@
 						</div> <!-- /responseContent -->
 					</div> <!-- /response_2 -->
 
-					<div id="response_3" class="response">
+					<div id="response_3" class="response" onmouseover="hoverResponse(this);" onmouseout="removeHoverResponse(this)">
 						<div class="responseLetter">
 							<div class="centerLetter">D</div>
 						</div> <!-- /responseLetter-->
@@ -331,79 +474,118 @@
 <script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-core.js"></script>
 <script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-classapplier.js"></script>
 <script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-highlighter.js"></script>
+<!--highligher js-->
 <script type="text/javascript">
-        var serializedHighlights = decodeURIComponent(window.location.search.slice(window.location.search.indexOf("=") + 1));
-        var highlighter;
+var serializedHighlights = decodeURIComponent(window.location.search.slice(window.location.search.indexOf("=") + 1));
+var highlighter;
 
-        var initialDoc;
+var initialDoc;
 
-        window.onload = function() {
-            rangy.init();
+window.onload = function() {
+    rangy.init();
 
-            highlighter = rangy.createHighlighter();
+    highlighter = rangy.createHighlighter();
 
-            highlighter.addClassApplier(rangy.createCssClassApplier("highlight", {
-                ignoreWhiteSpace: true,
-                tagNames: ["span", "a"]
-            }));
+    highlighter.addClassApplier(rangy.createCssClassApplier("highlight", {
+        ignoreWhiteSpace: true,
+        tagNames: ["span", "a"]
+    }));
 
-            highlighter.addClassApplier(rangy.createCssClassApplier("note", {
-                ignoreWhiteSpace: true,
-                elementTagName: "a",
-                elementProperties: {
-                    href: "#",
-                    onclick: function() {
-                        var highlight = highlighter.getHighlightForElement(this);
-                        if (window.confirm("Delete this note (ID " + highlight.id + ")?")) {
-                            highlighter.removeHighlights( [highlight] );
-                        }
-                        return false;
-                    }
+    highlighter.addClassApplier(rangy.createCssClassApplier("note", {
+        ignoreWhiteSpace: true,
+        elementTagName: "a",
+        elementProperties: {
+            href: "#",
+            onclick: function() {
+                var highlight = highlighter.getHighlightForElement(this);
+                if (window.confirm("Delete this note (ID " + highlight.id + ")?")) {
+                    highlighter.removeHighlights( [highlight] );
                 }
-            }));
-
-
-            if (serializedHighlights) {
-                highlighter.deserialize(serializedHighlights);
+                return false;
             }
-        };
-
-
-        function highlightSelectedText() {
-            highlighter.highlightSelection("highlight");
-            //hideAnnotateMenu();
         }
+    }));
 
-        function noteSelectedText() {
-            highlighter.highlightSelection("note");
-        }
 
-        function removeHighlightFromSelectedText() {
-            highlighter.unhighlightSelection();
-        }
+    if (serializedHighlights) {
+        highlighter.deserialize(serializedHighlights);
+    }
+};
 
-        function highlightScopedSelectedText() {
-            highlighter.highlightSelection("highlight", null, "summary");
-        }
 
-        function noteScopedSelectedText() {
-            highlighter.highlightSelection("note", null, "summary");
-        }
+function highlightSelectedText() {
+    highlighter.highlightSelection("highlight");
+    e = document.getElementById("annotate_menu");
+ 		e.className = "hidden";
+}
 
-        function reloadPage(button) {
-            button.form.elements["serializedHighlights"].value = highlighter.serialize();
-            button.form.submit();
-        }
+function noteSelectedText() {
+    highlighter.highlightSelection("note");
+}
 
-        function showAnnotateMenu() {
-        	document.getElementById("annotate_menu").style.display="all";
-        }
+function removeHighlightFromSelectedText() {
+    highlighter.unhighlightSelection();
+    e = document.getElementById("annotate_menu");
+ 		e.className = "hidden";
+}
 
-        function hideAnnotateMenu() {
-        	document.getElementById("annotate_menu").style.display="none";
-        }
+function highlightScopedSelectedText() {
+    highlighter.highlightSelection("highlight", null, "summary");
+}
 
+function noteScopedSelectedText() {
+    highlighter.highlightSelection("note", null, "summary");
+}
+
+function reloadPage(button) {
+    button.form.elements["serializedHighlights"].value = highlighter.serialize();
+    button.form.submit();
+}
+
+function begin_reading() {
+   document.getElementById('passageContainer').style.display = 'block';
+   document.getElementById('start_reading_btn').style.display = 'none';
+   //document.getElementById('done_reading_btn').style.display = 'block';
+ }
+
+function done_reading() {
+   document.getElementById('done_reading_btn').style.display = 'none';
+   document.getElementById('start_questions_btn').style.display = 'block';
+ }
+
+ function start_questions() {
+ 	document.getElementById('questionContainer').style.display = 'block';
+ 	document.getElementById('start_questions_btn').style.display = 'none';
+ }
+
+ var isMouseDown = false;
+ document.onmousedown = function() { isMouseDown = true  };
+ document.onmouseup   = function() { isMouseDown = false };
+
+ function show_highlighter() {
+ 	if (isMouseDown) {
+ 		e = document.getElementById("annotate_menu");
+ 		e.className = "";
+ 		e.style.top=(event.clientY-120);
+ 		e.style.left=(event.clientX-100);
+ 	}
+ }
 
 </script> <!-- /highlight js-->
+
+<script>
+	function hoverResponse(e) {
+		e.className = "response hoverResponse";
+	}
+
+	function removeHoverResponse(e) {
+		e.className = "response";
+	}
+
+	function toggleSelectedResponse(e){
+		alert(1);
+	}
+
+</script>
 	</body>
 </html>

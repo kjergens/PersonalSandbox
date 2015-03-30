@@ -12,14 +12,10 @@
 		color: #fff;
 		padding: 20px;
 		font: 20px arial;
-	  zborder: 1px solid #4a8ac7;
-	  width: 30%; #150px;
-		position:fixed;
+		position:absolute;
 		text-align: center;
 		background-color: #4a8ac7;
 		z-index: 3;
-		right: 10%;
-		top: 30%;
 	}
 
 	#start_reading_btn:hover, #done_reading_btn:hover, #start_questions_btn:hover {
@@ -27,17 +23,18 @@
 	}
 
 	#start_reading_btn {
-		ztop:83px;
-		zleft: 20%;
+		top: 95px;
+		left: 120px;
 	}
 
 	#done_reading_btn {
-		zbottom: 10%;
-		zleft: 20%;
+		bottom: 5%;
+		right: 20%;
 	}
 
 	#start_questions_btn {
-		ztop: 30%;
+		bottom: 15px;
+		left: 120px;
 	}
 
 	</style>
@@ -88,9 +85,9 @@
 	<div id="passageAndQuestionContainer" class="passageContentResize">
 
 		<!-- Fluency controls -->
-		<div id="start_reading_btn" onclick="begin_reading()">Begin reading passage 2</div>
-		<div id="done_reading_btn" onclick="done_reading()" class="hidden">I'm done reading passage 2.</div>
-		<div id="start_questions_btn" onclick="start_questions()" class="hidden">Answer questions</div>
+		<div id="start_reading_btn" onclick="begin_reading()">Begin reading PASSAGE 1</div>
+		<div id="done_reading_btn" onclick="done_reading()" class="hidden">Done reading passage 2</div>
+		<div id="start_questions_btn" onclick="start_questions()" zclass="hidden">Done reading PASSAGE 1</div>
 		<!-- /Fluency controls -->
 		
     <!-- start passage container-->
@@ -231,6 +228,7 @@
 				</script>
 
 					<!-- paired passage menu -->
+					<!--
 					<div id="paired_passage_header" style="display:block"> 
 					<ul>
 						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage 2</a></li>
@@ -239,9 +237,13 @@
 
 					</div>
           <br>
+        -->
 
 					<!-- Start of Picnic -->
 					<div id="passage2">
+						<div>
+							<br><br><center><b>START OF PASSAGE 1</b>
+					</div>
 					<div class="page" id="p2_page1">
 						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
 							<br><center><b>The Picnic</b></center>
@@ -256,10 +258,42 @@
 									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
 
 							</ol>
-								<img src="img/The_Picnic.jpg" width="100%">
 						</div> <! --/text -->
+
+						<div>
+							<br><br><center><b>END OF PASSAGE 1</b><br><br><br><br><b>START OF PASSAGE 2</b></center>
+						</div>
+
+						<!-- Start of field trip -->
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
+							<img src="img/oibImageA.jpeg" width="100%"><br><br>
+								<span class="indent">Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.</span>
+								<br>
+								<span class="indent">
+								"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.</span>
+								<br><span class="indent">
+								"Is there a way to see them all?" Lucas asked.</span>
+								<br><span class="indent">
+								"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."</span>
+								<br><span class="indent">
+								"No sports?" Mark asked.</span>
+								<br><span class="indent">
+								"Sorry, no sports," said Ms. Wu.</span>
+								<img src="img/oibImageB.png" width="100%"><br><br>
+								<span class="indent">
+								On Tuesday, the class took the bus to the Science Center.</span>
+								<br><span class="indent">
+								Outside the center, they spotted a dinosaur model.</span><br>
+								<span class="indent">
+								Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.</span>
+								<img src="img/oibImageC.png" width="100%">
+							</div> <!--text-->
 					</div> <!--/page-->
 				</div> <!--/passage2-->
+
+					<div>
+							<br><br><center><b>END OF PASSAGE 2</b><br><br>
+					</div>
 
 					<!-- Start of Best Field Trip Ever -->
 					<div id="passage1" class="hidden">
@@ -549,7 +583,7 @@ function reloadPage(button) {
 function begin_reading() {
    document.getElementById('passageContainer').style.display = 'block';
    document.getElementById('start_reading_btn').style.display = 'none';
-   document.getElementById('done_reading_btn').style.display = 'block';
+   //document.getElementById('done_reading_btn').style.display = 'block';
  }
 
 function done_reading() {
