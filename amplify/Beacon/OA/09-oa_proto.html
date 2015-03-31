@@ -87,7 +87,7 @@
 		<!-- Fluency controls -->
 		<div id="start_reading_btn" onclick="begin_reading()">Begin reading PASSAGE 1</div>
 		<div id="done_reading_btn" onclick="done_reading()" class="hidden">Done reading passage 2</div>
-		<div id="start_questions_btn" onclick="start_questions()" zclass="hidden">Done reading PASSAGE 1</div>
+		<div id="start_questions_btn" onclick="start_questions()" class="hidden">Done reading PASSAGE 1</div>
 		<!-- /Fluency controls -->
 		
     <!-- start passage container-->
@@ -583,6 +583,7 @@ function reloadPage(button) {
 function begin_reading() {
    document.getElementById('passageContainer').style.display = 'block';
    document.getElementById('start_reading_btn').style.display = 'none';
+   document.getElementById('start_questions_btn').style.display = 'block';
    //document.getElementById('done_reading_btn').style.display = 'block';
  }
 
