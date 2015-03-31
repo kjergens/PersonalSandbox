@@ -5,11 +5,11 @@
 	<body>
 
 	<!-- Highlight -->
-    <div id="annotate_menu" style="display: none">
+    <div id="annotate_menu" class="hidden">
         <div class="title">Highlight</div>
         <hr/>
-        <input class="unhighlight_button" type="button" value="none" onclick="removeHighlightFromSelectedText();">
-        <input class="highlight_button" type="button" onclick="highlightSelectedText();">
+        <input class="unhighlight_button" type="button" style="border-width:0px;"  value="none" onclick="removeHighlightFromSelectedText();">
+        <input class="highlight_button" type="button" style="border-width:0px;"  onclick="highlightSelectedText();">
         <div class="hoverDiv"></div>
         <div class="arrow"></div>
     </div>
@@ -77,7 +77,7 @@
 					}
 
 					.turn_btn {
-					  zz-index: 9999999;
+					  z-index: 9999999;
 					  position: absolute;
 					  background: black;
 					  padding-top: 7px;
@@ -131,7 +131,7 @@
 						<span class="turn_btn" onclick="turn_page('page1', 'coverpage');"><</span>
 						<span class="turn_btn next" onclick="turn_page('page1', 'page2');">></span>
 						
-						<div class="text">
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
 								<span class="indent">Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.</span>
 								<br>
 								<span class="indent">
@@ -156,7 +156,7 @@
 						<span class="turn_btn" onclick="turn_page('page2', 'page1')"><</span>
 						<span class="turn_btn next" onclick="turn_page('page2', 'coverpage')">></span>
 						
-						<div class="text">
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
 								<span class="indent">
 								On Tuesday, the class took the bus to the Science Center.</span>
 								<br><span class="indent">
@@ -371,7 +371,8 @@
 
         function highlightSelectedText() {
             highlighter.highlightSelection("highlight");
-            //hideAnnotateMenu();
+				    e = document.getElementById("annotate_menu");
+				 		e.className = "hidden";
         }
 
         function noteSelectedText() {
@@ -380,6 +381,8 @@
 
         function removeHighlightFromSelectedText() {
             highlighter.unhighlightSelection();
+            e = document.getElementById("annotate_menu");
+ 						e.className = "hidden";
         }
 
         function highlightScopedSelectedText() {
@@ -395,15 +398,34 @@
             button.form.submit();
         }
 
-        function showAnnotateMenu() {
-        	document.getElementById("annotate_menu").style.display="all";
-        }
 
-        function hideAnnotateMenu() {
-        	document.getElementById("annotate_menu").style.display="none";
-        }
 
+ var isMouseDown = false;
+ document.onmousedown = function() { isMouseDown = true  };
+ document.onmouseup   = function() { isMouseDown = false };
+
+ function show_highlighter() {
+ 	if (isMouseDown) {
+ 		e = document.getElementById("annotate_menu");
+ 		e.className = "";
+ 		e.style.top=(event.clientY-120);
+ 		e.style.left=(event.clientX-100);
+ 	}
+ }
 
 </script> <!-- /highlight js-->
+
+
+<script>
+	function hoverResponse(e) {
+		e.className = "response hoverResponse";
+	}
+
+	function removeHoverResponse(e) {
+		e.className = "response";
+	}
+
+
+</script>
 	</body>
 </html>

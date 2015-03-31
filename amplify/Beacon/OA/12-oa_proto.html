@@ -198,6 +198,11 @@
 						color: gray;
 					}
 
+					.page {
+						border-top: 1px solid #cccccc;
+						clear: both;
+					}
+
 					#paired_passage_header .selected_passage {
 						position: relative;
 						top: 2px;
@@ -231,8 +236,8 @@
 					<!-- paired passage menu -->
 					<div id="paired_passage_header" style="display:block"> 
 					<ul>
-						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage 2</a></li>
-						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">Passage 1</a></li>
+						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage One</a></li>
+						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">Passage Two</a></li>
 					</ul>
 
 					</div>
@@ -241,7 +246,9 @@
 					<!-- Start of Picnic -->
 					<div id="passage2">
 					<div class="page" id="p2_page1">
+						<span class="turn_btn next" onclick="turn_page('p2_page1', 'p2_page2');">><p>turn page</p></span>
 						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+
 							<br><center><b>The Picnic</b></center>
 							<ol class="line_numbers">
 								<li>
@@ -256,6 +263,13 @@
 							</ol>
 						</div> <! --/text -->
 					</div> <!--/page-->
+
+					<div class="page" id="p2_page2" style="display:none">
+						<span class="turn_btn prev" onclick="turn_page('p2_page2', 'p2_page1');"><<p>turn page</p></span>
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+							<br><br><br><br><br>
+						</div> <! --/text -->
+					</div> <!--/page-->
 				</div> <!--/passage2-->
 
 					<!-- Start of Best Field Trip Ever -->
@@ -266,7 +280,6 @@
 					</div> <!--/cover page-->
 
 					<!-- Start of Page 1 -->
-					<br>
 					<div class="page" id="p1_page1" style="display:none">
 
 						<span class="turn_btn prev" onclick="turn_page('p1_page1', 'p1_coverpage');"><<p>turn page</p></span>
@@ -291,12 +304,9 @@
 					</div> <!--/page1-->
 
 					<!-- Start of Page 2 -->
-					<br>
 					<div class="page" id="p1_page2" style="display:none">
-
 						<span class="turn_btn prev" onclick="turn_page('p1_page2', 'p1_page1')"><<p>turn page</p></span>
 						<span class="turn_btn next" onclick="turn_page('p1_page2', 'p1_coverpage')">><p>turn page</p></span>
-						
 						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
 								<span class="indent">
 								On Tuesday, the class took the bus to the Science Center.</span>
