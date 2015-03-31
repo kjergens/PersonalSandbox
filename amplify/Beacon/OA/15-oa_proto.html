@@ -12,13 +12,14 @@
 		color: #fff;
 		padding: 20px;
 		font: 20px arial;
-		position:absolute;
+	  zborder: 1px solid #4a8ac7;
+	  width: 30%; #150px;
+		position:fixed;
 		text-align: center;
 		background-color: #4a8ac7;
 		z-index: 3;
-		zmin-height: 300px;
-		width: 200px;
-		
+		right: 10%;
+		top: 30%;
 	}
 
 	#start_reading_btn:hover, #done_reading_btn:hover, #start_questions_btn:hover {
@@ -26,17 +27,17 @@
 	}
 
 	#start_reading_btn {
-		top: 25%;
-		left: 15%;
+		ztop:83px;
+		zleft: 20%;
 	}
 
 	#done_reading_btn {
-		left: 25%;
+		zbottom: 10%;
+		zleft: 20%;
 	}
 
 	#start_questions_btn {
-		top: 25%;
-		right: 15%;
+		ztop: 30%;
 	}
 
 	</style>
@@ -85,14 +86,9 @@
 
 	<!--passage and questions panels-->
 	<div id="passageAndQuestionContainer" class="passageContentResize">
-
-		<!-- Fluency controls -->
-		<div id="start_reading_btn" onclick="begin_reading()">Begin reading</div>
-		<div id="start_questions_btn" onclick="start_questions()" class="hidden">Click when done</div>
-		<!-- /Fluency controls -->
 		
     <!-- start passage container-->
-		<div id="passageContainer" class="passageContainer noBorderRight hidden">
+		<div id="passageContainer" class="passageContainer noBorderRight">
 
 			<!-- Start passage instructions -->
 			<div id="passageInstructions">
@@ -100,7 +96,7 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" zstyle="height: 47px;">
+			<div id="passageContent" style="height: 47px;">
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
@@ -231,8 +227,8 @@
 					<!-- paired passage menu -->
 					<div id="paired_passage_header" style="display:block"> 
 					<ul>
-						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage 2</a></li>
-						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">Passage 1</a></li>
+						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage One</a></li>
+						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">Passage Two</a></li>
 					</ul>
 
 					</div>
@@ -254,6 +250,7 @@
 									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
 
 							</ol>
+								<img src="img/The_Picnic.jpg" width="100%">
 						</div> <! --/text -->
 					</div> <!--/page-->
 				</div> <!--/passage2-->
@@ -312,10 +309,10 @@
 				</div> <!--/passage1-->
 				</div> <!--/passageAlign-->
 			</div> <!-- /passageContent-->
-			 <div id="done_reading_btn" onclick="done_reading()" zclass="hidden">Done reading</div>
+			 
 		</div> <!-- /passageContainer -->
 
-		<div class="questionContainer hidden" id="questionContainer">
+		<div class="questionContainer" id="questionContainer">
 			<div id="questionContent">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
@@ -546,13 +543,12 @@ function reloadPage(button) {
 function begin_reading() {
    document.getElementById('passageContainer').style.display = 'block';
    document.getElementById('start_reading_btn').style.display = 'none';
-   //document.getElementById('done_reading_btn').style.display = 'block';
+   document.getElementById('done_reading_btn').style.display = 'block';
  }
 
 function done_reading() {
-	  document.getElementById('questionContainer').style.display = 'block';
    document.getElementById('done_reading_btn').style.display = 'none';
-   //document.getElementById('start_questions_btn').style.display = 'block';
+   document.getElementById('start_questions_btn').style.display = 'block';
  }
 
  function start_questions() {

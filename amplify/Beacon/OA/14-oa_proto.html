@@ -228,38 +228,10 @@
 				//-->
 				</script>
 
-					<!-- paired passage menu -->
-					<div id="paired_passage_header" style="display:block"> 
-					<ul>
-						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Passage 2</a></li>
-						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">Passage 1</a></li>
-					</ul>
-
-					</div>
-          <br>
-
-					<!-- Start of Picnic -->
-					<div id="passage2">
-					<div class="page" id="p2_page1">
-						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
-							<br><center><b>The Picnic</b></center>
-							<ol class="line_numbers">
-								<li>
-									<span class="indent">
-									A picnic is an excursion at which a meal is eaten outdoors (al fresco or en plein air), ideally taking place in a beautiful landscape such as a park, beside a lake or with an interesting view and possibly at a public event such as before an open-air theatre performance, and usually in summer. </span> </li>
-								<li>
-									<span class="indent">Descriptions of picnics show that the idea of a meal that was jointly contributed and was enjoyed out-of-doors were essential to a picnic from the early 19th century.</span></li>
-								<li>
-									<span class="indent">
-									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
-
-							</ol>
-						</div> <! --/text -->
-					</div> <!--/page-->
-				</div> <!--/passage2-->
+					
 
 					<!-- Start of Best Field Trip Ever -->
-					<div id="passage1" class="hidden">
+					<div id="passage1">
 					<div class="page" id="p1_coverpage">
 						<span class="turn_btn next" onclick="turn_page('p1_coverpage', 'p1_page1');">><p>turn page</p></span>
 						<img src="img/oibImageA.jpeg" width="90%">
@@ -295,7 +267,7 @@
 					<div class="page" id="p1_page2" style="display:none">
 
 						<span class="turn_btn prev" onclick="turn_page('p1_page2', 'p1_page1')"><<p>turn page</p></span>
-						<span class="turn_btn next" onclick="turn_page('p1_page2', 'p1_coverpage')">><p>turn page</p></span>
+						<span class="turn_btn next" onclick="turn_page('p1_page2', 'p1_page3')">><p>turn page</p></span>
 						
 						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
 								<span class="indent">
@@ -309,6 +281,16 @@
 						
 					</div> <!--/page2-->
 
+				<br>
+					<div class="page" id="p1_page3" style="display:none">
+
+						<span class="turn_btn prev" onclick="turn_page('p1_page3', 'p1_page2')"><<p>turn page</p></span>
+						<!--<span class="turn_btn next" onclick="turn_page('p1_page3', 'p1_coverpage')">><p>turn page</p></span>-->
+						
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
+						</div> <! --/text -->
+						
+					</div> <!--/page2-->
 				</div> <!--/passage1-->
 				</div> <!--/passageAlign-->
 			</div> <!-- /passageContent-->
@@ -551,7 +533,7 @@ function begin_reading() {
 
 function done_reading() {
 	  document.getElementById('questionContainer').style.display = 'block';
-   document.getElementById('done_reading_btn').style.display = 'none';
+    document.getElementById('done_reading_btn').style.display = 'none';
    //document.getElementById('start_questions_btn').style.display = 'block';
  }
 
