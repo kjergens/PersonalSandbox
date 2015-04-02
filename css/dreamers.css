@@ -1,3 +1,13 @@
-body {
-	background-image: url("img/dream_logo.png");
-}
+#company_logo{
+    float: right;
+};
+
+.footer{
+	position:fixed;
+	bottom: 0 px;
+};
+
+.ui-footer{
+	position:fixed;
+	bottom: 0 px;
+};

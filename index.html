@@ -13,7 +13,9 @@ It uses pages to simulate several pages in on html file.
 		<script src="js/jQuery-v2.1.3.min.js"></script>
 	  <script src="js/jQueryMobile-1.4.5.min.js"></script>
 	</head>
-<body background="img/dream_logo.png">
+
+<body background="img/dream_logo.png">img
+
 
 <!-- Start of Sign In page -->
 <div data-role="page" id="signin">
@@ -33,7 +35,7 @@ It uses pages to simulate several pages in on html file.
 	
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" class="footer">
 		<h4>Dreamers</h4>
 	</div><!-- /footer -->
 </div><!-- /page End of Sign in page -->
@@ -111,7 +113,7 @@ It uses pages to simulate several pages in on html file.
 			</div>
 	</div>
 
-	<div data-role="footer">
+	<div data-role="footer" class="footer">
 		<h4>Dreamers</h4>
 	</div>
 
@@ -163,26 +165,26 @@ It uses pages to simulate several pages in on html file.
 														</tr>
 														<tr>
 															<td> $10 </td>
-															<td> Social Media Updates </td>
+															<td> <a href="#job_detail"> Social Media Updates </a> </td>
 															<td> 3 times a day for 1 month </td>
 														</tr>
 														<tr>
 															<td> Free </td>
-															<td> Test Website </td>
+															<td> <a href="#job_detail"> Test Website </a> </td>
 															<td> 3 hours </td>
 														</tr>
 														<tr>
 															<td> $15 </td>
-															<td> Sales Calls </td>
+															<td> <a href="#job_detail"> Sales Calls </a> </td>
 															<td> 4 hours </td>
 														</tr>
 														<tr>
 															<td> $25 </td>
-															<td> Shop for Company Picnic </td>
+															<td> <a href="#job_detail"> Shop for Company Picnic </a> </td>
 															<td> 5 hours </td>
 														<tr>
 															<td> Free </td>
-															<td> Edit Pictures for Studio </td>
+															<td> <a href="#job_detail"> Edit Pictures for Studio </a> </td>
 															<td> 2 hours </td>
 														</tr>
 														</tr>
@@ -194,7 +196,7 @@ It uses pages to simulate several pages in on html file.
 		<a href="#joblist"><img src = "img/dream_logo.png" width="265px"> </a>
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" class="footer">
 		<h4>Dreamers Job List</h4>
 	</div><!-- /footer -->
 
@@ -217,8 +219,8 @@ It uses pages to simulate several pages in on html file.
 	</div> 
 
 	<div role="main" class="ui-content">
-			<div class="ui-field-contain">
-				<p align="right"> <img src="https://www.microsoft.com/global/learning/en-us/PublishingImages/ms-logo-site-share.png" width="25%"> </p>
+			<div id="company_logo">
+				<img src="https://www.microsoft.com/global/learning/en-us/PublishingImages/ms-logo-site-share.png" width="85%">
 			</div>
 
 			<h1>Company Details</h1>
@@ -243,7 +245,7 @@ It uses pages to simulate several pages in on html file.
 					<a href="#joblist" class= "ui-input-btn ui-btn ui-btn-inline ui-shadow">Reject</a>
 	</div>
 
-	<div data-role="footer">
+	<div data-role="footer "class="footer">
 		<h4>Dreamers</h4>
 	</div>
 
