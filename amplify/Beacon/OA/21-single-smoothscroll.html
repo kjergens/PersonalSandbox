@@ -127,10 +127,6 @@
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
 						</div>
-						<div class="fluency_btn_container" id="start_questions_btn" style="display: none">
-							<div class="fluency_btn_header">Now answer the questions on the right.</div>
-							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
-						</div>
 			</div> <!--/page3 -->
 			
 				</div> <!-- /pageAlign -->
@@ -145,8 +141,16 @@
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
 
-		<div class="questionContainer" id="questionContainer" style="display: none">
-			<div id="questionContent">
+		<div class="questionContainer hidden" id="questionContainer">
+
+				<!-- Answer questions button -->
+						<div class="fluency_btn_container" id="start_questions_btn">
+							<div class="fluency_btn_header">Now answer questions about what you read.</div>
+							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
+						</div>
+						<!-- /Answer questions -->
+
+			<div id="questionContent" class="hidden">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
 
@@ -302,6 +306,18 @@
 </div> <!-- /passageAndQuestionContainer -->
 
 <script>
+
+function done_reading() {
+   document.getElementById('done_reading_btn').style.display = 'none';
+   document.getElementById('questionContainer').style.display = 'block';
+    $("#p3_next").click();
+   	
+ }
+
+ function start_questions() {
+ 	document.getElementById('questionContent').style.display = 'block';
+ 	document.getElementById('start_questions_btn').style.display = 'none';
+ }
 
  	// Passage 1 - Next
 	$("#psg1_next").click(function(){

@@ -8,7 +8,6 @@
 	<body>
 
 
-
 	<!--header bar-->
 	<div id="header">
 		<span id="assessmentDetail" class="left">
@@ -42,7 +41,7 @@
 	<!--passage and questions-->
 	<div id="passageAndQuestionContainer" class="passageContentResize">
 
-		<!-- Start reading controls -->
+	<!-- Start reading controls -->
 		<div class="fluency_btn_container" id="start_reading_btn">
 		<div class="fluency_btn_header">Click button to begin reading.</div>
 		<div class="fluency_btn"  onclick="begin_reading()">Start Reading</div>
@@ -56,7 +55,7 @@
 
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
-		<div id="passageContainer" class="passageContainer noBorderRight" style="display: none">
+		<div id="passageContainer" class="passageContainer noBorderRight hidden">
 
 			<!-- Start passage instructions -->
 			<div id="passageInstructions">
@@ -64,21 +63,19 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" style="height: 47px;">
+			<div id="passageContent" style="height: 47px;" >
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
 					<style type="text/css">
 					.page {
-						max-height:1200px;
-						overflow:hidden;
+						min-height:800px;
 					}
 
 					</style>
 
 					<!-- Pasage 1 -->
 					<div class="page" id="passage1">
-						<a href="#" id="psg1_next" style="display: none"><span class="turn_page" style="float: right">See earlier passage</span></a>
 						<div class="text" style="clear: both" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
 							<br><center><b>The Picnic</b></center>
 							<ol class="line_numbers">
@@ -92,86 +89,90 @@
 									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
 
 							</ol>
-							<center>--- End of passage ---</center>
+							<p class="pageno">End of passage<p>
 						</div> <! --/text -->
-					</div> <!-- /Passage 1-->
-
+						<!-- End reading buttons -->
 					<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
 						</div>
-						
+					<!-- /End reading buttons -->
 
-
-			<!-- Passage 2 -->
+					</div> <!-- /Passage 1-->
+					<p class="pageno">Here's a passage you read earlier.</p>
+					<hr>
 					<!-- Start of Cover Page -->
-			<div class="page" id="coverpage" style="height: 0px">
-			<a href="#" id="cov_back"><span class="turn_page" style="float: left">Back to previous passage</span></a>	
-				<a href="#" id="cov_next"><span class="turn_page" style="float: right">Next page</span></a>
-				<div class="text" style="clear: both"></div>
-				<img src="img/oibImageA.jpeg" width="100%">
-			</div> <!--/cover page-->
+					<a href="#page1"><span class="turn_page" id="coverpage" style="float: right">Next page</span></a>
+					<div class="page">
+						<img src="img/oibImageA.jpeg" width="100%">
+					</div> <!--/cover page-->
+					<p class="pageno">Cover</p>
+					<hr>
 
-			<!-- Start of Page 1 -->
-			<div class="page" id="page1" style="height: 0px">
-				<a href="#" id="p1_back"><span class="turn_page" style="float: left">Previous page</span></a>
-				<a href="#" id="p1_next"><span class="turn_page" style="float: right">Next page</span></a>
-				<div class="text" style="clear: both">
-					<span class="indent">
+					<!-- Start of Page 1 -->
+					<a href="#coverpage"><span class="turn_page" id="page1" style="float: left">Previous Page</span></a>
+					<a href="#page2"><span class="turn_page" style="float: right">Next page</span></a>
+					<div class="page">
+						<div class="text" style="clear: both">
+							<span class="indent">
 							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
-							<br>
-					<span class="indent">
+							<br><span class="indent">
 							"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.
-							<br>
-					<span class="indent">
+							<br><span class="indent">
 							"Is there a way to see them all?" Lucas asked.
-							<br>
-					<span class="indent">
+							<br><span class="indent">
 							"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."
-							<br>
-					<span class="indent">
+							<br><span class="indent">
 							"No sports?" Mark asked.
-							<br>
-					<span class="indent">
+							<br><span class="indent">
 							"Sorry, no sports," said Ms. Wu.
-				</div> <!--/text-->
-				<img src="img/oibImageB.png" width="100%">
-			</div> <!--/page1-->
+						</div>
+						<img src="img/oibImageB.png" width="100%">
+					</div> <!--/page1-->
+					<p class="pageno">Page 1</p>
+					<hr>
 
-			<!-- Start of Page 2 -->
-			<div class="page" id="page2" style="height: 0px">
-				<a href="#" id="p2_back"><span class="turn_page" style="float: left">Previous page</span></a>
-				<a href="#" id="p2_next"><span class="turn_page" style="float: right">Next page</span></a>
-				<div class="text" style="clear: both">
-					<span class="indent">
+					<!-- Start of Page 2 -->
+					<a href="#page1"><span class="turn_page" id="page2" style="float: left">Previous Page</span></a>
+					<a href="#page3"><span class="turn_page" style="float: right">Next page</span></a>
+					<div class="page">
+						<div class="text" style="clear: both">
+							<span class="indent">
 							On Tuesday, the class took the bus to the Science Center.
-							<br>
-					<span class="indent">
+							<br><span class="indent">
 							Outside the center, they spotted a dinosaur model.<br>
-					<span class="indent">
+							<span class="indent">
 							Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.
-				</div> <!-- /text-->
-				<img src="img/oibImageC.png" width="100%">
-			</div> <!--/page2-->
+						</div>
+						<img src="img/oibImageC.png" width="100%">
+					</div> <!--/page2-->
+					<p class="pageno">Page 2</p>
+					<hr>
 
-			<!-- Start of Page 3 -->
-			<div class="page" id="page3" style="height: 0px">
-					<a href="#" id="p3_back"><span class="turn_page" style="float: left">Previous page</span></a>
-					<a href="#" id="p3_next"><span class="turn_page" style="float: right">Back to start</span></a>
-					<div class="text" style="clear: both">
-						<span class="indent">
+					<!-- Start of Page 3 -->
+					<a href="#page1"><span class="turn_page" id="page3" style="float: left">Previous page</span></a>
+					
+					<div class="page">
+						<div class="text" style="clear: both">
+							<span class="indent">
 							The dinosaur was nice.
-							<br>
-						<span class="indent">
+							<br><span class="indent">
 							All the kids liked.<br>
-						<span class="indent">
+							<span class="indent">
 							Then they went home.
-					</div> <!--/text-->
-			</div> <!--/page3 -->
+						</div>
+						<p class="pageno">Page 3</p>
+						<hr>
+						End.
+						<a href="#coverpage"><span class="turn_page" style="float: right">Go to beginning</span></a>
+
+					</div> <!--/page3-->
+
+				</div> <!--/passageAlign-->
+			</div> <!--/passageContent-->
 			
-				</div> <!-- /pageAlign -->
-			</div> <!-- /passageContent -->
-		</div> <!-- /passageContainer -->
+		</div> <!--/passageContainer-->
+
 
 <!-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
@@ -345,12 +346,12 @@
 	</div> <!-- /questionContainer-->
 </div> <!-- /passageAndQuestionContainer -->
 
-<script>
+<script type="text/javascript">
 
 function done_reading() {
 	$('#passageContainer').animate({
         scrollTop: $('#passage1').offset().top -100
-    }, 1500);
+    }, 2000);
    document.getElementById('done_reading_btn').style.display = 'none';
    document.getElementById('questionContainer').style.display = 'block';
    	$('html, body').animate({
@@ -362,109 +363,16 @@ function done_reading() {
  function start_questions() {
  	document.getElementById('questionContent').style.display = 'block';
  	document.getElementById('start_questions_btn').style.display = 'none';
- 	document.getElementById('psg1_next').style.display = 'block';
  }
 
-var delay = 700;
-var hght = '1200px';
-
-
- 	// Passage 1 - Next
-	$("#psg1_next").click(function(){
-
-			$('#passage1').animate({
-	      height: '0px'}, delay);
-
-			$('#coverpage').animate({
-	      height: hght});
-
-		});
-
-
-	// Passage 2 coverpage - Back
-	 $("#cov_back").click(function(){
-
-			$('#coverpage').animate({
-	      height: '0px'}, delay);
-
-			$('#passage1').animate({
-	      height: hght});
-
-		});
-
-	// Passage 2 coverpage - Next
-	 $("#cov_next").click(function(){
-
-			$('#coverpage').animate({
-	      height: '0px'}, delay);
-
-			$('#page1').animate({
-	      height: hght});
-
-		});
-
-	 // Page 1 - Back
-	 $("#p1_back").click(function(){
-			
-			$('#page1').animate({
-	      height: '0px'}, delay);
-
-			$('#coverpage').animate({
-	      height: hght});
-			
-		});
-
-	  // Page 1 - Next
-	 $("#p1_next").click(function(){
-
-			$('#page2').animate({
-	      height: hght});
-
-			$('#page1').animate({
-	      height: '0px'}, delay);
-		});
-
-	 // Page 2 - Back
-	 $("#p2_back").click(function(){
-
-			$('#page1').animate({
-	      height: hght});
-
-			$('#page2').animate({
-	      height: '0px'}, delay);
-		});
-
-	 // Page 2 - Next
-	 $("#p2_next").click(function(){
-
-			$('#page3').animate({
-	      height: hght});
-
-			$('#page2').animate({
-	      height: '0px'}, delay);
-		});
-
-	 // Page 3 - Back
-	 $("#p3_back").click(function(){
-
-			$('#page2').animate({
-	      height: hght});
-
-			$('#page3').animate({
-	      height: '0px'}, delay);
-		});
-
-	 // Page 3 - Next
-	 $("#p3_next").click(function(){
-
-			$('#passage1').animate({
-	      height: hght});
-
-			$('#page3').animate({
-	      height: '0px'}, delay);
-		});
-
-
- </script>
+ /*
+$('.turn_page').click(function(){
+	alert(1);
+	$('#passageContainer').animate({
+	        scrollTop: $($(this).attr('href')).offset().top
+	    }, 3000);
+}
+ */
+</script>
 	</body>
 </html>
