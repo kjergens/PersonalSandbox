@@ -63,7 +63,7 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" style="height: 47px;" >
+			<div id="passageContent" style="height: 800px;overflow-y:hidden" >
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
@@ -331,7 +331,7 @@
 
 function done_reading() {
 	$('#passageContainer').animate({
-        scrollTop: $('#header').offset().top 
+        scrollTop: $('#coverpage').offset().top -100
     }, 2000);
    document.getElementById('done_reading_btn').style.display = 'none';
    document.getElementById('questionContainer').style.display = 'block';
@@ -343,8 +343,8 @@ function done_reading() {
  	document.getElementById('start_questions_btn').style.display = 'none';
  }
 
-$('#done_reading_btn, .turn_page').click(function(){
-	$('body').animate({
+$('a').click(function(){
+	$('html, body').animate({
         scrollTop: $('#header').offset().top 
     });
 });
