@@ -153,9 +153,9 @@
 					</div> <!--/text-->
 			</div> <!--/page3-->
 
-				</div>
-			</div>
-		</div>
+				</div> <!-- /pageAlign -->
+			</div> <!-- /passageContent -->
+		</div> <!-- /passageContainer -->
 
 		<div class="questionContainer">
 			<div id="questionContent">
@@ -320,7 +320,7 @@ var hght = '600px'
 
  $(document).ready(function(){
 
-	// When the user clicks internal link, scroll to the link slowly
+	 // Coverpage - Next
 	 $("#cov_next").click(function(){
 
 			$('#coverpage').animate({
@@ -331,7 +331,7 @@ var hght = '600px'
 
 		});
 
-	 // When the user clicks internal link, scroll to the link slowly
+	 // Page 1 - Back
 	 $("#p1_back").click(function(){
 			
 			$('#page1').animate({
@@ -342,7 +342,7 @@ var hght = '600px'
 			
 		});
 
-	  // When the user clicks internal link, scroll to the link slowly
+	 // Page 1 - Next
 	 $("#p1_next").click(function(){
 
 			$('#page2').animate({
@@ -352,7 +352,7 @@ var hght = '600px'
 	      height: '0px'}, delay);
 		});
 
-	 	 // When the user clicks internal link, scroll to the link slowly
+	 // Page 2 - Back
 	 $("#p2_back").click(function(){
 
 			$('#page1').animate({
@@ -362,7 +362,7 @@ var hght = '600px'
 	      height: '0px'}, delay);
 		});
 
-	  // When the user clicks internal link, scroll to the link slowly
+	  // Page 2 - Next
 	 $("#p2_next").click(function(){
 
 			$('#page3').animate({
@@ -372,7 +372,7 @@ var hght = '600px'
 	      height: '0px'}, delay);
 		});
 
-	 // When the user clicks internal link, scroll to the link slowly
+	 // Page 3 - Back
 	 $("#p3_back").click(function(){
 
 			$('#page2').animate({
@@ -382,7 +382,7 @@ var hght = '600px'
 	      height: '0px'}, delay);
 		});
 
-	 // When the user clicks internal link, scroll to the link slowly
+	 // Page 3 - Next
 	 $("#p3_next").click(function(){
 
 			$('#coverpage').animate({

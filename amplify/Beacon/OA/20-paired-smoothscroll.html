@@ -8,6 +8,7 @@
 	<body>
 
 
+
 	<!--header bar-->
 	<div id="header">
 		<span id="assessmentDetail" class="left">
@@ -55,8 +56,7 @@
 
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
-
-		<div id="passageContainer" class="passageContainer noBorderRight hidden">
+		<div id="passageContainer" class="passageContainer noBorderRight" style="display: none">
 
 			<!-- Start passage instructions -->
 			<div id="passageInstructions">
@@ -68,66 +68,35 @@
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
-					<!-- Start of Cover Page -->
-					<div class="page" id="coverpage">
-						<img src="img/oibImageA.jpeg" width="100%">
-					</div> <!--/cover page-->
-				
-				 <center><p class="pageno">Cover</p></center>
-					<hr>
+					<style type="text/css">
+					.page {
+						max-height:1200px;
+						overflow:hidden;
+					}
 
-					<!-- Start of Page 1 -->
-					<div class="page">
-						<div class="text">
-							<span class="indent">
-							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
-							<br><span class="indent">
-							"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.
-							<br><span class="indent">
-							"Is there a way to see them all?" Lucas asked.
-							<br><span class="indent">
-							"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."
-							<br><span class="indent">
-							"No sports?" Mark asked.
-							<br><span class="indent">
-							"Sorry, no sports," said Ms. Wu.
-						</div>
-						<img src="img/oibImageB.png" width="100%">
-					</div> 
-					<!--/page1-->
-					<center><p class="pageno">Page 1</p></center>
-					<hr>
+					</style>
 
-					<!-- Start of Page 2 -->
-					<div class="page">
-						<div class="text">
-							<span class="indent">
-							On Tuesday, the class took the bus to the Science Center.
-							<br><span class="indent">
-							Outside the center, they spotted a dinosaur model.<br>
-							<span class="indent">
-							Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.
-						</div>
-						<img src="img/oibImageC.png" width="100%">
-					</div> <!--/page2-->
+					<!-- Pasage 1 -->
+					<div class="page" id="passage1">
+						<a href="#" id="psg1_next"><span class="turn_page" style="float: right">Go on to next passage</span></a>
+						<div class="text" style="clear: both" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+							<br><center><b>The Picnic</b></center>
+							<ol class="line_numbers">
+								<li>
+									<span class="indent">
+									A picnic is an excursion at which a meal is eaten outdoors (al fresco or en plein air), ideally taking place in a beautiful landscape such as a park, beside a lake or with an interesting view and possibly at a public event such as before an open-air theatre performance, and usually in summer. </span> </li>
+								<li>
+									<span class="indent">Descriptions of picnics show that the idea of a meal that was jointly contributed and was enjoyed out-of-doors were essential to a picnic from the early 19th century.</span></li>
+								<li>
+									<span class="indent">
+									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
 
-					<center><p class="pageno">Page 2</p></center>
-					<hr>
+							</ol>
+							<center>--- End of passage ---</center>
+						</div> <! --/text -->
+					</div> <!-- /Passage 1-->
 
-					<!-- Start of Page 3 -->
-					<div class="page">
-						<div class="text" style="clear: both">
-							<span class="indent">
-							The dinosaur was nice.
-							<br><span class="indent">
-							All the kids liked.<br>
-							<span class="indent">
-							Then they went home.
-							<br><br>
-							<span class="indent">End.
-						</div>
-
-						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
+					<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
 						</div>
@@ -136,15 +105,76 @@
 							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
 						</div>
 
-					</div> <!--/page3-->
 
-					<center><p class="pageno">Page 3</p></center>
-					<hr>
-				</div> <!--/passageAlign-->
-			</div> <!--/passageContent-->
+			<!-- Passage 2 -->
+					<!-- Start of Cover Page -->
+			<div class="page" id="coverpage" style="height: 0px">
+			<a href="#" id="cov_back"><span class="turn_page" style="float: left">Back to previous passage</span></a>	
+				<a href="#" id="cov_next"><span class="turn_page" style="float: right">Next page</span></a>
+				<div class="text" style="clear: both"></div>
+				<img src="img/oibImageA.jpeg" width="100%">
+			</div> <!--/cover page-->
+
+			<!-- Start of Page 1 -->
+			<div class="page" id="page1" style="height: 0px">
+				<a href="#" id="p1_back"><span class="turn_page" style="float: left">Previous page</span></a>
+				<a href="#" id="p1_next"><span class="turn_page" style="float: right">Next page</span></a>
+				<div class="text" style="clear: both">
+					<span class="indent">
+							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
+							<br>
+					<span class="indent">
+							"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.
+							<br>
+					<span class="indent">
+							"Is there a way to see them all?" Lucas asked.
+							<br>
+					<span class="indent">
+							"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."
+							<br>
+					<span class="indent">
+							"No sports?" Mark asked.
+							<br>
+					<span class="indent">
+							"Sorry, no sports," said Ms. Wu.
+				</div> <!--/text-->
+				<img src="img/oibImageB.png" width="100%">
+			</div> <!--/page1-->
+
+			<!-- Start of Page 2 -->
+			<div class="page" id="page2" style="height: 0px">
+				<a href="#" id="p2_back"><span class="turn_page" style="float: left">Previous page</span></a>
+				<a href="#" id="p2_next"><span class="turn_page" style="float: right">Next page</span></a>
+				<div class="text" style="clear: both">
+					<span class="indent">
+							On Tuesday, the class took the bus to the Science Center.
+							<br>
+					<span class="indent">
+							Outside the center, they spotted a dinosaur model.<br>
+					<span class="indent">
+							Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.
+				</div> <!-- /text-->
+				<img src="img/oibImageC.png" width="100%">
+			</div> <!--/page2-->
+
+			<!-- Start of Page 3 -->
+			<div class="page" id="page3" style="height: 0px">
+					<a href="#" id="p3_back"><span class="turn_page" style="float: left">Previous page</span></a>
+					<a href="#" id="p3_next"><span class="turn_page" style="float: right">Back to start</span></a>
+					<div class="text" style="clear: both">
+						<span class="indent">
+							The dinosaur was nice.
+							<br>
+						<span class="indent">
+							All the kids liked.<br>
+						<span class="indent">
+							Then they went home.
+					</div> <!--/text-->
+			</div> <!--/page3 -->
 			
-		</div> <!--/passageContainer-->
-
+				</div> <!-- /pageAlign -->
+			</div> <!-- /passageContent -->
+		</div> <!-- /passageContainer -->
 
 <!-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
@@ -153,7 +183,8 @@
 
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
-		<div class="questionContainer hidden" id="questionContainer">
+
+		<div class="questionContainer" id="questionContainer" style="display: none">
 			<div id="questionContent">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
@@ -308,5 +339,109 @@
 		</div> <!-- /questionContent -->
 	</div> <!-- /questionContainer-->
 </div> <!-- /passageAndQuestionContainer -->
+
+<script>
+
+var delay = 700;
+var hght = '1200px';
+
+
+ 	// Passage 1 - Next
+	$("#psg1_next").click(function(){
+
+			$('#passage1').animate({
+	      height: '0px'}, delay);
+
+			$('#coverpage').animate({
+	      height: hght});
+
+		});
+
+
+	// Passage 2 coverpage - Back
+	 $("#cov_back").click(function(){
+
+			$('#coverpage').animate({
+	      height: '0px'}, delay);
+
+			$('#passage1').animate({
+	      height: hght});
+
+		});
+
+	// Passage 2 coverpage - Next
+	 $("#cov_next").click(function(){
+
+			$('#coverpage').animate({
+	      height: '0px'}, delay);
+
+			$('#page1').animate({
+	      height: hght});
+
+		});
+
+	 // Page 1 - Back
+	 $("#p1_back").click(function(){
+			
+			$('#page1').animate({
+	      height: '0px'}, delay);
+
+			$('#coverpage').animate({
+	      height: hght});
+			
+		});
+
+	  // Page 1 - Next
+	 $("#p1_next").click(function(){
+
+			$('#page2').animate({
+	      height: hght});
+
+			$('#page1').animate({
+	      height: '0px'}, delay);
+		});
+
+	 // Page 2 - Back
+	 $("#p2_back").click(function(){
+
+			$('#page1').animate({
+	      height: hght});
+
+			$('#page2').animate({
+	      height: '0px'}, delay);
+		});
+
+	 // Page 2 - Next
+	 $("#p2_next").click(function(){
+
+			$('#page3').animate({
+	      height: hght});
+
+			$('#page2').animate({
+	      height: '0px'}, delay);
+		});
+
+	 // Page 3 - Back
+	 $("#p3_back").click(function(){
+
+			$('#page2').animate({
+	      height: hght});
+
+			$('#page3').animate({
+	      height: '0px'}, delay);
+		});
+
+	 // Page 3 - Next
+	 $("#p3_next").click(function(){
+
+			$('#passage1').animate({
+	      height: hght});
+
+			$('#page3').animate({
+	      height: '0px'}, delay);
+		});
+
+
+ </script>
 	</body>
 </html>

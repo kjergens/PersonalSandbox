@@ -127,19 +127,18 @@
 							<span class="indent">End.
 						</div>
 
+					<p class="pageno">Page 3</p>
+					<hr>
+						<!-- End button-->
 						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
 						</div>
-						<div class="fluency_btn_container" id="start_questions_btn" style="display: none">
-							<div class="fluency_btn_header">Now answer the questions on the right.</div>
-							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
-						</div>
+						<!-- /End button -->
 
 					</div> <!--/page3-->
 
-					<center><p class="pageno">Page 3</p></center>
-					<hr>
+					
 				</div> <!--/passageAlign-->
 			</div> <!--/passageContent-->
 			
@@ -154,7 +153,15 @@
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
 		<div class="questionContainer hidden" id="questionContainer">
-			<div id="questionContent">
+
+			<!-- Answer questions button -->
+						<div class="fluency_btn_container" id="start_questions_btn">
+							<div class="fluency_btn_header">Now answer questions about what you read.</div>
+							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
+						</div>
+						<!-- /Answer questions -->
+
+			<div id="questionContent" class="hidden">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
 
@@ -308,5 +315,25 @@
 		</div> <!-- /questionContent -->
 	</div> <!-- /questionContainer-->
 </div> <!-- /passageAndQuestionContainer -->
+
+<script>
+
+function done_reading() {
+	$('#passageContainer').animate({
+        scrollTop: $('#coverpage').offset().top
+    }, 1500);
+   document.getElementById('done_reading_btn').style.display = 'none';
+   document.getElementById('questionContainer').style.display = 'block';
+   	$('html, body').animate({
+        scrollTop: $('#header').offset().top
+    }, 800);
+   	
+ }
+
+ function start_questions() {
+ 	document.getElementById('questionContent').style.display = 'block';
+ 	document.getElementById('start_questions_btn').style.display = 'none';
+ }
+</script>
 	</body>
 </html>

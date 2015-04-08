@@ -41,7 +41,7 @@
 	<!--passage and questions-->
 	<div id="passageAndQuestionContainer" class="passageContentResize">
 
-		<!-- Start reading controls -->
+	<!-- Start reading controls -->
 		<div class="fluency_btn_container" id="start_reading_btn">
 		<div class="fluency_btn_header">Click button to begin reading.</div>
 		<div class="fluency_btn"  onclick="begin_reading()">Start Reading</div>
@@ -55,7 +55,6 @@
 
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
-
 		<div id="passageContainer" class="passageContainer noBorderRight hidden">
 
 			<!-- Start passage instructions -->
@@ -64,21 +63,30 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" style="height: 47px;">
+			<div id="passageContent" style="height: 47px;" >
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
+					<style type="text/css">
+					.page {
+						min-height:800px;
+					}
+
+					</style>
+
 					<!-- Start of Cover Page -->
-					<div class="page" id="coverpage">
+					<a href="#page1"><span class="turn_page" id="coverpage" style="float: right">Next page</span></a>
+					<div class="page">
 						<img src="img/oibImageA.jpeg" width="100%">
 					</div> <!--/cover page-->
-				
-				 <center><p class="pageno">Cover</p></center>
+					<p class="pageno">Cover</p>
 					<hr>
 
 					<!-- Start of Page 1 -->
+					<a href="#coverpage"><span class="turn_page" id="page1" style="float: left">Previous Page</span></a>
+					<a href="#page2"><span class="turn_page" style="float: right">Next page</span></a>
 					<div class="page">
-						<div class="text">
+						<div class="text" style="clear: both">
 							<span class="indent">
 							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
 							<br><span class="indent">
@@ -93,14 +101,15 @@
 							"Sorry, no sports," said Ms. Wu.
 						</div>
 						<img src="img/oibImageB.png" width="100%">
-					</div> 
-					<!--/page1-->
-					<center><p class="pageno">Page 1</p></center>
+					</div> <!--/page1-->
+					<p class="pageno">Page 1</p>
 					<hr>
 
 					<!-- Start of Page 2 -->
+					<a href="#page1"><span class="turn_page" id="page2" style="float: left">Previous Page</span></a>
+					<a href="#page3"><span class="turn_page" style="float: right">Next page</span></a>
 					<div class="page">
-						<div class="text">
+						<div class="text" style="clear: both">
 							<span class="indent">
 							On Tuesday, the class took the bus to the Science Center.
 							<br><span class="indent">
@@ -110,11 +119,12 @@
 						</div>
 						<img src="img/oibImageC.png" width="100%">
 					</div> <!--/page2-->
-
-					<center><p class="pageno">Page 2</p></center>
+					<p class="pageno">Page 2</p>
 					<hr>
 
 					<!-- Start of Page 3 -->
+					<a href="#page1"><span class="turn_page" id="page3" style="float: left">Previous page</span></a>
+					
 					<div class="page">
 						<div class="text" style="clear: both">
 							<span class="indent">
@@ -123,23 +133,21 @@
 							All the kids liked.<br>
 							<span class="indent">
 							Then they went home.
-							<br><br>
-							<span class="indent">End.
 						</div>
+						<p class="pageno">Page 3</p>
+						<hr>
+						End.
+						<a href="#coverpage"><span class="turn_page" style="float: right">Go to beginning</span></a>
 
-						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
+					<!-- End reading buttons -->
+					<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
 						</div>
-						<div class="fluency_btn_container" id="start_questions_btn" style="display: none">
-							<div class="fluency_btn_header">Now answer the questions on the right.</div>
-							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
-						</div>
+					<!-- /End reading buttons -->
 
 					</div> <!--/page3-->
 
-					<center><p class="pageno">Page 3</p></center>
-					<hr>
 				</div> <!--/passageAlign-->
 			</div> <!--/passageContent-->
 			
@@ -153,8 +161,17 @@
 
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
+
 		<div class="questionContainer hidden" id="questionContainer">
-			<div id="questionContent">
+
+				<!-- Answer questions button -->
+						<div class="fluency_btn_container" id="start_questions_btn">
+							<div class="fluency_btn_header">Now answer questions about what you read.</div>
+							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
+						</div>
+						<!-- /Answer questions -->
+
+			<div id="questionContent" class="hidden">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
 
@@ -308,5 +325,34 @@
 		</div> <!-- /questionContent -->
 	</div> <!-- /questionContainer-->
 </div> <!-- /passageAndQuestionContainer -->
+
+<script type="text/javascript">
+
+function done_reading() {
+	$('#passageContainer').animate({
+        scrollTop: $('#coverpage').offset().top
+    }, 1500);
+   document.getElementById('done_reading_btn').style.display = 'none';
+   document.getElementById('questionContainer').style.display = 'block';
+   	$('html, body').animate({
+        scrollTop: $('#header').offset().top
+    }, 800);
+   	
+ }
+
+ function start_questions() {
+ 	document.getElementById('questionContent').style.display = 'block';
+ 	document.getElementById('start_questions_btn').style.display = 'none';
+ }
+
+ /*
+$('.turn_page').click(function(){
+	alert(1);
+	$('#passageContainer').animate({
+	        scrollTop: $($(this).attr('href')).offset().top
+	    }, 3000);
+}
+ */
+</script>
 	</body>
 </html>
