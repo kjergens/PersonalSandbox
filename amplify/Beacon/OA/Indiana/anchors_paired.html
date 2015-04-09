@@ -4,11 +4,31 @@
 		<link rel="stylesheet" type="text/css" href="css/fluency.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 		<script src="js/fluency.js"></script>
+		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-core.js"></script>
+		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-classapplier.js"></script>
+		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-highlighter.js"></script>
+		<script type="text/javascript" src="js/highlight.js"></script>
 		<title>Anchors paired</title>
 	</head>
 	<body>
 
+<!-------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------
 
+	  Highlight 
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------->
+    <div id="annotate_menu" class="hidden">
+        <div class="title">Highlight</div>
+        <hr/>
+        <input class="unhighlight_button" type="button" style="border-width:0px;" value="none" onclick="removeHighlightFromSelectedText();">
+        <input class="highlight_button" type="button" style="border-width:0px;" onclick="highlightSelectedText();">
+        <div class="hoverDiv"></div>
+        <div class="arrow"></div>
+    </div>
+    <!--/Highlight-->
+    
 	<!--header bar-->
 	<div id="header">
 		<span id="assessmentDetail" class="left">
@@ -64,7 +84,7 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" style="height: 47px;" >
+			<div id="passageContent" style="height: 47px;" onmousemove="show_highlighter()" ontouchstart="show_highlighter()">
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
