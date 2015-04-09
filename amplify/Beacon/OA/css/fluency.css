@@ -27,11 +27,13 @@
 a .turn_page {
 	text-transform: none;
 	text-decoration: none;
+	text-decoration-color: #f3964d;
 	color: #fff;
 }
 
 a:visited {
 	color: #fff;
+	text-decoration: none;
 }
 
 .indent::before {
