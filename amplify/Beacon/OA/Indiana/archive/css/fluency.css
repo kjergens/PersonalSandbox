@@ -25,15 +25,15 @@
 }
 
 a .turn_page {
-	text-transform: none;
-	text-decoration: none;
-	text-decoration-color: #f3964d;
+	text-decoration-line: none;
+	-moz-text-decoration-line: none;
 	color: #fff;
 }
 
 a:visited {
 	color: #fff;
-	text-decoration: none;
+	text-decoration-line: none;
+	-moz-text-decoration-line: none;
 }
 
 .indent::before {
