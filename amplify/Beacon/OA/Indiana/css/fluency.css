@@ -48,7 +48,7 @@ a:visited {
 	text-align: center;
 	background-color: #f37321;
 	z-index: 3;
-	border-radius: 3px;
+	border-radius: 4px;
 	margin: 30px 0px 20px 0px;
 	width: 180px;
 	position: relative;
@@ -60,7 +60,6 @@ a:visited {
 }
 
 .fluency_btn_container {
-	border-radius: 3px;
 	background-color: #ececec;
 	width: 350px;
 	position: relative;
