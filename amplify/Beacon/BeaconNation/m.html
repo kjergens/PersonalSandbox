@@ -18,6 +18,16 @@
 $(document).ready(function() {
     $('#map').usmap({}); })
 
+$('#map').usmap({
+  stateSpecificStyles: {
+    'CA': {fill: 'teal'},
+    'NY': {fill: 'teal'},
+    'WA': {fill: 'teal'},
+    'DC': {fill: 'teal'},
+    'VA': {fill: 'teal'},
+    'IN': {fill:'teal'}
+  } 
+});
 
 </script>
 </body>
