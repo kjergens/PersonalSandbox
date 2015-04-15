@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="ui-toolkit">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+	<link rel="stylesheet" href="css/beaconmap.css">
+	<link rel="stylesheet" href="css/pesticide.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="us-map-1.0.1/jquery.usmap.js"></script>
+
+	<title>US Map</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<div>Beacon Nation</div>
+		</div><!--/span12-->
+	</div><!--/row-fluid-->
+
+	<div class="row-fluid">
+		<div class="span6">
+			<!-- TODO: use media query to resize map-->
+			<div id="map" zstyle="width: 600px; height: 600px;">hi</div>
+		</div><!--/span6-->
+		<div class="span6">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ul>
+		</div> <!--/span6-->
+	</div> <!--/row-fluid-->
+	<div class="footer">footer</div>
+</div> <!--/container-fluid-->
+<script type="text/javascript">
+	
+$(document).ready(function() {
+    $('#map').usmap({}); })
+
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="ui-toolkit">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="zcss/pesticide.css">
+	<link rel="stylesheet" href="public/css/styles.css">
+	<link rel="stylesheet" href="css/beaconmap.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="public/js/vendor/jquery/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="us-map-1.0.1/jquery.usmap.js"></script>
+
+	<title>US Map</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Beacon Nation</h1>
+		</div><!--/col-lg-12-->
+	</div><!--/row-fluid-->
+
+	<div class="row" >
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div id="map"></div>
+			</div>
+			<div id="details" style="position:relative;top:-120px;min-height:200px">details</div>
+		</div><!--/col-->
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="background: #e9e9e9">
+			<div id="dir" style="height:500px;overflow-y:scroll"></div>
+		</div> <!--/col-->
+	</div> <!--/row-fluid-->
+</div> <!--/container-fluid-->
+
+
+<script type="text/javascript" src="js/customers.js"></script>
+<script type="text/javascript">
+
+/*
+	Get data
+*/
+$(document).ready(function() {
+    $('#map').usmap({}); 
+
+		var list="";
+		for (var state in CUSTOMERS) {
+			list += "<h5>" + state + "</h5>"
+			list += "<ul class='list-unstyled'>"
+			for (var dist in CUSTOMERS[state]) {
+		    	list += "<li><a href=\'#\' onclick=getDetails(" 
+		    	+ "\'" + state + "\'" + ",\'" + dist + "\'" 
+		    	+ ")>" 
+		    	+ CUSTOMERS[state][dist]['name'] + "</a></li>"
+		  }
+		  list += "</ul>"
+		}
+		document.getElementById("dir").innerHTML = list;
+
+  })
+
+
+function getDetails(state, dist) {
+	var details = "<ul class='list-unstyled'>";
+	details += "<li><b>"
+	details += CUSTOMERS[state][dist]['name'];
+	details += "</b></li>"
+	details += "<li>"
+	details += CUSTOMERS[state][dist]['num_schools'];
+	details += " school(s)"
+	details += "</li>"
+	details += "<li>"
+	details += "Grades "
+	details += CUSTOMERS[state][dist]['grades'];
+	details += "</li>"
+	details += "<li>"
+	details += "<br><a href=\'http\://";
+	details += CUSTOMERS[state][dist]['url'];
+	details += "\'>";
+	details += CUSTOMERS[state][dist]['url'];
+	details += "</a>"
+	details += "</li>"
+	details += "</ul>"
+	document.getElementById("details").innerHTML = details;
+/*
+				name: "Las Puertas Community School",
+			num_schools: 1,
+			num_stu: "not available",
+			num_interims: 0,
+			url: "http://www.laspuertascommunityschool.org/",
+			consortia: "",
+			full_beacon: false,
+			paper: "",
+			online: "",
+			num_summative: 0,
+			grades: "6-8",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: ""
+
+			TODO:
+			logo for each district/school
+			testing windows
+			a positive quote from someone if i have it
+			the school/district motto
+			if Beacon or just Assmt Studio
+			show data if i have it or else don't, e.g. num interims
+			make the map light up
+			get a county map
+			*/
+}
+
+</script>
+
+</body>
+</html>
+
