@@ -256,6 +256,9 @@
 
 <script>
 function done_reading() {
+	$('#passageContainer').animate({
+        scrollTop: $('#coverpage').offset().top
+    }, 1500);
    document.getElementById('done_reading_btn').style.display = 'none';
    document.getElementById('questionContainer').style.display = 'block';
    turn_page('page3', 'coverpage');

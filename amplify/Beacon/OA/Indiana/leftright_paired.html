@@ -107,8 +107,8 @@
            Start of Animals
            -------------------------------->
 					<div id="passage2">
-					<div class="page">
-						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+					<div class="page" id="p2_page1">
+						<div class="text">
 							<br><center><b>Animals - A Rhyming Poem</b></center>
 							<ol class="line_numbers">
 								<li>
@@ -163,7 +163,7 @@ I would live wild in the woods and run from here to there.</span></li>
 						<span class="turn_btn prev" onclick="turn_page('page1', 'coverpage');"><</span>
 						<span class="turn_btn next" onclick="turn_page('page1', 'page2');">></span>
 						
-						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+						<div class="text" >
 								<span class="indent">Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.</span>
 								<br>
 								<span class="indent">
@@ -188,7 +188,7 @@ I would live wild in the woods and run from here to there.</span></li>
 						<span class="turn_btn prev" onclick="turn_page('page2', 'page1')"><</span>
 						<span class="turn_btn next" onclick="turn_page('page2', 'page3')">></span>
 						
-						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+						<div class="text" >
 								<span class="indent">
 								On Tuesday, the class took the bus to the Science Center.</span>
 								<br><span class="indent">
@@ -332,9 +332,15 @@ I would live wild in the woods and run from here to there.</span></li>
 
 <script>
 function done_reading() {
+	$('#passageContainer').animate({
+        scrollTop: $('#p2_page1').offset().top
+    }, 1500);
    document.getElementById('done_reading_btn').style.display = 'none';
    document.getElementById('questionContainer').style.display = 'block';
-   turn_page('page3', 'coverpage');
+   //turn_page('page3', 'coverpage');
+   $('html, body').animate({
+        scrollTop: $('#header').offset().top
+    }, 800);
    	
  }
 
