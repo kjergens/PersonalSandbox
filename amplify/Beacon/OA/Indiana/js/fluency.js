@@ -16,9 +16,9 @@ function done_reading() {
  }
 
  function start_questions() {
- 	document.getElementById('questionContainer').style.display = 'block';
+ 	document.getElementById('questionContent').style.display = 'block';
  	document.getElementById('start_questions_btn').style.display = 'none';
- 	$("#p3_next").click();
+ 	document.getElementById('navButtonBar').style.display = 'block';
  }
 
  function turn_page(id1, id2) {
