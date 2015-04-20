@@ -147,9 +147,63 @@
 				       document.getElementById(id2).style.display = 'block';
 				    }
 
+				    function switch_passage(passage_to_hide, passage_to_show, menu_to_hide, menu_to_show) {
+				       document.getElementById(passage_to_hide).className = "hidden";
+				       document.getElementById(passage_to_show).className = "";
+				       document.getElementById(menu_to_hide).className = "";
+				       document.getElementById(menu_to_show).className = "selected_passage";
+				    }
+
 				//-->
 				</script>
+
+				<!---------------------------------------------
+				 paired passage menu 
+				 ---------------------------------------------->
+					<div id="paired_passage_header" style="display:block"> 
+					<ul>
+						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">The Picnic</a></li>
+						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">The Best Field Trip Ever</a></li>
+					</ul>
+
+					</div>
+          <br>
+
+          <!------------------------------
+           Start of Picnic 
+           -------------------------------->
+					<div id="passage2">
+					<div class="page" id="p2_page1">
+						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
+							<br><center><b>The Picnic</b></center>
+							<ol class="line_numbers">
+								<li>
+									<span class="indent">
+									A picnic is an excursion at which a meal is eaten outdoors (al fresco or en plein air), ideally taking place in a beautiful landscape such as a park, beside a lake or with an interesting view and possibly at a public event such as before an open-air theatre performance, and usually in summer. </span> </li>
+								<li>
+									<span class="indent">Descriptions of picnics show that the idea of a meal that was jointly contributed and was enjoyed out-of-doors were essential to a picnic from the early 19th century.</span></li>
+								<li>
+									<span class="indent">
+									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
+
+							</ol>
+								<img src="img/The_Picnic.jpg" width="100%">
+								<!---------------------------------------------------------
+
+								Done button
+
+							------------------------------------------------------------>
+						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
+							<div class="fluency_btn_header">Are you done reading?</div>
+							<div class="fluency_btn" onclick="done_reading()">Done</div>
+						</div>
+						</div> <! --/text -->
+					</div> <!--/page-->
+				</div> <!--/passage2-->
+
+
 					<!-- Start of Cover Page -->
+					<div id="passage1" class="hidden">
 					<div class="page" id="coverpage" style="display:block">
 						<span class="turn_btn next" onclick="turn_page('coverpage', 'page1');">></span>
 						<img src="img/oibImageA.jpeg" width="100%">
@@ -202,17 +256,8 @@
 
 						<span class="turn_btn prev" onclick="turn_page('page3', 'page2')"><</span>
 
-						<!---------------------------------------------------------
-
-								Done button
-
-							------------------------------------------------------------>
-						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
-							<div class="fluency_btn_header">Are you done reading?</div>
-							<div class="fluency_btn" onclick="done_reading()">Done</div>
-						</div>
-
 					</div>
+				</div> <!-- /passage2 -->
 				</div> <!--/passageAlign-->
 			</div> <!-- /passageContent-->
 		</div> <!-- /passageContainer -->

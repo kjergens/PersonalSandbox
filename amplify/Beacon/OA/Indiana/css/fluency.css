@@ -90,3 +90,50 @@ a:visited {
 	font-size: 13px;
 }
 
+.line_numbers {
+  					list-style-type: none;
+  				}
+
+  				.line_numbers li {
+						counter-increment: line_number;
+  				}
+
+  				.line_numbers li::before {
+    				content: counter(line_number);
+    				font-size: 14px;
+    				color: #b4b4b4;
+    				margin-left: -30px;
+    			}
+
+  				#paired_passage_header ul {
+						list-style: none;
+						padding:0;
+						margin:0;
+					}
+
+					#paired_passage_header li {
+						float: left;
+						border: 1px solid #abcdef;
+						border-bottom-width: 0;
+						margin: 0 0.5em 0 0;
+						background-color: #ecf3f9;
+						font-size: 20px;
+						font-family: 'Helvetica' , 'Arial', sans-serif;
+						padding: 2px;
+					}
+
+					#paired_passage_header li a {
+						padding: 0 1em;
+						text-decoration: none;
+					}
+
+					#paired_passage_header li a:visited {
+						color: gray;
+					}
+
+					#paired_passage_header .selected_passage {
+						position: relative;
+						top: 2px;
+						background: white;
+					}
+
