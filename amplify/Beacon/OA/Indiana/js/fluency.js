@@ -32,3 +32,13 @@ function switch_passage(passage_to_hide, passage_to_show, menu_to_hide, menu_to_
    document.getElementById(menu_to_hide).className = "";
    document.getElementById(menu_to_show).className = "selected_passage";
 }
+
+function hoverResponse(e) {
+	e.className = 'response hoverResponse';
+	alert(e.className);
+}
+
+function noHoverResponse(e) {
+	e.className = 'response';
+	alert(e.className);
+}

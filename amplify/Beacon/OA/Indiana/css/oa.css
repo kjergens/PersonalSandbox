@@ -173,7 +173,7 @@ div.response {
 	margin-right: 10%;
 }
 
-.hoverResponse. div.response:hover {
+.hoverResponse, div.response:hover {
   background-color: #fef9c1;
 }
 
