@@ -2,7 +2,7 @@
 	display:block;
 	width:470px;
 	max-height:1200px;
-	min-height: 500px;
+	min-height: 580px;
 	overflow:hidden;
 	font-family:serif;
 	color:#333333;
@@ -12,11 +12,10 @@
 	zposition: absolute;
 	zleft: 5%;
 	ztop: 3%;
-	zmax-width: 200px;
 	background-color: white;
 }
 
-.passageContainer {
+.passageContainer, #passageContent {
 	background-color: #555555;
 }
 
@@ -185,5 +184,9 @@ z.pageno::after {
 	position: relative;
 	top: 2px;
 	background: white;
+}
+
+#paired_passage_header {
+	margin-left: 40px;
 }
 
