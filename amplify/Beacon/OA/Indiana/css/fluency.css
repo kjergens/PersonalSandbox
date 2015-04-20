@@ -146,9 +146,9 @@ a:visited {
 	float: left;
 	border: 1px solid #abcdef;
 	border-bottom-width: 0;
-	margin: 0 0.5em 0 0;
+	margin: 0 0 0 0.5em;
 	background-color: #ecf3f9;
-	font-size: 20px;
+	font-size: 14px;
 	font-family: 'Helvetica' , 'Arial', sans-serif;
 	padding: 2px;
 }
@@ -158,8 +158,8 @@ a:visited {
 	text-decoration: none;
 }
 
-#paired_passage_header li a:visited {
-	color: gray;
+#paired_passage_header li a, #paired_passage_header li a:visited {
+	color: #1a99c7;
 }
 
 #paired_passage_header .selected_passage {

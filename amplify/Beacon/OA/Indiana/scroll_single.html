@@ -53,7 +53,7 @@
 	<!-- gray nav bar-->
 	<div class="mathToolAndNavArrowContainer">
 		<div id="learnosityMathTools"></div>
-		<div class="navArrowContainer">
+		<div class="navArrowContainer" id="navButtonBar" style="display:none">
 			<a href="scroll_paired.html"><span class="nextQuestionArrow" style="display: all;">&nbsp;</span></a>
 			<span class="arrowContainerSpace">&nbsp;</span>
 		</div>
@@ -271,6 +271,7 @@ function done_reading() {
  function start_questions() {
  	document.getElementById('questionContent').style.display = 'block';
  	document.getElementById('start_questions_btn').style.display = 'none';
+ 	document.getElementById('navButtonBar').style.display = 'block';
  }
 </script>
 	</body>
