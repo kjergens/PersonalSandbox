@@ -53,7 +53,7 @@
 	<div class="mathToolAndNavArrowContainer">
 		<div id="learnosityMathTools">
 		</div>
-		<div class="navArrowContainer">
+		<div class="navArrowContainer" id="navButtonBar" style="display:none">
 			<a href="leftright_single.html"><span class="prevQuestionArrow" style="display: all;">&nbsp;</span></a>
 			<span class="arrowContainerSpace">&nbsp;</span>
 		</div>
@@ -89,79 +89,14 @@
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
-					<style type="text/css">
 
-					.text {
-						max-width:420px;
-						margin: auto;
-						font-family:serif;
-						color:#333333;
-						font-size:20px;
-						line-height:1.75;
-						padding: 10px 0px 0px 0px;
-					}
-
-					.indent::before {
-						content:'\00A0\00A0\00A0\00A0\00A0\00A0';
-					}
-
-					.turn_btn {
-					  z-index: 9999999;
-					  position: absolute;
-					  padding: 2px 8px;
-					  text-align: center;
-					  color: #fff;
-					  top: 30%;
-					  zbox-sizing: border-box;
-					  font-size: 24px;
-					  cursor: pointer;
-					  background: #f37321;
-					  #154a67;
-					  -moz-box-sizing: border-box;
-					  font-family: 'SSStandard', 'Helvetica', 'Arial', sans-serif;
-					}
-
-					.turn_btn:hover {
-						background: #f58f4d;
-						#265b7a;
-					}
-
-
-					.prev {
-  					left: 0px;
-  					zbox-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
-  				}
-
-  				.next {
-  					right: 0px;
-  					zbox-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
-  				}
-
-					</style>
-
-					<script type="text/javascript">
-				<!--
-				    function turn_page(id1, id2) {
-				       document.getElementById(id1).style.display = 'none';
-				       document.getElementById(id2).style.display = 'block';
-				    }
-
-				    function switch_passage(passage_to_hide, passage_to_show, menu_to_hide, menu_to_show) {
-				       document.getElementById(passage_to_hide).className = "hidden";
-				       document.getElementById(passage_to_show).className = "";
-				       document.getElementById(menu_to_hide).className = "";
-				       document.getElementById(menu_to_show).className = "selected_passage";
-				    }
-
-				//-->
-				</script>
 
 				<!---------------------------------------------
 				 paired passage menu 
 				 ---------------------------------------------->
 					<div id="paired_passage_header" style="display:block"> 
 					<ul>
-						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">The Picnic</a></li>
+						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Animals</a></li>
 						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">The Best Field Trip Ever</a></li>
 					</ul>
 
@@ -169,24 +104,33 @@
           <br>
 
           <!------------------------------
-           Start of Picnic 
+           Start of Animals
            -------------------------------->
 					<div id="passage2">
-					<div class="page" id="p2_page1">
+					<div class="page">
 						<div class="text" onmousemove="show_highlighter()" ontouchstart="show_highlighter()" >
-							<br><center><b>The Picnic</b></center>
+							<br><center><b>Animals - A Rhyming Poem</b></center>
 							<ol class="line_numbers">
 								<li>
-									<span class="indent">
-									A picnic is an excursion at which a meal is eaten outdoors (al fresco or en plein air), ideally taking place in a beautiful landscape such as a park, beside a lake or with an interesting view and possibly at a public event such as before an open-air theatre performance, and usually in summer. </span> </li>
+									<span class="indent">Animals live in many places - in water, grass, and trees.
+									</span> 
+								</li>
 								<li>
-									<span class="indent">Descriptions of picnics show that the idea of a meal that was jointly contributed and was enjoyed out-of-doors were essential to a picnic from the early 19th century.</span></li>
+									<span class="indent">Some hop, some jump, some climb, while others run with ease.</span>
+								</li>
 								<li>
-									<span class="indent">
-									Picnics are often family-oriented but can also be an intimate occasion between two people or a large get-together such as company picnics and church picnics. </span></li>
+									<span class="indent">Animals can swim in lakes or fly high in the sky.</span>
+								</li>
+								<li>
+									<span class="indent">Smaller ones crawl in the rocks for a shady place to lie.</span>
+								</li>
+								<li><span class="indent">Whales dive deep to look for food in an ocean or a sea.</span></li>
+								<li><span class="indent">And bees buzz among the flowers, gathering nectar happily.</span></li>
+								<li><span class="indent">If I could be an animal - perhaps a deer or bear,
+I would live wild in the woods and run from here to there.</span></li>
+								<li><span class="indent">The End </span></li>
 
 							</ol>
-								<img src="img/The_Picnic.jpg" width="100%">
 								<!---------------------------------------------------------
 
 								Done button
@@ -195,13 +139,18 @@
 						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
-						</div>
+						</div> <!--/done button-->
+
 						</div> <! --/text -->
 					</div> <!--/page-->
 				</div> <!--/passage2-->
 
 
-					<!-- Start of Cover Page -->
+					<!---------------------------------------------------------
+
+								Best Field Trip Ever
+
+							------------------------------------------------------------>
 					<div id="passage1" class="hidden">
 					<div class="page" id="coverpage" style="display:block">
 						<span class="turn_btn next" onclick="turn_page('coverpage', 'page1');">></span>
@@ -288,7 +237,7 @@
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
 
-					<!-- Start question1 -->
+					<!-- Start question2 -->
 					<div id="content_0" class="questionContentItem" style="width: auto;">
 						<div class="itemInstructions"></div>
 						<div id="internal_key" class="hidden"></div>
@@ -298,13 +247,13 @@
 						<!-- itemHead-->
 						<div class="itemHead">
 							<div class="indexButton">
-								<button class="largePill" onclick="highlightSelectedText();">1</button>
+								<button class="largePill" onclick="highlightSelectedText();">2</button>
 								<div class="indexOf"> of 2 </div>
 							</div> <!--/indexButton -->
 							<div class="itemBody">
 								<div class="styledTextMarker"></div>
 								<p><span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									What was Ms. Wu's idea for the class to see most of the things they like?</span></p>
+									Which word rhymes with <b>bear</b>?</span></p>
 							</div> <!-- /itemBody -->
 						</div> <!--/itemHead -->
 
@@ -315,7 +264,7 @@
 							</div> <!-- /responseLetter -->
 							<div class="responseContent">
 								<div class="styledTextMarker"></div>
-								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">to go to the Science Center to see dinosaurs, robots, and sharks</span>
+								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">there</span>
 							</div> <!-- /responseContent -->
 						</div> <!-- /response_0-->
 
@@ -327,7 +276,7 @@
 							<div class="responseContent">
 								<div class="styledTextMarker"></div>
 								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									to go to the Good Health Room to watch a few sports
+									sea
 								</span>
 							</div> <!-- /responseContent -->
 						</div> <!-- /response_1-->
@@ -340,7 +289,7 @@
 							<div class="responseContent">
 								<div class="styledTextMarker"></div>
 								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									to go to a science museum to see dinosaur bones
+									animals
 								</span>
 							</div> <!-- /responseContent -->
 						</div> <!-- /response_2 -->
@@ -353,70 +302,12 @@
 							<div class="responseContent">
 								<div class="styledTextMarker"></div>
 								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									to go to a park where everyone can play different things</span>
+									lie</span>
 							</div> <!-- /responseContent -->
 						</div> <!-- /response_3 -->
 					</div> <!-- /question1-->
 
-					<!-- Start of question 2-->
-					<a name="tag_1" id="1"></a>
-					<div id="content_1" class="questionContentItem" style="width: auto;">
-						<div class="itemInstructions"></div>
-						<div id="internal_key" class="hidden"></div>
-						<div id="index" class="hidden">1</div>
-						<div id="type" class="hidden">MC</div>
-						<div class="itemHead">
-							<div class="indexButton">
-							<button class="largePill">2</button>
-							<div class="indexOf"> of 2 </div>
-						</div>
-						<div class="itemBody">
-							<div class="styledTextMarker"></div>
-							<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-								Look at page 1. Based on the picture and the text, which idea was the students most interested in?
-							</span>
-						</div> <!-- itemBody -->
-					</div>
-
-					<div id="response_0" class="response">
-						<div class="responseLetter">
-							<div class="centerLetter">A</div>
-						</div> <!-- /responseLetter-->
-						<div class="responseContent">
-							<div class="styledTextMarker"></div>
-							<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">dinosaurs</span>
-						</div> <!-- /responseContent -->
-					</div> <!-- /response_0 -->
-
-					<div id="response_1" class="response">
-						<div class="responseLetter">
-							<div class="centerLetter">B</div>
-						</div> <!-- /responseLetter-->
-						<div class="responseContent">
-							<div class="styledTextMarker"></div>
-							<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">cars</span>
-						</div> <!-- /responseContent -->
-					</div> <!-- /response_1 -->
-
-					<div id="response_2" class="response">
-						<div class="responseLetter">
-							<div class="centerLetter">C</div>
-						</div> <!-- /responseLetter-->
-						<div class="responseContent">
-							<div class="styledTextMarker"></div>
-							<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">hospital</span>
-						</div> <!-- /responseContent -->
-					</div> <!-- /response_2 -->
-
-					<div id="response_3" class="response">
-						<div class="responseLetter">
-							<div class="centerLetter">D</div>
-						</div> <!-- /responseLetter-->
-						<div class="responseContent">
-							<div class="styledTextMarker"></div>
-							<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">dinosaurs</span>
-						</div> <!-- /responseContent -->
-					</div> <!-- /response_3 -->
+					
 
 
 					<div class="lastQuestionEndTestPage" style="display:all">
@@ -450,6 +341,7 @@ function done_reading() {
  function start_questions() {
  	document.getElementById('questionContent').style.display = 'block';
  	document.getElementById('start_questions_btn').style.display = 'none';
+ 	document.getElementById('navButtonBar').style.display = 'block';
  }
 </script>
 

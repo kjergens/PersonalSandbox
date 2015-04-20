@@ -53,8 +53,8 @@
 	<div class="mathToolAndNavArrowContainer">
 		<div id="learnosityMathTools">
 		</div>
-		<div class="navArrowContainer">
-			<a href="leftright_paired.html"><span class="nextQuestionArrow" style="display: all;">&nbsp;</span></a>
+		<div class="navArrowContainer" id="navButtonBar" style="display:none">
+			<a href="leftright_paired.html"><span class="nextQuestionArrow" style="display:all">&nbsp;</span></a>
 			<span class="arrowContainerSpace">&nbsp;</span>
 		</div>
 	</div> <!-- /gray nav bar-->
@@ -89,65 +89,7 @@
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
-					<style type="text/css">
-
-					.text {
-						max-width:420px;
-						margin: auto;
-						font-family:serif;
-						color:#333333;
-						font-size:20px;
-						line-height:1.75;
-						padding: 10px 0px 0px 0px;
-					}
-
-					.indent::before {
-						content:'\00A0\00A0\00A0\00A0\00A0\00A0';
-					}
-
-					.turn_btn {
-					  z-index: 9999999;
-					  position: absolute;
-					  padding: 2px 8px;
-					  text-align: center;
-					  color: #fff;
-					  top: 30%;
-					  zbox-sizing: border-box;
-					  font-size: 24px;
-					  cursor: pointer;
-					  background: #f37321;
-					  #154a67;
-					  -moz-box-sizing: border-box;
-					  font-family: 'SSStandard', 'Helvetica', 'Arial', sans-serif;
-					}
-
-					.turn_btn:hover {
-						background: #f58f4d;
-						#265b7a;
-					}
-
-
-					.prev {
-  					left: 0px;
-  					zbox-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
-  				}
-
-  				.next {
-  					right: 0px;
-  					zbox-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
-  				}
-
-					</style>
-
-					<script type="text/javascript">
-				<!--
-				    function turn_page(id1, id2) {
-				       document.getElementById(id1).style.display = 'none';
-				       document.getElementById(id2).style.display = 'block';
-				    }
-
-				//-->
-				</script>
+					
 					<!-- Start of Cover Page -->
 					<div class="page" id="coverpage" style="display:block">
 						<span class="turn_btn next" onclick="turn_page('coverpage', 'page1');">></span>
@@ -201,6 +143,8 @@
 
 						<span class="turn_btn prev" onclick="turn_page('page3', 'page2')"><</span>
 
+						<div class="text">The End.</div>	
+
 						<!---------------------------------------------------------
 
 								Done button
@@ -243,77 +187,7 @@
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
 
-					<!-- Start question1 -->
-					<div id="content_0" class="questionContentItem" style="width: auto;">
-						<div class="itemInstructions"></div>
-						<div id="internal_key" class="hidden"></div>
-						<div id="index" class="hidden">0</div>
-						<div id="type" class="hidden">MC</div>
-
-						<!-- itemHead-->
-						<div class="itemHead">
-							<div class="indexButton">
-								<button class="largePill" onclick="highlightSelectedText();">1</button>
-								<div class="indexOf"> of 2 </div>
-							</div> <!--/indexButton -->
-							<div class="itemBody">
-								<div class="styledTextMarker"></div>
-								<p><span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									What was Ms. Wu's idea for the class to see most of the things they like?</span></p>
-							</div> <!-- /itemBody -->
-						</div> <!--/itemHead -->
-
-						<!-- response_0 -->
-						<div id="response_0" class="response">
-							<div class="responseLetter">
-								<div class="centerLetter">A</div>
-							</div> <!-- /responseLetter -->
-							<div class="responseContent">
-								<div class="styledTextMarker"></div>
-								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">to go to the Science Center to see dinosaurs, robots, and sharks</span>
-							</div> <!-- /responseContent -->
-						</div> <!-- /response_0-->
-
-						<!-- response_1 -->
-						<div id="response_1" class="response">
-							<div class="responseLetter">
-								<div class="centerLetter">B</div>
-							</div> <!-- /responseLetter -->
-							<div class="responseContent">
-								<div class="styledTextMarker"></div>
-								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									to go to the Good Health Room to watch a few sports
-								</span>
-							</div> <!-- /responseContent -->
-						</div> <!-- /response_1-->
-
-						<!-- response_2 -->
-						<div id="response_2" class="response">
-							<div class="responseLetter">
-								<div class="centerLetter">C</div>
-							</div> <!-- /responseLetter -->
-							<div class="responseContent">
-								<div class="styledTextMarker"></div>
-								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									to go to a science museum to see dinosaur bones
-								</span>
-							</div> <!-- /responseContent -->
-						</div> <!-- /response_2 -->
-
-						<!-- response_3 -->
-						<div id="response_3" class="response">
-							<div class="responseLetter">
-								<div class="centerLetter">D</div>
-							</div>
-							<div class="responseContent">
-								<div class="styledTextMarker"></div>
-								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
-									to go to a park where everyone can play different things</span>
-							</div> <!-- /responseContent -->
-						</div> <!-- /response_3 -->
-					</div> <!-- /question1-->
-
-					<!-- Start of question 2-->
+					<!-- Start of question 1-->
 					<a name="tag_1" id="1"></a>
 					<div id="content_1" class="questionContentItem" style="width: auto;">
 						<div class="itemInstructions"></div>
@@ -322,7 +196,7 @@
 						<div id="type" class="hidden">MC</div>
 						<div class="itemHead">
 							<div class="indexButton">
-							<button class="largePill">2</button>
+							<button class="largePill">1</button>
 							<div class="indexOf"> of 2 </div>
 						</div>
 						<div class="itemBody">
@@ -373,20 +247,6 @@
 						</div> <!-- /responseContent -->
 					</div> <!-- /response_3 -->
 
-
-					<div class="lastQuestionEndTestPage" style="display:all">
-						<hr class="separator">
-						<div class="lastQuestionAlert">
-							<span>YOU'VE REACHED THE END OF THE TEST</span>
-						</div>
-						<div class="lastQuestionInstruction">
-							<ul>
-								<li>If there's time, check your work.</li>
-								<li>If you're done, click: <img src="img/curved_arrow_small.png" class="arrow"> </li>
-							</ul>
-						</div> <!-- /lastQuestionInstruction -->
-						<button id="lastPageEndTest" class="endTest"></button>
-					</div> <!-- /lastQuestionEndTestPage -->
 				</div> <!-- questionContentItem-->
 
 			</div> <!-- /passageWithItemsContent_0-->
@@ -405,6 +265,7 @@ function done_reading() {
  function start_questions() {
  	document.getElementById('questionContent').style.display = 'block';
  	document.getElementById('start_questions_btn').style.display = 'none';
+ 	document.getElementById('navButtonBar').style.display = 'block';
  }
 </script>
 

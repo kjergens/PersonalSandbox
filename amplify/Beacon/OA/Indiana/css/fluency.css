@@ -8,6 +8,9 @@
 	font-size:20px;
 	margin: auto;
 	line-height:1.75;
+	zposition: absolute;
+	zleft: 5%;
+	ztop: 3%;
 }
 
 .page > .text {
@@ -24,6 +27,7 @@
   margin: 10px 5px;
 }
 
+
 a .turn_page {
 	text-decoration-line: none;
 	-moz-text-decoration-line: none;
@@ -34,6 +38,33 @@ a:visited {
 	color: #fff;
 	text-decoration-line: none;
 	-moz-text-decoration-line: none;
+}
+
+
+.turn_btn {
+  z-index: 9999999;
+  position: absolute;
+  padding: 2px 8px;
+  text-align: center;
+  color: #fff;
+  top: 30%;
+  zbox-sizing: border-box;
+  font-size: 24px;
+  cursor: pointer;
+  background: #f37321;
+  #154a67;
+  -moz-box-sizing: border-box;
+  font-family: 'SSStandard', 'Helvetica', 'Arial', sans-serif;
+}
+
+.prev {
+	left: 0px;
+	zbox-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
+}
+
+.next {
+	right: 0px;
+	zbox-shadow: inset -50px 0 30px -30px rgba(0,0,0,0.3);
 }
 
 .indent::before {
@@ -91,49 +122,49 @@ a:visited {
 }
 
 .line_numbers {
-  					list-style-type: none;
-  				}
+	list-style-type: none;
+}
 
-  				.line_numbers li {
-						counter-increment: line_number;
-  				}
+.line_numbers li {
+	counter-increment: line_number;
+}
 
-  				.line_numbers li::before {
-    				content: counter(line_number);
-    				font-size: 14px;
-    				color: #b4b4b4;
-    				margin-left: -30px;
-    			}
+.line_numbers li::before {
+	content: counter(line_number);
+	font-size: 14px;
+	color: #b4b4b4;
+	margin-left: -30px;
+}
 
-  				#paired_passage_header ul {
-						list-style: none;
-						padding:0;
-						margin:0;
-					}
+#paired_passage_header ul {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
 
-					#paired_passage_header li {
-						float: left;
-						border: 1px solid #abcdef;
-						border-bottom-width: 0;
-						margin: 0 0.5em 0 0;
-						background-color: #ecf3f9;
-						font-size: 20px;
-						font-family: 'Helvetica' , 'Arial', sans-serif;
-						padding: 2px;
-					}
+#paired_passage_header li {
+	float: left;
+	border: 1px solid #abcdef;
+	border-bottom-width: 0;
+	margin: 0 0.5em 0 0;
+	background-color: #ecf3f9;
+	font-size: 20px;
+	font-family: 'Helvetica' , 'Arial', sans-serif;
+	padding: 2px;
+}
 
-					#paired_passage_header li a {
-						padding: 0 1em;
-						text-decoration: none;
-					}
+#paired_passage_header li a {
+	padding: 0 1em;
+	text-decoration: none;
+}
 
-					#paired_passage_header li a:visited {
-						color: gray;
-					}
+#paired_passage_header li a:visited {
+	color: gray;
+}
 
-					#paired_passage_header .selected_passage {
-						position: relative;
-						top: 2px;
-						background: white;
-					}
+#paired_passage_header .selected_passage {
+	position: relative;
+	top: 2px;
+	background: white;
+}
 

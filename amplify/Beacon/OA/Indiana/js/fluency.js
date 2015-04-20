@@ -20,3 +20,15 @@ function done_reading() {
  	document.getElementById('start_questions_btn').style.display = 'none';
  	$("#p3_next").click();
  }
+
+ function turn_page(id1, id2) {
+   document.getElementById(id1).style.display = 'none';
+   document.getElementById(id2).style.display = 'block';
+}
+
+function switch_passage(passage_to_hide, passage_to_show, menu_to_hide, menu_to_show) {
+   document.getElementById(passage_to_hide).className = "hidden";
+   document.getElementById(passage_to_show).className = "";
+   document.getElementById(menu_to_hide).className = "";
+   document.getElementById(menu_to_show).className = "selected_passage";
+}
