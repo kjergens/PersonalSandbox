@@ -191,11 +191,11 @@ z.pageno::after {
 
 #paired_passage_header .selected_passage {
 	position: relative;
-	top: 2px;
+	top: 1px;
 	background: white;
 }
 
 #paired_passage_header {
-	margin-left: 40px;
+	margin-left: 50px;
 }
 
