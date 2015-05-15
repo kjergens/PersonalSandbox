@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="ui-toolkit">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="zcss/pesticide.css">
+	<link rel="stylesheet" href="public/css/styles.css">
+	<link rel="stylesheet" href="css/beaconmap.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="public/js/vendor/jquery/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="us-map-1.0.1/jquery.usmap.js"></script>
+
+	<title>US Map</title>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<h1>Beacon Nation</h1>
+		</div><!--/col-lg-12-->
+	</div><!--/row-fluid-->
+
+	<div class="row" >
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="row">
+				<div id="map" style="width:400px;height:400px;margin-top:30px"></div>
+			</div>
+			<div id="details" style="position:relative;top:-120px;min-height:200px"></div>
+		</div><!--/col-->
+		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="background: #e9e9e9">
+			<div id="dir" style="height:500px;overflow-y:scroll"></div>
+		</div> <!--/col-->
+	</div> <!--/row-fluid-->
+</div> <!--/container-fluid-->
+
+
+<script type="text/javascript" src="js/customers.js"></script>
+<script type="text/javascript" src="js/bn.js"></script>
+
+</body>
+</html>
+

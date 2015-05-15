@@ -1,0 +1,21 @@
+#company_logo{
+    float: right;
+};
+
+.footer{
+	position:fixed;
+	bottom: 0 px;
+};
+
+.ui-footer{
+	position:fixed;
+	bottom: 0 px;
+};
+
+.socialMedia {
+	padding:100px;
+	margin-left: 50px;
+}
+h3{
+	text-align: center;
+}

@@ -1,0 +1,332 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/oa.css">
+		<link rel="stylesheet" type="text/css" href="css/fluency.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="js/fluency.js"></script>
+		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-core.js"></script>
+		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-classapplier.js"></script>
+		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-highlighter.js"></script>
+		<script type="text/javascript" src="js/highlight.js"></script>
+		<title>Scroll paired</title>
+	</head>
+	<body>
+
+<!-------------------------------------------------------------------------------------------
+  -------------------------------------------------------------------------------------------
+
+	  Highlight 
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------->
+    <div id="annotate_menu" class="hidden">
+        <div class="title">Highlight</div>
+        <hr/>
+        <input class="unhighlight_button" type="button" style="border-width:0px;" value="none" onclick="removeHighlightFromSelectedText();">
+        <input class="highlight_button" type="button" style="border-width:0px;" onclick="highlightSelectedText();">
+        <div class="hoverDiv"></div>
+        <div class="arrow"></div>
+    </div>
+    <!--/Highlight-->
+
+	<!--header bar-->
+	<div id="header">
+		<span id="assessmentDetail" class="left">
+			<span class="subjectName">English Language Arts</span>
+			<span class="assessmentTitle ellipsis">- Assessment</span>
+		</span>
+		<span id="buttonsContainer">
+			<span class="studentName">Sample</span>
+			<span class="instructions">
+				<button class="instructions"></button>
+			</span>
+			<span id="finishLater">
+				<button class="finishLater"></button>
+			</span>
+			<span id="endTest">
+				<button id="endTestOnBar" class="endTest"></button>
+			</span>
+		</span> <!-- /buttonsContainer -->
+	</div> <!-- /header-->
+
+	<!-- gray nav bar-->
+	<div class="mathToolAndNavArrowContainer">
+		<div id="learnosityMathTools"></div>
+		<div class="navArrowContainer" id="navButtonBar" style="display:none">
+			<a href="scroll_single.html"><span class="prevQuestionArrow" style="display: all;">&nbsp;</span></a>
+			<span class="arrowContainerSpace">&nbsp;</span>
+		</div>
+	</div> <!-- /gray nav bar-->
+
+	<!--passage and questions-->
+	<div id="passageAndQuestionContainer" class="passageContentResize">
+
+		<!-- Start reading controls -->
+		<div class="fluency_btn_container" id="start_reading_btn">
+		<div class="fluency_btn_header">Click button to begin reading.</div>
+		<div class="fluency_btn"  onclick="begin_reading()">Start Reading</div>
+	</div>
+		<!-- /Start reading controls -->
+
+<!-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+	Passage
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------->
+
+		<div id="passageContainer" class="passageContainer noBorderRight hidden">
+
+			<!-- Start passage instructions -->
+			<div id="passageInstructions">
+				<div class="itemInstructions" style="margin:10px; padding: 10px;">
+					Read the first passage then click the Done button.
+				</div>
+			</div> <!--/passageInstructions -->
+
+			<!-- Start passage content -->
+			<div id="passageContent" style="height: 47px;" zonmousemove="show_highlighter()" ontouchstart="show_highlighter()">
+				<div class="passage_align" data-id="-7965472791252355464-1">
+					<div class="styledTextMarker"></div>
+
+
+					<!-- Pasage 1 -->
+					<div class="page" id="passage1">
+						<div class="text" style="clear: both"  >
+							<br><center><b>Animals - A Rhyming Poem</b></center>
+							<ol class="line_numbers">
+								<li>
+									<span class="indent">Animals live in many places - in water, grass, and trees.
+									</span> 
+								</li>
+								<li>
+									<span class="indent">Some hop, some jump, some climb, while others run with ease.</span>
+								</li>
+								<li>
+									<span class="indent">Animals can swim in lakes or fly high in the sky.</span>
+								</li>
+								<li>
+									<span class="indent">Smaller ones crawl in the rocks for a shady place to lie.</span>
+								</li>
+								<li><span class="indent">Sharks dive deep to look for food in an ocean or a sea.</span></li>
+								<li><span class="indent">And bees buzz among the flowers, gathering nectar happily.</span></li>
+								<li><span class="indent">If I could be an animal - perhaps a deer or bear,</span></li>
+								<li><span class="indent">I would live wild in the woods and run from here to there.</span></li>
+							</ol>
+							The End
+							<p class="pageno">End of passage<p>
+						</div> <! --/text -->
+					</div> <!-- /Passage 1-->
+					
+					<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
+							<div class="fluency_btn_header">Are you done reading?</div>
+							<div class="fluency_btn" onclick="done_reading()">Done</div>
+						</div>
+
+
+				<br><br>
+				
+				<p class="pageno">Here's a passage you read earlier.</p>
+
+					<!-- Start of Cover Page -->
+					<div class="page" id="coverpage">
+
+						<img src="img/oibImageA.jpeg" width="100%">
+					</div> <!--/cover page-->
+				
+				 <p class="pageno">Cover</p>
+					
+
+					<!-- Start of Page 1 -->
+					<div class="page">
+						<div class="text">
+							<span class="indent">
+							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
+							<br><span class="indent">
+							"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and soccer.
+							<br><span class="indent">
+							"Is there a way to see them all?" Lucas asked.
+							<br><span class="indent">
+							"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."
+							<br><span class="indent">
+							"No soccer?" Mark asked.
+							<br><span class="indent">
+							"Sorry, no soccer," said Ms. Wu.
+						</div>
+						<img src="img/oibImageB.png" width="100%">
+					</div> 
+					<!--/page1-->
+					<p class="pageno">Page 1</p>
+					
+
+					<!-- Start of Page 2 -->
+					<div class="page">
+						<div class="text">
+							<span class="indent">
+							On Tuesday, the class took the bus to the Science Center.
+							<br><span class="indent">
+							Outside the center, they spotted a dinosaur model.<br>
+							<span class="indent">
+							Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.
+						</div>
+						<img src="img/oibImageC.png" width="100%">
+					</div> <!--/page2-->
+
+					<p class="pageno">Page 2</p>
+					
+
+					<!-- Start of Page 3 -->
+					<div class="page">
+						<div class="text" style="clear: both">
+							<span class="indent">
+							The dinosaurs were nice.
+							<br><span class="indent">
+							All the kids liked them.<br>
+							<span class="indent">
+							Then they went home.
+							<br><br>
+							<span class="indent">The End.
+						</div>
+
+						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
+							<div class="fluency_btn_header">Are you done reading?</div>
+							<div class="fluency_btn" onclick="done_reading()">Done</div>
+						</div>
+
+					</div> <!--/page3-->
+
+					<p class="pageno">Page 3</p>
+					
+				</div> <!--/passageAlign-->
+			</div> <!--/passageContent-->
+			
+		</div> <!--/passageContainer-->
+
+
+<!-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+	Questions
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------->
+		<div class="questionContainer hidden" id="questionContainer">
+
+			<!-- Answer questions button -->
+						<div class="fluency_btn_container" id="start_questions_btn">
+							<div class="fluency_btn_header">Now answer questions about what you read.</div>
+							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
+						</div>
+						<!-- /Answer questions -->
+
+			<div id="questionContent" class="hidden">
+				<div id="passageWithItemsContent_0" data-id="0">
+					<a name="tag_0" id="0"></a>
+
+					<!-- Start question1 -->
+					<!-- Start question2 -->
+					<div id="content_0" class="questionContentItem" style="width: auto;">
+						<div class="itemInstructions"></div>
+						<div id="internal_key" class="hidden"></div>
+						<div id="index" class="hidden">0</div>
+						<div id="type" class="hidden">MC</div>
+
+						<!-- itemHead-->
+						<div class="itemHead">
+							<div class="indexButton">
+								<button class="largePill" onclick="highlightSelectedText();">2</button>
+								<div class="indexOf"> of 2 </div>
+							</div> <!--/indexButton -->
+							<div class="itemBody">
+								<div class="styledTextMarker"></div>
+								<p><span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
+									You need to look at both passage to answer this. What animals are in both the poem <b>Animals</b> and the book <b>The Best Field Trip Ever</b>? </span></p>
+							</div> <!-- /itemBody -->
+						</div> <!--/itemHead -->
+
+						<!-- response_0 -->
+						<div id="response_0" class="response" onclick="selectResponse(this)">
+							<div class="responseLetter">
+								<div class="centerLetter">A</div>
+							</div> <!-- /responseLetter -->
+							<div class="responseContent">
+								<div class="styledTextMarker"></div>
+								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">dogs</span>
+							</div> <!-- /responseContent -->
+						</div> <!-- /response_0-->
+
+						<!-- response_1 -->
+						<div id="response_1" class="response" onclick="selectResponse(this)">
+							<div class="responseLetter">
+								<div class="centerLetter">B</div>
+							</div> <!-- /responseLetter -->
+							<div class="responseContent">
+								<div class="styledTextMarker"></div>
+								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
+									cats
+								</span>
+							</div> <!-- /responseContent -->
+						</div> <!-- /response_1-->
+
+						<!-- response_2 -->
+						<div id="response_2" class="response" onclick="selectResponse(this)">
+							<div class="responseLetter">
+								<div class="centerLetter">C</div>
+							</div> <!-- /responseLetter -->
+							<div class="responseContent">
+								<div class="styledTextMarker"></div>
+								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
+									sharks
+								</span>
+							</div> <!-- /responseContent -->
+						</div> <!-- /response_2 -->
+
+						<!-- response_3 -->
+						<div id="response_3" class="response" onclick="selectResponse(this)">
+							<div class="responseLetter">
+								<div class="centerLetter">D</div>
+							</div>
+							<div class="responseContent">
+								<div class="styledTextMarker"></div>
+								<span style="color: rgb(51,51,51);font-family: Arial;font-size: 15.0px;font-style: normal;font-weight: normal;text-transform: none;">
+									camels</span>
+							</div> <!-- /responseContent -->
+						</div> <!-- /response_3 -->
+					</div> <!-- /question1-->
+
+					<div class="lastQuestionEndTestPage">
+						<hr class="separator">
+						<div class="lastQuestionAlert">
+							<span>YOU'VE REACHED THE END OF THE TEST</span>
+						</div>
+						<div class="lastQuestionInstruction">
+							<ul>
+								<li>If there's time, check your work.</li>
+								<li>If you're done, click: <img src="img/curved_arrow_small.png" class="arrow"> </li>
+							</ul>
+						</div> <!-- /lastQuestionInstruction -->
+						<button id="lastPageEndTest" class="endTest"></button>
+					</div> <!-- /lastQuestionEndTestPage -->
+				</div> <!-- questionContentItem-->
+
+			</div> <!-- /passageWithItemsContent_0-->
+		</div> <!-- /questionContent -->
+	</div> <!-- /questionContainer-->
+</div> <!-- /passageAndQuestionContainer -->
+	</body>
+<script>
+	function done_reading() {
+	$('#passageContainer').animate({
+        scrollTop: $('#passage1').offset().top
+    }, 1500);
+   document.getElementById('done_reading_btn').style.display = 'none';
+   document.getElementById('questionContainer').style.display = 'block';
+   	$('html, body').animate({
+        scrollTop: $('#header').offset().top
+    }, 800);
+   	
+ }
+
+ </script>
+</html>

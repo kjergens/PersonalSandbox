@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!--
+Dreamers job-finding web app.
+
+It uses pages to simulate several pages in on html file.
+-->
+<html class="ui-mobile portrait">
+	<head>
+		<title>Dreamers</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/jQueryMobile-1.4.5.min.css">
+		<link rel = "stylesheet" type = "text/css" href = "css/dreamers.css"> 
+		<script src="js/jQuery-v2.1.3.min.js"></script>
+	  <script src="js/jQueryMobile-1.4.5.min.js"></script>
+	</head>
+
+<body>
+
+
+<!-- Start of Sign In page -->
+<div data-role="page" id="signin">
+	<div data-role="header">
+		<h1>Dreamers</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<form>
+					<input class="form-text-box" type="text" name="username" id="username" value="" placeholder="username">
+					<input class="form-text-box" type="password" data-clear-btn="true" name="password" id="password" value="" placeholder="password" autocomplete="off">
+					<a href="#joblist" class="ui-btn ui-shadow">Sign In</a>
+					<a href="#register">Register</a>
+		</form>
+		<p align= "center" > <a href="#joblist"><img src = "img/Logo5.png" width="365px"> </a> </p>
+
+	
+	</div><!-- /content -->
+
+	<div data-role="footer" class="footer">
+		<h4>Dreamers</h4>
+	</div><!-- /footer -->
+</div><!-- /page End of Sign in page -->
+
+
+<!-- Start of Register page -->
+<div data-role="page" id="register">
+	<div data-role="header">
+		<h1>Registration</h1>
+			<a href="#register_menu" class="ui-nodisc-icon ui-btn ui-btn-b ui-icon-bars ui-btn-icon-notext ui-corner-all">
+			</a>
+
+	</div>
+	<div role="main" class="ui-content">
+
+						<h3 style="display: inline"> Import Information From: </h3>
+			<span class="socialMedia"> <img src = "img/linkedin.png" width = "100px" style="padding: 2px 20px"> </span> 
+			<img src = "img/facebook.png" width = "100px" style = "padding: 20px">
+			<h3> OR <h3>
+		<div class="ui-field-contain">
+			<form> 
+				<div class="ui-field-contain"><label for="name">Name</label>
+					<input class="form-text-box" type="text" name="name" id="name" value="" placeholder="name">
+				</div>
+				<div class="ui-field-contain">
+					<label for="DateofBirth">Date of Birth</label>
+					<input class="form-text-box" type="text" name="username" id="dateofbirth" value="" placeholder="mm/dd/yyyy"> 
+				</div>
+
+				<div class="ui-field-contain">
+					<label for="username">Username</label>
+					<input class="form-text-box" type="text" name="username" id="username" value="" placeholder="username">
+				</div>
+				<div class="ui-field-contain">
+					<label for="password">Password</label>
+					<input class="form-text-box" type="password" data-clear-btn="true" name="password" id="password" value="" placeholder="password" autocomplete="off">
+				</div>
+				<div class="ui-field-contain">
+					<label for="email_address">Email Address</label> 
+					<input class="form-text-box" type="text" name="email_address" id="email_address" placeholder="email address"> 
+				</div>
+
+					<div class="ui-field-contain">
+						<label for="careergoal">Career Goal</label>
+						<select name="select-native-1" id="careergoal">
+						<option value="1">Business</option>
+						<option value="2">Government</option>
+						<option value="3">Academic</option>
+						<option value="4">Social Work</option>
+						<option value="5">Technology</option>
+						<option value="6">Undecided</option>
+						</select> <!--/select-->
+					</div>
+					
+
+					<a href="#joblist" class="ui-btn ui-shadow">Register</a>
+			</form>
+		</div>
+	</div>
+<div data-role="panel" id="register_menu">
+    <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+    </ul>
+    <br><br>
+    <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
+</div><!-- /panel -->
+</div><!-- /Register Page-->
+
+<!-- Start of My Profile page -->
+<div data-role="page" id="myprofile">
+	<div data-role="header">
+		<h1> My Profile </h1>
+		<a href="#profile_menu" class="ui-nodisc-icon ui-btn ui-btn-b ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+	</div> 
+
+	<div role="main" class="ui-content">
+			<div class="ui-field-contain">
+			This is my profile, yo!
+			</div>
+	</div>
+
+	<div data-role="footer" class="footer">
+		<h4>Dreamers</h4>
+	</div>
+
+	<div data-role="panel" id="profile_menu">
+   	 <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+   	 </ul>
+   	 <br><br>
+    	<a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
+	</div><!-- /panel -->
+</div><!-- /My Profile page-->
+
+<!-- Start of Job List page -->
+<div data-role="page" id="joblist">
+	<div data-role="header">
+		<h1>Dreamers Job List</h1>
+			<a href="#joblist_menu" class="ui-nodisc-icon ui-btn ui-btn-b ui-icon-bars ui-btn-icon-notext ui-corner-all">
+			</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+		<div class="ui-field-contain">
+			<label for="select-native-1">Filter by career:</label>
+			<select name="select-native-1" id="select-native-1">
+			<option value="1">Business (10)</option>
+			<option value="2">Government (15)</option>
+			<option value="3">Academic (25)</option>
+			<option value="4">Social Work (9)</option>
+			<option value="5">Technology (28)</option>
+			</select> <!--/select-->
+		</div>
+		<br><br>
+		<h3>Choose a task to continue: </h3>
+		<div class="ui-field-contain">
+
+			<table data-role="table" id="table-custom-2" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
+											<thead>
+												<tr class="ui-bar-d">
+													<th data-priority="2">Salary</th>
+													<th>Task</th>
+													<th data-priority="3">Time needed to Complete</th>
+												</tr>
+													<tbody>
+														<tr>
+															<td> Unpaid </td>
+															<td> <a href="#job_detail"> Data Entry </a> </td>
+															<td> 20 minutes </td>
+														</tr>
+														<tr>
+															<td> $10 </td>
+															<td> <a href="#job_detail"> Social Media Updates </a> </td>
+															<td> 3 times a day for 1 month </td>
+														</tr>
+														<tr>
+															<td> Unpaid </td>
+															<td> <a href="#job_detail"> Test Website </a> </td>
+															<td> 3 hours </td>
+														</tr>
+														<tr>
+															<td> $15 </td>
+															<td> <a href="#job_detail"> Sales Calls </a> </td>
+															<td> 4 hours </td>
+														</tr>
+														<tr>
+															<td> $25 </td>
+															<td> <a href="#job_detail"> Shop for Company Picnic </a> </td>
+															<td> 5 hours </td>
+														<tr>
+															<td> Unpaid </td>
+															<td> <a href="#job_detail"> Edit Pictures for Studio </a> </td>
+															<td> 2 hours </td>
+														</tr>
+														</tr>
+													</tbody>
+											</thead>
+										</table>
+		</div> <!--/listview-->
+
+		
+	</div><!-- /content -->
+
+	<div data-role="footer" class="footer">
+		<h4>Dreamers Job List</h4>
+	</div><!-- /footer -->
+
+	<div data-role="panel" id="joblist_menu">
+    <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+    </ul>
+    <br><br>
+    <a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
+</div><!-- /panel -->
+</div><!-- /Job List page -->
+
+<!-- Start of Job Detail page -->
+<div data-role="page" id="job_detail">
+	<div data-role="header">
+		<h1> Job Detail </h1>
+		<a href="#job_detail_menu" class="ui-nodisc-icon ui-btn ui-btn-b ui-icon-bars ui-btn-icon-notext ui-corner-all"></a>
+	</div> 
+
+	<div role="main" class="ui-content">
+			<div id="company_logo">
+				<img src="https://www.microsoft.com/global/learning/en-us/PublishingImages/ms-logo-site-share.png" width="85%">
+			</div>
+
+			<h1>Company Details</h1>
+				<p> <b>Date Founded:</b> Date insert here
+					<br> <b> Size of Company: </b> insert here
+					<br> <b> Location: </b> WORLDWIDE!! 
+			<h1> Job Details </h1>
+					<b> Task: </b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+					<br><br> <b> Details: </b> jasgk;jg;saj;lgajsl;gjlsa;jgl;jsagl;jsagl;ngdnslgkgdgg 
+					<ul>
+						<li> This </li> 
+						<li> that </li> 
+						<li> there </li>
+					</ul>
+				</p>
+					<a href="#joblist" class= "ui-input-btn ui-btn ui-btn-inline ui-shadow">Accept</a> 
+					<a href="#joblist" class= "ui-input-btn ui-btn ui-btn-inline ui-shadow">Reject</a>
+	</div>
+
+	<div data-role="footer "class="footer">
+		<h4>Dreamers</h4>
+	</div>
+
+	<div data-role="panel" id="job_detail_menu">
+   	 <ul data-role="listview">
+    	<li><a href="#signin">Home</a></li>
+    	<li><a href="#myprofile">My Profile</a></li>
+    	<li><a href="#joblist">Job List</a></li>
+   	 </ul>
+   	 <br><br>
+    	<a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ui-btn-inline">Close menu</a>
+	</div><!-- /panel -->
+</div><!-- /Job Detail-->
+
+</body>
+
+<script type="text/javascript">
+
+$(window).resize( function(){
+    var height = $(window).height();
+    var width = $(window).width(); 
+    var ob = $('html');
+    if( width > height ) {
+        if( ob.hasClass('portrait') ) {
+            ob.removeClass('portrait').addClass('landscape');
+        }
+    }else{
+        if( ob.hasClass('landscape') ) {
+            ob.removeClass('landscape').addClass('portrait');
+        }
+    }
+});
+</script>
+</html>
