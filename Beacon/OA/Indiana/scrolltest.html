@@ -1,0 +1,197 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/oa.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+		<style type="text/css">
+					.page{
+						display:block;
+						width:470px;
+						height:1300px;
+						overflow:hidden;
+						font-family:serif;
+						color:#333333;
+						font-size:20px;
+						margin: auto;
+						line-height:1.75;
+					}
+
+					.page > .text {
+						padding: 0 40px;
+					}
+
+					.turn_page {
+						  font-size: 16px;
+						  font-family: sans-serif;
+						  padding: 0px 10px;
+						  background-color: #e9e9e9;
+					}
+
+					a {
+						text-transform: none;
+						text-decoration: none;
+					}
+
+					a:visited {
+						color: #999;
+					}
+
+					.indent::before {
+						content:'\00A0\00A0\00A0\00A0\00A0\00A0';
+					}
+
+					</style>
+	</head>
+	<body>
+
+			<!-- Start of Cover Page -->
+			<div class="page" id="coverpage">	
+				<a href="#" id="cov_next"><span class="turn_page" style="float: right">Next</span></a>
+				<img src="img/oibImageA.jpeg" width="100%">
+			</div> <!--/cover page-->
+
+			<!-- Start of Page 1 -->
+			<div class="page" id="page1" style="height: 0px">
+				<hr>
+				<a href="#" id="p1_back"><span class="turn_page" style="float: left">Back</span></a>
+				<a href="#" id="p1_next"><span class="turn_page" style="float: right">Next</span></a>
+				<div class="text" style="clear: both">
+					<span class="indent">
+							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
+							<br>
+					<span class="indent">
+							"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.
+							<br>
+					<span class="indent">
+							"Is there a way to see them all?" Lucas asked.
+							<br>
+					<span class="indent">
+							"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."
+							<br>
+					<span class="indent">
+							"No sports?" Mark asked.
+							<br>
+					<span class="indent">
+							"Sorry, no sports," said Ms. Wu.
+				</div> <!--/text-->
+				<img src="img/oibImageB.png" width="100%">
+			</div> <!--/page1-->
+
+			<!-- Start of Page 2 -->
+			<div class="page" id="page2" style="height: 0px">
+				<hr>
+				<a href="#" id="p2_back"><span class="turn_page" style="float: left">Back</span></a>
+				<a href="#" id="p2_next"><span class="turn_page" style="float: right">Next</span></a>
+				<div class="text" style="clear: both">
+					<span class="indent">
+							On Tuesday, the class took the bus to the Science Center.
+							<br>
+					<span class="indent">
+							Outside the center, they spotted a dinosaur model.<br>
+					<span class="indent">
+							Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.
+				</div> <!-- /text-->
+				<img src="img/oibImageC.png" width="100%">
+			</div> <!--/page2-->
+
+			<!-- Start of Page 3 -->
+			<div class="page" id="page3" style="height: 0px">
+				<hr>
+					<a href="#" id="p3_back"><span class="turn_page" style="float: left">Back</span></a>
+					<a href="#" id="p3_next"><span class="turn_page" style="float: right">Back to start</span></a>
+					<div class="text" style="clear: both">
+						<span class="indent">
+							The dinosaur was nice.
+							<br>
+						<span class="indent">
+							All the kids liked.<br>
+						<span class="indent">
+							Then they went home.
+					</div> <!--/text-->
+					<hr>
+			</div> <!--/page3-->
+
+
+<script>
+
+var delay = 700;
+
+ $(document).ready(function(){
+
+	// When the user clicks internal link, scroll to the link slowly
+	 $("#cov_next").click(function(){
+
+			$('#coverpage').animate({
+	      height: '0px'}, delay);
+
+			$('#page1').animate({
+	      height: '1300px'});
+
+		});
+
+	 // When the user clicks internal link, scroll to the link slowly
+	 $("#p1_back").click(function(){
+			
+			$('#page1').animate({
+	      height: '0px'}, delay);
+
+			$('#coverpage').animate({
+	      height: '1300px'});
+			
+		});
+
+	  // When the user clicks internal link, scroll to the link slowly
+	 $("#p1_next").click(function(){
+
+			$('#page2').animate({
+	      height: '1300px'});
+
+			$('#page1').animate({
+	      height: '0px'}, delay);
+		});
+
+	 	 // When the user clicks internal link, scroll to the link slowly
+	 $("#p2_back").click(function(){
+
+			$('#page1').animate({
+	      height: '1300px'});
+
+			$('#page2').animate({
+	      height: '0px'}, delay);
+		});
+
+	  // When the user clicks internal link, scroll to the link slowly
+	 $("#p2_next").click(function(){
+
+			$('#page3').animate({
+	      height: '1300px'});
+
+			$('#page2').animate({
+	      height: '0px'}, delay);
+		});
+
+	 // When the user clicks internal link, scroll to the link slowly
+	 $("#p3_back").click(function(){
+
+			$('#page2').animate({
+	      height: '1300px'});
+
+			$('#page3').animate({
+	      height: '0px'}, delay);
+		});
+
+	 // When the user clicks internal link, scroll to the link slowly
+	 $("#p3_next").click(function(){
+
+			$('#coverpage').animate({
+	      height: '1300px'});
+
+			$('#page3').animate({
+	      height: '0px'}, delay);
+		});
+
+});
+ </script>
+
+</body>
+</html>

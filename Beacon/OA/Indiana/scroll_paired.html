@@ -8,7 +8,7 @@
 		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-classapplier.js"></script>
 		<script type="text/javascript" src="js/rangy-1.3.0-beta.2/rangy-highlighter.js"></script>
 		<script type="text/javascript" src="js/highlight.js"></script>
-		<title>Left/right single</title>
+		<title>Scroll paired</title>
 	</head>
 	<body>
 
@@ -51,10 +51,9 @@
 
 	<!-- gray nav bar-->
 	<div class="mathToolAndNavArrowContainer">
-		<div id="learnosityMathTools">
-		</div>
+		<div id="learnosityMathTools"></div>
 		<div class="navArrowContainer" id="navButtonBar" style="display:none">
-			<a href="leftright_single.html"><span class="prevQuestionArrow" style="display: all;">&nbsp;</span></a>
+			<a href="scroll_single.html"><span class="prevQuestionArrow" style="display: all;">&nbsp;</span></a>
 			<span class="arrowContainerSpace">&nbsp;</span>
 		</div>
 	</div> <!-- /gray nav bar-->
@@ -62,12 +61,12 @@
 	<!--passage and questions-->
 	<div id="passageAndQuestionContainer" class="passageContentResize">
 
-		<!-- Fluency controls -->
+		<!-- Start reading controls -->
 		<div class="fluency_btn_container" id="start_reading_btn">
 		<div class="fluency_btn_header">Click button to begin reading.</div>
 		<div class="fluency_btn"  onclick="begin_reading()">Start Reading</div>
 	</div>
-		<!-- /Fluency controls -->
+		<!-- /Start reading controls -->
 
 <!-------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
@@ -77,7 +76,7 @@
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
 
-		<div id="passageContainer" class="passageContainer noBorderRight" style="display: none">
+		<div id="passageContainer" class="passageContainer noBorderRight hidden">
 
 			<!-- Start passage instructions -->
 			<div id="passageInstructions">
@@ -85,30 +84,14 @@
 			</div> <!--/passageInstructions -->
 
 			<!-- Start passage content -->
-			<div id="passageContent" style="height: 27px;" zonmousemove="show_highlighter()" ontouchstart="show_highlighter()">
+			<div id="passageContent" style="height: 47px;" zonmousemove="show_highlighter()" ontouchstart="show_highlighter()">
 				<div class="passage_align" data-id="-7965472791252355464-1">
 					<div class="styledTextMarker"></div>
 
 
-
-				<!---------------------------------------------
-				 paired passage menu 
-				 ---------------------------------------------->
-					<div id="paired_passage_header" style="display:block"> 
-					<ul>
-						<li id="passage2_menu" class="selected_passage"><a href="#" onclick="switch_passage('passage1', 'passage2', 'passage1_menu', 'passage2_menu')">Animals</a></li>
-						<li id="passage1_menu"><a href="#" onclick="switch_passage('passage2', 'passage1', 'passage2_menu', 'passage1_menu')">The Best Field Trip Ever</a></li>
-					</ul>
-
-					</div>
-          <br>
-
-          <!------------------------------
-           Start of Animals
-           -------------------------------->
-					<div id="passage2">
-					<div class="page" id="p2_page1">
-						<div class="text">
+					<!-- Pasage 1 -->
+					<div class="page" id="passage1">
+						<div class="text" style="clear: both"  >
 							<br><center><b>Animals - A Rhyming Poem</b></center>
 							<ol class="line_numbers">
 								<li>
@@ -130,86 +113,93 @@
 								<li><span class="indent">I would live wild in the woods and run from here to there.</span></li>
 							</ol>
 							The End
-								
-
+							<p class="pageno">End of passage<p>
 						</div> <! --/text -->
-					</div> <!--/page-->
+					</div> <!-- /Passage 1-->
+					
+					<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
+							<div class="fluency_btn_header">Are you done reading?</div>
+							<div class="fluency_btn" onclick="done_reading()">Done</div>
+						</div>
 
-					<!---------------------------------------------------------
 
-								Done button
+				<br><br>
+				
+				<p class="pageno">Here's a passage you read earlier.</p>
 
-							------------------------------------------------------------>
+					<!-- Start of Cover Page -->
+					<div class="page" id="coverpage">
+
+						<img src="img/oibImageA.jpeg" width="100%">
+					</div> <!--/cover page-->
+				
+				 <p class="pageno">Cover</p>
+					
+
+					<!-- Start of Page 1 -->
+					<div class="page">
+						<div class="text">
+							<span class="indent">
+							Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.
+							<br><span class="indent">
+							"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.
+							<br><span class="indent">
+							"Is there a way to see them all?" Lucas asked.
+							<br><span class="indent">
+							"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."
+							<br><span class="indent">
+							"No sports?" Mark asked.
+							<br><span class="indent">
+							"Sorry, no sports," said Ms. Wu.
+						</div>
+						<img src="img/oibImageB.png" width="100%">
+					</div> 
+					<!--/page1-->
+					<p class="pageno">Page 1</p>
+					
+
+					<!-- Start of Page 2 -->
+					<div class="page">
+						<div class="text">
+							<span class="indent">
+							On Tuesday, the class took the bus to the Science Center.
+							<br><span class="indent">
+							Outside the center, they spotted a dinosaur model.<br>
+							<span class="indent">
+							Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.
+						</div>
+						<img src="img/oibImageC.png" width="100%">
+					</div> <!--/page2-->
+
+					<p class="pageno">Page 2</p>
+					
+
+					<!-- Start of Page 3 -->
+					<div class="page">
+						<div class="text" style="clear: both">
+							<span class="indent">
+							The dinosaur was nice.
+							<br><span class="indent">
+							All the kids liked.<br>
+							<span class="indent">
+							Then they went home.
+							<br><br>
+							<span class="indent">End.
+						</div>
+
 						<div class="fluency_btn_container" id="done_reading_btn" style="display:none">
 							<div class="fluency_btn_header">Are you done reading?</div>
 							<div class="fluency_btn" onclick="done_reading()">Done</div>
-						</div> <!--/done button-->
-				</div> <!--/passage2-->
+						</div>
 
+					</div> <!--/page3-->
 
-					<!---------------------------------------------------------
-
-								Best Field Trip Ever
-
-							------------------------------------------------------------>
-					<div id="passage1" class="hidden">
-					<div class="page" id="coverpage" style="display:block">
-						<span class="turn_btn next" onclick="turn_page('coverpage', 'page1');">></span>
-						<img src="img/oibImageA.jpeg" width="100%">
-					</div> <!--/cover page-->
-
-					<!-- Start of Page 1 -->
-					<div class="page" id="page1" style="display:none">
-
-						<span class="turn_btn prev" onclick="turn_page('page1', 'coverpage');"><</span>
-						<span class="turn_btn next" onclick="turn_page('page1', 'page2');">></span>
-						
-						<div class="text" >
-								<span class="indent">Ms. Wu's class was planning a field trip for Tuesday. They had voted on what they'd like to see.</span>
-								<br>
-								<span class="indent">
-								"Three ideas got the most votes," Ms. Wu said. "Most of you are interested in dinosaurs, robots, sharks, and sports.</span>
-								<br><span class="indent">
-								"Is there a way to see them all?" Lucas asked.</span>
-								<br><span class="indent">
-								"Well," Ms. Wu said, "the Science Center has dinosaurs, robots, and sharks."</span>
-								<br><span class="indent">
-								"No sports?" Mark asked.</span>
-								<br><span class="indent">
-								"Sorry, no sports," said Ms. Wu.</span>
-								<img src="img/oibImageB.png" width="100%">
-							</div> <!--text-->
-						
-					</div> 
-					<!--/page1-->
-
-					<!-- Start of Page 2 -->
-					<div class="page" id="page2" style="display:none">
-
-						<span class="turn_btn prev" onclick="turn_page('page2', 'page1')"><</span>
-						<span class="turn_btn next" onclick="turn_page('page2', 'page3')">></span>
-						
-						<div class="text" >
-								<span class="indent">
-								On Tuesday, the class took the bus to the Science Center.</span>
-								<br><span class="indent">
-								Outside the center, they spotted a dinosaur model.</span><br>
-								<span class="indent">
-								Cool!" said Mark. "Let's see the dinosaurs first!" The other kids nodded.</span>
-								<img src="img/oibImageC.png" width="100%">
-						</div> <! --/text -->						
-					</div> <!--/page2-->
-
-					<!-- Start of Page 3 -->
-					<div class="page" id="page3" style="display:none">
-
-						<span class="turn_btn prev" onclick="turn_page('page3', 'page2')"><</span>
-
-					</div>
-				</div> <!-- /passage2 -->
+					<p class="pageno">Page 3</p>
+					
 				</div> <!--/passageAlign-->
-			</div> <!-- /passageContent-->
-		</div> <!-- /passageContainer -->
+			</div> <!--/passageContent-->
+			
+		</div> <!--/passageContainer-->
 
 
 <!-------------------------------------------------------------------------------------------
@@ -219,25 +209,20 @@
 
 -------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------->
-
-
 		<div class="questionContainer hidden" id="questionContainer">
 
-			<!---------------------------------------------------------
-
-				Answer questions button
-
-			------------------------------------------------------------>
-			<div class="fluency_btn_container" id="start_questions_btn">
-				<div class="fluency_btn_header">Now answer questions about what you read.</div>
-				<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
-			</div>
-			<!-- /Answer questions -->
+			<!-- Answer questions button -->
+						<div class="fluency_btn_container" id="start_questions_btn">
+							<div class="fluency_btn_header">Now answer questions about what you read.</div>
+							<div  class="fluency_btn" onclick="start_questions()" >Answer Questions</div>
+						</div>
+						<!-- /Answer questions -->
 
 			<div id="questionContent" class="hidden">
 				<div id="passageWithItemsContent_0" data-id="0">
 					<a name="tag_0" id="0"></a>
 
+					<!-- Start question1 -->
 					<!-- Start question2 -->
 					<div id="content_0" class="questionContentItem" style="width: auto;">
 						<div class="itemInstructions"></div>
@@ -306,12 +291,9 @@
 									lie</span>
 							</div> <!-- /responseContent -->
 						</div> <!-- /response_3 -->
-					</div> <!-- /question2-->
+					</div> <!-- /question1-->
 
-					
-
-
-					<div class="lastQuestionEndTestPage" style="display:all">
+					<div class="lastQuestionEndTestPage">
 						<hr class="separator">
 						<div class="lastQuestionAlert">
 							<span>YOU'VE REACHED THE END OF THE TEST</span>
@@ -330,23 +312,19 @@
 		</div> <!-- /questionContent -->
 	</div> <!-- /questionContainer-->
 </div> <!-- /passageAndQuestionContainer -->
-
+	</body>
 <script>
-function done_reading() {
+	function done_reading() {
 	$('#passageContainer').animate({
-        scrollTop: $('#p2_page1').offset().top
-    }, 1000);
+        scrollTop: $('#passage1').offset().top
+    }, 1500);
    document.getElementById('done_reading_btn').style.display = 'none';
    document.getElementById('questionContainer').style.display = 'block';
-   //turn_page('page3', 'coverpage');
-   $('html, body').animate({
+   	$('html, body').animate({
         scrollTop: $('#header').offset().top
-    }, 600);
+    }, 800);
    	
  }
 
-</script>
-
-
-	</body>
+ </script>
 </html>

@@ -1,4 +1,11 @@
-
+.ui-toolkit h1, 
+.ui-toolkit h2, 
+.ui-toolkit h3, 
+.ui-toolkit h4, 
+.ui-toolkit h5, 
+.ui-toolkit h6 {
+	margin: 8px 0px;
+}
 
 /*
  ****************
@@ -16,6 +23,20 @@
 	height: 75px;
 }
 
+.ui-toolkit div #pagetitle {
+	margin: 0px;
+}
+
+/*
+ ****************
+ * =Page Body
+ ****************
+*/  
+#pagebody {
+	background-color: #fff;
+}
+
+
 /*
  ****************
  * =Beacon Map
@@ -27,16 +48,6 @@
 	margin: 0px auto;
 	padding: 20px;
 }
-
-#map {
-	margin: auto;
-	padding: 30px;
-	width: 400px;
-	height:400px;
-}
-
-
-
 
 
 figcaption {
