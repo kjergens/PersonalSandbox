@@ -11,25 +11,9 @@ $(document).ready(function() {
 
 });
 
-function loadCustomerList() {
-	var list="";
-	for (var state in CUSTOMERS) {
-		list += "<h5>" + state + "</h5>"
-		list += "<ul class='list-unstyled'>"
-		for (var dist in CUSTOMERS[state]) {
-	    	list += "<li><a href=\'#\' onclick=getDetails(" 
-	    	+ "\'" + state + "\'" + ",\'" + dist + "\'" 
-	    	+ ")>" 
-	    	+ CUSTOMERS[state][dist]['name'] + "</a></li>"
-	  }
-	  list += "</ul>"
-	}
-	document.getElementById("dir").innerHTML = list;
-}
-
 /*
 	Helper function to load the map.
-	TODO - look up the states
+	TODO - dynamically look up the Beacon states
 */
 function drawMap() {
 
@@ -53,6 +37,27 @@ function drawMap() {
 	  	} 
     }); 
 }
+
+/*
+	Helper function to load directory.
+*/
+function loadCustomerList() {
+	var list="";
+	for (var state in CUSTOMERS) {
+		list += "<h5>" + state + "</h5>"
+		list += "<ul class='list-unstyled'>"
+		for (var dist in CUSTOMERS[state]) {
+	    	list += "<li><a href=\'#\' onclick=getDetails(" 
+	    	+ "\'" + state + "\'" + ",\'" + dist + "\'" 
+	    	+ ")>" 
+	    	+ CUSTOMERS[state][dist]['name'] + "</a></li>"
+	  }
+	  list += "</ul>"
+	}
+	document.getElementById("dir").innerHTML = list;
+}
+
+
 
 /*
 	Highlight only one state
@@ -114,8 +119,7 @@ function getDetails(state, dist) {
 */
 }
 
-function getStateDetails(state) 
-{
+function getStateDetails(state) {
 	var details = "<ul class='list-unstyled'>";
 
 	for (var dist in CUSTOMERS[state]) {
@@ -146,6 +150,12 @@ function getStateDetails(state)
 	document.getElementById("details").innerHTML = details;
 
 }
+
+/***************************
+
+  EVENTS
+
+ ***************************/
 
 /*
 	Click a state event. Show all customers in that state.

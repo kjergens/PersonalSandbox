@@ -82,6 +82,13 @@ figcaption {
   color: #fff;
 }
 
+#dir {
+	background-color: #fafafa; 
+	padding: 20px;
+	height:400px;
+	overflow-y:scroll
+}
+
 .ui-toolkit .directory li {
 	list-style: none;
 	-webkit-list-style: none;
@@ -183,6 +190,19 @@ figcaption {
 	left: -40px;
 }
 
+#details_header {
+	font-size: 18px;
+	font-weight: bold;
+	zpadding: 20px;
+	zbackground-color: #cccccc;
+}
+
+.cust_details {
+	float: left;
+	padding: 20px;
+	background-color: #fafafa; 
+	margin: 20px;
+}
 
 /*
  ****************

@@ -1,0 +1,95 @@
+img {
+	padding-right: 5px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: all;
+}
+
+#pagecontainer {
+	margin: 0px 20px;
+}
+
+/*
+ ****************
+ * =Page Header
+ ****************
+*/  
+
+#header {
+	padding: 1px 20px 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid gray;
+}
+
+
+/*
+ ****************
+ * =Beacon Map
+ ****************
+*/  
+
+#map {
+	width:400px;
+	height:300px;
+	zfloat:right;
+	margin: 0px auto;
+}
+
+
+/*
+ ****************
+ * =Directory
+ ****************
+*/  
+
+#dir {
+	background-color: #333; 
+	padding: 20px 40px 20px 30px;
+	height:600px;
+	overflow-y:scroll;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	color: #f1f1f1;
+	border: 2px solid gray;
+	z-index: 999999;
+}
+
+#dir a {
+	color: #f1f1f1;
+}
+
+#dir_link {
+	position: absolute;
+	right: 10px;
+	top: 30px;
+}
+
+/*
+ ****************
+ * =Details section
+ ****************
+*/  
+
+#details_header {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 30px;
+}
+
+.cust_details {
+	float: left;
+	padding: 20px;
+	background-color: #e9e9e9; 
+	margin: 20px;
+	width: 300px;
+	height: 200px;
+}
+
+
+

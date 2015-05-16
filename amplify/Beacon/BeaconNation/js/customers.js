@@ -17,28 +17,34 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "lpcs.gif",
+			motto: ""
 		} 
 	} ,
 	CA : {
-		SFUSD : {
-			name: "San Francisco Unified School District",
-			num_schools: 140,
-			num_stu: 44000,
-			num_interims: 3,
-			grades: "3-11",
-			url: "www.sfusd.edu",
+		GPUSD : {
+			name: "Golden Plains Unified School District",
+			county: "Fresno",
+			state: "California",
+			num_schools: 6,
+			num_stu: 1600,
+			num_interims: "--",
+			url: "www.gpusd.org",
 			consortia: "Smarter Balanced",
 			app: "Full Beacon",
-			paper: "Yes",
-			online: "Pending",
-			num_summative: 0,
-			testing_win1: "Sep 29 - Nov 14",
-			testing_win2: "Dec 15 - Jan 23",
-			testing_win3: "Mar 2 - Mar 27",
+			paper: "",
+			online: "Yes",
+			num_summative: "--",
+			grades: "K-12",
 			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			motto: "Whatever it takes...our kids are worth it!",
+			logo: "goldenplains.png"
 		},
 		LAUSD : {
 			name: "Los Angeles Unified School District",
@@ -51,13 +57,15 @@ var CUSTOMERS = {
 			paper: "No",
 			online: "Yes",
 			num_summative: 1,
-			grades: "",
+			grades: "--",
 			testing_win0: "",
 			testing_win1: "May 25 - May 29",
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "lausd.png",
+			motto: ""
 		},
 		MUSD : {
 			name: "Mendota Unified School District",
@@ -76,7 +84,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "mendota.png",
+			motto: ""
 		},
 		PUC : {
 			name: "PUC Schools",
@@ -97,28 +107,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
-		},
-		GPUSD : {
-			name: "Golden Plains Unified School District",
-			county: "Fresno",
-			state: "California",
-			num_schools: 6,
-			num_stu: 1600,
-			num_interims: "--",
-			url: "www.gpusd.org",
-			consortia: "Smarter Balanced",
-			app: "Full Beacon",
-			paper: "",
-			online: "Yes",
-			num_summative: "--",
-			grades: "K-12",
-			testing_win0: "",
-			testing_win1: "",
-			testing_win2: "",
-			testing_win3: "",
-			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "puc.png",
+			motto: "Partnerships to uplift communities."
 		}  
 	},
 	DC : {
@@ -139,7 +130,9 @@ var CUSTOMERS = {
 			testing_win2: "Nov 19 - Dec 2",
 			testing_win3: "Feb 2 - Feb 10",
 			testing_win4: "Mar 30 - Apr 28",
-			testing_win5: "May 5 - Jun 12"
+			testing_win5: "May 5 - Jun 12",
+			logo: "dcps.png",
+			motto: ""
 		},
 		EAPCS: {
 			name: "Eagle Academy Public Charter School District",
@@ -158,7 +151,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "eagle.png",
+			motto: ""
 		}  
 	},
 	DE : {
@@ -179,7 +174,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "newcastle.png",
+			motto: ""
 		} 
 	},
 	IL : {
@@ -194,13 +191,15 @@ var CUSTOMERS = {
 			paper: "",
 			online: "",
 			num_summative: "--",
-			grades: "",
+			grades: "--",
 			testing_win0: "",
 			testing_win1: "",
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "victory.png",
+			motto: "Helping communities create great schools."
 		}
 	},
 	IN : {
@@ -223,7 +222,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "eastallen.png",
+			motto: "Dream it. Do it."
 		} 
 	},
 	KY : {
@@ -244,7 +245,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "filler.png",
+			motto: ""
 		}
 	},
 	NC : {
@@ -267,7 +270,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "guilford.png",
+			motto: "Striving. Achieving. Excelling."
 		},
 		NHC : {
 			name: "New Hanover County Schools",
@@ -276,7 +281,7 @@ var CUSTOMERS = {
 			num_schools: 3,
 			num_stu: 800,
 			num_interims: "--",
-			url: "www.gcsnc.com/pages/gcsnc",
+			url: "www.nhcs.k12.nc.us",
 			consortia: "",
 			app: "Assessment Studio only",
 			paper: "",
@@ -288,7 +293,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "nhcs.png",
+			motto: "Reach, Equip, Achieve."
 		} 
 	}, 
 	NY : {
@@ -303,13 +310,15 @@ var CUSTOMERS = {
 			paper: "",
 			online: "",
 			num_summative: "--",
-			grades: "",
+			grades: "--",
 			testing_win0: "",
 			testing_win1: "",
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "achievementfirst.png",
+			motto: ""
 		},
 		PAVE : {
 			name: "PAVE Academy Charter School",
@@ -328,7 +337,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "pave.png",
+			motto: "Building citizens and schools brick by brick."
 		},
 		UCS : {
 			name: "Uncommon Schools",
@@ -347,7 +358,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "uncommon.png",
+			motto: ""
 		}  
 	},
 	TN : {
@@ -368,7 +381,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "filler.png",
+			motto: ""
 		}
 	},
 	VA : {
@@ -391,7 +406,9 @@ var CUSTOMERS = {
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "collegeboard.png",
+			motto: ""
 		} 
 	},
 	WA : {
@@ -414,7 +431,9 @@ var CUSTOMERS = {
 			testing_win2: "Nov 10 - Nov 21",
 			testing_win3: "Feb 2 - Feb 13",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "seattle.png",
+			motto: ""
 		} ,
 		SPO : {
 			name: "Spokane Public schools",
@@ -427,13 +446,15 @@ var CUSTOMERS = {
 			paper: "",
 			online: "",
 			num_summative: "--",
-			grades: "",
+			grades: "--",
 			testing_win0: "",
 			testing_win1: "Sep 15 - Oct 3",
 			testing_win2: "",
 			testing_win3: "",
 			testing_win4: "",
-			testing_win5: ""
+			testing_win5: "",
+			logo: "spokane.png",
+			motto: ""
 		}
 	}
 };
