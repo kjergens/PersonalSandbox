@@ -23,25 +23,42 @@ function drawMap() {
 	}
 	console.log(stateSpecificStyleText);
 
+	var strokeColor = '#0645AD';
+	var strokeWidth = 4;
+
 	// Draw the map
     $('#map').usmap({
     	stateStyles: {fill: '#e9e9e9'},
-    	showLabels: true,
+    	showLabels: false,
     	stateSpecificStyles: {
-		    'AZ': {fill: '#4cbbd3'},
-		    'CA': {fill: '#4cbbd3'},
-		    'DC': {fill: '#4cbbd3'},
-		    'DE': {fill: '#4cbbd3'},
-		    'IL': {fill: '#4cbbd3'},
-		    'IN': {fill: '#4cbbd3'},
-		    'KY': {fill: '#4cbbd3'},
-		    'NC': {fill: '#4cbbd3'},
-		    'NY': {fill: '#4cbbd3'},
-		    'TN': {fill: '#4cbbd3'},
-		    'VA': {fill: '#4cbbd3'},
-		    'WA': {fill: '#4cbbd3'},
+		    'AZ': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'CA': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'DC': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'DE': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'IL': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'IN': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'KY': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'NC': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'NY': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'TN': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'VA': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'WA': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
 	  	}, 
-	  	stateHoverStyles: {fill: '#b7e3ed'},
+	  	stateHoverStyles: {fill: '#e9e9e9'},
+	  	stateSpecificHoverStyles: {
+		    'AZ': {'fill': '#b7e3ed'},
+		    'CA': {'fill': '#b7e3ed'},
+		    'DC': {'fill': '#b7e3ed'},
+		    'DE': {'fill': '#b7e3ed'},
+		    'IL': {'fill': '#b7e3ed'},
+		    'IN': {'fill': '#b7e3ed'},
+		    'KY': {'fill': '#b7e3ed'},
+		    'NC': {'fill': '#b7e3ed'},
+		    'NY': {'fill': '#b7e3ed'},
+		    'TN': {'fill': '#b7e3ed'},
+		    'VA': {'fill': '#b7e3ed'},
+		    'WA': {'fill': '#b7e3ed'},
+	  	}, 
 	  	click: function(click, state) {
     		getStateDetails(state.name); 
     }});
@@ -86,15 +103,16 @@ function getStateDetails(state) {
 
 	if (CUSTOMERS[state]) {
 		var details = ""; 
+		var count = 0;
 		highlightState(state);
-		document.getElementById("details_header").innerHTML = "Customers in " + state;
+		
 		for (var dist in CUSTOMERS[state]) {
 			details += getCustomerDetails(state, dist);
+			count++;
 		}
+
+		document.getElementById("details_header").innerHTML = count + " Customers in " + state;
 		document.getElementById("details").innerHTML = details;	
-	}
-	else {
-		getAllCustomers();
 	}
 	
 }
@@ -132,8 +150,7 @@ function getCustomerDetails(state, dist) {
 	var details = "<div class=\"cust_details\">";
 	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\"><b>"
 	details += CUSTOMERS[state][dist]['name'];
-	details += "</b><br>"
-	details += "<i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
+	details += "</b><br style=\'clear:both\'>"
 	details += CUSTOMERS[state][dist]['app'];
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['num_schools'];
@@ -148,6 +165,7 @@ function getCustomerDetails(state, dist) {
 	details += "\' target=\"_blank\">";
 	details += CUSTOMERS[state][dist]['url'];
 	details += "</a></b>";
+	details += "<br><br><i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
 	details += "</div>";
 
 	return details;
