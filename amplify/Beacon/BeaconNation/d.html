@@ -5,24 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="zcss/pesticide.css">
 	<link rel="stylesheet" href="public/css/styles.css">
+	<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
 	<link rel="stylesheet" href="css/beaconmap2.css">
 	<title>Beacon Nation</title>
 </head>
-<body onclick="hideDir()">
+<body>
 
-		<div id="header"><h1>Beacon Nation</h1></div>
+		<div id="header">
 
-		<div id="dir_link"><a onmouseover="showDir()">Directory</a></div>
+				<div id="dir_link" class="menu_icon" onclick="showDir()"></div>
 
-		<div id="dir" class="hide"></div>
+				<div id="dir" class="hide"></div>
 
-		<div id="pagecontainer">
+				<h1 onclick="loadAllCustomers()">Beacon Nation</h1>
 
-			<div id="map" onclick="hideDir()"></div>
-			
+				<div id="map" onclick="loadAllCustomers()"></div>
+
+		</div>
+
+
+		<div id="content_container" onclick="loadAllCustomers()">
+
 			<div id="details_header"></div>
 			
-			<div id="details"></div>
+			<div id="details_container"></div>
 
 		</div>
 

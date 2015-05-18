@@ -11,9 +11,6 @@ img {
 	display: all;
 }
 
-#pagecontainer {
-	margin: 0px 20px;
-}
 
 /*
  ****************
@@ -22,25 +19,11 @@ img {
 */  
 
 #header {
-	padding: 1px 20px 5px;
-	margin-bottom: 5px;
-	border-bottom: 1px solid gray;
+	margin-top: -20px;
+	padding: 15px 20px 2px;
+	zbackground-color: #888;
+	zcolor: #f1f1f1;
 }
-
-
-/*
- ****************
- * =Beacon Map
- ****************
-*/  
-
-#map {
-	width:400px;
-	height:300px;
-	zfloat:right;
-	margin: 0px auto;
-}
-
 
 /*
  ****************
@@ -54,7 +37,7 @@ img {
 	height:600px;
 	overflow-y:scroll;
 	position: absolute;
-	right: 10px;
+	left: 10px;
 	top: 50px;
 	color: #f1f1f1;
 	border: 2px solid gray;
@@ -66,9 +49,37 @@ img {
 }
 
 #dir_link {
-	position: absolute;
-	right: 10px;
-	top: 30px;
+	float: left;
+}
+
+.menu_icon {
+	content: url('../img/menu-icon.png');
+	height: 28px;
+	margin: 23px 15px 0px 0px;
+}
+
+
+
+/*
+ ****************
+ * =Content Container
+ ****************
+*/  
+#content_container {
+	margin: 0px 50px;
+}
+
+/*
+ ****************
+ * =Beacon Map
+ ****************
+*/  
+
+#map {
+	width:500px;
+	height:350px;
+	margin: 30px auto -25px;
+
 }
 
 /*
@@ -80,23 +91,17 @@ img {
 #details_header {
 	font-size: 18px;
 	font-weight: bold;
-	padding: 5px 30px;
-	position: relative;
-	top: -50px;
+	margin: 15px 15px;
 }
 
 .cust_details {
 	float: left;
 	padding: 20px;
-	background-color: #e9e9e9; 
-	margin: 20px;
-	width: 300px;
-	height: 210px;
-}
-
-#details {
-	position: relative;
-	top: -50px;
+	background-color: #dcdcdc; 
+	margin: 15px;
+	width: 270px;
+	height: 150px;
+	color: #333;
 }
 
 

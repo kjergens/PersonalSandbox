@@ -229,7 +229,7 @@ var CUSTOMERS = {
 	},
 	KY : {
 		LCSD1 : {
-			name: "Lexington County School District 01",
+			name: "Lexington County School District",
 			num_schools: 1,
 			num_stu: 0,
 			num_interims: "--",

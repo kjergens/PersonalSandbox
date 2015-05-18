@@ -7,10 +7,10 @@ $(document).ready(function() {
   drawMap(); 
 
    // Load the customer director
-	loadCustomerList();
+	loadDirectory();
 
 	// List details for all customers
-	//getAllCustomers();
+	loadAllCustomers();
 
 });
 
@@ -67,7 +67,7 @@ function drawMap() {
 /*
 	Helper function to load directory.
 */
-function loadCustomerList() {
+function loadDirectory() {
 	var list="";
 	for (var state in CUSTOMERS) {
 		list += "<b>" + state + "</b>"
@@ -91,8 +91,8 @@ function getDetails(state, dist) {
 
 	highlightState(state);
 	document.getElementById("details_header").innerHTML = "";	
-	document.getElementById("details").innerHTML = getCustomerDetails(state, dist);
-	document.getElementById("dir").className = "hide";
+	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
+	hideDir();
 }
 
 
@@ -112,7 +112,7 @@ function getStateDetails(state) {
 		}
 
 		document.getElementById("details_header").innerHTML = count + " Customers in " + state;
-		document.getElementById("details").innerHTML = details;	
+		document.getElementById("details_container").innerHTML = details;	
 	}
 	
 }
@@ -120,7 +120,7 @@ function getStateDetails(state) {
 /*
 	Get all customers.
 */
-function getAllCustomers() {
+function loadAllCustomers() {
 
 	document.getElementById("details_header").innerHTML = "";
 
@@ -130,7 +130,7 @@ function getAllCustomers() {
 			details += getCustomerDetails(state, dist);
 		}
 	}
-	document.getElementById("details").innerHTML = details;	
+	document.getElementById("details_container").innerHTML = details;	
 }
 
 /* 
@@ -148,9 +148,9 @@ function getAllCustomers() {
  */
 function getCustomerDetails(state, dist) {
 	var details = "<div class=\"cust_details\">";
-	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\"><b>"
-	details += CUSTOMERS[state][dist]['name'];
-	details += "</b><br style=\'clear:both\'>"
+	//details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\">"
+	details += "<b>" + CUSTOMERS[state][dist]['name'] + "</b>";
+	details += "<br style=\'clear:both\'>"
 	details += CUSTOMERS[state][dist]['app'];
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['num_schools'];
@@ -165,7 +165,7 @@ function getCustomerDetails(state, dist) {
 	details += "\' target=\"_blank\">";
 	details += CUSTOMERS[state][dist]['url'];
 	details += "</a></b>";
-	details += "<br><br><i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
+	//details += "<br><br><i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
 	details += "</div>";
 
 	return details;
