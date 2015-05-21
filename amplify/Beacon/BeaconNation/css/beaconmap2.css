@@ -97,7 +97,7 @@ img {
 }
 
 
-.dot::before {
+.dot::after {
 	content: url('../img/twodots.jpg');
 }
 
@@ -117,8 +117,8 @@ img {
 	float: left;
 	padding: 20px;
 	background-color: #dcdcdc; 
-	margin: 15px;
-	width: 270px;
+	margin: 10px;
+	width: 290px;
 	height: 200px;
 	color: #333;
 }

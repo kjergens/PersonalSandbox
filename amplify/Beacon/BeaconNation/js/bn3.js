@@ -16,52 +16,80 @@ $(document).ready(function() {
 
 function drawMap() {
 
+	var fill = '#4cbbd3';
+	var strokeColor = '#0645AD';
+	var strokeWidth = 4;
+	var stateHoverStyles = '#e9e9e9';
+	var stateSpecificHoverFill = '#b7e3ed';
+
+/*
+	Dynamically figure out Beacon states.
+	TODO: Figure out how to plug this in.
+*/
 	var stateSpecificStyleText ="";
 
 	for (var state in CUSTOMERS) {
-		stateSpecificStyleText += state + ": {fill: '#4cbbd3'},"
+		stateSpecificStyleText += state + ": {fill: " + fill + "},"
 	}
 	console.log(stateSpecificStyleText);
 
-	var strokeColor = '#0645AD';
-	var strokeWidth = 4;
-
-	// Draw the map
-    $('#map').usmap({
+	/*
+	 Draw the map
+	*/
+	$('#map').usmap({
     	stateStyles: {fill: '#e9e9e9'},
     	showLabels: false,
     	stateSpecificStyles: {
-		    'AZ': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'CA': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'DC': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'DE': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'IL': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'IN': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'KY': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'NC': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'NY': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'TN': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'VA': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'WA': {'fill': '#4cbbd3', 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'AZ': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'CA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'DC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'DE': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'IL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'IN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'KY': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'NC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'NY': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'TN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'VA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'WA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 	  	}, 
-	  	stateHoverStyles: {fill: '#e9e9e9'},
+	  	stateHoverStyles: {fill: stateHoverStyles},
 	  	stateSpecificHoverStyles: {
-		    'AZ': {'fill': '#b7e3ed'},
-		    'CA': {'fill': '#b7e3ed'},
-		    'DC': {'fill': '#b7e3ed'},
-		    'DE': {'fill': '#b7e3ed'},
-		    'IL': {'fill': '#b7e3ed'},
-		    'IN': {'fill': '#b7e3ed'},
-		    'KY': {'fill': '#b7e3ed'},
-		    'NC': {'fill': '#b7e3ed'},
-		    'NY': {'fill': '#b7e3ed'},
-		    'TN': {'fill': '#b7e3ed'},
-		    'VA': {'fill': '#b7e3ed'},
-		    'WA': {'fill': '#b7e3ed'},
+		    'AZ': {'fill': stateSpecificHoverFill},
+		    'CA': {'fill': stateSpecificHoverFill},
+		    'DC': {'fill': stateSpecificHoverFill},
+		    'DE': {'fill': stateSpecificHoverFill},
+		    'IL': {'fill': stateSpecificHoverFill},
+		    'IN': {'fill': stateSpecificHoverFill},
+		    'KY': {'fill': stateSpecificHoverFill},
+		    'NC': {'fill': stateSpecificHoverFill},
+		    'NY': {'fill': stateSpecificHoverFill},
+		    'TN': {'fill': stateSpecificHoverFill},
+		    'VA': {'fill': stateSpecificHoverFill},
+		    'WA': {'fill': stateSpecificHoverFill},
 	  	}, 
 	  	click: function(click, state) {
     		getStateDetails(state.name); 
     }});
+
+		drawLabels();	
+}
+
+/*
+	Helper function to draw labels.
+*/
+function drawLabels() {
+	var labels = "";
+	for (var state in CUSTOMERS) {
+		for (var dist in CUSTOMERS[state]) {
+			labels += '<div class="dot" style="position:relative;left:90%;top:40%">'
+				+ '<a href="#" onclick=getDetails(' 
+	    	+ '"' + state + '"' + ',"' + dist + '"'
+	    	+ ')></div>'
+				+ CUSTOMERS[state][dist]['name'] + "</a>"
+		}
+	}
+	document.getElementById("map_overlay").innerHTML = labels;	
 }
 
 /*
@@ -151,6 +179,7 @@ function getCustomerDetails(state, dist) {
 	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\">"
 	details += "<b>" + CUSTOMERS[state][dist]['name'] + "</b>";
 	details += "<br style=\'clear:both\'>"
+	details += "<i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
 	details += CUSTOMERS[state][dist]['app'];
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['num_schools'];
@@ -165,7 +194,6 @@ function getCustomerDetails(state, dist) {
 	details += "\' target=\"_blank\">";
 	details += CUSTOMERS[state][dist]['url'];
 	details += "</a></b>";
-	//details += "<br><br><i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
 	details += "</div>";
 
 	return details;
