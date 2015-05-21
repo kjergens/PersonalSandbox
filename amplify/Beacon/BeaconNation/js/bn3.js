@@ -148,7 +148,7 @@ function loadAllCustomers() {
  */
 function getCustomerDetails(state, dist) {
 	var details = "<div class=\"cust_details\">";
-	//details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\">"
+	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\">"
 	details += "<b>" + CUSTOMERS[state][dist]['name'] + "</b>";
 	details += "<br style=\'clear:both\'>"
 	details += CUSTOMERS[state][dist]['app'];
