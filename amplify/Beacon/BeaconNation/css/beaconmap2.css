@@ -1,7 +1,7 @@
 html {
 	min-width: 1024px;
 	background-color: #93c7d2; #dedede;
-	min-height: 1100px;
+	min-height: 1500px;
 }
 
 img {
@@ -124,7 +124,7 @@ img {
 	float: left;
 	padding: 20px;
 	background-color: #fff; #dcdcdc; 
-	margin: 6px;
+	margin: 8px;
 	width: 300px;
 	height: 290px;
 	color: #333;
