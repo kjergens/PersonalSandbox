@@ -2,8 +2,9 @@ var CUSTOMERS = {
 	AZ : {
 		LPCS : {
 			name: "Las Puertas Community School",
+			county: "Pima",
 			num_schools: 1,
-			num_stu: "not available",
+			num_stu: "--",
 			num_interims: 0,
 			url: "www.laspuertascommunityschool.org",
 			consortia: "",
@@ -19,16 +20,39 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "lpcs.gif",
-			motto: ""
+			motto: "Where you belong."
 		} 
 	} ,
 	CA : {
+		COA : {
+			name: "Community Outreach Academy",
+			county: "Sacramento",
+			state: "California",
+			num_schools: 2,
+			num_stu: "--",
+			num_interims: "--",
+			url: "www.outreachacademy.org",
+			consortia: "Smarter Balanced",
+			app: "Full Beacon",
+			paper: "",
+			online: "",
+			num_summative: "--",
+			grades: "2-12",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: "",
+			motto: "",
+			logo: "coa.png"
+		},
 		GPUSD : {
 			name: "Golden Plains Unified School District",
 			county: "Fresno",
 			state: "California",
 			num_schools: 6,
-			num_stu: 1600,
+			num_stu: "--",
 			num_interims: "--",
 			url: "www.gpusd.org",
 			consortia: "Smarter Balanced",
@@ -48,6 +72,7 @@ var CUSTOMERS = {
 		},
 		LAUSD : {
 			name: "Los Angeles Unified School District",
+			county: "Los Angeles",
 			num_schools: 230,
 			num_stu: 54000,
 			num_interims: 0,
@@ -65,10 +90,11 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "lausd.png",
-			motto: ""
+			motto: "All youth achieving."
 		},
 		MUSD : {
 			name: "Mendota Unified School District",
+			county: "Fresno",
 			num_schools: 7,
 			num_stu: 2600,
 			num_interims: "--",
@@ -86,7 +112,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "mendota.png",
-			motto: ""
+			motto: "Building scholars, leaders, and champions!"
 		},
 		PUC : {
 			name: "PUC Schools",
@@ -115,6 +141,7 @@ var CUSTOMERS = {
 	DC : {
 		DCPS : {
 			name: "District of Columbia Public Schools",
+			county: "D.C.",
 			num_schools: 93,
 			num_stu: 33000,
 			num_interims: 4,
@@ -136,6 +163,7 @@ var CUSTOMERS = {
 		},
 		EAPCS: {
 			name: "Eagle Academy Public Charter School District",
+			county: "D.C.",
 			num_schools: "2",
 			num_stu: "900",
 			num_interims: "--",
@@ -153,12 +181,13 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "eagle.png",
-			motto: ""
+			motto: "Starting early. Soaring high."
 		}  
 	},
 	DE : {
 		NCCS : {
 			name: "New Castle Charter Schools",
+			county: "New Castle",
 			num_schools: 4,
 			num_stu: 1400,
 			num_interims: "--",
@@ -176,31 +205,8 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "newcastle.png",
-			motto: ""
+			motto: "Gems of the Foothills, Shining Above the Rest"
 		} 
-	},
-	IL : {
-		VIC : {
-			name: "Victory Education Partners",
-			num_schools: "--",
-			num_stu: "--",
-			num_interims: "--",
-			url: "victoryep.com",
-			consortia: "",
-			app: "Assessment Studio only",
-			paper: "",
-			online: "",
-			num_summative: "--",
-			grades: "--",
-			testing_win0: "",
-			testing_win1: "",
-			testing_win2: "",
-			testing_win3: "",
-			testing_win4: "",
-			testing_win5: "",
-			logo: "victory.png",
-			motto: "Helping communities create great schools."
-		}
 	},
 	IN : {
 		EA : {
@@ -211,8 +217,8 @@ var CUSTOMERS = {
 			num_stu: 8600,
 			num_interims: "--",
 			url: "www.eacs.k12.in.us",
-			consortia: "none",
-			app: "Assessment Studio only",
+			consortia: "",
+			app: "Full Beacon",
 			paper: "",
 			online: "Yes",
 			num_summative: "--",
@@ -230,11 +236,12 @@ var CUSTOMERS = {
 	KY : {
 		LCSD1 : {
 			name: "Lexington County School District",
+			county: "Lexington",
 			num_schools: 1,
-			num_stu: 0,
+			num_stu: "--",
 			num_interims: "--",
 			url: "",
-			consortia: "0",
+			consortia: "",
 			app: "Full Beacon",
 			paper: "",
 			online: "",
@@ -246,7 +253,7 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			logo: "filler.png",
+			logo: "books_icon.png",
 			motto: ""
 		}
 	},
@@ -301,6 +308,7 @@ var CUSTOMERS = {
 	NY : {
 		ACH : {
 			name: "Achievement First Public Charter Schools",
+			county: "New York",
 			num_schools: 11,
 			num_stu: 5000,
 			num_interims: "--",
@@ -322,6 +330,7 @@ var CUSTOMERS = {
 		},
 		PAVE : {
 			name: "PAVE Academy Charter School",
+			county: "New York",
 			num_schools: 1,
 			num_stu: 225,
 			num_interims: "--",
@@ -343,6 +352,7 @@ var CUSTOMERS = {
 		},
 		UCS : {
 			name: "Uncommon Schools",
+			county: "New York",
 			num_schools: 15,
 			num_stu: 857,
 			num_interims: "--",
@@ -361,16 +371,39 @@ var CUSTOMERS = {
 			testing_win5: "",
 			logo: "uncommon.png",
 			motto: ""
+		},
+		VIC : {
+			name: "Victory Education Partners",
+			county: "New York",
+			num_schools: "--",
+			num_stu: "--",
+			num_interims: "--",
+			url: "victoryep.com",
+			consortia: "",
+			app: "Assessment Studio only",
+			paper: "",
+			online: "",
+			num_summative: "--",
+			grades: "--",
+			testing_win0: "",
+			testing_win1: "",
+			testing_win2: "",
+			testing_win3: "",
+			testing_win4: "",
+			testing_win5: "",
+			logo: "victory.png",
+			motto: "Helping communities create great schools."
 		}  
 	},
 	TN : {
 		MSPS: {
 			name: "Metro Nashville Public Schools",
+			county: "Davidson",
 			num_schools: "--",
-			num_stu: 0,
+			num_stu: "--",
 			num_interims: "--",
 			url: "",
-			consortia: "0",
+			consortia: "",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -382,25 +415,25 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			logo: "filler.png",
+			logo: "books_icon.png",
 			motto: ""
 		}
 	},
 	VA : {
 		CB : {
 			name: "College Board",
-			county: "various",
-			state: "FL,TX, MD, IL, DC, SC,  DE, WA, OH, CA, VA, TN",
+			county: "Fairfax",
+			state: "VA",
 			num_schools: 115,
 			num_stu: 10000,
 			num_interims: "--",
 			url: "www.collegeboard.org",
-			consortia: "n/a",
+			consortia: "",
 			app: "Full Beacon",
 			paper: "Yes",
 			online: "Yes",
 			num_summative: "--",
-			grades: "6-8",
+			grades: "6-12",
 			testing_win0: "",
 			testing_win1: "",
 			testing_win2: "",
@@ -419,7 +452,7 @@ var CUSTOMERS = {
 			num_schools: 42,
 			num_stu: 6500,
 			num_interims: 3,
-			url: "www.seattleschools.org",
+			url: "sps.ss8.sharpschool.com/",
 			consortia: "Smarter Balanced",
 			app: "Full Beacon",
 			paper: "",
@@ -437,8 +470,9 @@ var CUSTOMERS = {
 		} ,
 		SPO : {
 			name: "Spokane Public schools",
+			county: "Spokane",
 			num_schools: 23,
-			num_stu: 11000,
+			num_stu: 1100,
 			num_interims: "--",
 			url: "www.spokaneschools.org",
 			consortia: "Smarter Balanced",
@@ -454,7 +488,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "spokane.png",
-			motto: ""
+			motto: "Excellence for everyone."
 		}
 	}
 };

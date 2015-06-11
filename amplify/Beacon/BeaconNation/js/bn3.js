@@ -17,7 +17,7 @@ $(document).ready(function() {
 function drawMap() {
 
 	var fill = '#4cbbd3';
-	var strokeColor = '#0645AD';
+	var strokeColor = '#1b356c'; //#0645AD';
 	var strokeWidth = 4;
 	var stateHoverStyles = '#e9e9e9';
 	var stateSpecificHoverFill = '#b7e3ed';
@@ -44,7 +44,6 @@ function drawMap() {
 		    'CA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'DC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'DE': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'IL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'IN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'KY': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'NC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
@@ -59,7 +58,6 @@ function drawMap() {
 		    'CA': {'fill': stateSpecificHoverFill},
 		    'DC': {'fill': stateSpecificHoverFill},
 		    'DE': {'fill': stateSpecificHoverFill},
-		    'IL': {'fill': stateSpecificHoverFill},
 		    'IN': {'fill': stateSpecificHoverFill},
 		    'KY': {'fill': stateSpecificHoverFill},
 		    'NC': {'fill': stateSpecificHoverFill},
@@ -82,11 +80,11 @@ function drawLabels() {
 	var labels = "";
 	for (var state in CUSTOMERS) {
 		for (var dist in CUSTOMERS[state]) {
-			labels += '<div class="dot" style="position:relative;left:90%;top:40%">'
+			labels += '<div class="dot" style="position:relative;left:-50%;top:0%">'
 				+ '<a href="#" onclick=getDetails(' 
 	    	+ '"' + state + '"' + ',"' + dist + '"'
-	    	+ ')></div>'
-				+ CUSTOMERS[state][dist]['name'] + "</a>"
+	    	+ ')>'
+				+ CUSTOMERS[state][dist]['name'] + "</a></div>"
 		}
 	}
 	document.getElementById("map_overlay").innerHTML = labels;	
@@ -177,16 +175,18 @@ function loadAllCustomers() {
 function getCustomerDetails(state, dist) {
 	var details = "<div class=\"cust_details\">";
 	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\">"
-	details += "<b>" + CUSTOMERS[state][dist]['name'] + "</b>";
-	details += "<br style=\'clear:both\'>"
-	details += "<i>" + CUSTOMERS[state][dist]['motto'] + "</i><br>";
-	details += CUSTOMERS[state][dist]['app'];
+	details += "<b>" + CUSTOMERS[state][dist]['name'] + "</b><br>";
+	details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
+	details += "<i style=\'clear:both\' class=\'line\'></i>"
+	details += "<div class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
+	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";
 	details += "<br>"
-	details += CUSTOMERS[state][dist]['num_schools'];
-	details += " school(s)"
-	details += "<br>"
+	details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
+	details += CUSTOMERS[state][dist]['num_stu'] + " students<br>";
 	details += "Grades "
 	details += CUSTOMERS[state][dist]['grades'];
+	details += "<br>"
+	details += CUSTOMERS[state][dist]['consortia'];
 	details += "<br>"
 	details += "<b>"
 	details += "<a href=\'http\://";

@@ -1,3 +1,9 @@
+html {
+	min-width: 1024px;
+	background-color: #93c7d2; #dedede;
+	min-height: 1100px;
+}
+
 img {
 	margin: 0px 15px 10px 0px;
 	float: left;
@@ -22,9 +28,9 @@ img {
 	margin-top: -20px;
 	margin-bottom: 40px;
 	padding: 15px 20px;
-	zbackground-color: #ccc;
+	background-color: #fff; #747474;
 	height: 450px;
-	zcolor: #f1f1f1;
+	color: #5a5a5a;
 	z-index: -1;
 }
 
@@ -57,8 +63,8 @@ img {
 
 .menu_icon {
 	content: url('../img/menu-icon.png');
-	height: 28px;
-	margin: 23px 15px 0px 0px;
+	height: 34px;
+	margin: 21px 15px 0px 0px;
 }
 
 
@@ -69,7 +75,8 @@ img {
  ****************
 */  
 #content_container {
-	margin: 0px 50px;
+	margin: 0px 40px;
+	zbackground-color: #e29989;
 }
 
 /*
@@ -116,11 +123,26 @@ img {
 .cust_details {
 	float: left;
 	padding: 20px;
-	background-color: #dcdcdc; 
-	margin: 10px;
-	width: 290px;
-	height: 200px;
+	background-color: #fff; #dcdcdc; 
+	margin: 6px;
+	width: 300px;
+	height: 290px;
 	color: #333;
 }
 
+.line {
+	content: url('../img/hr.png');
+}
 
+.motto {
+	font-style: italic;
+	padding: 0px 0px 8px;
+}
+
+/*
+* =Footer
+*/
+#footer {
+	background-color: #fff;
+	height: 50px;
+}
