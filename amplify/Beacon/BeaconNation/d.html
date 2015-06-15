@@ -11,27 +11,29 @@
 </head>
 <body>
 
-		<div id="header">
+		<div id="header_container">
+				<div id="header">
 
-				<div id="dir_link" class="menu_icon" onclick="showDir()"></div>
-
-				<div id="dir" class="hide"></div>
-
-				<h1 onclick="loadAllCustomers()">Beacon Nation</h1>
-
-				<div id="map" onclick="loadAllCustomers()"></div>
-
-				<div id="map_overlay" class="hide">
-					
+						<div id="dir_link" class="menu_icon" onclick="showDir()"></div>
+						<div id="dir" class="hide"></div>
+						<h1 onclick="loadAllCustomers()">Beacon Nation</h1>
+							
 				</div>
+				
+		</div>
+		
 
+		<div id="map_container">
+			
+				<div id="map" onclick="loadAllCustomers()"></div>
+				<div id="map_overlay" class="hide"></div>
+		
 		</div>
 
 
 		<div id="content_container" onclick="loadAllCustomers()">
 
 			<div id="details_header"></div>
-			
 			<div id="details_container"></div>
 
 		</div>

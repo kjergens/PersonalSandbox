@@ -38,30 +38,38 @@ function drawMap() {
 	*/
 	$('#map').usmap({
     	stateStyles: {fill: '#e9e9e9'},
-    	showLabels: false,
+    	showLabels: true,
     	stateSpecificStyles: {
+    		'AL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+    		'AR': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'AZ': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'CA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'DC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'DE': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'IL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'IN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'KY': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'MI': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'NC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'NY': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'SC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'TN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'VA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'WA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 	  	}, 
 	  	stateHoverStyles: {fill: stateHoverStyles},
 	  	stateSpecificHoverStyles: {
+	  		'AL': {'fill': stateSpecificHoverFill},
+	  		'AR': {'fill': stateSpecificHoverFill},
 		    'AZ': {'fill': stateSpecificHoverFill},
 		    'CA': {'fill': stateSpecificHoverFill},
 		    'DC': {'fill': stateSpecificHoverFill},
 		    'DE': {'fill': stateSpecificHoverFill},
+		    'IL': {'fill': stateSpecificHoverFill},
 		    'IN': {'fill': stateSpecificHoverFill},
-		    'KY': {'fill': stateSpecificHoverFill},
+		    'MI': {'fill': stateSpecificHoverFill},
 		    'NC': {'fill': stateSpecificHoverFill},
 		    'NY': {'fill': stateSpecificHoverFill},
+		    'SC': {'fill': stateSpecificHoverFill},
 		    'TN': {'fill': stateSpecificHoverFill},
 		    'VA': {'fill': stateSpecificHoverFill},
 		    'WA': {'fill': stateSpecificHoverFill},
@@ -116,7 +124,7 @@ function loadDirectory() {
 function getDetails(state, dist) {
 
 	highlightState(state);
-	document.getElementById("details_header").innerHTML = "";	
+	document.getElementById("details_header").innerHTML = "1 customer selected";	
 	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
 	hideDir();
 }
@@ -137,7 +145,7 @@ function getStateDetails(state) {
 			count++;
 		}
 
-		document.getElementById("details_header").innerHTML = count + " Customers in " + state;
+		document.getElementById("details_header").innerHTML = count + " customers in " + state;
 		document.getElementById("details_container").innerHTML = details;	
 	}
 	
@@ -151,11 +159,14 @@ function loadAllCustomers() {
 	document.getElementById("details_header").innerHTML = "";
 
 	var details = "";
+	var count = 0;
 	for (var state in CUSTOMERS) {
 		for (var dist in CUSTOMERS[state]) {
 			details += getCustomerDetails(state, dist);
+			count ++;
 		}
 	}
+	document.getElementById("details_header").innerHTML = count + " customers";
 	document.getElementById("details_container").innerHTML = details;	
 }
 
@@ -174,11 +185,17 @@ function loadAllCustomers() {
  */
 function getCustomerDetails(state, dist) {
 	var details = "<div class=\"cust_details\">";
-	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\' height=\"40px\">"
-	details += "<b>" + CUSTOMERS[state][dist]['name'] + "</b><br>";
+	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\'>"
+	details += "<b>";
+	details += "<a href=\'http\://";
+	details += CUSTOMERS[state][dist]['url'];
+	details += "\' target=\"_blank\">";
+	details += CUSTOMERS[state][dist]['name'] + "</b></a>, ";
 	details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
-	details += "<i style=\'clear:both\' class=\'line\'></i>"
-	details += "<div class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
+	//details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
+	details += "<div style=\'clear:both\' class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
+	details += "<i class=\'line\'></i>"
+	//details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
 	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
@@ -187,13 +204,14 @@ function getCustomerDetails(state, dist) {
 	details += CUSTOMERS[state][dist]['grades'];
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['consortia'];
-	details += "<br>"
-	details += "<b>"
-	details += "<a href=\'http\://";
-	details += CUSTOMERS[state][dist]['url'];
-	details += "\' target=\"_blank\">";
-	details += CUSTOMERS[state][dist]['url'];
-	details += "</a></b>";
+	//details += "<br>"
+	//details += "<b>"
+	//details += "<a href=\'http\://";
+	//details += CUSTOMERS[state][dist]['url'];
+	//details += "\' target=\"_blank\">";
+	//details += CUSTOMERS[state][dist]['url'];
+	//details += "</a></b>";
+	//details += "<br><br><div class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
 	details += "</div>";
 
 	return details;

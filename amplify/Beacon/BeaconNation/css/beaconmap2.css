@@ -1,12 +1,6 @@
 html {
-	min-width: 1024px;
 	background-color: #93c7d2; #dedede;
 	min-height: 1500px;
-}
-
-img {
-	margin: 0px 15px 10px 0px;
-	float: left;
 }
 
 .hide {
@@ -24,32 +18,40 @@ img {
  ****************
 */  
 
+#header_container {
+	background-color: #4cbbd3;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	padding: 0px 80px;
+}
+
 #header {
-	margin-top: -20px;
-	margin-bottom: 40px;
-	padding: 15px 20px;
-	background-color: #fff; #747474;
-	height: 450px;
-	color: #5a5a5a;
-	z-index: -1;
+	color: #fff;
 }
 
 /*
  ****************
- * =Directory
+ * =Menu
  ****************
 */  
+
+.menu_icon {
+	content: url('../img/menu-icon.png');
+	height: 34px;
+	margin: 3px;
+}
 
 #dir {
 	background-color: #333; 
 	padding: 20px 40px 20px 30px;
-	height:600px;
+	line-height: 1.8;
 	overflow-y:scroll;
 	position: absolute;
-	left: 10px;
-	top: 50px;
+	left: 85px;
+	top: 55px;
 	color: #f1f1f1;
-	border: 2px solid gray;
+	border: 1px solid #222;
 	z-index: 888888;
 }
 
@@ -61,23 +63,6 @@ img {
 	float: left;
 }
 
-.menu_icon {
-	content: url('../img/menu-icon.png');
-	height: 34px;
-	margin: 21px 15px 0px 0px;
-}
-
-
-
-/*
- ****************
- * =Content Container
- ****************
-*/  
-#content_container {
-	margin: 0px 40px;
-	zbackground-color: #e29989;
-}
 
 /*
  ****************
@@ -85,11 +70,18 @@ img {
  ****************
 */  
 
+#map_container {
+	background-color: #FFF;
+	height: 330px;
+}
+
 #map {
-	width:500px;
-	height:350px;
-	margin: 30px auto -25px;
-	zz-index: 50;
+	width:400px;
+	height:240px;
+	margin: 0px auto;
+	position: relative;
+	top: 100px;
+	zz-index: 2;
 }
 
 #map_overlay {
@@ -100,7 +92,7 @@ img {
 	height:300px;
 	margin: 20px auto 0px;
 	zborder: 1px solid gray;
-	z-index: -1;
+	z-index: 1;
 }
 
 
@@ -110,33 +102,47 @@ img {
 
 /*
  ****************
- * =Details section
+ * =Content Container
  ****************
 */  
-
+#content_container {
+	width: 900px;
+	margin: 0px auto;
+}
+ 
 #details_header {
-	font-size: 18px;
+	position: relative;
+	top: 30px;
+	font-size: 16px;
 	font-weight: bold;
-	margin: 15px 15px;
+	margin: 30px 0px;
+	color: #fff;
 }
 
 .cust_details {
 	float: left;
 	padding: 20px;
 	background-color: #fff; #dcdcdc; 
-	margin: 8px;
-	width: 300px;
-	height: 290px;
+	margin: 30px 27px 0px 0px;
+	width: 273px;
+	height: 260px;
 	color: #333;
+}
+
+.cust_details > img {
+	margin: 0px 15px 10px 0px;
+	float: left;
+	height: 40px;
 }
 
 .line {
 	content: url('../img/hr.png');
+	width: 235px;
 }
 
 .motto {
 	font-style: italic;
-	padding: 0px 0px 8px;
+	padding: 7px 0px 3px;
 }
 
 /*
