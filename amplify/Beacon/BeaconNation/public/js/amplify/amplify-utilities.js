@@ -9,5 +9,15 @@ utilities = (function ($) {
             return '';
         }
     };
+
+    /*
+     * Function to sort an array in the descending order
+     */
+    this.sortArrayDescendingOrder = function (arrayToSort) {
+        arrayToSort.sort(function (a, b) {
+            return b.dataValue - a.dataValue;
+        });
+    };
+    
     return this;
 }(jQuery));

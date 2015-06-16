@@ -11,7 +11,7 @@
         btnDropdownButton.attr('data-value', dropdownMenuItem.data('value'));
         // Hide the dropdown menu
         btnGroup.children('.dropdown-toggle').dropdown('toggle');
-        return false;
+        event.preventDefault();
     });
 
     /*

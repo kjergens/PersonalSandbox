@@ -6,7 +6,7 @@ $(document).ready(function() {
 	// Draw the map
   drawMap(); 
 
-   // Load the customer director
+   // Load the customer directory
 	loadDirectory();
 
 	// List details for all customers
@@ -44,8 +44,10 @@ function drawMap() {
     		'AR': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'AZ': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'CA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'CT': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'DC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'DE': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
+		    'GA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'IL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'IN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
 		    'MI': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
@@ -62,8 +64,10 @@ function drawMap() {
 	  		'AR': {'fill': stateSpecificHoverFill},
 		    'AZ': {'fill': stateSpecificHoverFill},
 		    'CA': {'fill': stateSpecificHoverFill},
+		    'CT': {'fill': stateSpecificHoverFill},
 		    'DC': {'fill': stateSpecificHoverFill},
 		    'DE': {'fill': stateSpecificHoverFill},
+		    'GA': {'fill': stateSpecificHoverFill},
 		    'IL': {'fill': stateSpecificHoverFill},
 		    'IN': {'fill': stateSpecificHoverFill},
 		    'MI': {'fill': stateSpecificHoverFill},
@@ -185,7 +189,7 @@ function loadAllCustomers() {
  */
 function getCustomerDetails(state, dist) {
 	var details = "<div class=\"cust_details\">";
-	details += "<img src=\'img\\" + CUSTOMERS[state][dist]['logo'] + "\'>"
+	details += "<img src=\'img\/" + CUSTOMERS[state][dist]['logo'] + "\'>"
 	details += "<b>";
 	details += "<a href=\'http\://";
 	details += CUSTOMERS[state][dist]['url'];
@@ -198,9 +202,8 @@ function getCustomerDetails(state, dist) {
 	//details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
 	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";
 	details += "<br>"
-	details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
+	//details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
 	details += CUSTOMERS[state][dist]['num_stu'] + " students<br>";
-	details += "Grades "
 	details += CUSTOMERS[state][dist]['grades'];
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['consortia'];
