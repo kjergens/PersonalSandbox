@@ -462,7 +462,7 @@ var CUSTOMERS = {
 			num_interims: "--",
 			url: "rcboe.org",
 			consortia: "",
-			app: "",
+			app: "Assessment Studio only",
 			paper: "",
 			online: "",
 			num_summative: "--",
