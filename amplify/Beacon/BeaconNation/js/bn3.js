@@ -242,7 +242,6 @@ function getCustomerDetails(state, dist) {
 	details += "\' target=\"_blank\">";
 	details += CUSTOMERS[state][dist]['name'] + "</b></a><br> ";
 	details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
-	//details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
 	details += "<div style=\'clear:both\' class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
 	details += "<i class=\'line\'></i>"
 	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";

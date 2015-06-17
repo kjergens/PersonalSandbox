@@ -139,9 +139,8 @@ html {
 	height: 55px;
 }
 
-.line {
+.line:before {
 	content: url('../img/hr.png');
-	width: 235px;
 }
 
 .motto {
