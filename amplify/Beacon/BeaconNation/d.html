@@ -21,18 +21,23 @@
 				</div>
 				
 		</div>
-		
+
+
+
 		<div id="map_container">
-			
+				<h4>By state:</h4>
 				<div id="map" onclick="loadAllCustomers()"></div>
 				<div id="map_overlay" class="hide"></div>
-				<button onclick="loadBeaconCustomers()">Beacon customers</button><br>
-				<button onclick="loadASCustomers()">Assessment Studio only customers</button><br>
-				<button onclick="loadAllCustomers()">Reset</button>
 		
 		</div>
 
+		<div id="button_container">
+			<h4>By application:</h4>
+				<button class="btn btn-primary" onclick="loadBeaconCustomers()">Beacon only</button><br><br>
+				<button class="btn btn-secondary" onclick="loadASCustomers()">Assessment Studio only</button><br><br>
+				<button class="btn btn-tertiary" onclick="loadAllCustomers()">Reset</button>
 
+		</div>
 		<div id="content_container" onclick="loadAllCustomers()">
 
 			<div id="details_header"></div>
