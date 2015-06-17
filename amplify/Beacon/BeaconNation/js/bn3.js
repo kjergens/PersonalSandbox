@@ -16,11 +16,11 @@ $(document).ready(function() {
 
 function drawMap() {
 
-	var fill = '#4cbbd3';
-	var strokeColor = '#1b356c'; //#0645AD';
+	var fill = '#f37321'; //#4cbbd3';
+	var strokeColor =  '#c25c1a'; //#1b356c'; //#0645AD';
 	var strokeWidth = 4;
 	var stateHoverStyles = '#e9e9e9';
-	var stateSpecificHoverFill = '#b7e3ed';
+	var stateSpecificHoverFill = '#f7ab79'; //'#b7e3ed';
 
 /*
 	Dynamically figure out Beacon states.
@@ -127,10 +127,11 @@ function loadDirectory() {
 */
 function getDetails(state, dist) {
 
+  hideDir();
 	highlightState(state);
 	document.getElementById("details_header").innerHTML = "1 customer selected";	
 	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
-	hideDir();
+	
 }
 
 
@@ -142,7 +143,6 @@ function getStateDetails(state) {
 	if (CUSTOMERS[state]) {
 		var details = ""; 
 		var count = 0;
-		highlightState(state);
 		
 		for (var dist in CUSTOMERS[state]) {
 			details += getCustomerDetails(state, dist);
@@ -151,6 +151,7 @@ function getStateDetails(state) {
 
 		document.getElementById("details_header").innerHTML = count + " customers in " + state;
 		document.getElementById("details_container").innerHTML = details;	
+		highlightState(state);
 	}
 	
 }
@@ -174,6 +175,51 @@ function loadAllCustomers() {
 	document.getElementById("details_container").innerHTML = details;	
 }
 
+
+/*
+	Get all Beacon customers.
+*/
+function loadBeaconCustomers() {
+
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var state in CUSTOMERS) {
+		for (var dist in CUSTOMERS[state]) {
+			if (CUSTOMERS[state][dist]['app'] === 'Beacon') {
+				details += getCustomerDetails(state, dist);
+				count ++;
+			}
+			
+		}
+	}
+	document.getElementById("details_header").innerHTML = count + " Beacon customers";
+	document.getElementById("details_container").innerHTML = details;	
+}
+
+/*
+	Get Assessment Studio only customers.
+*/
+function loadASCustomers() {
+
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var state in CUSTOMERS) {
+		for (var dist in CUSTOMERS[state]) {
+			if (CUSTOMERS[state][dist]['app'] === 'Assessment Studio only') {
+				details += getCustomerDetails(state, dist);
+				count ++;
+			}
+			
+		}
+	}
+	document.getElementById("details_header").innerHTML = count + " Assessment Studio only customers";
+	document.getElementById("details_container").innerHTML = details;	
+}
+
 /* 
    Helper function to return details for one customer
 
@@ -194,12 +240,11 @@ function getCustomerDetails(state, dist) {
 	details += "<a href=\'http\://";
 	details += CUSTOMERS[state][dist]['url'];
 	details += "\' target=\"_blank\">";
-	details += CUSTOMERS[state][dist]['name'] + "</b></a>, ";
+	details += CUSTOMERS[state][dist]['name'] + "</b></a><br> ";
 	details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
 	//details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
 	details += "<div style=\'clear:both\' class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
 	details += "<i class=\'line\'></i>"
-	//details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
 	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";
 	details += "<br>"
 	//details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
@@ -207,14 +252,6 @@ function getCustomerDetails(state, dist) {
 	details += CUSTOMERS[state][dist]['grades'];
 	details += "<br>"
 	details += CUSTOMERS[state][dist]['consortia'];
-	//details += "<br>"
-	//details += "<b>"
-	//details += "<a href=\'http\://";
-	//details += CUSTOMERS[state][dist]['url'];
-	//details += "\' target=\"_blank\">";
-	//details += CUSTOMERS[state][dist]['url'];
-	//details += "</a></b>";
-	//details += "<br><br><div class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
 	details += "</div>";
 
 	return details;
@@ -234,6 +271,17 @@ function highlightState(state) {
   $('#map').usmap('trigger', state, 'mouseover');
 }
 
+
+
+function toggleDir() {
+	var m = document.getElementById("dir").className;
+	if (m === "show") {
+		document.getElementById("dir").className = "hide";
+	}
+	else {
+		document.getElementById("dir").className = "show";
+	}
+}
 
 /*
   Show the directory
