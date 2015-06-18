@@ -6,11 +6,14 @@ $(document).ready(function() {
 	// Draw the map
   drawMap(); 
 
-   // Load the customer directory
-	loadDirectory();
-
 	// List details for all customers
 	loadAllCustomers();
+
+  // alpha
+	ALPHACUSTS = alphabetizeCusts(CUSTOMERS);
+
+  // Load the customer directory
+	loadDirectory();
 
 });
 
@@ -104,7 +107,7 @@ function drawLabels() {
 
 /*
 	Helper function to load directory.
-*/
+
 function loadDirectory() {
 	var list="";
 	for (var state in CUSTOMERS) {
@@ -118,6 +121,25 @@ function loadDirectory() {
 	  }
 	  list += "</ul>"
 	}
+	document.getElementById("dir").innerHTML = list;
+}
+*/
+
+/*
+	Helper function to load directory.
+*/
+function loadDirectory() {
+	var list= "<ul class='list-unstyled' style='padding-left:20px'>";
+	for (var key = 0; key < ALPHACUSTS.length; key ++) {
+	    	list += "<li>";
+	    	list += "<a href=\'#\'";
+	    	list += " onclick=\"getDetails(\'"; 
+	    	list += ALPHACUSTS[key]['state'] + "\', \'" + ALPHACUSTS[key]['dist'] + "\')\">"; 
+	    	list += ALPHACUSTS[key]['name'];
+	    	list += ", " + ALPHACUSTS[key]['state'];
+	    	list += "</a></li>";
+	}
+  list += "</ul>";
 	document.getElementById("dir").innerHTML = list;
 }
 
@@ -136,24 +158,63 @@ function getDetails(state, dist) {
 
 
 /* 
+   Helper function to return details for one customer
+
+			TODO:
+			x logo for each district/school
+			testing windows
+			a positive quote from someone if i have it
+			x the school/district motto
+			x if Beacon or just Assmt Studio
+			show data if i have it or else don't, e.g. num interims
+			x make the map light up
+			get a county map
+ */
+function getCustomerDetails(state, dist) {
+	var details = "<div class=\"cust_details\">";
+	details += "<a href=\'http\://";
+	details += CUSTOMERS[state][dist]['url'];
+	details += "\' target=\"_blank\">";
+	details += "<img src=\'img\/" + CUSTOMERS[state][dist]['logo'] + "\'></a>";
+	details += "<b>";
+	details += "<a href=\'http\://";
+	details += CUSTOMERS[state][dist]['url'];
+	details += "\' target=\"_blank\">";
+	details += CUSTOMERS[state][dist]['name'] + "</b></a><br> ";
+	details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
+	details += "<div style=\'clear:both\' class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
+	details += "<i class=\'line\'></i>"
+	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";
+	details += "<br>"
+	//details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
+	details += CUSTOMERS[state][dist]['num_stu'] + " students<br>";
+	details += CUSTOMERS[state][dist]['grades'];
+	details += "<br>"
+	details += CUSTOMERS[state][dist]['consortia'];
+	details += "</div>";
+
+	return details;
+}
+
+/* 
   Get all customers for one state.
 */
 function getStateDetails(state) {
 
+	var details = ""; 
+	var count = 0;
+
 	if (CUSTOMERS[state]) {
-		var details = ""; 
-		var count = 0;
 		
 		for (var dist in CUSTOMERS[state]) {
 			details += getCustomerDetails(state, dist);
 			count++;
 		}
 
-		document.getElementById("details_header").innerHTML = count + " customers in " + state;
-		document.getElementById("details_container").innerHTML = details;	
-		highlightState(state);
 	}
-	
+
+	document.getElementById("details_header").innerHTML = count + " customers in " + state;
+	document.getElementById("details_container").innerHTML = details;	
 }
 
 /*
@@ -171,7 +232,7 @@ function loadAllCustomers() {
 			count ++;
 		}
 	}
-	document.getElementById("details_header").innerHTML = count + " customers";
+	document.getElementById("details_header").innerHTML = count + " customers total";
 	document.getElementById("details_container").innerHTML = details;	
 }
 
@@ -220,41 +281,29 @@ function loadASCustomers() {
 	document.getElementById("details_container").innerHTML = details;	
 }
 
-/* 
-   Helper function to return details for one customer
 
-			TODO:
-			x logo for each district/school
-			testing windows
-			a positive quote from someone if i have it
-			x the school/district motto
-			x if Beacon or just Assmt Studio
-			show data if i have it or else don't, e.g. num interims
-			x make the map light up
-			get a county map
- */
-function getCustomerDetails(state, dist) {
-	var details = "<div class=\"cust_details\">";
-	details += "<img src=\'img\/" + CUSTOMERS[state][dist]['logo'] + "\'>"
-	details += "<b>";
-	details += "<a href=\'http\://";
-	details += CUSTOMERS[state][dist]['url'];
-	details += "\' target=\"_blank\">";
-	details += CUSTOMERS[state][dist]['name'] + "</b></a><br> ";
-	details += CUSTOMERS[state][dist]['county'] + " County, " + state  + "<br>";
-	details += "<div style=\'clear:both\' class=\'motto\'>" + CUSTOMERS[state][dist]['motto'] + "</div>";
-	details += "<i class=\'line\'></i>"
-	details += "<b>" +  CUSTOMERS[state][dist]['app'] + "</b>";
-	details += "<br>"
-	//details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
-	details += CUSTOMERS[state][dist]['num_stu'] + " students<br>";
-	details += CUSTOMERS[state][dist]['grades'];
-	details += "<br>"
-	details += CUSTOMERS[state][dist]['consortia'];
-	details += "</div>";
+/*
+	Get OIB customers.
+*/
+function loadOIBCustomers() {
 
-	return details;
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var state in CUSTOMERS) {
+		for (var dist in CUSTOMERS[state]) {
+			if (CUSTOMERS[state][dist]['app'] === 'OIB') {
+				details += getCustomerDetails(state, dist);
+				count ++;
+			}
+			
+		}
+	}
+	document.getElementById("details_header").innerHTML = count + " Open Item Bank customers";
+	document.getElementById("details_container").innerHTML = details;	
 }
+
 
 /*
 	Highlight only one state
@@ -283,16 +332,42 @@ function toggleDir() {
 }
 
 /*
-  Show the directory
+ * Show the directory
 */
 function showDir() {
 	document.getElementById("dir").className = "show";
 }
 
 /*
-  Hide the directory
+ * Hide the directory
 */
 function hideDir() {
 	document.getElementById("dir").className = "hide";
+}
+
+/*
+ * Alphabetize the customers
+*/
+function alphabetizeCusts(CUSTOMERS) {
+    var sorted = [];
+    var key, state, dist, a = [], b = [];
+
+    // put all the district names in an array. 
+    for (state in CUSTOMERS) {
+    	for (dist in CUSTOMERS[state]) {
+           a.push(CUSTOMERS[state][dist]);
+      }
+
+    }
+
+    // Sort district names
+    a.sort();
+
+    // Put into a full customer object
+    for (key = 0; key < a.length; key++) {
+        sorted.push(CUSTOMERS[a[key]['state']][a[key]['dist']]);
+    }
+
+    return sorted;
 }
 

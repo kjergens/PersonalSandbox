@@ -11,33 +11,34 @@
 </head>
 <body>
 
-		<div id="header_container">
-				<div id="header">
 
-						<div id="dir_link" class="menu_icon" onclick="toggleDir()"><img src="img/menu-icon.png" height="40px"></div>
-						<div id="dir" class="hide"></div>
-						<h1>Beacon Nation</h1>
+		<div id="header">
+
+				<div id="dir_link" class="menu_icon" onclick="toggleDir()"><img src="img/menu-icon.png" height="40px"></div>
+				<div id="dir" class="hide"></div>
+				<h1>Beacon Nation</h1>
 							
-				</div>
-				
 		</div>
-
-
-
+				
 		<div id="map_container">
-				<h4>By state:</h4>
+
+				<h4  id="maptitle">Explore by state</h4>
 				<div id="map" onclick="loadAllCustomers()"></div>
 				<div id="map_overlay" class="hide"></div>
+
+				<div id="button_container">
+					<h4 id="configtitle">Explore by configuration</h4><br>
+					<button class="btn btn-primary btn-lg" onclick="loadBeaconCustomers()">Beacon</button><br>
+					<button class="btn btn-secondary btn-lg" onclick="loadASCustomers()">Assessment Studio only</button><br>
+					<button class="btn btn-tertiary btn-lg" onclick="loadOIBCustomers()">Open Item Bank</button><br>
+					<button class="btn btn-quaternary btn-lg" onclick="loadAllCustomers()">Reset</button>
+			</div>
 		
 		</div>
+		
 
-		<div id="button_container">
-			<h4>By application:</h4>
-				<button class="btn btn-primary" onclick="loadBeaconCustomers()">Beacon only</button><br><br>
-				<button class="btn btn-secondary" onclick="loadASCustomers()">Assessment Studio only</button><br><br>
-				<button class="btn btn-tertiary" onclick="loadAllCustomers()">Reset</button>
+		<div class="clearfix"></div>
 
-		</div>
 		<div id="content_container" onclick="loadAllCustomers()">
 
 			<div id="details_header"></div>

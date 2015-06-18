@@ -1,8 +1,11 @@
+var ALPHACUSTS = [];
 var CUSTOMERS = {
 	AL : {
 		TCSD : {
 			name: "Tuscaloosa County School District",
+			dist: "TCSD",
 			county: "Tuscaloosa",
+			state: 'AL',
 			num_schools: "--",
 			num_stu: "550",
 			num_interims: 0,
@@ -26,7 +29,9 @@ var CUSTOMERS = {
 	AZ : {
 		LPCS : {
 			name: "Las Puertas Community School",
+			dist: "LPCS",
 			county: "Pima",
+			state: 'AZ',
 			num_schools: 1,
 			num_stu: "75",
 			num_interims: 0,
@@ -50,7 +55,9 @@ var CUSTOMERS = {
 	AR : {
 		NSD : {
 			name: "Newport School District",
+			dist: "NSD",
 			county: "Jackson",
+			state: 'AR',
 			num_schools: "--",
 			num_stu: "1,283",
 			num_interims: 0,
@@ -74,7 +81,9 @@ var CUSTOMERS = {
 	CA : {
 		CARU : {
 			name: "Caruthers Unified School District",
+			dist: "CARU",
 			county: "Fresno",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "1,200",
 			num_interims: 0,
@@ -96,7 +105,9 @@ var CUSTOMERS = {
 		},
 		CHOW : {
 			name: "Chowchilla Union High School District",
+			dist: "CHOW",
 			county: "Madera",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "1,000",
 			num_interims: 0,
@@ -118,7 +129,9 @@ var CUSTOMERS = {
 		},
 		COA : {
 			name: "Community Outreach Academy",
+			dist: "COA",
 			county: "Sacramento",
+			state: 'CA',
 			num_schools: 2,
 			num_stu: "1,200",
 			num_interims: "--",
@@ -140,7 +153,9 @@ var CUSTOMERS = {
 		},
 		EARL : {
 			name: "Earlimart Elementary School District",
-			county: "",
+			dist: "EARL",
+			county: "Tulare",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "1,885",
 			num_interims: 0,
@@ -162,7 +177,9 @@ var CUSTOMERS = {
 		},
 		ECP : {
 			name: "Education for Change Public Schools",
+			dist: "ECP",
 			county: "Oakland",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "1,703",
 			num_interims: "--",
@@ -184,7 +201,9 @@ var CUSTOMERS = {
 		},
 		GPUSD : {
 			name: "Golden Plains Unified School District",
+			dist: "GPUSD",
 			county: "Fresno",
+			state: 'CA',
 			num_schools: 6,
 			num_stu: "1,941",
 			num_interims: "--",
@@ -206,7 +225,9 @@ var CUSTOMERS = {
 		},
 		KING : {
 			name: "Kingsburg Joint Union High School District",
+			dist: "KING",
 			county: "Fresno",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "1,177",
 			num_interims: 0,
@@ -228,7 +249,9 @@ var CUSTOMERS = {
 		},
 		LAUSD : {
 			name: "Los Angeles Unified School District",
+			dist: "LAUSD",
 			county: "Los Angeles",
+			state: 'CA',
 			num_schools: 230,
 			num_stu: "54,000",
 			num_interims: 0,
@@ -250,7 +273,9 @@ var CUSTOMERS = {
 		},
 		MUSD : {
 			name: "Mendota Unified School District",
+			dist: "MUSD",
 			county: "Fresno",
+			state: 'CA',
 			num_schools: 7,
 			num_stu: "2,600",
 			num_interims: "--",
@@ -272,7 +297,9 @@ var CUSTOMERS = {
 		},
 		HOPE : {
 			name: "St. Hope Public Schools",
+			dist: "HOPE",
 			county: "Sacramento",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "1,665",
 			num_interims: 0,
@@ -294,7 +321,9 @@ var CUSTOMERS = {
 		}, 
 		TWIN : {
 			name: "Twin River Charter School",
+			dist: "TWIN",
 			county: "Sutter",
+			state: 'CA',
 			num_schools: "1",
 			num_stu: "360",
 			num_interims: 0,
@@ -316,7 +345,9 @@ var CUSTOMERS = {
 		},
 		WATER : {
 			name: "Waterford Unified School District",
+			dist: "WATER",
 			county: "Stanislaus",
+			state: 'CA',
 			num_schools: "--",
 			num_stu: "2,075",
 			num_interims: 0,
@@ -340,7 +371,9 @@ var CUSTOMERS = {
 	CT : {
 		NH : {
 			name: "New Haven Public Schools",
+			dist: "NH",
 			county: "New Haven",
+			state: 'CT',
 			num_schools: "--",
 			num_stu: "517",
 			num_interims: 0,
@@ -364,7 +397,9 @@ var CUSTOMERS = {
 	DC : {
 		CITY : {
 			name: "City Center Public Charter School",
+			dist: "CITY",
 			county: "District of Columbia",
+			state: 'DC',
 			num_schools: 1,
 			num_stu: "1,000",
 			num_interims: "--",
@@ -386,7 +421,9 @@ var CUSTOMERS = {
 		},
 		DCPS : {
 			name: "District of Columbia Public Schools",
+			dist: "DCPS",
 			county: "District of Columbia",
+			state: 'DC',
 			num_schools: 93,
 			num_stu: "30,137",
 			num_interims: 4,
@@ -408,7 +445,9 @@ var CUSTOMERS = {
 		},
 		EAPCS: {
 			name: "Eagle Academy Public Charter School District",
+			dist: "EAPCS",
 			county: "District of Columbia",
+			state: 'DC',
 			num_schools: "2",
 			num_stu: "233",
 			num_interims: "--",
@@ -432,7 +471,9 @@ var CUSTOMERS = {
 	DE : {
 		NCCS : {
 			name: "Delaware Charter Schools",
+			dist: "NCCS",
 			county: "New Castle",
+			state: 'DE',
 			num_schools: 4,
 			num_stu: "3,280",
 			num_interims: "--",
@@ -456,7 +497,9 @@ var CUSTOMERS = {
 	GA : {
 		RICH : {
 			name: "Richmond County School System",
+			dist: "RICH",
 			county: "Richmond",
+			state: 'GA',
 			num_schools: "--",
 			num_stu: "150",
 			num_interims: "--",
@@ -480,7 +523,9 @@ var CUSTOMERS = {
 	IL : {
 		VIC : {
 			name: "Victory Education Partners",
+			dist: "VIC",
 			county: "Cook",
+			state: 'IL',
 			num_schools: "--",
 			num_stu: "647",
 			num_interims: "--",
@@ -504,8 +549,9 @@ var CUSTOMERS = {
 	IN : {
 		EA : {
 			name: "East Allen County Schools",
+			dist: "EA",
 			county: "Allen",
-			state: "Indiana",
+			state: 'IN',
 			num_schools: 14,
 			num_stu: "7,806",
 			num_interims: "--",
@@ -527,9 +573,11 @@ var CUSTOMERS = {
 		} 
 	},
   MI : {
-		LCSD1 : {
+		MANI : {
 			name: "Manistee Area Public Schools",
-			county: "",
+			dist: "MANI",
+			county: "Manistee",
+			state: 'MI',
 			num_schools: "--",
 			num_stu: "1,691",
 			num_interims: "--",
@@ -551,10 +599,11 @@ var CUSTOMERS = {
 		}
 	},
 	NC : {
-		GPS : {
+		GCS : {
 			name: "Guilford County Schools",
+			dist: "GCS",
 			county: "Guilford",
-			state: "North Carolina",
+			state: "NC",
 			num_schools: 22,
 			num_stu: "14,118",
 			num_interims: 0,
@@ -576,8 +625,9 @@ var CUSTOMERS = {
 		},
 		NHC : {
 			name: "New Hanover County Schools",
+			dist: "NHC",
 			county: "New Hanover",
-			state: "North Carolina",
+			state: "NC",
 			num_schools: 3,
 			num_stu: 800,
 			num_interims: "--",
@@ -601,7 +651,9 @@ var CUSTOMERS = {
 	NY : {
 		NFTE : {
 			name: "Network for Teaching Entrepreneurship",
+			dist: "NFTE",
 			county: "New York",
+			state: 'NY',
 			num_schools: "--",
 			num_stu: 260,
 			num_interims: "--",
@@ -623,7 +675,9 @@ var CUSTOMERS = {
 		},
 		PAVE : {
 			name: "PAVE Academy Charter School",
+			dist: "PAVE",
 			county: "New York",
+			state: 'NY',
 			num_schools: 1,
 			num_stu: 225,
 			num_interims: "--",
@@ -645,7 +699,9 @@ var CUSTOMERS = {
 		},
 		PRO : {
 			name: "Professional Preparatory Charter School",
+			dist: "PRO",
 			county: "Kings",
+			state: 'NY',
 			num_schools: "--",
 			num_stu: 205,
 			num_interims: "--",
@@ -667,7 +723,9 @@ var CUSTOMERS = {
 		},
 		UCS : {
 			name: "Uncommon Schools",
+			dist: "UCS",
 			county: "New York",
+			state: 'NY',
 			num_schools: 15,
 			num_stu: "1,691",
 			num_interims: "--",
@@ -691,7 +749,9 @@ var CUSTOMERS = {
 	SC : {
 		LEX: {
 			name: "Lexington County School District",
+			dist: "LEX",
 			county: "Lexington",
+			state: 'SC',
 			num_stu: "575",
 			num_schools: "--",
 			grades: "",
@@ -703,9 +763,11 @@ var CUSTOMERS = {
 		}
 	},
 	TN : {
-		MSPS: {
+		METRO: {
 			name: "Metro Nashville Public Schools",
+			dist: "METRO",
 			county: "Davidson",
+			state: 'TN',
 			num_schools: "--",
 			num_stu: "1,040",
 			num_interims: "--",
@@ -729,6 +791,7 @@ var CUSTOMERS = {
 	VA : {
 		CB : {
 			name: "College Board",
+			dist: "CB",
 			county: "Fairfax",
 			state: "VA",
 			num_schools: 115,
@@ -736,7 +799,7 @@ var CUSTOMERS = {
 			num_interims: "--",
 			url: "www.collegeboard.org",
 			consortia: "",
-			app: "Beacon",
+			app: "OIB",
 			paper: "Yes",
 			online: "Yes",
 			num_summative: "--",
@@ -754,8 +817,9 @@ var CUSTOMERS = {
 	WA : {
 		SPS : {
 			name: "Seattle Public schools",
+			dist: "SPS",
 			county: "King",
-			state:"Washington",
+			state:"WA",
 			num_schools: 42,
 			num_stu: "6,500",
 			num_interims: 3,
@@ -777,7 +841,9 @@ var CUSTOMERS = {
 		} ,
 		SPO : {
 			name: "Spokane Public schools",
+			dist: "SPO",
 			county: "Spokane",
+			state: 'WA',
 			num_schools: 23,
 			num_stu: "1,100",
 			num_interims: "--",
