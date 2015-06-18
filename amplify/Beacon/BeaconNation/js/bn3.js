@@ -357,11 +357,16 @@ function alphabetizeCusts(CUSTOMERS) {
     	for (dist in CUSTOMERS[state]) {
            a.push(CUSTOMERS[state][dist]);
       }
-
     }
 
     // Sort district names
-    a.sort();
+    a.sort(function(x,y) {
+    	if (x.name < y.name) 
+    		return -1;
+    	if (x.name > y.name) 
+    		return 1
+    	return 0
+    });
 
     // Put into a full customer object
     for (key = 0; key < a.length; key++) {
