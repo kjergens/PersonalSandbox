@@ -12,28 +12,33 @@
 <body>
 
 
-		<div id="header">
+		<div id="header" onclick="hideDir()">
 
-				<div id="dir_link" class="menu_icon" onclick="toggleDir()"><img src="img/menu-icon.png" height="40px"></div>
-				<div id="dir" class="hide"></div>
+				<div id="dir_link" class="menu_icon" onclick="toggleDir()" onmouseover="toggleDir()"><img src="img/menu-icon.png" height="40px"></div>
+				<div id="dir" class="hide" zonmouseout="hideDir()"></div>
 				<h2>Beacon Nation</h2>
 							
 		</div>
 				
-		<div id="map_container">
+		<div id="filters_container">
 
-				<h5 id="maptitle">Customers by state</h5>
-				<div id="map" onclick="loadAllCustomers()"></div>
-				<div id="map_overlay" class="hide"></div>
+			<div id="map_container">
 
-				<div id="button_container">
-					<h5 id="configtitle">Customers by product</h5><br>
-					<span id="config-btn" class="btn zbtn-lg" onclick="loadBeaconCustomers()"><img src="img/beacon_logo.png">Beacon</span><br>
-					<span id="config-btn"  class="btn zbtn-lg" onclick="loadASCustomers()"><img src="img/as_logo.png">Assessment Studio</span><br>
-					<span id="config-btn" class="btn zbtn-lg" onclick="loadOIBCustomers()"><img src="img/oib.png">Open Item Bank</span><br><br>
-					<button class="btn btn-quaternary zbtn-lg" onclick="loadAllCustomers()">Reset</button>
+					<h5 class="filter_title">Customers by state</h5>
+					<div id="map" onclick="loadAllCustomers()"></div>
+
 			</div>
-		
+
+			<div id="products_container">
+
+					<h5 class="filter_title">Customers by product</h5>
+
+					<span class="product-btn btn zbtn-primary" onclick="loadBeaconCustomers()"><img src="img/beacon_logo.png"><br>Beacon</span><br>
+					<span class="btn zbtn-secondary" onclick="loadASCustomers()"><img src="img/as_logo.png"><br>Assessment Studio</span><br>
+					<span class="btn zbtn-tertiary" onclick="loadOIBCustomers()"><img src="img/oib.png"><br>Open Item Bank</span><br><br>
+
+			</div>
+			
 		</div>
 		
 
@@ -41,7 +46,9 @@
 
 		<div id="content_container" onclick="loadAllCustomers()">
 
-			<div id="details_header"></div>
+			<span id="details_header"></span>
+			<span class="btn btn-quaternary" onclick="loadAllCustomers()">Reset</span>
+
 			<div id="details_container"></div>
 
 		</div>

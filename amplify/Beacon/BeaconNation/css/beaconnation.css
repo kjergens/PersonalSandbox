@@ -37,24 +37,24 @@ html {
 	margin: 10px 0px;
 }
 
+.menu_icon {
+	content: url('../img/menu-icon.png');
+	height: 35px;
+	margin: 8px 12px 0px 15px;
+	position: relative;
+	right: 0px;
+}
+
 /*
  ****************
  * =Directory Menu
  ****************
 */  
 
-.menu_icon {
-	content: url('../img/menu-icon.png');
-	height: 30px;
-	margin: 12px 30px 0px 20px;
-	position: relative;
-	right: 0px;
-}
-
 #dir {
 	background-color: #f2f2f2; 
-	padding: 10px 20px 20px 10px;
-	line-height: 1.9;
+	padding: 10px 20px 20px 0px;
+	line-height: 2.0;
 	overflow-y:scroll;
 	height: 560px;
 	position: absolute;
@@ -63,7 +63,7 @@ html {
 	border: 1px solid #ccc;
 	z-index: 888888;
 	border-radius: 5px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 #dir a {
@@ -81,6 +81,11 @@ html {
  ****************
 */  
 
+.ui-toolkit h5 {
+	 font-weight: bold;
+	 margin-left: -40px;
+}
+
 /*
  * =Map
 */ 
@@ -93,14 +98,13 @@ html {
 #map {
 	width:370px;
 	height:220px;
-	margin-top: -10px;
 }
 
 /*
  * =Product filters
 */ 
 #products_container {
-	border-left: 1px solid #ccc;
+	border-left: 1px solid #aaa;
 	float: left;
 	padding: 0% 8%;
 }
@@ -110,7 +114,7 @@ html {
 	border: 1px solid #333;
 	margin-bottom: 2px;
 	width: 105px;
-	text-align: center;
+	ztext-align: center;
 }
 
 #product-btn img {
@@ -132,8 +136,9 @@ html {
 */  
 #content_container {
 	background-color: #b3d7df;  #e9e9e9; #b3d7df; #93c7d2;
-	height: 3200px;
+	height: 3100px;
 	border-top: 1px solid #ddd;
+	padding: 0px 35px;
 }
  
 #details_header {
@@ -146,8 +151,8 @@ html {
 	float: left;
 	padding: 20px 25px;
 	background-color: #fff; 
-	margin: 0px 0px 12px 12px;
-	width: 280px;
+	margin: 0px 0px 10px 10px;
+	width: 260px;
 	height: 235px;
 	color: #333;
 	zborder: 1px solid #ccc;
