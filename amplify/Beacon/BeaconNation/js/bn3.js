@@ -6,11 +6,11 @@ $(document).ready(function() {
 	// Draw the map
   drawMap(); 
 
+    // alpha
+	alphabetizeCusts();
+
 	// List details for all customers
 	loadAllCustomers();
-
-  // alpha
-	ALPHACUSTS = alphabetizeCusts(CUSTOMERS);
 
   // Load the customer directory
 	loadDirectory();
@@ -20,10 +20,12 @@ $(document).ready(function() {
 function drawMap() {
 
 	var fill = '#f37321'; //#4cbbd3';
-	var strokeColor =  '#c25c1a'; //#1b356c'; //#0645AD';
-	var strokeWidth = 4;
-	var stateHoverStyles = '#e9e9e9';
-	var stateSpecificHoverFill = '#f7ab79'; //'#b7e3ed';
+	var inactiveFill = '#e9e9e9';
+	var strokeColor =  '#984513'; //#c25c1a'; //#1b356c'; //#0645AD';
+	var strokeWidth = 5;
+	var stateHoverStyles = '#f8f8f8';
+	var stateSpecificHoverFill = '#fed5bc';//#feab79'; //#f7ab79'; //'#b7e3ed';
+	var stateSpecificLabelTextStyles = '#b15017';
 
 /*
 	Dynamically figure out Beacon states.
@@ -40,8 +42,28 @@ function drawMap() {
 	 Draw the map
 	*/
 	$('#map').usmap({
-    	stateStyles: {fill: '#e9e9e9'},
+			stateHoverAnimation: 250,
+    	stateStyles: {fill: inactiveFill},
+    	labelBackingStyles: {fill: inactiveFill},
+    	labelBackingHoverStyles: {'fill': stateHoverStyles},
     	showLabels: true,
+    	labelRadius: 2,
+    	labelTextStyles: {'stroke': '#888', 'font-size':'10px', 'font-weight':'0'},
+    	stateSpecificLabelBackingStyles: {
+    		'CT':{'fill': '#fe8f4d'},
+    		'DC':{'fill': '#fe8f4d'},
+    		'DE':{'fill': '#fe8f4d'}
+    	},
+    	stateSpecificLabelBackingHoverStyles: {
+    		'CT':{'fill': stateSpecificHoverFill},
+    		'DC':{'fill': stateSpecificHoverFill},
+    		'DE':{'fill': stateSpecificHoverFill}
+    	},
+    	stateSpecificLabelTextStyles: {
+				'CT':{'stroke': stateSpecificLabelTextStyles},
+    		'DC':{'stroke': stateSpecificLabelTextStyles},
+    		'DE':{'stroke': stateSpecificLabelTextStyles}
+    	},
     	stateSpecificStyles: {
     		'AL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
     		'AR': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
@@ -161,13 +183,8 @@ function getDetails(state, dist) {
    Helper function to return details for one customer
 
 			TODO:
-			x logo for each district/school
 			testing windows
 			a positive quote from someone if i have it
-			x the school/district motto
-			x if Beacon or just Assmt Studio
-			show data if i have it or else don't, e.g. num interims
-			x make the map light up
 			get a county map
  */
 function getCustomerDetails(state, dist) {
@@ -201,6 +218,8 @@ function getCustomerDetails(state, dist) {
 */
 function getStateDetails(state) {
 
+	highlightState(state);
+
 	var details = ""; 
 	var count = 0;
 
@@ -226,11 +245,9 @@ function loadAllCustomers() {
 
 	var details = "";
 	var count = 0;
-	for (var state in CUSTOMERS) {
-		for (var dist in CUSTOMERS[state]) {
-			details += getCustomerDetails(state, dist);
+	for (var i in ALPHACUSTS) {
+			details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 			count ++;
-		}
 	}
 	document.getElementById("details_header").innerHTML = count + " customers total";
 	document.getElementById("details_container").innerHTML = details;	
@@ -246,14 +263,11 @@ function loadBeaconCustomers() {
 
 	var details = "";
 	var count = 0;
-	for (var state in CUSTOMERS) {
-		for (var dist in CUSTOMERS[state]) {
-			if (CUSTOMERS[state][dist]['app'] === 'Beacon') {
-				details += getCustomerDetails(state, dist);
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'] === 'Beacon') {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
-			}
-			
-		}
+			}		
 	}
 	document.getElementById("details_header").innerHTML = count + " Beacon customers";
 	document.getElementById("details_container").innerHTML = details;	
@@ -268,16 +282,13 @@ function loadASCustomers() {
 
 	var details = "";
 	var count = 0;
-	for (var state in CUSTOMERS) {
-		for (var dist in CUSTOMERS[state]) {
-			if (CUSTOMERS[state][dist]['app'] === 'Assessment Studio only') {
-				details += getCustomerDetails(state, dist);
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'] === 'Assessment Studio only') {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
-			}
-			
-		}
+			}		
 	}
-	document.getElementById("details_header").innerHTML = count + " Assessment Studio only customers";
+	document.getElementById("details_header").innerHTML = count + " Assessment Studio (non-Beacon) customers";
 	document.getElementById("details_container").innerHTML = details;	
 }
 
@@ -291,14 +302,11 @@ function loadOIBCustomers() {
 
 	var details = "";
 	var count = 0;
-	for (var state in CUSTOMERS) {
-		for (var dist in CUSTOMERS[state]) {
-			if (CUSTOMERS[state][dist]['app'] === 'OIB') {
-				details += getCustomerDetails(state, dist);
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'] === 'OIB') {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
-			}
-			
-		}
+			}		
 	}
 	document.getElementById("details_header").innerHTML = count + " Open Item Bank customers";
 	document.getElementById("details_container").innerHTML = details;	
@@ -348,9 +356,8 @@ function hideDir() {
 /*
  * Alphabetize the customers
 */
-function alphabetizeCusts(CUSTOMERS) {
-    var sorted = [];
-    var key, state, dist, a = [], b = [];
+function alphabetizeCusts() {
+    var key, state, dist, a = [];
 
     // put all the district names in an array. 
     for (state in CUSTOMERS) {
@@ -370,9 +377,7 @@ function alphabetizeCusts(CUSTOMERS) {
 
     // Put into a full customer object
     for (key = 0; key < a.length; key++) {
-        sorted.push(CUSTOMERS[a[key]['state']][a[key]['dist']]);
+        ALPHACUSTS.push(CUSTOMERS[a[key]['state']][a[key]['dist']]);
     }
-
-    return sorted;
 }
 

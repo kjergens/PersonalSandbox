@@ -1,7 +1,6 @@
 html {
 	background-color:  #f2f2f2; #2a92a9;#93c7d2;
-	min-height: 900px;
-		width: 1024px;
+	width: 1024px;
 	margin: 0px auto;
 	
 }
@@ -28,14 +27,17 @@ html {
 
 #header {
 	color: #fff;
-	padding: 1px 0px 5px 0px;
 	background-color: #4cbbd3;
 	border-bottom: 1px solid #aaa; #44a8bd;
-	height: 60px;
+	height: 55px;
+	position: fixed;
+	top: 0;
+	width: 1024px;
+	z-index: 7777777;
 }
 
-#header h1 {
-	margin-top: 7px;
+#header h2 {
+	margin-top: 12px;
 }
 
 /*
@@ -46,8 +48,8 @@ html {
 
 .menu_icon {
 	content: url('../img/menu-icon.png');
-	height: 35px;
-	margin: 13px 24px 0px 20px;
+	height: 30px;
+	margin: 15px 20px 0px 20px;
 }
 
 #dir {
@@ -82,11 +84,12 @@ html {
 
 #map_container {
 	background-color: #FFF;
+	padding-top: 50px;
 
 }
 
 #maptitle {
-	margin: 30px 0px 10px 180px;
+	margin: 30px 0px 20px 60px;
 }
 
 #map {
@@ -96,7 +99,7 @@ html {
 	float: left;
 	zborder: 1px solid red;
 	margin-right: 20px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 #map_overlay {
@@ -134,12 +137,12 @@ html {
 #config-btn {
 	background-color: #e9e9e9;
 	margin-bottom: 2px;
-	width: 345px;
+	width: 245px;
 	text-align: left;
 }
 
 #config-btn img {
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 #config-btn:hover {	
@@ -157,14 +160,14 @@ html {
 */  
 #content_container {
 	background-color: #e9e9e9; #b3d7df; #93c7d2;
-	height: 3400px;
+	height: 3300px;
 	border-top: 1px solid #ddd;
 }
  
 #details_header {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: bold;
-	padding: 20px 0px 0px 70px;
+	padding: 15px 0px 0px 70px;
 	color: #3e3f40;
 }
 
