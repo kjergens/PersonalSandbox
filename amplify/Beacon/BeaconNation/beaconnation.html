@@ -11,45 +11,63 @@
 </head>
 <body>
 
-
-		<div id="header" onclick="hideDir()">
-
-				<div id="dir_link" class="menu_icon" onclick="toggleDir()" onmouseover="toggleDir()"><img src="img/menu-icon.png" height="40px"></div>
-				<div id="dir" class="hide" zonmouseout="hideDir()"></div>
-				<h2>Beacon Nation</h2>
-							
-		</div>
+<div id="header_container">
+		<div id="header" onclick="hideDir()"><h2>Beacon Nation</h2></div>
 				
-		<div id="filters_container">
+		<span id="menu_container">
+				<div class="btn menu_icon" onclick="showDir()">
+					<img src="img/menu-icon.png" height="15px">
+				</div>
+				<div id="dir" class="hide" zonmouseout="hideDir()"></div>
+		</span>
+		</div>
+				<div class="clearfix"></div>
+
+ 		<div id="filter_container">
 
 			<div id="map_container">
 
-					<h5 class="filter_title">Customers by state</h5>
+					<label class="filter_title">View by state:</label><br>
 					<div id="map" onclick="loadAllCustomers()"></div>
 
-			</div>
+			</div> <!-- end of man -->
 
 			<div id="products_container">
 
-					<h5 class="filter_title">Customers by product</h5>
+					<label class="filter_title">View by type:</label><br>
 
-					<span class="product-btn btn zbtn-primary" onclick="loadBeaconCustomers()"><img src="img/beacon_logo.png"><br>Beacon</span><br>
-					<span class="btn zbtn-secondary" onclick="loadASCustomers()"><img src="img/as_logo.png"><br>Assessment Studio</span><br>
-					<span class="btn zbtn-tertiary" onclick="loadOIBCustomers()"><img src="img/oib.png"><br>Open Item Bank</span><br><br>
+					<div class="button_group">
+						<div class="btn filter-btn" onclick="loadBeaconCustomers()"><img src="img/beacon_logo.png"><br>Beacon</div><br>
+						<div class="btn filter-btn" onclick="loadASCustomers()"><img src="img/as_logo.png"><br>Assessment Studio</div><br>
+						<div class="btn filter-btn" onclick="loadCustomizedCustomers()"><img src="img/oib.png"><br>Customized</div>
+					</div>
+					<!--<div class="btn filter-btn" onclick="loadCustomizedCustomers()"><img src="img/oib.png"><br>Customized</div>-->
 
-			</div>
-			
-		</div>
-		
+			</div> <!-- end of products -->
+
+			<div id="consortia_container">
+				<label class="filter_title">View by consortia:</label><br>
+				<div class="button_group">
+					<div class="btn filter-btn" onclick="loadSBACCustomers()">Smarter Balanced</div><br>
+					<div class="btn filter-btn" onclick="loadPARCCCustomers()">PARCC</div><br>
+					<div class="btn filter-btn" id="nonconsortia" onclick="loadNonConsortiaCustomers()">None</div>
+				</div>
+
+			</div> <!-- end of consortia -->
+
+			<!--<span class="btn btn-quaternary" onclick="loadAllCustomers()">Reset</span>-->
+
+		</div> <!-- /filter_container -->
 
 		<div class="clearfix"></div>
 
-		<div id="content_container" onclick="loadAllCustomers()">
+		<div id="main_area">
+			<div id="details_header"></div>
+			<div id="content_container" onclick="loadAllCustomers()">
 
-			<span id="details_header"></span>
-			<span class="btn btn-quaternary" onclick="loadAllCustomers()">Reset</span>
+				<div id="details_container"></div>
 
-			<div id="details_container"></div>
+			</div> <!-- /content_container -->
 
 		</div>
 

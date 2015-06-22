@@ -1,12 +1,14 @@
 html {
 	background-color: #333;  #f2f2f2; 
-	max-width: 892px;
+	width: 915px;
 	margin: 0px auto;
 }
 
 .ui-toolkit body {
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
+	padding: 0px;
+	margin: 0px;
 }
 
 .hide {
@@ -28,58 +30,79 @@ html {
 	color: #fff;
 	background-color: #4cbbd3;
 	border-bottom: 1px solid #aaa; 
-	padding-top: 1px;
-	width: 891px;
+	width: 914px;
 	z-index: 7777777;
+	margin-top: -20px;
+	padding: 10px 0px 0px;
 }
 
 #header h2 {
-	margin: 10px 0px;
+	text-align: center;
 }
 
 /*
- ****************
  * =Directory Menu
- ****************
 */  
 
 .menu_icon {
-	content: url('../img/menu-icon.png');
-	height: 30px;
-	margin: 12px 30px 0px 20px;
+	width: 120px;
+	margin: 8px 15px 0px 15px;
 	position: relative;
-	right: 0px;
+	top: -50px;
+	z-index: 6666;
+	zborder: 1px solid #ccc;
+	padding: 6px 8px;
+	box-shadow: 1px 1px 1px 0px #888;
+}
+
+.menu_icon:after {
+	content: 'Customers';
+	font-size: 13px;
+	color: #fff;
+	margin-left: 3px;
+	font-weight: bold;
 }
 
 #dir {
-	background-color: #f2f2f2; 
-	padding: 10px 20px 20px 10px;
-	line-height: 1.9;
+	background-color: #fff; #f2f2f2; 
+	padding: 10px 20px 20px 0px;
+	line-height: 2.2;
 	overflow-y:scroll;
-	height: 560px;
-	position: absolute;
-	top: 40px;
-	color: #555;
-	border: 1px solid #ccc;
+	height: 700px;
+	position: fixed;
+	top: 0px;
+	left: -10px;
+	zcolor: #555;
+	zborder: 1px solid #888;
 	z-index: 888888;
-	border-radius: 5px;
-	margin-left: 20px;
+	zborder-radius: 5px;
+	margin-left: 10px;
+	zfont-weight: bold;
+	box-shadow: 5px 0px 30px 1px #888;
+	font-weight: bold;
 }
 
 #dir a {
-	color: #444;
+	color: #333;
+	text-decoration: none;
 }
 
-#dir_link {
-	float: left;
+#dir a:hover {
+	font-weight: normal;
 }
-
 
 /*
  ****************
  * =Map & Product filters
  ****************
 */  
+
+.ui-toolkit h5 {
+	 font-weight: bold;
+	 margin-left: -40px;
+	 margin-bottom: 25px;
+	 margin-top: 25px;
+}
 
 /*
  * =Map
@@ -88,21 +111,22 @@ html {
 	background-color: #FFF;
 	float: left;
 	padding: 0% 11% 0% 14%;
+	margin-top: -40px;
 }
 
 #map {
 	width:370px;
 	height:220px;
-	margin-top: -10px;
 }
 
 /*
  * =Product filters
 */ 
 #products_container {
-	border-left: 1px solid #ccc;
+	border-left: 1px solid #aaa;
 	float: left;
 	padding: 0% 8%;
+	margin-top: -40px;
 }
 
 #product-btn {
@@ -110,7 +134,7 @@ html {
 	border: 1px solid #333;
 	margin-bottom: 2px;
 	width: 105px;
-	text-align: center;
+	ztext-align: center;
 }
 
 #product-btn img {
@@ -132,8 +156,9 @@ html {
 */  
 #content_container {
 	background-color: #b3d7df;  #e9e9e9; #b3d7df; #93c7d2;
-	height: 3200px;
+	height: 3500px;
 	border-top: 1px solid #ddd;
+	padding: 0px 15px;
 }
  
 #details_header {
@@ -146,9 +171,9 @@ html {
 	float: left;
 	padding: 20px 25px;
 	background-color: #fff; 
-	margin: 0px 0px 12px 12px;
-	width: 280px;
-	height: 235px;
+	margin: 0px 0px 15px 15px;
+	width: 275px;
+	height: 260px;
 	color: #333;
 	zborder: 1px solid #ccc;
 }

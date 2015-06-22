@@ -197,99 +197,18 @@ function drawMap() {
 }
 
 
-/*
-	Highlight only one state
-*/
-function highlightState(state) {
-
-	// Undo existing highlights
- for (var s in CUSTOMERS) {
-    $('#map').usmap('trigger', s, 'mouseout');
-  }
-
-	// Highlight the selected states
-  $('#map').usmap('trigger', state, 'mouseover');
-}
-
-
-
 /**********************************
 
-  Product filters
-
-***********************************/
-/*
-	Get all Beacon customers.
-*/
-function loadBeaconCustomers() {
-
-	document.getElementById("details_header").innerHTML = "";
-
-	var details = "";
-	var count = 0;
-	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'] === 'Beacon') {
-				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
-				count ++;
-			}		
-	}
-	document.getElementById("details_header").innerHTML = count + " Beacon customers";
-	document.getElementById("details_container").innerHTML = details;	
-}
-
-/*
-	Get Assessment Studio only customers.
-*/
-function loadASCustomers() {
-
-	document.getElementById("details_header").innerHTML = "";
-
-	var details = "";
-	var count = 0;
-	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'] === 'Assessment Studio only') {
-				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
-				count ++;
-			}		
-	}
-	document.getElementById("details_header").innerHTML = count + " Assessment Studio (non-Beacon) customers";
-	document.getElementById("details_container").innerHTML = details;	
-}
-
-
-/*
-	Get OIB customers.
-*/
-function loadOIBCustomers() {
-
-	document.getElementById("details_header").innerHTML = "";
-
-	var details = "";
-	var count = 0;
-	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'] === 'OIB') {
-				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
-				count ++;
-			}		
-	}
-	document.getElementById("details_header").innerHTML = count + " Open Item Bank customers";
-	document.getElementById("details_container").innerHTML = details;	
-}
-
-
-
-
-/**********************************
-
-  Customer detail cards
+  Load customer detail cards
 
 ***********************************/
 
 /*
-	Display all customers.
+	Get all customers.
 */
 function loadAllCustomers() {
 
+  clearHighlights();
 	document.getElementById("details_header").innerHTML = "";
 
 	var details = "";
@@ -300,6 +219,165 @@ function loadAllCustomers() {
 	}
 	document.getElementById("details_header").innerHTML = count + " customers total";
 	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+
+/*
+	Get Beacon customers.
+*/
+function loadBeaconCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'].includes('Beacon')) {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML =  count + " Beacon customers";
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+/*
+	Get Assessment Studio only customers.
+*/
+function loadASCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'].includes('Assessment Studio only')) {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML = count + " Assessment Studio only customers" ;
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+/*
+	Get OIB customers.
+*/
+function loadOIBCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'].includes('OIB')) {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML =  count + " Open Item Bank customers";
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+/*
+	Get Customized customers.
+*/
+function loadCustomizedCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['app'].includes('Customized')) {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML = count + " customized customers";
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+/*
+	Get Smarter Balanced customers.
+*/
+function loadSBACCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['consortia'] === 'Smarter Balanced') {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML = count + " Smarter Balanced customers";
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+/*
+	Get PARCC customers.
+*/
+function loadPARCCCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['consortia'] === 'PARCC') {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML = count + " PARCC customers";
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+}
+
+
+/*
+	Get Non-Consortia customers.
+*/
+function loadNonConsortiaCustomers() {
+
+	clearHighlights();
+	document.getElementById("details_header").innerHTML = "";
+
+	var details = "";
+	var count = 0;
+	for (var i in ALPHACUSTS) {
+			if (ALPHACUSTS[i]['consortia'] != 'Smarter Balanced' && ALPHACUSTS[i]['consortia'] != 'PARCC') {
+				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
+				count ++;
+			}		
+	}
+	document.getElementById("details_header").innerHTML =  count + " non-consortia customers";
+	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
+
 }
 
 
@@ -324,7 +402,10 @@ function getStateDetails(state) {
 
 	document.getElementById("details_header").innerHTML = count + " customers in " + state;
 	document.getElementById("details_container").innerHTML = details;	
+
+	//scrollToMainArea();
 }
+
 
 /*
 	Get a single customer
@@ -332,10 +413,20 @@ function getStateDetails(state) {
 function getDetails(state, dist) {
 
 	highlightState(state);
-	document.getElementById("details_header").innerHTML = "";	
+	document.getElementById("details_header").innerHTML = CUSTOMERS[state][dist]['name'] + " - " + CUSTOMERS[state][dist]['num_stu'] + " students"  ;	
 	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
-	hideDir();
+	hideDir(); 
+
+  //scrollToMainArea();
+
 }
+
+
+/**********************************
+
+  Customer detail cards
+
+***********************************/
 
 
 /* 
@@ -364,10 +455,42 @@ function getCustomerDetails(state, dist) {
 	details += "<br>"
 	//details += CUSTOMERS[state][dist]['num_schools'] + " schools<br>";
 	details += CUSTOMERS[state][dist]['num_stu'] + " students<br>";
-	details += CUSTOMERS[state][dist]['grades'];
-	details += "<br>"
 	details += CUSTOMERS[state][dist]['consortia'];
+	details += "<br>"
+	details += CUSTOMERS[state][dist]['grades'];
 	details += "</div>";
 
 	return details;
 }
+
+/******************************************************************
+*
+*   Helper functions
+*
+*******************************************************************/
+
+function scrollToMainArea() {
+	//$('html, body').animate({
+  //      scrollTop: $("#main_area").offset().top
+  //  }, 4000);
+	$('html,body').animate({scrollTop: 380}, 600);
+}
+
+/*
+	Highlight only one state
+*/
+function highlightState(state) {
+
+	clearHighlights();
+
+	// Highlight the selected states
+  $('#map').usmap('trigger', state, 'mouseover');
+}
+
+function clearHighlights() {
+		// Undo existing highlights
+ 		for (var s in CUSTOMERS) {
+   		 $('#map').usmap('trigger', s, 'mouseout');
+  }
+}
+

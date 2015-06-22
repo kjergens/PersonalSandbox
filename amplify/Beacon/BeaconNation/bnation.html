@@ -2,143 +2,80 @@
 <html lang="en" class="ui-toolkit">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="zcss/pesticide.css">
 	<link rel="stylesheet" href="public/css/styles.css">
-	<link rel="stylesheet" href="css/beaconmap.css">
-	<link rel="stylesheet" href="jquery-jvectormap-2.0.2/jquery-jvectormap-2.0.2.css">
-
-	<title>US Map</title>
+	<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+	<link rel="stylesheet" href="css/bnation.css">
+	<title>Beacon Nation</title>
 </head>
 <body>
 
-<a tabindex="0" class="btn" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
 
-<div id="map">
-</div>
+		<div id="header" onclick="hideDir()"><h2>Beacon Nation</h2></div>
+				
+		<span id="menu_container">
+				<div class="zbtn menu_icon" onclick="showDir()">
+					<img src="img/menu-icon.png" height="20px">
+				</div>
+				<div id="dir" class="hide" zonmouseout="hideDir()"></div>
+		</span>
+				
 
-<div id="footer">
-<div class="directory">
-	<h5>Beacon customers</h5>
-	<ul class="dirlist">
-		<li><ul class="customers">
-			<li><h5><a id="CB" onclick="districtDetails(this)" title="VA" href="#">College Board</a></li>
-			<li><h5><a id="DCPS" onclick="districtDetails(this)" title="DC" href="#">District of Columbia</li>
-			<li><h6><a id="GPUSD" onclick="districtDetails(this)" title="CA" href="#">Golden Plains Unified School District</a></li>
-					</ul></li>
-		<li><ul class="customers">
-			<li><h6><a id="LCSD1" href="#" title="KY" onclick="districtDetails(this)">Lexington County School District 01</a></h6></li>
-			<li><h4><a id="LAUSD" onclick="districtDetails(this)" title="CA" href="#">Los Angeles</a></li>
-			<!--<li><h6><a id="PAVE" onclick="districtDetails(this)" title="NY" href="#" >Pave Academy Charter School</a></li>-->
-			<li><h4><a id="SFUSD" onclick="districtDetails(this)" title="CA"  href="#">San Francisco USD</a></h4></li>
-		</ul></li>
-		<li><ul class="customers">	
-			<li><h5><a id="SPS" onclick="districtDetails(this)" title="WA" href="#">Seattle Public Schools</a></li>
-			<li><h4><a id="SPO" onclick="districtDetails(this)" title="WA" href="#">Spokane Public Schools</a></li>
-			<li><h6><a id="UCS" onclick="districtDetails(this)" title="NY" href="#">Uncommon Schools</a></li>		
-		</ul></li>
-</ul>
+		<div class="container">
+		
+			<div class="mapcontainer">
+			
+					<div style="margin:auto;">
+						<div class="population" style="float:left;margin-right:40px;">
+							<span>Alternative content for the legend</span>
+						</div>
+						<div class="density" style="float:left;">
+							<span>Alternative content for the legend2</span>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+			
+				<div class="map">
+					<span>Alternative content for the map</span>
+				</div>
 
-</div> <!--end directory-->
-
-<div class="clear directory"><h5>Assessment Studio customers</h5>
-		<ul class="dirlist">
-			<li><ul class="customers">
-				<li><h6><a id="ACH" onclick="districtDetails(this)" title="NY" href="#">Achievement First Public Charter Schools</a></li>
-				<li><h5><a id="EA" onclick="districtDetails(this)" title="IN" href="#">East Allen County Schools</a></li>
-				<li><h6><a id="GPS" onclick="districtDetails(this)" title="NC" href="#">Guilford County Public Schools</a></li>
-			</ul></span>
-			<li><ul class="customers">
-				<li><h6><a id="LPCS" onclick="districtDetails(this)" title="AZ" href="#">Las Puertas Community School</a></li>
-				<li><h6><a id="MUSD" onclick="districtDetails(this)" title="CA" href="#">Mendota Unified School District</a></li>
-				<li><h6><a href="#" id="MSPS"  onclick="districtDetails(this)" title="TN">Metro Nashville Public Schools</h6></a></li>
-		</ul></span>
-		<li><ul class="customers">
-				<li><h6><a id="NCCS" onclick="districtDetails(this)" title="DE" href="#">New Castle Charter Schools</a></li>	
-				<li><h6><a id="PUC" onclick="districtDetails(this)" title="CA" href="#">PUC Schools</li>
-				<li><h6><a id="VIC" onclick="districtDetails(this)" title="IL" href="#">Victory Education Partners</a></li>				
-			</ul></span>
-</ul></div>
-</div> <!-- end footer-->
-
-</div> <!-- end pagebody-->
-
+			</div>
+		
+	</div>
 	<!--
 
-	DISTRICT DETAILS
+			<div id="products_container">
 
- -->
-	<div id="districtInfo" class="hide" onclick="hideDistrictInfo()">
-		<!--details of the selected district will go here-->
-	</div>
+					<h5 class="filter_title">Filter by product</h5>
 
-<!--
-	
-	JAVASCRIPT
+					<span class="product-btn btn zbtn-primary" onclick="loadBeaconCustomers()"><img src="img/beacon_logo.png"><br>Beacon</span><br>
+					<span class="btn zbtn-secondary" onclick="loadASCustomers()"><img src="img/as_logo.png"><br>Assessment Studio</span><br>
+					<span class="btn zbtn-tertiary" onclick="loadOIBCustomers()"><img src="img/oib.png"><br>Open Item Bank</span><br><br>
 
- -->
+			</div>
+			-->
+		
 
-<script src="js/customers.js"></script>
-<script src="public/js/vendor/jquery/jquery.js"></script>
-<script src="public/js/vendor/bootstrap/transition.js"></script>
-<script src="public/js/vendor/bootstrap/tooltip.js"></script>
-<script src="public/js/vendor/bootstrap/popover.js"></script>
-<script type="text/javascript" src="jquery-jvectormap-2.0.2/jquery-jvectormap-us-aea-en.js"></script>
-<script type="text/javascript" src="jquery-jvectormap-2.0.2/jquery-jvectormap-2.0.2.min.js"></script>
-<script type="text/javascript">
-	
-$('#map').vectorMap({map: 'us_aea_en'});
+		<div class="clearfix"></div>
 
+		<div id="content_container" onclick="loadAllCustomers()">
 
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
+			<span id="details_header"></span>
+			<span class="btn btn-quaternary" onclick="loadAllCustomers()">Reset</span>
+
+			<div id="details_container"></div>
+
+		</div>
 
 
+	<!-- JavaScript -->
+	<script type="text/javascript" src="public/js/vendor/jquery/jquery.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+	<script type="text/javascript" src="jQuery-Mapael-1.0.1/js/jquery.mapael.js"></script>
+	<script type="text/javascript" src="jQuery-Mapael-1.0.1/js/maps/usa_states.js"></script>
+	<script type="text/javascript" src="js/customers.js"></script>
+	<script type="text/javascript" src="js/bnation.js"></script>
 
-
-// ------------------------------------
-//
-// Display district details
-//
-// ------------------------------------
-function districtDetails(sender) {
-	districtId = sender.getAttribute('id');
-	districtState = sender.getAttribute('title');
-
-	// look up district info in an assoc. array
-	name = CUSTOMERS[districtState][districtId].name;
-	url = CUSTOMERS[districtState][districtId].url;
-	schools = CUSTOMERS[districtState][districtId].num_schools;
-	stu = CUSTOMERS[districtState][districtId].num_stu;
-	consortia = CUSTOMERS[districtState][districtId].consortia;
-	interims = CUSTOMERS[districtState][districtId].num_interims;
-	full_beacon = CUSTOMERS[districtState][districtId].full_beacon;
-	paper = CUSTOMERS[districtState][districtId].paper;
-	online = CUSTOMERS[districtState][districtId].online;
-	t0 = CUSTOMERS[districtState][districtId].testing_win0;
-	t1 = CUSTOMERS[districtState][districtId].testing_win1;
-	t2 = CUSTOMERS[districtState][districtId].testing_win2;
-	t3 = CUSTOMERS[districtState][districtId].testing_win3;
-	t4 = CUSTOMERS[districtState][districtId].testing_win4;
-	t5 = CUSTOMERS[districtState][districtId].testing_win5;
-
-
-	html = "<h4><a class='more' href='" + url + "' target='_blank'>" + name + "</a></h4><hr";
-	html += "<ul><li>Schools: " + schools + "</li>";
-	html += "<li>Students: " + stu + "</li>";
-	html += "<li><br>Consortia: " + consortia + "</li>";
-	html += "<li>Paper: " + paper + "</li>";
-	html += "<li>Online: " + online + "</li>";
-	html += "<li><br>Testing windows:</li>";
-	html +=  "<li>" + t0 + "<li>" + t1 + "<li>" + t2 + "<li>" + t3 + "<li>" + t4 + "<li>" + t5  + "</li>";
-	html += "</ul>";
-
-	document.getElementById("districtInfo").innerHTML = html;
-	document.getElementById("districtInfo").className = "show";
-}
-
-
-
-	</script>
 </body>
 </html>

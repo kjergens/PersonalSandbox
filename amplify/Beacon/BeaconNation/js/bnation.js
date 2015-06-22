@@ -107,95 +107,224 @@ function hideDir() {
 
 function drawMap() {
 
-	var fill = '#f37321'; //#4cbbd3';
-	var inactiveFill = '#e9e9e9';
-	var strokeColor =  '#984513'; //#c25c1a'; //#1b356c'; //#0645AD';
-	var strokeWidth = 5;
-	var stateHoverStyles = '#f8f8f8';
-	var stateSpecificHoverFill = '#fed5bc';//#feab79'; //#f7ab79'; //'#b7e3ed';
-	var stateSpecificLabelTextStyles = '#b15017';
+var n = "{\"map\": {\"name\": \"usa_states\""
+					   + ", \"defaultArea\": {"
+						 + "\"attrs\" : {"
+						 + "\"fill\" : \"#f4f4e8\""
+						 + ", \"stroke\": \"#00a1fe\""
+						 + "}}"
+						 + ", \"attrsHover\" : {"
+	 					 + "\"fill\": \"#f37321\""
+	           + "},"
+	           + "\"legend\": {"
+	           + "\"plot\":["
+	           + "{"
+	           + " \"labelAttrs\":{"
+	           + " \"fill\" : \"#888\""
+	           + " }, \"titleAttrs\":{"
+	           + " \"fill\" : \"#888\""
+	           + " },"
+	           + " \"cssClass\": \"population\","
+	           + "						\"mode\": \"horizontal\","
+	           + "						\"title\": \"Population\","
+	           + "						\"marginBottomTitle\":5,"
+	           + "						\"slices\": [{"
+						 + "							\"size\":15,"
+						 + "							\"legendSpecificAttrs\": {"
+						 + "								\"fill\":\"#00a1fe\","
+						 + "								\"stroke\":\"#888\","
+						 + "								\"stroke-width\" : 2"
+						 + "							},"
+						 + "						\"label\": \"< 10 000\","
+						 + "						\"max\": \"10000\""
+						 + "						}, {"
+						 + "						\"size\":30,"
+						 + "						\"legendSpecificAttrs\": {"
+						 + "							\"fill\":\"#00a1fe\","
+						 + "							\"stroke\":\"#f4f4e8\","
+						 + "							\"stroke-width\" : 2"
+						 + "						},"
+						 + "						\"label\": \"> 10 000 and < 100 000\","
+						 + "						\"min\": \"10000\","
+						 + "						\"max\": \"100000\""
+						 + "						}, {"
+						 + "						\"size\":50,"
+						 + "						\"legendSpecificAttrs\": {"
+						 + "							\"fill\":\"#00a1fe\","
+						 + "							\"stroke\":\"#f4f4e8\","
+						 + "							\"stroke-width\" : 2"
+						 + "						},"
+						 + "						\"label\": \"> 100 000\","
+						 + "						\"min\": \"100000\"}]} "  // end of slice, end of plot
+						 + "				, {"
+				  	 + "           \"labelAttrs\":{"
+						 + "                  \"fill\" : \"#888\""
+						 + "              },"
+						 + "              \"titleAttrs\":{"
+						 + "                  \"fill\" : \"#888\""
+						 + "              },"
+					 	 + "					\"cssClass\": \"density\","
+						 + "					\"mode\": \"horizontal\","
+						 + "					\"title\": \"Density\","
+						 + "					\"marginBottomTitle\":5,"
+						 + "					\"slices\": [{"
+						 + "						\"label\": \"< 50\","
+						 + "						\"max\": \"50\","
+						 + "						\"attrs\": {\"fill\": \"#fef500\"},"
+						 + "						\"legendSpecificAttrs\": {\"r\": 25}"
+						 + "						}," // end of slice
+						 + "            {"
+						 + "						\"label\": \"> 50 and < 500\","
+						 + "						\"min\": \"50\","
+						 + "						\"max\": \"500\","
+						 + "						\"attrs\": {\"fill\": \"#fe6c00\"},"
+						 + "						\"legendSpecificAttrs\": {\"r\": 25}"
+						 + "					}," // end of slice
+						 + "         {"
+						 + "						\"label\": \"> 500\","
+						 + "						\"min\": \"500\","
+						 + "						\"attrs\": {\"fill\": \"#dc0000\"},"
+						 + "						\"legendSpecificAttrs\": {\"r\": 25}"
+						 + "						}]" // end of slice, end of slices
+	           + "    }]}," // end of plot, end of legend
+	           	+ "		\"plots\": {" 
+						 + "			\"ny\" : {"
+						 + "				\"latitude\": 40.717079,"
+						 + "				\"longitude\": -74.00116,"
+						 + "				\"tooltip\": {\"content\" : \"New York\"},"
+						 + "                \"value\": [ 5000, 20]"
+						 + "			}}" // end of ny, end of plots
+             + "}}"; // end of map, end of n
 
-/*
-	Dynamically figure out Beacon states.
-	TODO: Figure out how to plug this in.
-*/
-	var stateSpecificStyleText ="";
 
-	for (var state in CUSTOMERS) {
-		stateSpecificStyleText += state + ": {fill: " + fill + "},"
-	}
-	console.log(stateSpecificStyleText);
+var um = { map : {
+			name : "usa_states"
+            , defaultArea: {
+				attrs : {
+					fill : "#f4f4e8"
+					, stroke: "#00a1fe"
+				}
+				, attrsHover : {
+					fill: "#f37321"
+				}
+            }
+		},
+        legend: {
+            plot: [
+				{
+                    labelAttrs:{
+                        fill : "#888"
+                    },
+                    titleAttrs:{
+                        fill : "#888"
+                    },
+					cssClass: 'population',
+					mode: 'horizontal',
+					title: "Population",
+					marginBottomTitle:5,
+					slices: [{
+						size:15,
+						legendSpecificAttrs: {
+							fill:'#00a1fe',
+							stroke:'#f4f4e8',
+							"stroke-width" : 2
+						},
+						label: "< 10 000",
+						max: "10000"
+					}, {
+						size:30,
+						legendSpecificAttrs: {
+							fill:'#00a1fe',
+							stroke:'#f4f4e8',
+							"stroke-width" : 2
+						},
+						label: "> 10 000 and < 100 000",
+						min: "10000",
+						max: "100000"
+					}, {
+						size:50,
+						legendSpecificAttrs: {
+							fill:'#00a1fe',
+							stroke:'#f4f4e8',
+							"stroke-width" : 2
+						},
+						label: "> 100 000",
+						min: "100000"
+					}]
+				}
+				, {
+                   labelAttrs:{
+                        fill : "#888"
+                    },
+                    titleAttrs:{
+                        fill : "#888"
+                    },
+					cssClass: 'density',
+					mode: "horizontal",
+					title: "Density",
+					marginBottomTitle:5,
+					slices: [{
+						label: "< 50",
+						max: "50",
+						attrs: {
+							fill: "#fef500"
+						},
+						legendSpecificAttrs: {
+							r: 25
+						}
+					}, {
+						label: "> 50 and < 500",
+						min: "50",
+						max: "500",
+						attrs: {
+							fill: "#fe6c00"
+						},
+						legendSpecificAttrs: {
+							r: 25
+						}
+					}, {
+						label: "> 500",
+						min: "500",
+						attrs: {
+							fill: "#dc0000"
+						},
+						legendSpecificAttrs: {
+							r: 25
+						}
+					}]
+				}
+            ]
+        },
+		plots: {
+			'ny' : {
+				latitude: 40.717079,
+				longitude: -74.00116,
+				tooltip: {content : "New York"},
+                value: [ 5000, 20]
+			}
+		},
+		eventHandlers: {
+			click: function (e, id, mapElem, textElem) { 
+				alert("click");
+			}
+		}
+};
+		
 
-	/*
-	 Draw the map
-	*/
-	$('#map').usmap({
-			stateHoverAnimation: 250,
-    	stateStyles: {fill: inactiveFill},
-    	labelBackingStyles: {fill: inactiveFill},
-    	labelBackingHoverStyles: {'fill': stateHoverStyles},
-    	showLabels: true,
-    	labelRadius: 2,
-    	labelTextStyles: {'stroke': '#888', 'font-size':'10px', 'font-weight':'0'},
-    	stateSpecificLabelBackingStyles: {
-    		'CT':{'fill': '#fe8f4d'},
-    		'DC':{'fill': '#fe8f4d'},
-    		'DE':{'fill': '#fe8f4d'}
-    	},
-    	stateSpecificLabelBackingHoverStyles: {
-    		'CT':{'fill': stateSpecificHoverFill},
-    		'DC':{'fill': stateSpecificHoverFill},
-    		'DE':{'fill': stateSpecificHoverFill}
-    	},
-    	stateSpecificLabelTextStyles: {
-				'CT':{'stroke': stateSpecificLabelTextStyles},
-    		'DC':{'stroke': stateSpecificLabelTextStyles},
-    		'DE':{'stroke': stateSpecificLabelTextStyles}
-    	},
-    	stateSpecificStyles: {
-    		'AL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-    		'AR': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'AZ': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'CA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'CT': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'DC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'DE': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'GA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'IL': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'IN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'MI': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'NC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'NY': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'SC': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'TN': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'VA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-		    'WA': {'fill': fill, 'stroke':strokeColor, 'stroke-width':strokeWidth},
-	  	}, 
-	  	stateHoverStyles: {fill: stateHoverStyles},
-	  	stateSpecificHoverStyles: {
-	  		'AL': {'fill': stateSpecificHoverFill},
-	  		'AR': {'fill': stateSpecificHoverFill},
-		    'AZ': {'fill': stateSpecificHoverFill},
-		    'CA': {'fill': stateSpecificHoverFill},
-		    'CT': {'fill': stateSpecificHoverFill},
-		    'DC': {'fill': stateSpecificHoverFill},
-		    'DE': {'fill': stateSpecificHoverFill},
-		    'GA': {'fill': stateSpecificHoverFill},
-		    'IL': {'fill': stateSpecificHoverFill},
-		    'IN': {'fill': stateSpecificHoverFill},
-		    'MI': {'fill': stateSpecificHoverFill},
-		    'NC': {'fill': stateSpecificHoverFill},
-		    'NY': {'fill': stateSpecificHoverFill},
-		    'SC': {'fill': stateSpecificHoverFill},
-		    'TN': {'fill': stateSpecificHoverFill},
-		    'VA': {'fill': stateSpecificHoverFill},
-		    'WA': {'fill': stateSpecificHoverFill},
-	  	}, 
-	  	click: function(click, state) {
-    		getStateDetails(state.name); 
-    }});
+  n = jQuery.trim(n);
+
+  console.log(n);
+
+  var obj = jQuery.parseJSON(n);
+
+  console.log(obj);
+
+  var t = JSON.stringify(um);
+  var o2 = jQuery.parseJSON (t);
+
+	$(".mapcontainer").mapael(o2);
+
 }
-
 
 /*
 	Highlight only one state
@@ -204,11 +333,11 @@ function highlightState(state) {
 
 	// Undo existing highlights
  for (var s in CUSTOMERS) {
-    $('#map').usmap('trigger', s, 'mouseout');
+    $('.mapcontainer').trigger('mouseout', [s]);
   }
 
 	// Highlight the selected states
-  $('#map').usmap('trigger', state, 'mouseover');
+  $('.mapcontainer').trigger('mouseover', [s]);
 }
 
 
@@ -308,7 +437,7 @@ function loadAllCustomers() {
 */
 function getStateDetails(state) {
 
-	highlightState(state);
+	//highlightState(state);
 
 	var details = ""; 
 	var count = 0;

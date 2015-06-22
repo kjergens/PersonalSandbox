@@ -10,7 +10,7 @@ var CUSTOMERS = {
 			num_stu: "550",
 			num_interims: 0,
 			url: "www.tcss.net/site/default.aspx?PageID=1",
-			consortia: "",
+			consortia: "Alabama College and Career Readiness Standards",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -23,7 +23,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "tusc.png",
-			motto: ""
+			motto: "Committed to meeting the educational needs of all students."
 		}
 	},
 	AZ : {
@@ -36,7 +36,7 @@ var CUSTOMERS = {
 			num_stu: "75",
 			num_interims: 0,
 			url: "www.laspuertascommunityschool.org",
-			consortia: "",
+			consortia: "No consortia",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -88,7 +88,7 @@ var CUSTOMERS = {
 			num_stu: "1,200",
 			num_interims: 0,
 			url: "www.caruthers.k12.ca.us/",
-			consortia: "",
+			consortia: "Smarter Balanced",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -112,7 +112,7 @@ var CUSTOMERS = {
 			num_stu: "1,000",
 			num_interims: 0,
 			url: "www.chowchillahigh.k12.ca.us/",
-			consortia: "",
+			consortia: "Common Core",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -148,7 +148,7 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			motto: "",
+			motto: "Academics. Attendence. Attitude.",
 			logo: "coa.png"
 		},
 		EARL : {
@@ -159,8 +159,8 @@ var CUSTOMERS = {
 			num_schools: "--",
 			num_stu: "1,885",
 			num_interims: 0,
-			url: "earlimart.org",
-			consortia: "",
+			url: "www.earlimart.org",
+			consortia: "Smarter Balanced",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -173,7 +173,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "earl.png",
-			motto: "Every child. Every opportunity. Every day."
+			motto: "Every child... Every opportunity... EVERY DAY."
 		},
 		ECP : {
 			name: "Education for Change Public Schools",
@@ -184,7 +184,7 @@ var CUSTOMERS = {
 			num_stu: "1,703",
 			num_interims: "--",
 			url: "efcps.org/",
-			consortia: "",
+			consortia: "Common Core",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -196,7 +196,7 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			motto: "",
+			motto: "A superior public education.",
 			logo: "educhange.png"
 		},
 		GPUSD : {
@@ -228,12 +228,12 @@ var CUSTOMERS = {
 			dist: "KING",
 			county: "Fresno",
 			state: 'CA',
+			app: "Assessment Studio only",
 			num_schools: "--",
 			num_stu: "1,177",
 			num_interims: 0,
 			url: "khsvikings.com",
-			consortia: "",
-			app: "Assessment Studio only",
+			consortia: "Common Core",
 			paper: "",
 			online: "",
 			num_summative: 0,
@@ -304,7 +304,7 @@ var CUSTOMERS = {
 			num_stu: "1,665",
 			num_interims: 0,
 			url: "sthopepublicschools.org/",
-			consortia: "",
+			consortia: "Smarter Balanced",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -317,7 +317,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "hope.png",
-			motto: ""
+			motto: "Gateway to college."
 		}, 
 		TWIN : {
 			name: "Twin River Charter School",
@@ -328,7 +328,7 @@ var CUSTOMERS = {
 			num_stu: "360",
 			num_interims: 0,
 			url: "twinriverscharterschool.org",
-			consortia: "",
+			consortia: "Smarter Balanced",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -352,7 +352,7 @@ var CUSTOMERS = {
 			num_stu: "2,075",
 			num_interims: 0,
 			url: "waterford-ca.schoolloop.com/",
-			consortia: "",
+			consortia: "Smarter Balanced",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -364,8 +364,8 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			logo: "books_icon.png",
-			motto: ""
+			logo: "water.png",
+			motto: "Committed to excellence, achievement, and success."
 		} 
 	},
 	CT : {
@@ -378,7 +378,7 @@ var CUSTOMERS = {
 			num_stu: "517",
 			num_interims: 0,
 			url: "nhps.net",
-			consortia: "",
+			consortia: "Smarter Balanced",
 			app: "",
 			paper: "",
 			online: "",
@@ -391,7 +391,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "newhaven.png",
-			motto: ""
+			motto: "Keep Rising"
 		}
 	},
 	DC : {
@@ -404,7 +404,7 @@ var CUSTOMERS = {
 			num_stu: "1,000",
 			num_interims: "--",
 			url: "centercitypcs.org",
-			consortia: "",
+			consortia: "PARCC",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -429,7 +429,7 @@ var CUSTOMERS = {
 			num_interims: 4,
 			url: "dcps.dc.gov/portal/site/DCPS",
 			consortia: "PARCC",
-			app: "Beacon",
+			app: "Customized; Beacon",
 			paper: "Yes",
 			online: "Yes",
 			num_summative: "--",
@@ -441,7 +441,7 @@ var CUSTOMERS = {
 			testing_win4: "Mar 30 - Apr 28",
 			testing_win5: "May 5 - Jun 12",
 			logo: "dcps.png",
-			motto: ""
+			motto: "A Capital Committment."
 		},
 		EAPCS: {
 			name: "Eagle Academy Public Charter School District",
@@ -478,7 +478,7 @@ var CUSTOMERS = {
 			num_stu: "3,280",
 			num_interims: "--",
 			url: "",
-			consortia: "",
+			consortia: "Common Core",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -490,7 +490,7 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			logo: "dela.png",
+			logo: "delaware.png",
 			motto: "Nurture. Inspire. Support."
 		} 
 	},
@@ -530,7 +530,7 @@ var CUSTOMERS = {
 			num_stu: "647",
 			num_interims: "--",
 			url: "victoryep.com/",
-			consortia: "",
+			consortia: "PARCC",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -556,7 +556,7 @@ var CUSTOMERS = {
 			num_stu: "7,806",
 			num_interims: "--",
 			url: "www.eacs.k12.in.us",
-			consortia: "",
+			consortia: "I-STEP process",
 			app: "Beacon",
 			paper: "",
 			online: "Yes",
@@ -582,7 +582,7 @@ var CUSTOMERS = {
 			num_stu: "1,691",
 			num_interims: "--",
 			url: "maps.manistee.org/",
-			consortia: "",
+			consortia: "Common Core",
 			app: "Beacon",
 			paper: "",
 			online: "",
@@ -594,8 +594,8 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			logo: "books_icon.png",
-			motto: ""
+			logo: "manistee.png",
+			motto: "The very best for all our students."
 		}
 	},
 	NC : {
@@ -608,7 +608,7 @@ var CUSTOMERS = {
 			num_stu: "14,118",
 			num_interims: 0,
 			url: "www.gcsnc.com/pages/gcsnc",
-			consortia: "",
+			consortia: "Common Core",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -632,7 +632,7 @@ var CUSTOMERS = {
 			num_stu: 800,
 			num_interims: "--",
 			url: "www.nhcs.k12.nc.us",
-			consortia: "",
+			consortia: "Common Core",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "Yes",
@@ -743,7 +743,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "uncommon.png",
-			motto: ""
+			motto: "42 Schools, One mission."
 		}  
 	},
 	SC : {
@@ -759,7 +759,7 @@ var CUSTOMERS = {
 			motto: "Where children and learning are One.",
 			logo: "lex.png",
 			url: "www.lexington1.net/",
-			consortia: ""
+			consortia: "Smarter Balanced"
 		}
 	},
 	TN : {
@@ -771,8 +771,8 @@ var CUSTOMERS = {
 			num_schools: "--",
 			num_stu: "1,040",
 			num_interims: "--",
-			url: "",
-			consortia: "",
+			url: "www.mnps.org/pages/mnps",
+			consortia: "Common Core",
 			app: "Assessment Studio only",
 			paper: "",
 			online: "",
@@ -784,8 +784,8 @@ var CUSTOMERS = {
 			testing_win3: "",
 			testing_win4: "",
 			testing_win5: "",
-			logo: "books_icon.png",
-			motto: ""
+			logo: "nashville.png",
+			motto: "The first choice for families."
 		}
 	},
 	VA : {
@@ -798,8 +798,8 @@ var CUSTOMERS = {
 			num_stu: "10,000",
 			num_interims: "--",
 			url: "www.collegeboard.org",
-			consortia: "",
-			app: "OIB",
+			consortia: "Various schools, various consortia",
+			app: "Customized; Beacon; OIB",
 			paper: "Yes",
 			online: "Yes",
 			num_summative: "--",
@@ -811,7 +811,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "collegeboard.png",
-			motto: ""
+			motto: "Opportunity for students to succeed."
 		} 
 	},
 	WA : {
@@ -837,7 +837,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "seattle.png",
-			motto: ""
+			motto: "Every student achieving, everyone accountable."
 		} ,
 		SPO : {
 			name: "Spokane Public schools",
