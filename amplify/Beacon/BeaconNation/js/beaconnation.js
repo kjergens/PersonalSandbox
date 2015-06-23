@@ -222,7 +222,7 @@ function loadAllCustomers() {
 	document.getElementById("details_header").innerHTML = count + " customers total";
 	document.getElementById("details_container").innerHTML = details;	
 
-	//scrollToMainArea();
+	//scrollToTop();
 }
 
 
@@ -242,6 +242,7 @@ function loadBeaconCustomers() {
 				count ++;
 			}		
 	}
+	document.getElementById("beacon_btn").className += " selected";
 	document.getElementById("details_header").innerHTML =  count + " Beacon customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -264,6 +265,7 @@ function loadASCustomers() {
 				count ++;
 			}		
 	}
+	document.getElementById("as_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " Assessment Studio only customers" ;
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -308,6 +310,7 @@ function loadCustomizedCustomers() {
 				count ++;
 			}		
 	}
+	document.getElementById("custom_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " customized customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -417,14 +420,16 @@ function getStateDetails(state) {
 function getDetails(state, dist) {
 
 	highlightState(state);
+	highlightButtons(state, dist);
 	document.getElementById("details_header").innerHTML = CUSTOMERS[state][dist]['name'] + " - " + CUSTOMERS[state][dist]['num_stu'] + " students"  ;	
 	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
 	hideDir(); 
 
   //scrollToMainArea();
 
-}
 
+
+}
 
 /**********************************
 
@@ -473,6 +478,13 @@ function getCustomerDetails(state, dist) {
 *
 *******************************************************************/
 
+function scrollToTop() {
+	//$('html, body').animate({
+  //      scrollTop: $("#main_area").offset().top
+  //  }, 4000);
+	$('html,body').animate({scrollTop: 1}, 100);
+}
+
 function scrollToMainArea() {
 	//$('html, body').animate({
   //      scrollTop: $("#main_area").offset().top
@@ -491,10 +503,46 @@ function highlightState(state) {
   $('#map').usmap('trigger', state, 'mouseover');
 }
 
+// highlight buttons
+function highlightButtons(state, dist) {
+
+	// product buttons
+  if (CUSTOMERS[state][dist]['app'] === 'Beacon') {
+  	document.getElementById("beacon_btn").className += " selected";
+  }
+  else if (CUSTOMERS[state][dist]['app'] === 'Assessment Studio only') {
+  	document.getElementById("as_btn").className += " selected";
+  }
+  else {
+  	document.getElementById("custom_btn").className += " selected";
+  }
+
+  // consortia buttons
+  if (CUSTOMERS[state][dist]['consortia'] === 'Smarter Balanced') {
+  	document.getElementById("sbac_btn").className += " selected";
+  }
+  else if (CUSTOMERS[state][dist]['consortia'] === 'PARCC') {
+  	document.getElementById("parcc_btn").className += " selected";
+  }
+  else {
+  	document.getElementById("nonconsortia_btn").className += " selected";
+  }
+}
+
+
+/// Undo existing highlights
 function clearHighlights() {
-		// Undo existing highlights
+		// map
  		for (var s in CUSTOMERS) {
    		 $('#map').usmap('trigger', s, 'mouseout');
+
+   	// buttons
+   	document.getElementById("beacon_btn").className = "btn filter-btn product-btn";
+   	document.getElementById("as_btn").className = "btn filter-btn product-btn";
+   	document.getElementById("custom_btn").className = "btn filter-btn product-btn";
+   	document.getElementById("sbac_btn").className = "btn filter-btn consortia-btn";
+   	document.getElementById("parcc_btn").className = "btn filter-btn consortia-btn";
+   	document.getElementById("nonconsortia_btn").className = "btn filter-btn consortia-btn";
   }
 }
 

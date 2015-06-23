@@ -125,25 +125,32 @@
  * =Map
 */ 
 #map_container {
+	width: 450px;
 	float: left;
 	text-align: center;
 }
 
 #map {
-	margin: 18px 21px 0px 48px;
+	zmargin: 20px 20px 0px 50px;
+	zmargin:0px auto;
+	margin-top: 20px;
+	margin-left: 60px;
 	width: 359px; 
 	height:229px;
 }
 
 #products_container {
+	width: 320px;
 	float: left;
 	text-align: center;
 	height: 280px;
 	border-left: 1px solid #e9e9e9;
 	border-right: 1px solid #e9e9e9;
+	zpadding: 100px auto 0px;
 }
 
 #consortia_container {
+	width: 254px;
 	float: left;
 	text-align: center;
 }
@@ -155,12 +162,12 @@
 }
 
 .button_group {
-	text-align: center;
-	margin: 40px 51px;
+	margin-top: 40px;
 }
 
 .ui-toolkit .btn {
 	text-align: left;
+	padding: 6px 12px;
 }
 
 .filter-btn {
@@ -187,10 +194,9 @@
 }
 
 
-
-
 .selected {
-	background-color: #bababa;
+	background-color: #bababa;  #f37321; #fed5bc; #fff; #bababa;
+	zcolor: #fff;
 }
 
 .unselected {
