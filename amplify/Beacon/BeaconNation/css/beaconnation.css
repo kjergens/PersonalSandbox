@@ -148,17 +148,10 @@
 	margin: 40px 51px;
 }
 
-.product-btn {
-	background-color: #e9e9e9;
-	margin: 2px; 
-	width: 225px;
-	text-align: left;
-}
 
-.consortia-btn {
+.filter-btn {
 	background-color: #e9e9e9;
-	margin: 2px; 
-	width: 157px;
+	margin: 2px;
 }
 
 .filter-btn img {
@@ -170,6 +163,16 @@
 	cursor: pointer;
 	color: #fff;
 }
+
+.product-btn { 
+	width: 225px;
+	text-align: left;
+}
+
+.consortia-btn {
+	width: 157px;
+}
+
 
 .selected {
 	background-color: #bababa;
