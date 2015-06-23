@@ -501,7 +501,7 @@ var CUSTOMERS = {
 			num_schools: "",
 			num_stu: "20,000",
 			num_interims: "--",
-			url: "",
+			url: "www.doe.k12.de.us/site/default.aspx?PageID=1",
 			consortia: "Common Core",
 			app: "Beacon",
 			paper: "",
@@ -515,7 +515,7 @@ var CUSTOMERS = {
 			testing_win4: "",
 			testing_win5: "",
 			logo: "deled.png",
-			motto: "Nurture. Inspire. Support."
+			motto: "Education in the First State."
 		} 
 	},
 	GA : {
