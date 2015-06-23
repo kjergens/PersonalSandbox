@@ -111,8 +111,8 @@ function drawMap() {
 	var inactiveFill = '#e9e9e9';
 	var strokeColor =  '#984513'; //#c25c1a'; //#1b356c'; //#0645AD';
 	var strokeWidth = 5;
-	var stateHoverStyles = '#f8f8f8';
-	var stateSpecificHoverFill = '#fed5bc';//#feab79'; //#f7ab79'; //'#b7e3ed';
+	var stateHoverStyles = '#e9e9e9'; //#f8f8f8';
+	var stateSpecificHoverFill =  '#fed5bc';//#feab79'; //#f7ab79'; //'#b7e3ed';
 	var stateSpecificLabelTextStyles = '#b15017';
 
 /*
@@ -209,6 +209,8 @@ function drawMap() {
 function loadAllCustomers() {
 
   clearHighlights();
+  hideDir();
+
 	document.getElementById("details_header").innerHTML = "";
 
 	var details = "";
@@ -235,7 +237,7 @@ function loadBeaconCustomers() {
 	var details = "";
 	var count = 0;
 	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'].includes('Beacon')) {
+			if (ALPHACUSTS[i]['app'] === 'Beacon') {
 				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
 			}		
@@ -257,7 +259,7 @@ function loadASCustomers() {
 	var details = "";
 	var count = 0;
 	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'].includes('Assessment Studio only')) {
+			if (ALPHACUSTS[i]['app'] ==='Assessment Studio only') {
 				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
 			}		
@@ -279,7 +281,7 @@ function loadOIBCustomers() {
 	var details = "";
 	var count = 0;
 	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'].includes('OIB')) {
+			if (ALPHACUSTS[i]['app'] != "Beacon" && ALPHACUSTS[i]['app'] != "Assessment Studio only") {
 				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
 			}		
@@ -301,7 +303,7 @@ function loadCustomizedCustomers() {
 	var details = "";
 	var count = 0;
 	for (var i in ALPHACUSTS) {
-			if (ALPHACUSTS[i]['app'].includes('Customized')) {
+			if (ALPHACUSTS[i]['app'] != "Beacon" && ALPHACUSTS[i]['app'] != "Assessment Studio only") {
 				details += getCustomerDetails(ALPHACUSTS[i]['state'], ALPHACUSTS[i]['dist']);
 				count ++;
 			}		
@@ -398,10 +400,12 @@ function getStateDetails(state) {
 			count++;
 		}
 
+		document.getElementById("details_header").innerHTML = count + " customers in " + state;
+		document.getElementById("details_container").innerHTML = details;	
+
 	}
 
-	document.getElementById("details_header").innerHTML = count + " customers in " + state;
-	document.getElementById("details_container").innerHTML = details;	
+	
 
 	//scrollToMainArea();
 }
