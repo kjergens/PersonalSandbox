@@ -1,5 +1,5 @@
 .ui-toolkit body {
-	background-color: #f1f1f1; #f8f8f8; #838B8B; #E1E3E4;
+	background-color: #fff; #f1f1f1; #f8f8f8; #838B8B; #E1E3E4;
 	width: 1026px;
 	margin: 0px auto;
 	border-left: 1px solid #ddd;
@@ -90,7 +90,7 @@
 
 #filter_container {
 	height: 280px;
-	margin-top: -34px;
+	margin-top: -37px;
 	background-color: #fff;
 	padding: 0px 0px 10px;
 
@@ -127,6 +127,7 @@
 #products_container {
 	float: left;
 	text-align: center;
+	height: 280px;
 	border-left: 1px solid #e9e9e9;
 	border-right: 1px solid #e9e9e9;
 }
