@@ -333,6 +333,7 @@ function loadSBACCustomers() {
 				count ++;
 			}		
 	}
+	document.getElementById("sbac_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " Smarter Balanced customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -355,6 +356,7 @@ function loadPARCCCustomers() {
 				count ++;
 			}		
 	}
+	document.getElementById("parcc_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " PARCC customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -378,6 +380,7 @@ function loadNonConsortiaCustomers() {
 				count ++;
 			}		
 	}
+	document.getElementById("nonconsortia_btn").className += " selected";
 	document.getElementById("details_header").innerHTML =  count + " non-consortia customers";
 	document.getElementById("details_container").innerHTML = details;	
 
