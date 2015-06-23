@@ -162,7 +162,7 @@
 }
 
 .button_group {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .ui-toolkit .btn {
@@ -176,26 +176,26 @@
 }
 
 .filter-btn img {
-	margin: 2px 6px 2px 2px;
+	margin: 2px 8px 2px 2px;
 }
 
 .filter-btn:hover {	
-	background-color: #bababa;
+	background-color: #ddd;
 	cursor: pointer;
 	color: #fff;
 }
 
 .product-btn { 
-	width: 225px;
+	width: 240px;
 }
 
 .consortia-btn {
-	width: 157px;
+	width: 180px;
 }
 
 
 .selected {
-	background-color: #bababa;  #f37321; #fed5bc; #fff; #bababa;
+	background-color: #ddd;  #f37321; #fed5bc; #fff; #bababa;
 	zcolor: #fff;
 }
 
