@@ -496,7 +496,7 @@ var CUSTOMERS = {
 		DELED : {
 			name: "Delaware Department of Education",
 			dist: "DELED",
-			county: "Every",
+			county: "Kent",
 			state: 'DE',
 			num_schools: "",
 			num_stu: "20,000",
