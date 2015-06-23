@@ -18,13 +18,13 @@
 				<div class="menu_icon" onclick="toggleDir()">
 					<img src="img/menu-icon.png" height="20px">
 				</div>
-				<div id="dir" class="hide" zonmouseout="hideDir()"></div>
+				
 		</span>
 		</div>
 
 <div class="clearfix"></div>
  		<div id="filter_container">
-
+<span id="dir" class="show"></span>
 			<div id="map_container">
 
 					<div class="label_container">
@@ -34,21 +34,7 @@
 
 		</div> <!-- end of man -->
 
-		<div id="products_container">
 
-					<div class="label_container">
-						<label class="filter_title">Explore by Beacon Flavor</label>
-				</div>
-					
-
-			<div class="button_group">
-					<div id="beacon_btn" class="btn filter-btn product-btn" onclick="loadBeaconCustomers()"><img src="img/beacon-logo.png" zwidth="80px" zheight="35px">Full Beacon</div><br>
-					<div id="as_btn" class="btn filter-btn product-btn" onclick="loadASCustomers()"><img src="img/as_logo.png" zwidth="65px" zheight="35px"><span>Assessment Studio</span></div><br>
-					<div id="custom_btn" class="btn filter-btn product-btn" onclick="loadCustomizedCustomers()"><img src="img/customized-logo.png" zwidth="65px" zheight="35px">Customized</div>
-				</div>
-				<!--<div class="btn filter-btn" onclick="loadCustomizedCustomers()"><img src="img/oib.png"><br>Customized</div>-->
-
-			</div> <!-- end of products -->
 
 			
 
@@ -67,6 +53,21 @@
 
 			</div> <!-- end of consortia -->
 
+		<div id="products_container">
+
+					<div class="label_container">
+						<label class="filter_title">Explore by Beacon Flavor</label>
+				</div>
+					
+
+			<div class="button_group">
+					<div id="beacon_btn" class="btn filter-btn product-btn" onclick="loadBeaconCustomers()"><img src="img/beacon-logo.png" zwidth="80px" zheight="35px">Full Beacon</div><br>
+					<div id="as_btn" class="btn filter-btn product-btn" onclick="loadASCustomers()"><img src="img/as_logo.png" zwidth="65px" zheight="35px"><span>Assessment Studio</span></div><br>
+					<div id="custom_btn" class="btn filter-btn product-btn" onclick="loadCustomizedCustomers()"><img src="img/customized-logo.png" zwidth="65px" zheight="35px">Customized</div>
+				</div>
+				<!--<div class="btn filter-btn" onclick="loadCustomizedCustomers()"><img src="img/oib.png"><br>Customized</div>-->
+
+			</div> <!-- end of products -->
 			
 
 		</div> <!-- /filter_container -->
