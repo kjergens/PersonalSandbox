@@ -11,70 +11,94 @@
 </head>
 <body>
 
-<div id="header_container">
-		<div id="header" onclick="hideDir()"><h3>Beacon Customer Directory</h3></div>
-				
-		<span id="menu_container">
-				<div class="menu_icon" onclick="toggleDir()">
-					<img src="img/menu-icon.png" height="20px">
+		<div id="header_container">
+
+				<div id="header" onclick="hideDir()">
+					<h3>Beacon Customer Directory</h3>
 				</div>
-				
-		</span>
+						
+				<span id="menu_container">
+						<div class="menu">
+							<div id="menu_icon" onclick="toggleDir()">
+								<img src="img/menu-icon.png" height="20px">
+								Customers A-Z
+							</div>
+							<div id="dir"></div>
+						</div>
+				</span>
 		</div>
 
-<div class="clearfix"></div>
+		<div class="clearfix"></div>
+
  		<div id="filter_container">
-<span id="dir" class="show"></span>
+
+			
 			<div id="map_container">
 
 					<div class="label_container">
 						<label class="filter_title">Explore by State</label>
 					</div>
+
 					<div id="map" onclick="loadAllCustomers()"></div>
 
-		</div> <!-- end of man -->
+			</div> <!-- end of map container -->
 
-
-
-			
-
-			<div id="consortia_container">
-
-				<div class="label_container">
-					<label class="filter_title">Explore by Consortia</label>
-				</div>
-				
-				<div class="button_group">
-					<div id="sbac_btn" class="btn filter-btn consortia-btn" onclick="loadSBACCustomers()"><img src="img/sbac_logo.png">Smarter Balanced</div><br>
-					<div id="parcc_btn" lass="btn filter-btn consortia-btn" onclick="loadPARCCCustomers()"><img src="img/parcc-logo.png">PARCC</div><br>
-					<div id="nonconsortia_btn" class="btn filter-btn consortia-btn" onclick="loadNonConsortiaCustomers()"><img src="img/noconsortia-logo.png">No consortia</div><br><br><br>
-					<!--<span class="btn filter-btn btn-quaternary" onclick="loadAllCustomers()">Reset</span>-->
-				</div>
-
-			</div> <!-- end of consortia -->
-
-		<div id="products_container">
+			<div id="products_container">
 
 					<div class="label_container">
 						<label class="filter_title">Explore by Beacon Flavor</label>
-				</div>
+					</div>
 					
 
-			<div class="button_group">
-					<div id="beacon_btn" class="btn filter-btn product-btn" onclick="loadBeaconCustomers()"><img src="img/beacon-logo.png" zwidth="80px" zheight="35px">Full Beacon</div><br>
-					<div id="as_btn" class="btn filter-btn product-btn" onclick="loadASCustomers()"><img src="img/as_logo.png" zwidth="65px" zheight="35px"><span>Assessment Studio</span></div><br>
-					<div id="custom_btn" class="btn filter-btn product-btn" onclick="loadCustomizedCustomers()"><img src="img/customized-logo.png" zwidth="65px" zheight="35px">Customized</div>
-				</div>
-				<!--<div class="btn filter-btn" onclick="loadCustomizedCustomers()"><img src="img/oib.png"><br>Customized</div>-->
+					<div class="button_group">
 
-			</div> <!-- end of products -->
-			
+						<div id="beacon_btn" class="btn filter-btn product-btn" onclick="loadBeaconCustomers()">
+							<img src="img/beacon-logo.png">Full Beacon
+						</div>
+
+						<div id="as_btn" class="btn filter-btn product-btn" onclick="loadASCustomers()">
+							<img src="img/as_logo.png"><span>Assessment Studio</span>
+						</div>
+
+						<div id="custom_btn" class="btn filter-btn product-btn" onclick="loadCustomizedCustomers()">
+							<img src="img/customized-logo.png">Customized
+						</div>
+
+					</div>
+
+				</div> <!-- end of Beacon flavor -->
+
+				<div id="consortia_container">
+
+					<div class="label_container">
+						<label class="filter_title">Explore by Consortia</label>
+					</div>
+
+					<div class="button_group">
+
+						<div id="sbac_btn" class="btn filter-btn consortia-btn" onclick="loadSBACCustomers()">
+							<img src="img/sbac_logo.png">Smarter Balanced
+						</div>
+
+						<div id="parcc_btn" lass="btn filter-btn consortia-btn" onclick="loadPARCCCustomers()">
+							<img src="img/parcc-logo.png">PARCC
+						</div>
+
+						<div id="nonconsortia_btn" class="btn filter-btn consortia-btn" onclick="loadNonConsortiaCustomers()">
+							<img src="img/noconsortia-logo.png">No consortia
+						</div>
+
+					</div>
+
+				</div> <!-- end of consortia -->	
 
 		</div> <!-- /filter_container -->
 
 
 		<div id="main_area" class="clearfix" onclick="loadAllCustomers()">
+
 			<div id="details_header"></div>
+
 			<div id="content_container">
 
 				<div id="details_container"></div>

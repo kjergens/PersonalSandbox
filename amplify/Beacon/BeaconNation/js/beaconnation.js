@@ -424,14 +424,10 @@ function getDetails(state, dist) {
 
 	highlightState(state);
 	highlightButtons(state, dist);
-	document.getElementById("details_header").innerHTML = CUSTOMERS[state][dist]['name'] + " - " + CUSTOMERS[state][dist]['num_stu'] + " students"  ;	
-	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
 	hideDir(); 
 
-  //scrollToMainArea();
-
-
-
+	document.getElementById("details_header").innerHTML = CUSTOMERS[state][dist]['name'] + " - " + CUSTOMERS[state][dist]['num_stu'] + " students"  ;	
+	document.getElementById("details_container").innerHTML = getCustomerDetails(state, dist);
 }
 
 /**********************************
