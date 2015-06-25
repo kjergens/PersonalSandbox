@@ -242,7 +242,7 @@ function loadBeaconCustomers() {
 				count ++;
 			}		
 	}
-	document.getElementById("beacon_btn").className += " selected";
+	//document.getElementById("beacon_btn").className += " selected";
 	document.getElementById("details_header").innerHTML =  count + " Beacon customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -265,7 +265,7 @@ function loadASCustomers() {
 				count ++;
 			}		
 	}
-	document.getElementById("as_btn").className += " selected";
+	//document.getElementById("as_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " Assessment Studio only customers" ;
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -310,7 +310,7 @@ function loadCustomizedCustomers() {
 				count ++;
 			}		
 	}
-	document.getElementById("custom_btn").className += " selected";
+	//document.getElementById("custom_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " customized customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -333,7 +333,7 @@ function loadSBACCustomers() {
 				count ++;
 			}		
 	}
-	document.getElementById("sbac_btn").className += " selected";
+	//document.getElementById("sbac_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " Smarter Balanced customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -356,7 +356,7 @@ function loadPARCCCustomers() {
 				count ++;
 			}		
 	}
-	document.getElementById("parcc_btn").className += " selected";
+	//document.getElementById("parcc_btn").className += " selected";
 	document.getElementById("details_header").innerHTML = count + " PARCC customers";
 	document.getElementById("details_container").innerHTML = details;	
 
@@ -380,7 +380,7 @@ function loadNonConsortiaCustomers() {
 				count ++;
 			}		
 	}
-	document.getElementById("nonconsortia_btn").className += " selected";
+	//document.getElementById("nonconsortia_btn").className += " selected";
 	document.getElementById("details_header").innerHTML =  count + " non-consortia customers";
 	document.getElementById("details_container").innerHTML = details;	
 
