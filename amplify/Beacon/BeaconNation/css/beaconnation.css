@@ -47,24 +47,27 @@
 }
 
 .menu {
-	height: 51px;
-	width: 160px;
-	padding-top: 15px;
-	padding-left: 21px;
 	position: relative;
 	top: -53px;
 	float: right;
-	z-index: 6666;
+	height: 51px;
+	width: 160px;
 	font-size: 13px;
 	color: #fff;
 	margin-left: 3px;
+}
+
+#menu_icon {
+	padding-top: 15px;
+	padding-left: 21px;
+	padding-bottom: 16px;
 }
 
 #menu_icon img {
 	margin-right: 8px;
 }
 
-.menu:hover {
+#menu_icon:hover {
 	background-color: #44a8bd;
 	cursor: pointer;
 }
