@@ -70,7 +70,6 @@
 }
 
 
-
 #dir {
 	background-color: #fff; #f2f2f2; 
 	padding: 10px 45px 20px 25px;
@@ -85,7 +84,7 @@
 	opacity: 0.95;
 	display: inline-block;
 	position: relative;
-	right: 300px;
+	right: 290px;
 	z-index: 9999;
 }
 
@@ -133,8 +132,8 @@
 	width: 450px;
 	float: left;
 	text-align: center;
-	border-left: 1px solid #e9e9e9;
-	border-right: 1px solid #e9e9e9;
+	zborder-left: 1px solid #e9e9e9;
+	zborder-right: 1px solid #e9e9e9;
 }
 
 #map {
@@ -161,8 +160,8 @@
 	float: left;
 	height: 280px;
 	text-align: center;
-	border-left: 1px solid #e9e9e9;
-	border-right: 1px solid #e9e9e9;
+	zborder-left: 1px solid #e9e9e9;
+	zborder-right: 1px solid #e9e9e9;
 }
 
 @-moz-document url-prefix() {
@@ -248,6 +247,7 @@
 	color: #333;
 	border-radius: 2px;
 	border: 1px solid #ccc;
+	box-shadow: 0px 0px 15px .25px #bbb;
 }
 
 .cust_details img {
