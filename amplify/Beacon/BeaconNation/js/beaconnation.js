@@ -32,10 +32,10 @@ function loadDirectory() {
 	    	list += "<li>";
 	    	list += "<a href=\'#\'";
 	    	list += " onclick=\"getDetails(\'"; 
-	    	list += ALPHACUSTS[key]['state'] + "\', \'" + ALPHACUSTS[key]['dist'] + "\')\">"; 
+	    	list += ALPHACUSTS[key]['state'] + "\', \'" + ALPHACUSTS[key]['dist'] + "\')\"><h5>"; 
 	    	list += ALPHACUSTS[key]['name'];
 	    	list += ", " + ALPHACUSTS[key]['state'];
-	    	list += "</a></li>";
+	    	list += "</h5></a></li>";
 	}
   list += "</ul>";
 	document.getElementById("dir").innerHTML = list;
