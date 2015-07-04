@@ -1,0 +1,35 @@
+body {
+	background-color: black;
+}
+
+#instructions {
+	font-size: 14px;
+	color: #d3d3d3;
+	text-align: center;
+	margin-top: 8%;
+}
+
+#text_editor {
+	width: 50%;
+	height: 260px;
+	resize: none;
+	background-color: black;
+	zcolor: black;
+	font-size: 180px;
+	text-align: right;
+	overflow: none;
+	margin: 100px 0px 0px 0px;
+	border: 0px solid #333;
+	color: white;
+  text-shadow: 0px 0px 0px #000;
+  -webkit-text-fill-color: transparent;
+}
+
+#text_editor:focus {
+	outline: 0;
+}
+
+#saved_text {
+	margin-top: 100px;
+	color: #5a5a5a;
+}
