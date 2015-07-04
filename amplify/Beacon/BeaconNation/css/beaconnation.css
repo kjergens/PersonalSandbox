@@ -1,11 +1,7 @@
 .ui-toolkit body {
-	background-color: #fff; 
-	width: 1026px;
+	width: 1024px;
 	margin: 0px auto;
-	border-left: 1px solid #ddd;
-	border-right: 1px solid #ddd;
 	box-shadow: 0px 0px 20px 0.25px #ccc;
-	font-family: 'Arial', sans-serif;
 }
 
 .hide {
@@ -51,10 +47,11 @@
 	top: -53px;
 	float: right;
 	height: 51px;
-	width: 160px;
+	width: 170px;
 	font-size: 13px;
 	color: #fff;
 	margin-left: 3px;
+	background-color: #44a8bd;
 }
 
 #menu_icon {
@@ -68,7 +65,6 @@
 }
 
 #menu_icon:hover {
-	background-color: #44a8bd;
 	cursor: pointer;
 }
 
@@ -81,12 +77,8 @@
 	width: 430px;
 	border-radius: 1px;
 	box-shadow: 0px 0px 20px .25px #ccc;
-	font-weight: bold;
-	font-size: 13px;
-	opacity: 0.95;
-	display: inline-block;
 	position: relative;
-	right: 290px;
+	right: 250px;
 	z-index: 9999;
 }
 
@@ -114,16 +106,12 @@
 }
 
 .ui-toolkit label {
-	font-weight: bold;
-	font-size: 14px;
   padding: 5px 0px 0px;
-	ztext-align: center;
 	color: #737373;
 }
 
 .label_container {
 	background-color: #f6f6f6; 
-	zmargin: 0px 0px 20px;
 	border-bottom: 1px solid #eaeaea;
 }
 
@@ -131,22 +119,20 @@
  * =Map
 */ 
 #map_container {
-	width: 450px;
+	width: 414px;
 	float: left;
 	text-align: center;
 }
 
 #map {
-	zmargin: 20px 20px 0px 50px;
-	zmargin:0px auto;
 	margin-top: 20px;
-	margin-left: 60px;
-	width: 359px; 
+	margin-left: 50px;
+	width: 349px; 
 	height:229px;
 }
 
 #products_container {
-	width: 323px;
+	width: 340px;
 	float: left;
 	text-align: center;
 	height: 280px;
@@ -155,7 +141,7 @@
 }
 
 #consortia_container {
-	width: 251px;
+	width: 270px;
 	float: left;
 	height: 280px;
 	text-align: center;
@@ -191,17 +177,16 @@
 }
 
 .product-btn { 
-	width: 242px;
+	width: 262px;
 }
 
 .consortia-btn {
-	width: 180px;
+	width: 195px;
 }
 
 
 .selected {
 	background-color: #c6c6c6; 
-	zcolor: #fff;
 }
 
 /*
@@ -217,9 +202,10 @@
 #details_header {
 	font-size: 16px;
 	font-weight: bold;
-	padding: 20px 0px 0px 58px;
-	color: #3A3A38; 
-	zbackground-color: #3A3A38;
+	padding: 13px 0px 13px 40px;
+	zcolor: #3A3A38; 
+	color: #fff;
+	background-color: #3A3A38;
 	border-top: 1px solid #ccc;
 }
 
