@@ -65,9 +65,9 @@ body {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
   	#text_editor {
-			width: 50%;
+			width: 60%;
 			font-size: 90px;
-			margin: 0px 0px 0px 0px;
+			margin: -50px 0px 0px 0px;
 		}
 
 }
