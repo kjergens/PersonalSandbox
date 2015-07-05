@@ -1,0 +1,1 @@
+'}, 'Sun Jul 05 2015 12:27:51 GMT-0400 (EDT)' : { entry: 'Let's start writing entries in th e diary. Won't that be fun?'}, 'Sun Jul 05 2015 12:30:35 GMT-0400 (EDT)' : { entry: 'This is getting a little sloppy and there's probably a better way to do it. '}, 'Sun Jul 05 2015 12:46:09 GMT-0400 (EDT)' : { entry: 'Ut oh. Not working?This will still be with tthe last entry. ho ho ho
