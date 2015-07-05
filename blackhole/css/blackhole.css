@@ -9,23 +9,38 @@ body {
 	margin-top: 8%;
 }
 
+#peek-btn:hover, #peek-btn:active {
+	background-color: #5a5a5a;
+	color: white;
+}
+
+#peek-btn {
+	float: right;
+}
+
+.active-btn {
+	background-color: #5a5a5a;
+	color: white;
+}
+
 #text_editor {
-	width: 50%;
-	height: 260px;
+	width: 60%;
+	height: 300px;
 	resize: none;
 	background-color: black;
-	font-size: 180px;
+	font-size: 150px;
 	font-weight: lighter;
 	text-align: right;
 	overflow: none;
-	margin: 100px 0px 0px 0px;
+	margin: 50px 0px 0px 0px;
 	border: 0px solid #333;
-	color: white;
-  ztext-shadow: 0px 0px 0px #000;
-  z-webkit-text-fill-color: transparent;
+	padding: 20px;
+	color: #000;
+  text-shadow: 0px 0px 0px #fff;
+  -webkit-text-fill-color: transparent;
 }
 
-#text_editor:focus {
+#text_editor:focus, #peek-btn:focus {
 	outline: 0;
 }
 
@@ -33,4 +48,11 @@ body {
 	margin-top: 100px;
 	color: #5a5a5a;
 	text-align: center;
+}
+
+#floating_words {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
 }
