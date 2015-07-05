@@ -71,8 +71,7 @@ body {
 		}
 
 		#floating_words {
-			position: relative;
-			z-index: -1;
+			top: 300px;
 		}
 
 }
