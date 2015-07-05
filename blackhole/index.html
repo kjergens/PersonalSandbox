@@ -17,12 +17,12 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<p id="instructions">Put your thoughts in the black hole.</p>
+				<p id="instructions">Add your thoughts to the black hole.</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<input type="textfield" id="text_editor" onkeyup="twinkle(event)"></input>
+				<input type="textfield" id="text_editor" onkeyup="savedata(event)"></input>
 			</div>
 		</div>
 		<div class="row">
@@ -34,35 +34,45 @@
 	</div>
 	
 		<!-- Latest compiled and minified JavaScript -->
+		<script src="jquery-2.1.4.min.js"></script>
 	<!--<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>-->
 
-	<script>
-	var text_entry = "";
-	var peek = false;
+<script>
+var peek = true;
 
-	window.onload = function () {
-		document.getElementById('text_editor').focus();
-	}
+window.onload = function () {
+	document.getElementById('text_editor').focus();
+}
 
-	var twinkle = function (event) {
+var savedata = function (event) {
 
-		if (peek) {
+	txt = document.getElementById('text_editor');
 
-			txt = document.getElementById('text_editor');
+	if (event.keyCode === 32  ||   // space
+		  event.keyCode === 190 ||   // period
+		  event.keyCode === 191 ||   // question
+		  event.keyCode === 49  ||   // exclamation
+		  event.keyCode === 13) {    // newline
+		  
+		  
+		  $.ajax({
+			  type: 'POST',
+			  url: 'savedata.php',
+			  data: txt.value,
+			  success: function () {console.log('saved ' + txt.value);},
+			  dataType: 'text' 
+			});
 
-			if (//event.keyCode === 32 ||   // space
-				  event.keyCode === 190 ||  // period
-				  event.keyCode === 191 ||  // question
-				  event.keyCode === 49 ||   // exclamation
-				  event.keyCode === 13) {   // newline
-				  text_entry += txt.value;
-				  txt.value = "";
-					document.getElementById('saved_text').innerHTML = text_entry;
-				}
+		  if (peek) {
+				document.getElementById('saved_text').innerHTML = txt.value + "<br>" + document.getElementById('saved_text').innerHTML;
+			}
+
+			txt.value = "";
 
 		}
 
 	}
-	</script>
+
+</script>
 </body>
 </html>

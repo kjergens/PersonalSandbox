@@ -4,7 +4,7 @@ body {
 
 #instructions {
 	font-size: 14px;
-	color: #d3d3d3;
+	color: #77787a;
 	text-align: center;
 	margin-top: 8%;
 }
@@ -14,15 +14,15 @@ body {
 	height: 260px;
 	resize: none;
 	background-color: black;
-	zcolor: black;
 	font-size: 180px;
+	font-weight: lighter;
 	text-align: right;
 	overflow: none;
 	margin: 100px 0px 0px 0px;
 	border: 0px solid #333;
 	color: white;
-  text-shadow: 0px 0px 0px #000;
-  -webkit-text-fill-color: transparent;
+  ztext-shadow: 0px 0px 0px #000;
+  z-webkit-text-fill-color: transparent;
 }
 
 #text_editor:focus {
@@ -32,4 +32,5 @@ body {
 #saved_text {
 	margin-top: 100px;
 	color: #5a5a5a;
+	text-align: center;
 }
