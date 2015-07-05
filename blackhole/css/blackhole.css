@@ -67,7 +67,8 @@ body {
 			width: 80%;
 			font-size: 70px;
 			height: 90px;
-			margin: -50px 8px 0px 0px;
+			margin: 0px;
+			text-align: center;
 		}
 
 }
