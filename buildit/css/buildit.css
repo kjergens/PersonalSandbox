@@ -1,0 +1,148 @@
+body {
+	min-height: 705px;
+}
+
+.hidden {
+	display: none;
+}
+
+#header_container {
+	position: fixed;
+	width: 100%;
+	z-index: 222;
+	background-color: #4cbbd3;
+}
+
+#top_header {
+	color: white;
+}
+
+#uname, #logout-btn {
+	padding: 15px 0px 10px;
+}
+
+#logout-btn a{
+	color: white;
+}
+
+#header {
+	font-size: 24px;
+	padding: 10px 20px 10px 40px;
+}
+
+#subtitle {
+	background-color: #ccc;
+	font-size: 12px;
+	font-weight: bold;
+	color: #5a5a5a;
+	padding: 4px 20px 4px 40px;
+}
+
+#sum_data {
+	padding-left: 40px;
+	padding-top: 3px;
+	background-color: #f2f2f2;
+}
+
+#mainarea_container {
+	padding-top: 80px;
+}
+
+#mainarea {
+	margin: 20px 0px;
+}
+
+.option_title {
+	font-size: 24px;
+}
+
+.option_picture {
+	margin: 20px 0px;
+}
+
+.option_desc {
+}
+
+.button_row {
+	margin: 5px 10px;
+}
+
+
+.option_btn{
+	border-radius: 1px;
+	background-color: #f8f8f8;
+	margin: 3px;
+}
+
+.option_btn:hover {
+	background-color: #ddd;
+}
+
+.selected_btn {
+	background-color: #f37321;
+	color: white;
+}
+
+.feature {
+	margin-top: 25px;
+	margin-bottom: 100px;
+}
+
+#sidenav {
+	background-color: #f8f8f8;
+	min-height: 540px;
+	padding: 30px;
+	position: fixed;
+	right: 0px;
+	top: 105px;
+}
+
+#sidenav ul {
+	line-height: 2.0;
+	font-size: 13px;
+}
+
+#sidenav ul, .option_desc ul {
+	list-style: none;
+}
+
+.option_desc ul {
+	margin-left: -22px;
+}
+
+#sidenav ul li a, #sidenav a {
+	text-decoration: none;
+	color: #666;
+}
+
+#sidenav ul li a:hover {
+	color: #333;
+}
+
+#cost_summary {
+	background-color: #5a5a5a;
+}
+
+.suboptions {
+	color: #333;
+}
+
+.selected {
+	font-style: bold;
+	color: #333;
+}
+
+.selected:before {
+	content: "| ";
+}
+
+#sidenav ul .sub_options {
+	font-size: 11px;
+}
+
+#footer {
+	background-color: #999;
+	color: #e9e9e9;
+	padding: 20px 50px;
+
+}
