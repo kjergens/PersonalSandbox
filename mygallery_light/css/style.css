@@ -6,9 +6,10 @@ html
   padding: 0;}
 
 body
-{ font: normal 100% Arial, Helvetica, sans-serif;
+{ font: normal 100% Helvetica, sans-serif;
+  zbackground: url(../images/bk_diamond.png) repeat; 
   background: #535353 url(../images/pattern.png) repeat;
-  zbackground-color: #e2e2e2;
+  zbackground-color: #2e2633; #e0e4cc;
   color: #555;}
 
 p
@@ -21,41 +22,41 @@ img
 { border: 0;}
 
 h1, h2, h3, h4, h5, h6 
-{ font: normal 175% Arial, Helvetica, sans-serif;
-  color: #5a5a5a;
-  text-shadow: 1px 1px #eee;
+{ font: normal 175% Helvetica, sans-serif;
+  color: #555152;
+  ztext-shadow: 1px 1px #eee;
   letter-spacing: -1px;
   margin: 0 0 10px 0;
   padding: 5px 0 0 0;}
 
 h2
-{ font: normal 165% Arial, Helvetica, sans-serif;
-  color: #5a5a5a;
-  text-shadow: 1px 1px #eee;}
+{ font: normal 165% Helvetica, sans-serif;
+  color: #555152;
+  ztext-shadow: 1px 1px #eee;}
 
 h3
-{ font: normal 100% Arial, Helvetica, sans-serif;}
+{ font: normal 100% Helvetica, sans-serif;}
 
 h3 a, h3 a:hover
-{ color: #96B7B7;
+{ color: #efffcd;
 }
 
 h4, h5, h6
 { margin: 0;
   padding: 0 0 5px 0;
-  font: normal 150% Arial, Helvetica, sans-serif;
+  font: normal 150%  Helvetica, sans-serif;
   line-height: 1.5em;}
 
 h5, h6
-{ font: normal 95% Arial, Helvetica, sans-serif;
-  color: #888;
+{ font: normal 95% Helvetica, sans-serif;
+  color: #555152;
   padding-bottom: 15px;}
 
 a, a:hover
 { background: transparent;
   outline: none;
   text-decoration: none;
-  color: #FFF;
+  color: #efffcd;
 }
 
 a:hover
@@ -63,7 +64,7 @@ a:hover
 
 ul
 { margin: 2px 0 22px 30px;
-  line-height: 1.7em;
+  line-height: 1.75em;
   font-style: normal;
   font-size: 100%;}
 
@@ -84,22 +85,23 @@ ol li
   background: transparent;}
 
 #welcome
-{ wzidth: 325px;
+{ zwidth: 495px;
   float: left;
   height: 30px;
-  padding: 5px 0 20px 40px;
+  padding: 0px 0 20px 40px;
   margin: 0 auto;
+  zmargin-top: -40px;
   background: transparent;} 
   
 #welcome h1
-{ font: normal 200% Arial, Helvetica, sans-serif;
-  color: #b3b242; #FFF;
+{ font: normal 250% Helvetica, sans-serif;
+  color: #99173c; #b3b242; #FFF;
   letter-spacing: -3px;
-  text-shadow: 1px 1px #eee;}
-  
-span
-{ color: #555; #098EFF;
-  text-shadow: 1px 1px #eee;}
+  text-shadow: 1px 1px #dce9be;}
+
+span  
+{ color: #555152; #fa6900; #098EFF;
+  text-shadow: 1px 1px #666;}
 
  
 #menubar
@@ -124,27 +126,29 @@ ul#menu li
   background: transparent;}
 
 ul#menu li a
-{ font: normal 120% Arial, Helvetica, sans-serif;
+{ font: normal 120% Helvetica, sans-serif;
   float: left;
   letter-spacing: -1px;
   height: 30px;
   padding: 15px 20px 10px 20px;
   text-align: center;
-  color: #222;
-  text-shadow: 1px 1px #eee;
+  color: #2e2633;
+  ztext-shadow: 1px 1px #333;
   text-decoration: none;} 
 
 ul#menu li a:hover
-{ color: #666;
-  ztext-decoration: underline;}
+{ color: #555152;
+  text-decoration: underline;
+  ztext-shadow: 1px 1px #2e2633;}
   
 ul#menu li.current a
-{ color: #777;
-  ztext-decoration: underline;}
+{ color: #555152;
+  text-decoration: underline;
+  ztext-shadow: 1px 1px #000;}
 
 #site_content
 { width: 1000px;
-  overflow: hidden;
+  overflow: scroll;
   margin: 0 auto;
   padding: 20px 0 0 0;
   background: transparent url(../images/transparent.png) repeat;
@@ -162,7 +166,7 @@ ul#menu li.current a
   margin: 0 20px 0 20px;}
   
 #text_content h3
- { color: #5a5a5a;
+ { color: #555152;
   text-shadow: 1px 1px #eee;}
   
 .static_image
@@ -181,14 +185,14 @@ ul#menu li.current a
 
 #footer a, #footer a:hover
 { text-decoration: none;
-  color: #5a5a5a;}
+  color: #555152;}
 
 #footer a:hover
 { text-decoration: underline;
   color: #888;}
 
 .footer_container_box
-{ font: normal 90% Arial, Helvetica, sans-serif;
+{ font: normal 90% Helvetica, sans-serif;
   width: 325px;
   padding: 5px;
   text-align: center;
@@ -197,7 +201,7 @@ ul#menu li.current a
   background: transparent;}
 
 .footer_container_boxl
-{ font: normal 90% Arial, Helvetica, sans-serif;
+{ font: normal 90% Helvetica, sans-serif;
   width: 325px;
   padding: 5px;
   text-align: center;
@@ -233,7 +237,7 @@ ul#menu li.current a
 { float: left; 
   width: 120px;
   text-shadow: none;
-  c666r: #f1f1f1;}
+  color: #f1f1f1;}
   
 .form_settings input, .form_settings textarea
 { padding: 2px; 
