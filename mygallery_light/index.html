@@ -28,7 +28,7 @@
       });
       // initialize advanced galleriffic gallery
       var gallery = $('#thumbs').galleriffic({
-        delay:                     3500,
+        delay:                     3000,
         numThumbs:                 10,
         preloadAhead:              10,
         enableTopPager:            false,
@@ -37,8 +37,8 @@
         controlsContainerSel:      '#controls',
         captionContainerSel:       '#caption',
         loadingContainerSel:       '#loading',
-        renderSSControls:          true,
-        renderNavControls:         true,
+        renderSSControls:          false,
+        renderNavControls:         false,
         playLinkText:              'Play Slideshow',
         pauseLinkText:             'Pause Slideshow',
         prevLinkText:              '&lsaquo; Previous',
@@ -123,21 +123,9 @@
               </div>
             </li>
             <li>
-              <a class="thumb" href="images/ta-1a.png"><img src="images/1_thumb.jpg" alt="one" /></a>
-              <div class="caption">
-                <div class="image-title portfolio_two">Task analysis of a teacher planning instruction.</div>
-              </div>
-            </li>
-            <li>
               <a class="thumb" href="images/personas.svg"><img src="images/1_thumb.jpg" alt="three" /></a>
               <div class="caption">
                 <div class="image-title portfolio_two"></div>
-              </div>
-            </li>
-            <li>
-              <a class="thumb" href="images/pers-1a.png"><img src="images/1_thumb.jpg" alt="two" /></a>
-              <div class="caption">
-                <div class="image-title portfolio_two">A composite user is easy to get to know.</div>
               </div>
             </li>
             <li>
@@ -146,12 +134,7 @@
                 <div class="image-title portfolio_two"></div>
               </div>
             </li>
-            <li>
-              <a class="thumb" href="images/ia-1.png"><img src="images/1_thumb.jpg" alt="two" /></a>
-              <div class="caption">
-                <div class="image-title portfolio_two">Before & after information architecture</div>
-              </div>
-            </li>
+
             <li>
               <a class="thumb" href="images/wf.svg"><img src="images/1_thumb.jpg" alt="four" /></a>
               <div class="caption">
@@ -165,21 +148,9 @@
               </div>
             </li>
             <li>
-              <a class="thumb" href="images/nav-1a.png"><img src="images/1_thumb.jpg" alt="two" /></a>
-              <div class="caption">
-                <div class="image-title portfolio_two">There are various ways to navigate this test.</div>
-              </div>
-            </li>
-            <li>
               <a class="thumb" href="images/viz.svg"><img src="images/1_thumb.jpg" alt="three" /></a>
               <div class="caption">
                 <div class="image-title portfolio_two"></div>
-              </div>
-            </li>
-            <li>
-              <a class="thumb" href="images/viz-1a.png"><img src="images/1_thumb.jpg" alt="two" /></a>
-              <div class="caption">
-                <div class="image-title portfolio_two">This feature- and data-rich site is easy to digest.</div>
               </div>
             </li>
             <li>
@@ -196,8 +167,8 @@
         <div class="slideshow-container">
           <div id="loading" class="loader"></div>
           <div id="slideshow" class="slideshow"></div>
-          <div id="controls" class="controls portfolio_two"></div>
-          <div id="caption" class="caption-container"></div>
+          <div id="controls" zclass="controls portfolio_two"></div>
+          <div id="caption" zclass="caption-container"></div>
         </div>
       </div>
       <!-- end gallery HTML containers -->   
@@ -212,7 +183,7 @@
 	  </div><!--close footer_container_box1-->      
 	  <br style="clear:both"/>
 	  <br />
-    <a href="http://fotogrph.com/">Images</a> | website template by <a href="http://www.araynordesign.co.uk">ARaynorDesign</a>
+ 
     </div><!--close footer_container--> 
   </div><!--close footer-->  
   

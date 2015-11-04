@@ -8,9 +8,9 @@ html
 body
 { font: normal 100% Helvetica, sans-serif;
   zbackground: url(../images/bk_diamond.png) repeat; 
-  background: #535353 url(../images/pattern.png) repeat;
+  zbackground: #535353 url(../images/pattern.png) repeat;
   zbackground-color: #2e2633; #e0e4cc;
-  color: #555;}
+  color: #333;}
 
 p
 { padding: 0 0 15px 0;
@@ -52,13 +52,6 @@ h5, h6
   color: #555152;
   padding-bottom: 15px;}
 
-embed {
-  height: 500px;
-}
-
-#plugin {
-  height: 500px;
-}
 
 a, a:hover
 { background: transparent;
@@ -87,10 +80,11 @@ ol li
   margin-right: auto;}
 
 #header
-{ width: 1000px;
+{ zwidth: 1000px;
   height: 55px;
   padding: 50px 0 0 0;
-  background: transparent;}
+  background: #edefef;
+  zbackground: #535353 url(../images/pattern.png) repeat;}
 
 #welcome
 { zwidth: 495px;
@@ -103,13 +97,13 @@ ol li
   
 #welcome h1
 { font: normal 250% Helvetica, sans-serif;
-  color: #99173c; #b3b242; #FFF;
+  color: #4ccbd3; #b3b242; #FFF;
   letter-spacing: -3px;
   ztext-shadow: 1px 1px #dce9be;}
 
 span  
 { color: #555152; #fa6900; #098EFF;
-  text-shadow: 1px 1px #666;}
+  ztext-shadow: 1px 1px #666;}
 
  
 #menubar
@@ -176,7 +170,7 @@ ul#menu li.current a
   
 #text_content h3
  { color: #555152;
-  text-shadow: 1px 1px #eee;}
+  ztext-shadow: 1px 1px #eee;}
   
 .static_image
 { float: left;
@@ -275,3 +269,6 @@ ul#menu li.current a
   cursor: pointer; 
   background: #5082BD; 
   color: #FFF;} 
+
+
+  
