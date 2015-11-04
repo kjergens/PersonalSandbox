@@ -157,7 +157,8 @@ ul#menu li.current a
   -webkit-border: 15px 15px 15px 15px;} 
   
 #image_container  
-{ width: 1000px;}
+{ width: 1000px;
+min-height: 500px;}
 
 #text_content
 { float: right;
