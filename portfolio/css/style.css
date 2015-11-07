@@ -81,15 +81,14 @@ ol li
   margin-right: auto;}
 
 #header_container {
-background: #edefef;
+  background: #edefef;
 }
 
 #header
 { width: 1000px;
   height: 55px;
   padding: 50px 0 0 0;
-  background: #edefef;
-  zbackground: #535353 url(../images/pattern.png) repeat;}
+}
 
 #welcome
 { zwidth: 495px;
