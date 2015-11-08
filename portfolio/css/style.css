@@ -196,6 +196,12 @@ ul#menu li.current a
 .static_image
 { float: left;
 }  
+
+figcaption {
+  zfont-style: italic;
+  font-size: 13px;
+}
+
   
 #footer
 { font: normal 120% Arial, Helvetica, sans-serif;
