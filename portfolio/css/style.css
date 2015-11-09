@@ -1,6 +1,6 @@
 html
 { height: 100%;
-min-width: 1024px;}
+min-width: 1000px;}
 
 *
 { margin: 0;
@@ -83,6 +83,7 @@ ol li
 
 #header_container {
   background: #edefef;
+  border-bottom: 1px solid #dfdfdf;
 }
 
 #subheader_container {
@@ -96,10 +97,11 @@ ol li
 }
 
 #subheader {
-  padding: 10px 0 10px 55px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   margin-bottom: 20px;
   color: #efefef;
-  width: 1020px;
+  width: 960px;
 }
 
 #subheader a {
@@ -108,24 +110,31 @@ ol li
 }
 
 #welcome
-{ zwidth: 495px;
+{ width: 525px;
   float: left;
   height: 30px;
-  padding: 0px 0 20px 40px;
-  margin: 0 auto;
-  zmargin-top: -40px;
-  background: transparent;} 
+  zpadding: 0px 0 0px 40px;
+  zmargin: 0 auto;
+} 
+
+#welcome, #subheader, #site_content, #footer {
+  padding-left: 40px;
+}
   
 #welcome h1
 { font: normal 250% Helvetica, sans-serif;
   color: #4ccbd3; #b3b242; #FFF;
   letter-spacing: -3px;
-  ztext-shadow: 1px 1px #dce9be;}
+  text-shadow: 1px 1px #ddd;}
 
 span  
-{ color: #555152; #fa6900; #098EFF;
-  ztext-shadow: 1px 1px #666;}
+{ color: #555152; 
+  text-shadow: 1px 1px #aaa;
+}
 
+#welcome a:hover {
+  text-decoration: none;
+}
  
 #menubar
 { zwidth: 635px;
@@ -173,11 +182,8 @@ ul#menu li.current a
 { width: 1000px;
   overflow: scroll;
   margin: 0 auto;
-  padding: 20px 0 0 0;
-  background: transparent url(../images/transparent.png) repeat;
-  border-radius: 15px 15px 15px 15px;
-  -moz-border-radius: 15px 15px 15px 15px;
-  -webkit-border: 15px 15px 15px 15px;} 
+  padding-top: 20px;
+ } 
   
 #image_container  
 { width: 1000px;
