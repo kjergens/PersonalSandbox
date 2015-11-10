@@ -5,7 +5,30 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+
   <zlink href="css/pesticide.css" rel="stylesheet" type="text/css" />
+  
+  <!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+  $(".fancybox").fancybox();
+});
+
+$(".fancybox")
+  .attr('rel', 'gallery')
+  .fancybox({
+    padding : 0
+});
+
+</script>
+
 
 </head>
 
@@ -57,7 +80,9 @@
    
     <figure>
 
-      <img src="images/image14.jpg" style="height: 320px;">
+      <a class="fancybox" rel="group" href="images/image14.jpg">
+        <img src="images/image14.jpg" style="height: 320px;">
+      </a>
 
       <img src="images/image06.jpg" style="height: 290px;">
 
