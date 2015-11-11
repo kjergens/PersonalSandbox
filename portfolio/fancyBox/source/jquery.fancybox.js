@@ -156,7 +156,7 @@
 
 			// Closing fancyBox
 			closeEffect  : 'fade', // 'elastic', 'fade' or 'none'
-			closeSpeed   : 250,
+			closeSpeed   : 200,
 			closeEasing  : 'swing',
 			closeOpacity : true,
 			closeMethod  : 'zoomOut',
