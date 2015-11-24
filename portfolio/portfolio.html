@@ -33,13 +33,19 @@ $(".fancybox")
 </head>
 
 <body>
-  <div id="main">
+<div id="main">
+
+<!-----
+
+ Top Navigation
+
+ ------>
   <div id="header_container">
-      <div id="header">
+    <div id="header">
       <div id="welcome">
-        <a href="index.html">
-      <h1><span>KATIE JERGENS</span>UX DESIGNER</h1> </a>
-    </div><!--end welcome-->
+        <a href="index.html"><h1><span>KATIE JERGENS</span>UX DESIGNER</h1> </a>
+      </div><!--end welcome-->
+      
       <div id="menubar">
         <ul id="menu">
           <li><a href="resume.html">Resume</a></li>
@@ -48,26 +54,50 @@ $(".fancybox")
         </ul>
       </div><!--end menubar-->
     </div><!--end header-->
-    </div> <!--end header container-->
+  </div> <!--end header container-->
+<!-----
+
+ End Top Navigation
+
+ ------>
 
 
-<div id="subheader_container">
-<div id="subheader">
-  Skip to: &nbsp; &nbsp;
-  <a href="#dataviz">Data Visualization</a>&nbsp; &nbsp;
-  <a href="#ia">Information Architecture</a>&nbsp; &nbsp;
-  <a href="#userdata">User Data</a>&nbsp; &nbsp;
-  <a href="#pageflows">Page Flows</a>&nbsp; &nbsp;
-  <a href="#pdf">PDF Design</a>&nbsp; &nbsp;
-  <a href="#wires">Wireframes</a>&nbsp; &nbsp;
-  <a href="#prototypes">Prototypes</a>
+<!-----
+
+ Sub-Navigation
+
+ ------>
+  <div id="subnav_container">
+    <div id="subnav">
+      <a href="#dataviz">Data Visualization</a>&nbsp; &nbsp;
+      <a href="#ia">Information Architecture</a>&nbsp; &nbsp;
+      <a href="#userdata">User Data</a>&nbsp; &nbsp;
+      <a href="#pageflows">Page Flows</a>&nbsp; &nbsp;
+      <a href="#pdf">PDF Design</a>&nbsp; &nbsp;
+      <a href="#wires">Wireframes</a>&nbsp; &nbsp;
+      <a href="#prototypes">Prototypes</a>
     </div>
-    </div>
+  </div>
+<!-----
 
-  <div id="site_content">
+End Sub-Navigation
 
-<h2 id="dataviz">Data Visualization</h2>
-</h2>
+------>
+
+
+
+<!-----
+
+ Category - Data Visualization
+
+ ------>
+
+<div id="dataviz" class="category_title_container">
+  <div class="category_title">Data Visualization</div>
+</div>
+
+<div class="category_body">
+
 <h3>Before</h3>
 <figure>
   <a class="fancybox" href="images/image18.jpg">
@@ -112,24 +142,62 @@ $(".fancybox")
     <img alt="" src="images/image05.jpg" style="height: 750px; margin-left:-45px"></a>
     <figcaption>The client like how this showed more data than the existing chart and was easier to understand.</figcaption>
     </figure>
+
+</div> <!-- end Data Visualization -->
+
+<!-----
+
+ Category - Information Architecture
+
+ ------>
+<div id="infoarch" class="category_title_container">
+  <div class="category_title">Information Architecture</div>
+</div>
+
+<div class="category_body">
+  <h3>Before</h3>
+    <figure>
+      <img alt="" src="images/image20.jpg" style="height: 320px; margin-bottom:-20px">
+    </figure>
+
+ <h3>After</h3>
+  <figure><img src="images/image11.jpg" style="height: 320px;">
+    <figcaption>Reduced to one entry point, fewer top nav choices and no path redundancies. The navigation is much simpler without any loss of functionality.</figcaption>
+  </figure>
+
+</div> <!-- end Information Architecture -->
+
+<!-----
+
+ Category - User Data
+
+ ------>
+<div id="userdata" class="category_title_container">
+  <div class="category_title">User Research</div>
+</div>
+
+<div class="category_body">
+
+ <h3>Internal tool for searching customers</h3>
+<figure>
+<img alt="" src="images/bnation.png">
+ <figcaption>Online searchable customer directory for everyone - from design to engineering to sales - to learn about our customers.</figcaption>
+</figure>
+
 <br><br>
-~
+<h3>Internal graphic for describing sprint stories</h3>
+<figure>
+  <a class="fancybox" zrel="group" href="images/illustratedsprint_15-1.jpg">
+    <img alt="" src="images/illustratedsprint_15-1.jpg" style="height: 500px;"></a>
 
-      <h2 id="ia">Information Architecture</h2>
-      <h3>Before</h3>
-      <figure>
-     <img alt="" src="images/image20.jpg" style="height: 320px; margin-bottom:-20px">
-   </figure>
+  <a class="fancybox" zrel="group" href="images/illustratedsprint_15-2.jpg">
+    <img alt="" src="images/illustratedsprint_15-2.jpg" style="height: 500px;"></a>
 
-   <h3>After</h3>
-   <figure><img src="images/image11.jpg" style="height: 320px;">
-    <figcaption>Reduced to one entry point, fewer top nav choices and no path redundancies. The navigation is much simpler without any loss of functionality.</figcaption></figure>
+<figcaption>Sprint stories re-written through the perspective of the customers.</figcaption>
+</figure>
 
 <br><br>
- ~
-
- <h2 id="userdata">User Data: Getting It, Sharing It</h2>
- <br><br>
+<h3>Shared user research repository</h3>
  <figure>
  <img alt="" src="images/image10.png" style="height: 300px; margin-right:20px;">
  <img alt="" src="images/image07.png" style="height: 300px;">
@@ -137,34 +205,37 @@ $(".fancybox")
  <figcaption>User research documentation in a searchable shared data bank for the entire team to access.</figcaption>
 </figure>
 
-<br><br>
+</div> <!-- end User Testing -->
 
-<figure style="margin-top:30px">
-<img alt="" src="images/image04.png" style="width: 968.92px; margin-left:-95px">
-<br><br>
- <figcaption>Online searchable customer directory for everyone - from design to engineering to sales - to learn about our customers.</figcaption>
-</figure>
+ <!-----
 
-<figure style="margin-top:30px">
-<img alt="" src="images/image02.jpg" style="height: 500px;">
-<br><br>
-<figcaption>Sprint stories re-written through the perspective of the customers.</figcaption>
-</figure>
+ Category - Page Flows
 
-<br><br>
-~
+ ------>
+<div id="infoarch" class="category_title_container">
+  <div class="category_title">Page Flows</div>
+</div>
 
+<div class="category_body">
 
- <h2 id="pageflows">Page Flows</h2>
  <h3>Mobile app</h3>
  <figure>
   <a class="fancybox" zrel="group" href="images/02b_userflow.png">
   <img alt="" src="images/02b_userflow.png" style="width: 500px;"></a>
 </figure>
 
-<br><br><br><br>
+</div> <!-- end Page Flows -->
 
- ~<h2 id="pdf">PDF Report</h2>
+ <!-----
+
+ Category - PDFs
+
+ ------>
+<div id="infoarch" class="category_title_container">
+  <div class="category_title">PDF Reports</div>
+</div>
+
+<div class="category_body">
  <h3>Before & After</h3>
  <figure>
   <a class="fancybox" zrel="group" href="images/pdf_old.png">
@@ -176,9 +247,20 @@ $(".fancybox")
   <figcaption>The existing PDF report printed on too many sheets of paper and did not sort the rows in a meaningful way. In the re-design, fewer icons mean better use of space and more rows per page so it prints on fewer sheets. Also the row sort allows the reader to easily distinguish approved standards from the unapproved ones.</figcaption</>
 </figure>
 
-<br><br><br><br>
- ~
-<h2 id="wires">Wireframes</h2>
+</div> <!-- end PDF Reports -->
+
+
+<!-----
+
+ Category - Wireframes
+
+ ------>
+<div id="wires" class="category_title_container">
+  <div class="category_title">Wireframes</div>
+</div>
+
+<div class="category_body">
+
 <h3>Desktop</h3>
 <figure>
 
@@ -199,9 +281,19 @@ $(".fancybox")
 
 </figure>
 
-<br><br><br>
-~
-<h2 id="prototypes">Prototypes</h2>
+</div> <!-- end Wireframes -->
+
+<!-----
+
+ Category - Prototypes
+
+ ------>
+<div id="prototypes" class="category_title_container">
+  <div class="category_title">Prototypes</div>
+</div>
+
+<div class="category_body">
+
 <p>
 I like to code prototypes in HTML/CSS/Javascript when I can. These are before and after designs for assigning a test and then editing that assignment.</p>
 
@@ -219,9 +311,6 @@ I like to code prototypes in HTML/CSS/Javascript when I can. These are before an
 
 <a class="fancybox" zrel="group" href="images/image00.png">
 <img alt="" src="images/image00.png" style="width: 730px;"></a>
-
-<br><br>
-<figcaption>These were prototyped in HTML/CSS/Bootstrap.</figcaption>
 </figure>
 
 <br><br>
@@ -229,9 +318,7 @@ I like to code prototypes in HTML/CSS/Javascript when I can. These are before an
 <br><br><br>
 <a href="#header">Back to top</a>
 
-<br><br><br><br>
-<br><br><br><br>
-  </div> <!-- /content-->
+  </div> <!-- end Prototypes-->
   </div>
 
     <div id="footer">

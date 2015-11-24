@@ -8,9 +8,6 @@ min-width: 1000px;}
 
 body
 { font: normal 100% Helvetica, sans-serif;
-  zbackground: url(../images/bk_diamond.png) repeat; 
-  zbackground: #535353 url(../images/pattern.png) repeat;
-  zbackground-color: #2e2633; #e0e4cc;
   color: #333;}
 
 p
@@ -25,7 +22,6 @@ img
 h1, h2, h3, h4, h5, h6 
 { font: normal 175% Helvetica, sans-serif;
   color: #555152;
-  ztext-shadow: 1px 1px #eee;
   letter-spacing: -1px;
   margin: 0 0 10px 0;
   padding: 5px 0 0 0;}
@@ -33,7 +29,7 @@ h1, h2, h3, h4, h5, h6
 h2
 { font: normal 165% Helvetica, sans-serif;
   color: #555152;
-  ztext-shadow: 1px 1px #eee;}
+}
 
 h3
 { font: normal 100% Helvetica, sans-serif;}
@@ -77,7 +73,7 @@ ol
 ol li
 { margin: 0 0 11px 0;}
 
-#main, #header, #banner, #menubar, #site_content, #footer, #subheader
+#main, #header, #banner, #menubar, #site_content, #footer, #subheader, .category_body
 { margin-left: auto; 
   margin-right: auto;}
 
@@ -86,7 +82,7 @@ ol li
   border-bottom: 1px solid #dfdfdf;
 }
 
-#subheader_container {
+#subnav_container {
   background: #565656;
 }
 
@@ -96,15 +92,15 @@ ol li
   padding: 30px 0 5px 0;
 }
 
-#subheader {
+#subnav {
   padding-top: 15px;
   padding-bottom: 10px;
-  margin-bottom: 20px;
   color: #efefef;
   width: 960px;
+  margin: 0px auto;
 }
 
-#subheader a {
+#subnav a {
   color: #efefef;
   font-size: 13px;
 }
@@ -117,9 +113,28 @@ ol li
   zmargin: 0 auto;
 } 
 
-#welcome, #subheader, #site_content, #footer {
+#welcome, #subnav, #site_content, #footer, .category_body, .category_title {
   padding-left: 40px;
 }
+
+.category_title_container {
+  background-color: #f2f2f2;
+}
+
+.category_title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 960px;
+  margin: 0px auto;
+}
+
+#site_content, .category_body
+{ width: 1000px;
+  overflow: scroll;
+  margin: 0px auto 40px;
+  padding-top: 20px;
+ } 
+
   
 #welcome h1
 { font: normal 250% Helvetica, sans-serif;
@@ -177,13 +192,6 @@ ul#menu li.current a
 { color: #555152;
   text-decoration: underline;
   ztext-shadow: 1px 1px #000;}
-
-#site_content
-{ width: 1000px;
-  overflow: scroll;
-  margin: 0 auto;
-  padding-top: 20px;
- } 
   
 #image_container  
 { width: 1000px;
@@ -197,15 +205,15 @@ ul#menu li.current a
   
 #text_content h3
  { color: #555152;
-  ztext-shadow: 1px 1px #eee;}
+}
   
 .static_image
 { float: left;
 }  
 
 figcaption {
-  zfont-style: italic;
   font-size: 13.5px;
+  margin-top: 10px;
 }
 
   
