@@ -191,7 +191,7 @@ ul#menu li.current a
 { width: 1000px;
   overflow: scroll;
   margin: 0px auto 40px;
-  padding-top: 20px;
+  zpadding-top: 20px;
  } 
 
 
@@ -200,8 +200,8 @@ ul#menu li.current a
   min-height: 500px;}
 
 #text_content
-{ float: right;
-  width: 455px;
+{ float: left;
+  width: 725px;
   padding: 0; 
   margin: 0 20px 0 0px;}
   
