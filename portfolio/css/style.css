@@ -71,29 +71,24 @@ ol
 ol li
 { margin: 0 0 11px 0;}
 
-#main, #header, #banner, #menubar, #site_content, #footer, #subheader, .category_body
+#main, #header, #banner, #site_content, #footer, #subheader, .category_body
 { margin-left: auto; 
   margin-right: auto;}
 
 #header_container {
   background: #4DB4C6;
-  border-bottom: 10px solid #93CFEA;
-  border-top: 10px solid #93CFEA;
-  height: 36px;
-  padding: 0px 0px 35px;
+  zborder-bottom: 10px solid #93CFEA;
+  zborder-top: 10px solid #93CFEA;
+  height: 38px;
+  padding: 20px 0px 11px;
 }
 
 #header
-{ width: 1000px;
-  
+{ 
+  width: 1000px;
 }
 
-#welcome
-{ 
-  float: left;
-} 
-
-#welcome, #subnav, #site_content, #footer, .category_body, .category_title {
+#subnav, #site_content, #footer, .category_body, .category_title {
   padding-left: 40px;
 }
 
@@ -120,28 +115,30 @@ ul#subnav_menu li a
 
 #subnav_container {
   background: #F0EDF2;
-  border-bottom: 2px solid #E7B83B;
 }
 
-#welcome h1
-{ font: bold 200% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+#site_title
+{ 
+  float:left;
+  padding-left: 40px;
+  font: 200% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  font-weight: lighter;
   color: #93CFEA; #46B0DF; #b3b242; #FFF;
   letter-spacing: -3px;
 }
 
-span  
-{ color: #fff; 
-}
-
-#welcome a:hover {
-  text-decoration: none;
+#name 
+{ 
+  font: bold 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  color: #fff; 
+  letter-spacing: -3px;
 }
 
 ul#menu
 { 
   margin: 0;
   float: right;
-  padding-top: 15px;}
+  padding-top:15px;}
 
 ul#menu li, ul#subnav_menu li
 { padding: 0 0 0 0px;
@@ -150,11 +147,11 @@ ul#menu li, ul#subnav_menu li
   background: transparent;}
 
 ul#menu li a
-{ font: bold 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+{ font: bold 90% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   color: #fff;
   float: left;
   letter-spacing: -1px;
-  padding: 15px 20px 10px 20px;
+  padding-left: 30px;
   text-align: center;
   text-decoration: none;} 
 
@@ -172,11 +169,15 @@ ul#menu li.current a
    margin-top: 1px;
 }
   
+#aboutme, #contact {
+  padding-top: 30px;
+  padding-left: 40px;
+}
 
 .category_title_container {
-  border-top: 6px solid #E7B83B;
   padding-top: 30px;
-  padding-bottom: 8px;
+  padding-bottom: 15px;
+  border-top: 2px solid #E7B83B;
 }
 
 .category_title {
@@ -191,9 +192,7 @@ ul#menu li.current a
 { width: 1000px;
   overflow: scroll;
   margin: 0px auto 40px;
-  zpadding-top: 20px;
  } 
-
 
 #image_container  
 { width: 1000px;
@@ -216,15 +215,16 @@ ul#menu li.current a
 figure {
     border: 1px solid #F0EDF2;
     margin-bottom: 40px;
-    padding-top: 20px;
+    zpadding-top: 20px;
 }
 
 figcaption {
   font-size: 14px;
-  background-color: #F0EDF2;
+  background-color: #525659; #323639; #F0EDF2;
+  color: #f1f1f1;
   zwidth: 900px;
   padding: 7px 15px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #footer_container {

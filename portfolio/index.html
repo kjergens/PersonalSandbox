@@ -3,18 +3,17 @@
 
 <head>
   <title>Katie Jergens</title>
+
   <meta name="description" content="free website template" />
   <meta name="keywords" content="enter your keywords here" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href="css/slideshow.css" rel="stylesheet" type="text/css" />
-  <lzink href="css/pesticide.css" rel="stylesheet" type="text/css" />
+  <!--<link href="css/pesticide.css" rel="stylesheet" type="text/css" />-->
 
-
-  <!-- Add jQuery library -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-
+   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/jquery.galleriffic.js"></script>
   <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
   <script type="text/javascript" src="js/slideshow.js"></script>
@@ -31,24 +30,31 @@
  ------>
   <div id="header_container">
     <div id="header">
-      <div id="welcome"><a href="index.html">
-	    <h1><span>KATIE JERGENS</span>UX DESIGNER</h1></a>
-	  </div><!--end welcome-->
-      <div id="menubar">
-        <ul id="menu">
-          <li><a href="resume.html">Resum&#233;</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About Me</a></li>
-        </ul>
-      </div><!--end menubar-->
-    </div><!--end header-->
-    </div>
+      <a href="index.html"><span id="site_title">
+        <span id="name">KATIE JERGENS</span>UX DESIGNER</span>
+      </a>
+      <ul id="menu">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resum&#233;</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li class="last"><a href="about.html">About Me</a></li>
+      </ul>
+    </div> <!-- /header-->
+    </div> <!-- /header_container -->
 
+   
     
 	<div id="site_content">	
 	  <div id="image_container">	
       <!-- start gallery HTML containers -->
-      <div>
+<!-------------------------------
+
+  Thumbnails
+
+  -------------------------------->
+  <div class="navigation-container ">
+    <div class="navigation">
         <div id="thumbs">
           <a class="pageLink prev" style="visibility: hidden;" href="#" title="Previous Page"></a>
           <ul class="thumbs noscript">
@@ -103,17 +109,25 @@
             </li>
           </ul>
           <a class="pageLink next" style="visibility: hidden;" href="#" title="Next Page"></a>
-        </div>
-      </div>
-      <div class="content">
-        <div class="slideshow-container">
-          <div id="loading" class="loader"></div>
-          <div id="slideshow" class="slideshow"></div>
-          <div id="controls" zclass="controls portfolio_two"></div>
-          <div id="caption" zclass="caption-container"></div>
-        </div>
-      </div>
-      <!-- end gallery HTML containers -->   
+        </div> <!-- /thumbs -->
+      </div> <!-- /navigation-->
+    </div> <!-- /navigation-container -->
+
+<!-------------------------------
+
+  Slides
+
+  -------------------------------->
+  <div class="content">
+    <div class="slideshow-container">
+      <div id="loading" class="loader"></div>
+      <div id="slideshow" class="slideshow"></div>
+      <div id="controls" zclass="controls portfolio_two"></div>
+      <div id="caption" zclass="caption-container"></div>
+    </div>
+  </div>
+
+  <!-- end gallery HTML containers -->   
 	</div><!--end image_container-->    
 	</div><!--end site_content-->
   </div><!--end main-->
