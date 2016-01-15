@@ -40,20 +40,22 @@ $(".fancybox")
  Top Navigation
 
  ------>
- <div id="header_container">
+  <div id="header_container">
     <div id="header">
-      <a href="index.html"><span id="site_title">
-        <span id="name">KATIE JERGENS</span>UX DESIGNER</span>
-      </a>
+      <span id="site_title">
+        <a href="index.html">
+        <span id="name">KATIE JERGENS</span> UX DESIGNER
+      </a></span>
       <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resum&#233;</a></li>
         <li class="current"><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li class="last"><a href="about.html">About Me</a></li>
+        <li><a href="about.html">About Me</a></li>
       </ul>
     </div> <!-- /header-->
-  </div> <!-- /header_container -->
+    </div> <!-- /header_container -->
 
 
 <!-----
@@ -62,8 +64,6 @@ $(".fancybox")
 
  ------>
   <div id="subnav_container">
-    <div id="subnav">
-
       <ul id="subnav_menu">
         <li><a href="#dataviz">Data Visualization</a></li>
         <li><a href="#infoarch">Information Architecture</a></li>
@@ -73,7 +73,6 @@ $(".fancybox")
         <li><a href="#wires">Wireframes</a></li>
         <li><a href="#prototypes">Prototypes</a></li>
       </ul> <!-- end subnav_menu -->
-    </div> <!-- end subnav -->
   </div>  <!-- end subnav_container -->
 
 
@@ -92,36 +91,36 @@ $(".fancybox")
 <figure>
 <figcaption>This chart about student test results over time is hard to understand. </figcaption>
   <a class="fancybox" href="images/portfolio/dv_before.jpg">
-  <img src="images/portfolio/dv_before.jpg" style="width: 500px; margin-left:40px"></a>
+  <img src="images/portfolio/dv_before.jpg" style="width: 500px; margin-left:10px"></a>
 </figure>
 
 
   <h3>After</h3>
    
     <figure style="height:790px">
-      <figcaption style="clear:both">There are many better ways to represent the data.</figcaption>
+      <figcaption style="clear:both">There are many better ways to represent the same data.</figcaption>
      <a class="fancybox" zrel="group" href="images/portfolio/dv_pie.jpg">
-        <img src="images/portfolio/dv_pie.jpg" style="height: 240px; float:left"></a>
+        <img src="images/portfolio/dv_pie.jpg" style="height: 240px; float:left; border: 1px solid #dddddd; margin-left: 20px"></a>
 
       <a class="fancybox" zrel="group" href="images/portfolio/dv_bars.jpg">
-        <img src="images/portfolio/dv_bars.jpg" style="height: 320px; float:left; margin-left: 45px">
+        <img src="images/portfolio/dv_bars.jpg" style="height: 320px; float:left; margin-left: 10px; border: 1px solid #dddddd;">
       </a>
 
         <a class="fancybox" zrel="group" href="images/portfolio/dv_arrows.jpg">
-      <img src="images/portfolio/dv_arrows.jpg" style="height: 470px; float:right"></a>
+      <img src="images/portfolio/dv_arrows.jpg" style="height: 470px; float:right; border: 1px solid #dddddd; margin-right: 20px"></a>
 
 
    <a class="fancybox" zrel="group" href="images/portfolio/dv_progress.jpg">
-        <img src="images/portfolio/dv_progress.jpg" style="height: 380px; float:left; margin-left: 40px; margin-top: -40px"></a>
+        <img src="images/portfolio/dv_progress.jpg" style="height: 380px; float:left; margin-left: 20px; margin-top: -40px; border: 1px solid #dddddd;"></a>
 
       <a class="fancybox" zrel="group" href="images/portfolio/dv_bubble.jpg">
-      <img src="images/portfolio/dv_bubble.jpg" style="height: 370px; float:left; margin-left: 70px"></a>  
+      <img src="images/portfolio/dv_bubble.jpg" style="height: 370px; float:left; margin-left: 55px; margin-top:20px; border: 1px solid #dddddd;"></a>  
     </figure>
 
     <h3>The Winner</h3>
 
 <figure>
- <figcaption>The winning design best showed changes in population size over time.</figcaption>
+ <figcaption>The bubble chart best shows changes in population over time.</figcaption>
     <a class="fancybox" href="images/portfolio/dv_bubble.jpg">
     <img alt="" src="images/portfolio/dv_bubble.jpg" style="width: 500px;"></a>
   </figure>
@@ -142,15 +141,15 @@ $(".fancybox")
   <figure>
 <figcaption>This website has an overly-complicated information architecture.</figcaption>
        <a class="fancybox" zrel="group" href="images/portfolio/ia_before.jpg">
-      <img alt="" src="images/portfolio/ia_before.jpg" style="width: 750px; margin-left: 40px;"></a>
+      <img alt="" src="images/portfolio/ia_before.jpg" style="width: 800px; margin: 0px 30px 10px;"></a>
          
     </figure>
 
  <h3>After</h3>
  <figure>
-<figcaption>The new information architecture is easier to navigate and doesn't lose any functionality.</figcaption>
+<figcaption>The new design is easier to navigate without losing any functionality.</figcaption>
   <a class="fancybox" zrel="group" href="images/portfolio/ia_after.jpg">
-    <img src="images/portfolio/ia_after.jpg" style="height: 310px; margin-left: 40px;"></a>
+    <img src="images/portfolio/ia_after.jpg" style="height: 280px; margin-left: 30px;"></a>
      
   </figure>
 
@@ -167,9 +166,8 @@ $(".fancybox")
 
 <div class="category_body">
 
- <h3>Interactive Customer Directory</h3>
 <figure>
-  <figcaption>This interactive customer directory was intended for the product development team but it quickly became popular with sales and marketing teams.</figcaption>
+  <figcaption>This interactive directory was built for the product development team but quickly became popular with sales and marketing teams.</figcaption>
   &nbsp;&nbsp;
 &nbsp;&nbsp;
 &nbsp;&nbsp;
@@ -177,33 +175,29 @@ $(".fancybox")
       <img alt="" src="images/portfolio/ud_bnation.png" width="600px"></a>
 </figure>
 
-<h3>Sprint Story Graphics</h3>
 <figure>
-  <figcaption>These graphics represent the the product development's sprint stories through the perspective of our customers.</figcaption>
-&nbsp;&nbsp;
+  <figcaption>With knowledge of users you can translate tech stories into how they will impact you customers. This bridges commnication between developers and product owners and rallies the team.</figcaption>
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   <a class="fancybox" zrel="group" href="images/portfolio/ud_illustratedsprint_15-1.jpg">
-    <img alt="" src="images/portfolio/ud_illustratedsprint_15-1.jpg" style="width: 300px;"></a>
+    <img alt="" src="images/portfolio/ud_illustratedsprint_15-1.jpg" style="width: 300px; border: 1px solid #ddd"></a>
 &nbsp;&nbsp;
 &nbsp;&nbsp;
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   <a class="fancybox" zrel="group" href="images/portfolio/ud_illustratedsprint_15-2.jpg">
-    <img alt="" src="images/portfolio/ud_illustratedsprint_15-2.jpg" style="width: 300px;"></a>
+    <img alt="" src="images/portfolio/ud_illustratedsprint_15-2.jpg" style="width: 300px; border: 1px solid #ddd"></a>
 </figure>
 
-<h3>User research repository</h3>
  <figure>
-  <figcaption>All research data in a shared, searchable Evernote account. Tags and notebooks make data as easy to find as it is to add.</figcaption>
-&nbsp;&nbsp;
-&nbsp;&nbsp;
+  <figcaption>Research data goes into a shared, searchable Evernote databank. Tags and make data as easy to find as it is to add.</figcaption>
+
 &nbsp;&nbsp;
 <a class="fancybox" zrel="group" href="images/portfolio/ud_tags.png">
- <img alt="" src="images/portfolio/ud_tags.png" style="height: 300px; margin-right:20px;"></a>
+ <img alt="" src="images/portfolio/ud_tags.png" style="height: 300px; margin-right:20px; border: 1px solid #ddd"></a>
 
  <a class="fancybox" zrel="group" href="images/portfolio/ud_notes.png">
- <img alt="" src="images/portfolio/ud_notes.png" style="height: 300px;"></a>
+ <img alt="" src="images/portfolio/ud_notes.png" style="height: 300px; border: 1px solid #ddd"></a>
  <br><br>
 </figure>
 
@@ -221,14 +215,13 @@ $(".fancybox")
 
 <div class="category_body">
 
- <h3>Mobile app</h3>
  <figure>
     <figcaption>Page flow for a section of a mobile app.</figcaption>
     &nbsp;&nbsp;
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   <a class="fancybox" zrel="group" href="images/portfolio/pf_mobile_1.png">
-  <img alt="" src="images/portfolio/pf_mobile_1.png" style="width: 500px;"></a>
+  <img alt="" src="images/portfolio/pf_mobile_1.png" style="width: 500px; border: 1px solid #ddd"></a>
 </figure>
 
 </div> <!-- end Page Flows -->
@@ -243,10 +236,8 @@ $(".fancybox")
 </div>
 
 <div class="category_body">
- <h3>Before & After</h3>
-  
  <figure>
-   <figcaption>The old report (left) wasted space and did not sort rows in a meaningful way. The new report (right) is more organized, compact, and incorporates the company's branding.</figcaption>
+   <figcaption>The old report (left) wastes space and doesn't sort rows meaningfully. The new one (right) is more compact, with important rows first.</figcaption>
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   <a class="fancybox" zrel="group" href="images/portfolio/pdf_old.png">
@@ -275,25 +266,20 @@ $(".fancybox")
 
 <div class="category_body">
 
-<h3>Desktop</h3>
 <figure>
   <figcaption>Wireframes for two states of a web page.</figcaption>
-&nbsp;&nbsp;
-&nbsp;&nbsp;
-&nbsp;&nbsp;
+
   <a class="fancybox" zrel="group" href="images/portfolio/wf_desktop_1.png">
-    <img alt="" src="images/portfolio/wf_desktop_1.png" style="width: 450px;"></a>
+    <img alt="" src="images/portfolio/wf_desktop_1.png" style="width: 450px; border: 1px solid #ddd"></a>
 
     <a class="fancybox" zrel="group" href="images/portfolio/wf_desktop_2.png">
-    <img alt="" src="images/portfolio/wf_desktop_2.png" style="width: 450px;"></a>
+    <img alt="" src="images/portfolio/wf_desktop_2.png" style="width: 450px; border: 1px solid #ddd"></a>
     
 </figure>
 <br><br>
 
-
-<h3>Mobile</a>
   <figure>
-    <figcaption>Annotated wireframes leave little room for confusion in the hands of developers.</figcaption>
+    <figcaption>Annotated mobile app wireframes leave little room for confusion.</figcaption>
     &nbsp;&nbsp;
 &nbsp;&nbsp;
 &nbsp;&nbsp;
@@ -320,19 +306,16 @@ $(".fancybox")
 <h3>Before</h3>
 <figure>
    <figcaption>This modal has a confusing layout and an outdated look.</figcaption>
-  &nbsp;&nbsp;
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   <a class="fancybox" zrel="group" href="images/portfolio/pt_modal_before.png">
     <img alt="" src="images/portfolio/pt_modal_before.png" style="width: 700px;"></a>
  </figure>
 
-<br><br>
 
 <h3>After</h3>
 <figure>
-  <figcaption>New prototype lays the elements in the order the user will interact with them. Created in HTML/CSS/Javascript. </figcaption>
-  &nbsp;&nbsp;
+  <figcaption>New modal puts the controls in the order the user needs them. Created in HTML/CSS/Javascript. </figcaption>
 &nbsp;&nbsp;
 &nbsp;&nbsp;
   <a class="fancybox" zrel="group" href="images/portfolio/pt_modal_1.png">
@@ -354,30 +337,10 @@ $(".fancybox")
 
  ------>
 <div id="footer_container">
-
-  <div id="footer">
-
-<!-- box 1 -->
-    <div class="footer_container_box">
- <h4>
- katie.jergens@gmail.com</h4>
-  </div> <!--close footer_container_box1-->  
-
-<!-- box 2 -->
-  <div class="footer_container_box">
-    <h4>
-    <a href="https://www.linkedin.com/in/katie-jergens-29695aa" target="blank">LinkedIn</a></h4>
-  </div><!--close footer_container_box2-->  
-
-<!-- box 3 -->    
-  <div class="footer_container_box">
-    <h4>
-    <a href="https://twitter.com/KatieJergens" target="blank">Twitter</a>
-  </h4>
-  </div><!--close footer_container_box3-->    
-
-    <br style="clear:both"/>
-    </div><!--close footer--> 
+  <br>
+ <h4>katie.jergens@gmail.com</h4>
+ <h4><a href="https://www.linkedin.com/in/katie-jergens-29695aa" target="blank">LinkedIn profile</a></h4>
+  <h4><a href="https://twitter.com/KatieJergens" target="blank">Twitter feed</a></h4>  
   </div><!--close footer_container--> 
 
 </body></html>
