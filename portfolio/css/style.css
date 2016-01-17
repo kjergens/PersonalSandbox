@@ -92,6 +92,12 @@ ul {
   color: #fff; 
 }
 
+#site_content { 
+  width: 960px;
+  overflow: scroll;
+  margin: 0px auto 40px;
+ } 
+
 /*
     Main menu/global nav
 */
@@ -169,16 +175,11 @@ ul#subnav_menu li a:hover {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
-#site_content, .category_body { 
+.category_body { 
   width: 960px;
   overflow: scroll;
   margin: 0px auto 40px;
  } 
-
-#image_container { 
-  width: 1000px;
-  min-height: 500px;
-}
 
 #text_content { 
   float: left;
@@ -197,16 +198,19 @@ ul#subnav_menu li a:hover {
 
 figure {
     border: 1px solid #F0EDF2;
-    margin-bottom: 40px;
-    zpadding-top: 20px;
+    margin: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    zbackground-color: #d8d8d8;
+    padding-top: 5px;
 }
 
 figcaption {
   font-size: 14px;
-  background-color: #525659;
-  color: #f1f1f1;
-  padding: 7px 15px;
-  margin-bottom: 20px;
+  background-color: #f7f7f7; #525659;
+  padding: 15px;
+  text-align: left;
+  margin-top: 5px;
 }
 
 /* About me and Contact title specific
