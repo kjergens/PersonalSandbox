@@ -182,17 +182,7 @@ ul#subnav_menu li a:hover {
   margin: 0px auto 40px;
  } 
 
-.text_content { 
-  zfloat: left;
-  width: 755px;
-  padding: 0; 
-  margin: 0px auto;
-}
-  
-#text_content h3 { 
-  color: #555152;
-}
-  
+
 .static_image { 
   float: left;
 }  
@@ -216,12 +206,35 @@ figcaption {
 }
 
 /* About me and Contact title specific
-   TODO: generalize this
+   TODO: use category_title, like in blog
    */
 #aboutme, #contact {
   padding-top: 30px;
   padding-left: 40px;
 }
+
+/*
+  Blog 
+*/
+
+.text_content, .blog_entry { 
+  width: 755px;
+  padding: 0; 
+  margin: 0px auto;
+}
+  
+/* TODO why have this?  */
+#text_content h3 { 
+  color: #555152;
+}
+
+.blog_entry {
+  margin-top: 150px;
+}
+  
+.blog_entry:first-of-type {
+  margin-top: 0px;
+}  
 
 /* 
   Footer
