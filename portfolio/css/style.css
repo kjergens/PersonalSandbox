@@ -23,7 +23,7 @@ html {
 }
 
 body { 
-  font: normal 100% Merriweather, serif;
+  font-family: Merriweather, serif;
   color: #3f3f3f;
   margin: 0;
   padding: 0;
@@ -31,9 +31,10 @@ body {
 
 p { 
   padding: 0 0 15px 0;
-  line-height: 1.7em;
-  letter-spacing: -1px;
-  font-size: 100% 
+  zline-height: 1.7em;
+  font-size: 16px;
+  zletter-spacing: -1px;
+  zfont-size: 100% 
 }
 
 img { 
@@ -78,26 +79,21 @@ ul {
 #header { 
   width: 960px;
   margin: 0px auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  zpadding-bottom: 20px;
+  height: 80px;
 }
 
 #site_title a { 
   color: #93CFEA; 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 40px;
-  letter-spacing: -5px;
+  font-size: 50px;
+  letter-spacing: -6px;
 }
 
 #name { 
   color: #fff; 
 }
-
-#site_content { 
-  width: 960px;
-  overflow: scroll;
-  margin: 0px auto 60px;
- } 
 
 /*
     Main menu/global nav
@@ -108,7 +104,7 @@ ul#menu li.current a {
 } 
 
 ul#menu { 
-  margin: 0;
+  margin-top: 10px;
   float: right;
 }
 
@@ -119,10 +115,10 @@ ul#menu li, ul#subnav_menu li {
 
 ul#menu li a { 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #fff;
-  letter-spacing: -1px;
-  padding-left: 18px;
+  letter-spacing: -2px;
+  padding-left: 10px;
   text-align: center;
 } 
 
@@ -145,7 +141,7 @@ ul#subnav_menu {   /* center the menu */
 }
 
 ul#subnav_menu li a { 
-  padding-right: 40px;
+  padding-right: 35px;
   text-align: left;
   font-size: 12.5px;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -156,44 +152,43 @@ ul#subnav_menu li a:hover {
   color: #888;
 }
 
-
+.page_title {
+  font-size: 32px;
+  color: #222;
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  margin: 20px 0px;
+}
   
 /* 
     Portfolio body
 */
 
 .category_title_container {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 15px;
   border-top: 2px solid #E7B83B;
+  margin-top: 50px;
+}
+
+.category_title_container:first-of-type {
+  border-top: 0px;
+  padding-top: 0px;
+  margin-top: 0px;
 }
 
 .category_title {
-  width: 1000px;
-  margin: 0px auto;
-  font-size: 30px;
+  font-size: 26px;
   color: #222;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
-.category_body { 
-  width: 960px;
-  overflow: scroll;
-  margin: 0px auto 40px;
- } 
+.portfolio img {
+  max-width: 100%;
+}
 
-
-.static_image { 
-  float: left;
-}  
-
-figure {
+.portfolio figure {
     border: 1px solid #F0EDF2;
-    margin: 0px;
-    margin-bottom: 30px;
-    text-align: center;
-    padding-top: 15px;
-    max-width: 960px;
+    display: flex;
 }
 
 figcaption {
@@ -211,35 +206,7 @@ figcaption {
   padding-left: 40px;
 }
 
-/*
-  Blog 
-*/
 
-.text_content, .blog_entry { 
-  width: 755px;
-  padding: 0; 
-  margin: 0px auto;
-  overflow: hidden;
-}
-  
-/* TODO why have this?  */
-#text_content h3 { 
-  color: #555152;
-}
-
-.blog_entry {
-  margin-top: 50px;
-} 
-
-.blog_entry img{
-  zmax-width: 755px;
-  max-width: 100%;
-}
-
-.blog_entry figure {
-  border: 0px;
-  display: table;
-}
 
 /* 
   Footer

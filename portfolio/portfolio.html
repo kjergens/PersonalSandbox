@@ -4,8 +4,10 @@
   <title>Katie Jergens</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link zhref="css/pesticide.css" rel="stylesheet" type="text/css" />
   
   <!-- Add jQuery library -->
@@ -36,10 +38,8 @@ $(".fancybox")
 <div id="main">
 
 <!-----
-
- Top Navigation
-
- ------>
+  Top Navigation
+  ------>
   <div id="header_container">
     <div id="header">
       <span id="site_title">
@@ -50,7 +50,7 @@ $(".fancybox")
         <li><a href="index.html">Home</a></li>
         <li><a href="resume.html">Resum&#233;</a></li>
         <li class="current"><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog/drinks.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="about.html">About Me</a></li>
       </ul>
@@ -59,193 +59,245 @@ $(".fancybox")
 
 
 <!-----
-
  Sub-Navigation
-
  ------>
   <div id="subnav_container">
       <ul id="subnav_menu">
-        <li><a href="#dataviz">Data Visualization</a></li>
+        
         <li><a href="#infoarch">Information Architecture</a></li>
+        <li><a href="#dataviz">Data Visualization</a></li>
+        <li><a href="#prototypes">Prototypes</a></li>
         <li><a href="#userresearch">User Research</a></li>
         <li><a href="#pageflows">Page Flows</a></li>
         <li><a href="#pdf">PDF Reports</a></li>
         <li><a href="#wires">Wireframes</a></li>
-        <li><a href="#prototypes">Prototypes</a></li>
+        
       </ul> <!-- end subnav_menu -->
   </div>  <!-- end subnav_container -->
 
-
 <!-----
-
- Category - Data Visualization
-
+Main content
  ------>
-<div id="dataviz" class="category_title_container">
-  <div class="category_title">Data Visualization</div>
-</div>
-
-<div class="category_body">
-
-<h3>Before</h3>
+<div class="portfolio container">
 
 
-<figure>
-  <a class="fancybox" href="images/portfolio/dv_before.jpg">
-  <img src="images/portfolio/dv_before.jpg" style="margin-left:-30px;"></a>
-  <figcaption>This chart showed student progress over the course of a school year but it was hard to understand.</figcaption>
-</figure>
-
-
-    <h3>After</h3>
-
-<figure zstyle="background-color:#222">
- 
-    <a class="fancybox" href="images/portfolio/dv_progress.jpg">
-    <img alt="" src="images/portfolio/dv_progress.jpg" style="zwidth: 450px;"></a>
-  <figcaption>The redesigned chart groups students into categories - Much Progress, Some Progress, Little or No Progress - and allows the user to drill down to the names of the students who need help.</figcaption>
-  </figure>
-
-  <h3>Earlier drafts</h3>
-    <figure style:"text-align:center">
-      <a class="fancybox" zrel="group" href="images/portfolio/dataviz_arrows.png">
-      <img src="images/portfolio/dataviz_arrows.png" style="height: 500px; float:left; zborder: 1px solid #dddddd; margin: 20px 50px"></a>
-
-      <a class="fancybox" zrel="group" href="images/portfolio/dataviz_pie.png">
-        <img src="images/portfolio/dataviz_pie.png" style="height: 225px; float:left; border: 1px solid #f7f7f7; margin: 20px"></a>
-
-      <a class="fancybox" zrel="group" href="images/portfolio/dataviz_bubble.png">
-      <img src="images/portfolio/dataviz_bubble.png" style="height: 370px; float:left; zmargin-left: 55px; margin:20px; border: 1px solid #f7f7f7;"></a> 
-
-      <a class="fancybox" zrel="group" href="images/portfolio/dataviz_bars.png">
-        <img src="images/portfolio/dataviz_bars.png" style="height: 320px; float:left; margin-top: -135px; margin-bottom: 10px; margin: left: 90px; border: 1px solid #f7f7f7;">
-      </a>
-
-      <figcaption style="clear:both">Each of these explorations visualize the data in a much clearer way than the original chart.</figcaption>
-    </figure>
-
-
-
-</div> <!-- end Data Visualization -->
-
+<br><br>
 <!-----
-
- Category - Information Architecture
-
+Information Architecture
  ------>
 <div id="infoarch" class="category_title_container">
   <div class="category_title">Information Architecture</div>
 </div>
 
 <div class="category_body">
-  <h3>Before</h3>
+
+  <div class="row">
+
+  <div class="col-sm-6">
+
+  <h4>Before</h4>
   <figure>
 
        <a class="fancybox" zrel="group" href="images/portfolio/ia_before.jpg">
-      <img alt="" src="images/portfolio/ia_before.jpg" zstyle="width: 800px; margin: 0px 30px 10px;"></a>
-         <figcaption>This website had an overly-complicated information architecture that had redundant paths.</figcaption>
+      <img alt="" src="images/portfolio/ia_before.jpg"></a>
+         <figcaption>This website had an overly-complicated information architecture with redundant paths.</figcaption>
     </figure>
-
- <h3>After</h3>
+</div><!--/col-->
+<div class="col-sm-6">
+ <h4>After</h4>
  <figure>
 
   <a class="fancybox" zrel="group" href="images/portfolio/ia_after.jpg">
-    <img src="images/portfolio/ia_after.jpg" style="margin-right: -100px;"></a>
-     <figcaption>The redesigned site is easier to navigate without losing any functionality.</figcaption>
+    <img src="images/portfolio/ia_after.jpg" ></a>
+     <figcaption>The redesigned site is easier to navigate without any loss of functionality.</figcaption>
   </figure>
 
+</div><!--/col-->
+
+<div class="col-sm-1"></div>
+</div> <!--/row-->
 </div> <!-- end Information Architecture -->
 
+
 <!-----
-
- Category - User Data
-
+ Category - Data Visualization
  ------>
-<div id="userresearch" class="category_title_container">
-  <div class="category_title">User Research</div>
+<div id="dataviz" class="category_title_container">
+  <div class="category_title">Data Visualization</div>
 </div>
 
 <div class="category_body">
+    <div class="row">
 
- <figure>
-<a class="fancybox" zrel="group" href="images/portfolio/ud_tags.png">
- <img alt="" src="images/portfolio/ud_tags.png" style="height: 300px; margin-right:20px; border: 1px solid #ddd"></a>
+      <div class="col-sm-6">
+<h4>Before</h4>
 
- <a class="fancybox" zrel="group" href="images/portfolio/ud_notes.png">
- <img alt="" src="images/portfolio/ud_notes.png" style="height: 300px; border: 1px solid #ddd"></a>
- <figcaption>Research data goes into a shared Evernote databank. Tags and notebooks make data as easy to pull out as it is to add.</figcaption>
-</figure>
 
 <figure>
-    <a class="fancybox" zrel="group" href="images/portfolio/ud_bnation.png">
-      <img alt="" src="images/portfolio/ud_bnation.png" width="600px"></a>
-  <figcaption>I made this interactive directory for the development team but it quickly became popular with Sales and Marketing.</figcaption>
+  <a class="fancybox" href="images/portfolio/dv_before.jpg">
+  <img src="images/portfolio/dv_before.jpg"></a>
+  <figcaption>This student progress chart was hard to understand.</figcaption>
 </figure>
+
+</div><!--/col-->
+<div class="col-sm-6">
+    <h4>After</h4>
 
 <figure>
-  <a class="fancybox" zrel="group" href="images/portfolio/ud_illustratedsprint_15-1.jpg">
-    <img alt="" src="images/portfolio/ud_illustratedsprint_15-1.jpg" style="width: 300px; border: 1px solid #ddd"></a>
-  <a class="fancybox" zrel="group" href="images/portfolio/ud_illustratedsprint_15-2.jpg">
-    <img alt="" src="images/portfolio/ud_illustratedsprint_15-2.jpg" style="width: 300px; border: 1px solid #ddd"></a>
-      <figcaption>Tech stories translated into what they mean to the customers, bridging the gap between UX and technology.</figcaption>
-</figure>
+ 
+    <a class="fancybox" href="images/portfolio/dv_progress.jpg">
+    <img alt="" src="images/portfolio/dv_progress.jpg"></a>
+  <figcaption>The redesigned chart groups students into meaningful categories.</figcaption>
+  </figure>
 
+</div><!--/col-->
+</div> <!--/row-->
+<div class="row">
+  <div class="col-sm-12">
+  <h4>Earlier drafts</h4>
+    <figure style:"text-align:center">
+     
 
+<!--
+      <a class="fancybox" href="images/portfolio/dataviz_pie.png">
+        <img src="images/portfolio/dataviz_pie.png" zstyle="height: 225px; float:left; border: 1px solid #f7f7f7; margin: 20px"></a>
+      -->
 
-</div> <!-- end User Testing -->
+      <a class="fancybox" href="images/portfolio/dataviz_bubble.png">
+      <img src="images/portfolio/dataviz_bubble.png" width="400px"></a> 
 
+       <a class="fancybox" href="images/portfolio/dataviz_arrows.png">
+      <img src="images/portfolio/dataviz_arrows.png" width="400px" ></a>
 
- <!-----
+      <a class="fancybox" href="images/portfolio/dataviz_bars.png">
+        <img src="images/portfolio/dataviz_bars.png" zstyle="width:100%;">
+      </a>
 
- Category - Page Flows
-
- ------>
-<div id="pageflows" class="category_title_container">
-  <div class="category_title">Page Flows</div>
+      <figcaption style="clear:both">Each of these explorations visualize the data in a much clearer way than the original chart.</figcaption>
+    </figure>
+</div>
 </div>
 
-<div class="category_body">
+</div> <!-- end Data Visualization -->
 
- <figure>
-  <a class="fancybox" zrel="group" href="images/portfolio/pf_mobile_1.png">
-  <img alt="" src="images/portfolio/pf_mobile_1.png" zstyle="width: 500px; border: 1px solid #ddd"></a>
-     <figcaption>Page flow for a mobile app uses mini-wireframes to give a sense of complexity and cost.</figcaption>
-</figure>
+<!-----
+Prototypes
+ ------>
+<div id="prototypes" class="category_title_container">
+  <div class="category_title">Prototypes</div>
+</div>
 
-</div> <!-- end Page Flows -->
-
+<div class="row">
+  <div class="col-sm-6">
+    <h4>Before</h4>
+    <figure>
+      <a class="fancybox" zrel="group" href="images/portfolio/pt_modal_before.png">
+        <img alt="" src="images/portfolio/pt_modal_before.png"></a>
+      <figcaption>This modal hides important information and has an outdated look.</figcaption>
+     </figure>
+  </div> <!--/col for before-->
+  <div class="col-sm-6"> 
+    <h4>After</h4>
+    <figure>
+      <a class="fancybox" zrel="group" href="images/portfolio/pt_modal_1.png">
+      <img alt="" src="images/portfolio/pt_modal_1.png"></a>
+      <figcaption>The redesigned modal shows more of what the user needs. Created in HTML/CSS/Javascript. </figcaption>
+    </figure>
+  </div> <!--/col for after-->
+</div> <!--/row-->
  <!-----
-
  Category - PDFs
-
  ------>
 <div id="pdf" class="category_title_container">
   <div class="category_title">PDF Reports</div>
 </div>
 
 <div class="category_body">
+    <div class="row">
+  <div class="col-sm-6">
 
-<h3>Before</h3>
+<h4>Before</h4>
  <figure>
   <a class="fancybox" zrel="group" href="images/portfolio/pdf_old.png">
-    <img alt="" src="images/portfolio/pdf_old.png" style="width: 600.00px;"></a>
+    <img alt="" src="images/portfolio/pdf_old.png"></a>
 <figcaption>The old report wasted space and didn't sort the rows.</figcaption>
 </figure>
 
-<h3>After</h3>
+</div>
+  <div class="col-sm-6">
+<h4>After</h4>
 <figure>
   <a class="fancybox" zrel="group" href="images/portfolio/pdf_new.png">
-    <img alt="" src="images/portfolio/pdf_new.png" style="width: 600.00px;"></a>
-       <figcaption>The redesigned report uses space wisely, orders the rows and incorporates the company's branding.</figcaption>
+    <img alt="" src="images/portfolio/pdf_new.png"></a>
+       <figcaption>The redesigned report saves space and orders the rows.</figcaption>
 </figure>
 
-</div> <!-- end PDF Reports -->
+</div></div>
+</div> <!-- end PDF Reports --> 
+<!-----
+ Category - User Data
+ ------>
+<div id="userresearch" class="category_title_container">
+  <div class="category_title">User Research</div>
+</div>
+
+<div class="category_body">
+    <div class="row">
+  <div class="col-sm-6">
+ <figure>
+<a class="fancybox" zrel="group" href="images/portfolio/ud_tags.png">
+ <img alt="" src="images/portfolio/ud_tags.png" zstyle="width:45%"></a>
+
+ <figcaption>Research goes into a shared databank. Tags and notebooks make data easy to find and add.</figcaption>
+</figure>
+</div>
+<div class="col-sm-6">
+<figure>
+    <a class="fancybox" zrel="group" href="images/portfolio/ud_bnation.png">
+      <img alt="" src="images/portfolio/ud_bnation.png"></a>
+  <figcaption>Searchable online directory keeps customer data at our fingertips.</figcaption>
+</figure>
+</div>
+</div> <!--/row-->
+<!--
+<div class="row">
+<div class="col-sm-12">
+<figure>
+  <a class="fancybox" zrel="group" href="images/portfolio/ud_illustratedsprint_15-1.jpg">
+    <img alt="" src="images/portfolio/ud_illustratedsprint_15-1.jpg" zstyle="width: 45%"></a>
+
+      <figcaption>Tech stories translated into what they mean to the customers, bridging the gap between UX and technology.</figcaption>
+</figure>
+</div> 
+</div> 
+-->
+
+</div> <!-- end User Testing -->
+
+
+ <!-----
+ Category - Page Flows
+ ------>
+<div id="pageflows" class="category_title_container">
+  <div class="category_title">Page Flows</div>
+</div>
+
+<div class="category_body">
+<div class="row">
+  <div class="col-sm-12">
+ <figure>
+  <a class="fancybox" zrel="group" href="images/portfolio/pf_mobile_1.png">
+  <img alt="" src="images/portfolio/pf_mobile_1.png" width="500px"></a>
+     <figcaption>Page flow for a mobile app uses mini-wireframes to give a sense of complexity and cost.</figcaption>
+</figure>
+</div></div>
+</div> <!-- end Page Flows -->
+
+
 
 
 <!-----
-
  Category - Wireframes
-
  ------>
 <div id="wires" class="category_title_container">
   <div class="category_title">Wireframes</div>
@@ -254,61 +306,39 @@ $(".fancybox")
 <div class="category_body">
 
 <figure>
-  
 
+<!--
   <a class="fancybox" zrel="group" href="images/portfolio/wf_desktop_1.png">
-    <img alt="" src="images/portfolio/wf_desktop_1.png" style="width: 450px; zborder: 1px solid #ddd"></a>
+    <img alt="" src="images/portfolio/wf_desktop_1.png" zstyle="width: 45%;"></a>
 
     <a class="fancybox" zrel="group" href="images/portfolio/wf_desktop_2.png">
-    <img alt="" src="images/portfolio/wf_desktop_2.png" style="width: 450px; zborder: 1px solid #ddd"></a>
+    <img alt="" src="images/portfolio/wf_desktop_2.png" zstyle="width: 45%"></a>
     <figcaption>Wireframes for two states of a web page.</figcaption>
 </figure>
 <br><br>
+-->
 
   <figure>
     <a class="fancybox" zrel="group" href="images/portfolio/wf_mobile_1.png">
-    <img alt="" src="images/portfolio/wf_mobile_1.png" style="width: 425px; margin-bottom:435px; margin-right: 40px"></a>
+    <img alt="" src="images/portfolio/wf_mobile_1.png" zstyle="width: 45%"></a>
 
     <a class="fancybox" zrel="group" href="images/portfolio/wf_mobile_2.png">
-    <img alt="" src="images/portfolio/wf_mobile_2.png" style="width: 425px;"></a>
+    <img alt="" src="images/portfolio/wf_mobile_2.png" zstyle="width: 45%;"></a>
     <figcaption>Annotated wireframes for a mobile app leave little room for confusion.</figcaption>
 </figure>
 
 </div> <!-- end Wireframes -->
 
-<!-----
 
- Category - Prototypes
-
- ------>
-<div id="prototypes" class="category_title_container">
-  <div class="category_title">Prototypes</div>
-</div>
-
-<div class="category_body">
-
-<h3>Before</h3>
-<figure>
-
-  <a class="fancybox" zrel="group" href="images/portfolio/pt_modal_before.png">
-    <img alt="" src="images/portfolio/pt_modal_before.png" zstyle="width: 700px;"></a>
-       <figcaption>This modal hides important information and has an outdated look.</figcaption>
- </figure>
-
-
-<h3>After</h3>
-<figure>
-  <a class="fancybox" zrel="group" href="images/portfolio/pt_modal_1.png">
-<img alt="" src="images/portfolio/pt_modal_1.png" zstyle="width: 700px;"></a>
- <figcaption>The redesigned modal shows more of what the user needs. Created in HTML/CSS/Javascript. </figcaption>
-</figure>
-
+ 
 <br><br>
 <a class="c12" style="color:#4c33ff" target="new" href="https://www.google.com/url?q=http://kjergens.github.io/amplify/Beacon/OA/Indiana/archive/index.html&amp;sa=D&amp;usg=AFQjCNEYNrtYK2ZwS7ZiWZyXyP72Vgy_3Q">See more prototypes.</a>
 <br><br><br>
 <a href="#header">Back to top</a>
+<br><br><br>
+  </div> <!-- end container-->
 
-  </div> <!-- end Prototypes-->
+
 </div> <!-- end main -->
 
 <!-----
