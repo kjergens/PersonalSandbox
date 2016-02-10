@@ -34,6 +34,10 @@ img {
   max-width: 100%;
 }
 
+.img_border img {
+  border: 3px solid white;
+}
+
 #right_menu figure {
   max-height: 120px;
   overflow: hidden;
@@ -72,7 +76,7 @@ img {
   background-color: #fff;
 }
 
-.menu_item:first-child {
+.zmenu_item:first-child {
   border-left: 0px;
   border-right: 0px;
   padding: 0px;

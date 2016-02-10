@@ -42,11 +42,17 @@ img {
   max-width: 960px;
 }
 
-h1, h2 {
+h2 {
   font: normal 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.5em;
   color: #222;}
 
+.h2 {
+  font-family: 'Merriweather', serif;
+  line-height: 1.5em;
+  color: #222;
+  font-size: 28px;
+}
 
 h1, h2 {
   margin: 20px 0px 2px;
