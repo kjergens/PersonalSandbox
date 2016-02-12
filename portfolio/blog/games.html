@@ -3,7 +3,6 @@
 
 <head>
   <title>Katie Jergens</title>
-
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
@@ -24,38 +23,21 @@
   <link rel="stylesheet" type="text/css" href="../css/blog.css" />
   <link zhref="../css/pesticide.css" rel="stylesheet" type="text/css" />
 
-  <!-- JQuery
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    -->
+  <!-- JQuery -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- custom scripts -->
+  <script src="../js/facebook.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/menu.js"></script>
+    
 </head>
 
 <body>
-<!--
-   Facebook sharing code
--->
-<div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1559834101001985',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<div id="fb-root"></div> <!--connect to facebook-->
 
-
-<!-----
-  Top Navigation
-  ------>
+<!-----Top Navigation------>
   <div id="header_container">
     <div id="header">
       <span id="site_title">
@@ -66,7 +48,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../resume.html">Resum&#233;</a></li>
         <li><a href="../portfolio.html">Portfolio</a></li>
-        <li class="current"><a href="#">Blog</a></li>
+        <li class="current"><a href="../blog.html">Blog</a></li>
         <li><a href="../contact.html">Contact</a></li>
         <li><a href="../about.html">About Me</a></li>
       </ul>
@@ -74,127 +56,85 @@
     </div> <!-- /header_container -->
     
 
-<!-- 
-  Body
--->
-	<div class="container">
-
-    <!-- social media links-->
-    <div class="row">  
-      <div class="col-sm-12">
-        <div class="fb-like"
-              data-share="true"
-              data-width="450"
-              data-show-faces="true">
-        </div>
+<!-- Body-->
+<div class="container">
+  <div class="row">  <!-- social media links-->
+    <div class="col-sm-12">
+      <div class="fb-like"
+            data-share="true"
+            data-width="450"
+            data-show-faces="true">
       </div>
-    </div> <!-- /row -->
+    </div>
+  </div> <!-- /social media row -->
 
-    <!-- blog content-->
-    <div class="row">  
+  
+  <div class="row">  <!-- article & side menu-->
+    <div class="col-sm-9"> <!-- col for article-->
+          <h2>Sun Feb 7, 2016</h2> <!-- date -->
+          <div class="blog_title_container"> <!-- title -->
+            <div class="blog_title">First Versions of 3 Popular Games   
+            </div>
+          </div>
+          <p> <!-- text -->
 
-      <!-- col for articles-->
-      <div class="col-sm-8"> 
-
-        <!--article-->
-        <h2>Sun Feb 7, 2016</h2>
-        <div class="blog_title_container">
-          <div class="blog_title">3 Popular Games Are Actually Knock-Offs Of Old Designs</div>
-        </div>
-      <p>Did you know that some of our favorite childhood games are actually knock-offs of decades-old designs? In honor of Game Day, here are some the original versions of 3 popular games. What do you thing? Are the remakes as good as the originals?
+            Did you know that some of our favorite childhood games are actually knock-offs of decades-old designs? In honor of Game Day, here are some the original versions of 3 popular games. What do you thing? Are the remakes as good as the originals?
       </p>
 
-      <div class="h2">1. The Game of Life (1960)</div>
-      <figure><a href="images/life1963.png">
-      <img src="images/life1963.png" /></a>
-      <figcaption>Milton Bradley took a 100-year-old game and reimagined it for the 1960s. The concept is still the same: to navigate through life. They kept the idea of a spinner by building a one into the board. Photo courtesy of The Strong.</a>
-      </figcaption>
-      </figure>
-<br><br>
-      <h3><em>Original</em>: The Checkered Game of Life (1860)</h3>
-     <figure><a href="images/life_lg.jpg">
-      <img src="images/life_lg.jpg" /></a>
-      <figcaption>The Checkered Game of Life (1860) was meant to teach morals about living life. Dice was too closely associated with gambling so the game was played with a spinner, much like a top. Beware the suicide square!</a></figcaption> 
+      <div class="h2">1. The Game of Life (1860/1960)</div>
+      <figure>
+
+      <a href="images/life_lg.png">
+      <img src="images/life_lg.png" width="35%"/></a>
+
+      <a href="images/life1963.png">
+      <img src="images/life1963.png" width="50%"/></a>
+      
+      <figcaption>The Checkered Game of Life in 1866 (left) was meant to teach morals about living. The game was played with a spinner, much like a top. Milton reimagined it in 1960 (right) and keeps making it today. The concept is still the same: to navigate through life. They kept the idea of a spinner by building one into the board. They wisely took out the suicide square. Photo courtesy of The Strong.
+      </figcaption> 
       </figure>
 
-      <br><br>
+      <br>
 
-  <div class="h2">2. LEGO Automatic Binding Bricks (1949)</div>
-    <figure><a href="images/lego1949.jpg"><img src="images/lego1949.jpg" alt="" /></a><figcaption>Ten years after trying out a set of Kiddicraft self-locking blocks, the people at LEGO released their Automatic Binding Bricks. Photo courtesy of <a href="http://www.catawiki.com/catalog/toys/manufacturers/lego/4136087-700-2-automatic-binding-bricks">CataWiki</a>.</figcaption>
+  <div class="h2">2. LEGOs (1939/1949)</div>
+    <figure>
+<a href="images/kiddicraft.jpg">
+      <img src="images/kiddicraft.jpg" width="50%"/></a>&nbsp;
+      <a href="images/lego1949.png"><img src="images/lego1949.png" alt=""  width="45%"/></a>
+
+      <figcaption>Kiddicraft Self-Locking Blocks (1939, left) were the first plastic building blocks on the market. LEGO, up until then a wooden toy company, got their hands on a set and after better plastic molds came out in 1949, released Automatic Binding Bricks (right), now simply known as LEGOs. Photo courtesy of <a href="http://www.catawiki.com/catalog/toys/manufacturers/lego/4136087-700-2-automatic-binding-bricks">CataWiki</a>.</figcaption>
     </figure>
-    <br><br>
-<h3><em>Original</em>: Kiddicraft Self-Locking Blocks (1939)</h3>
-      <figure><a href="images/kiddicraft.jpg">
-      <img src="images/kiddicraft.jpg" /></a>
-      <figcaption>Kiddicraft Self-Locking Blocks (1939) look an awful lot like the <a href="http://brickfetish.com/timeline/1949.html">LEGO Automatic Binding Bricks </a>introduced in 1949.</a></figcaption> 
-      </figure>
-<br><br>
-    <div class="h2">3. Monopoly (1935)</div>
-    <figure><a href="images/monopoly1935lg.png"><img src="images/monopoly1935lg.png" alt="" /></a>
-        <figcaption>In 1935, <a href="images/landlordpatent.jpg">The Landlord's Game patent</a> expired and Parker Brothers released Monopoly the same year. </figcaption></figure>
-        <br><br>
-    <h3><em>Original</em>: The Landlord's Game (1903)</h3>
-      <figure><a href="images/landlord_lg.jpg">
-      <img src="images/landlord_lg.jpg" /><a>
-      <figcaption>The Landlord's Game (1903) was popular for decades until <a href="http://www.dailymail.co.uk/news/article-2957197/The-real-story-Monopoly-secretary-designed-board-game-100-years-ago-protest-against-property-moguls-day.html"> the design was stolen and sold to Parker Brothers in 1932.<a> That's capitalism for you.</a></figcaption> 
+
+<br>
+    <div class="h2">3. Monopoly (1903/1935)</div>
+    <figure>
+<a href="images/landlord_lg.jpg">
+      <img src="images/landlord_lg.jpg" width="45%"/><a>&nbsp;
+      <a href="images/monopoly1935.png"><img src="images/monopoly1935.png" width="45%" /></a>
+        <figcaption>The Landlord's Game (1903, left) was popular for decades until <a href="http://www.dailymail.co.uk/news/article-2957197/The-real-story-Monopoly-secretary-designed-board-game-100-years-ago-protest-against-property-moguls-day.html"> the design was stolen and sold to Parker Brothers.<a> In 1935, <a href="images/landlordpatent.jpg">The Landlord's Game patent</a> expired and Parker Brothers released Monopoly (right) the same year. That's capitalism for you.</a></figcaption> 
       </figure>
       <br>
-  
-      
 
-       <!-- /article 1-->
+          </p>
 
-      <!-- Facebook share link-->
-      <br><br><div class="fb-share-button" data-href="http://www.katieinbrooklyn.com/blog/quipu.html" data-layout="link"></div>
-       
-    </div> <!-- /col for article-->
-
-
+          <div class="fb-share-button" 
+            data-href="http://www.katieinbrooklyn.com/blog/games.html"  <!-- link -->
+            data-layout="link">
+          </div>
+    </div> <!-- /article -->
 
     <!-- col for right menu -->
-    <div class="col-sm-4" id="right_menu"> 
-      <div class="menu_item"><h3>More articles</h3></div>
+    <div class="col-sm-3" id="right_menu"> 
 
-      <!-- menu item 1 -->
-      <div class="menu_item">
-        <a href="drinks.html"><figure><img src="images/straight_up.png"/></figure>
-        <h4>Drinking Vocabulary To Make You Sound Legit</h4></a>
-      </div> <!-- /menu item 1 -->
-
-      <!-- menu item 2 -->
-      <div class="menu_item">
-        <a href="himba.html"><figure><img src="images/himbaPhoto1.png"/></figure>
-        <h4>Do You See What I See? (Possibly Not)</h4></a>
-      </div> <!-- /menu item 2 -->
-
-      <!-- menu item 3 -->
-      <div class="menu_item">
-        <a href="coffee.html"><figure><img src="images/flavorWheel.jpg"/></figure>
-        <h4>Color Wheel for Coffee</h4></a>
-      </div> <!-- /menu item 3 -->
-
-    <!-- menu item 4 -->
-      <div class="menu_item">
-        <a href="rams.html"><figure><img src="images/audreyLg.png"/></figure>
-        <h4>A Lettter To St. Louis On Losing Their Football Team</h4></a>
-      </div> <!-- /menu item -->
-
-      <!-- menu item 5 -->
-      <div class="menu_item">
-        <a href="greece.html"><figure><img src="images/greece_colorized.png"/></figure>
-        <h4>If the Ancient Greeks Are To Be Believed...</h4></a>
-      </div> <!-- /menu item -->
+      <h3>Recent Posts</h3>
+      <div id="sidemenu"></div>
       
-
     </div> <!-- /col for right menu-->
-
    </div> <!-- /row for blog content-->
-</div> <!-- /container for blog content -->
+</div> <!-- /container for body -->
 
   
-<!-----
- Footer
- ------>
+<!-----Footer------>
 <div id="footer_container">
   <br>
  <h4>katie.jergens@gmail.com</h4>

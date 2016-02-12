@@ -24,9 +24,13 @@
   <link rel="stylesheet" type="text/css" href="../css/blog.css" />
   <link zhref="../css/pesticide.css" rel="stylesheet" type="text/css" />
 
-  <!-- JQuery
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    -->
+  <!-- JQuery -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- custom scripts -->
+  <script src="../js/facebook.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/menu.js"></script>
 </head>
 
 <body>
@@ -34,24 +38,6 @@
    Facebook sharing code
 -->
 <div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1559834101001985',
-      xfbml      : true,
-      version    : 'v2.5'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-
 
 <!-----
   Top Navigation
@@ -66,7 +52,7 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../resume.html">Resum&#233;</a></li>
         <li><a href="../portfolio.html">Portfolio</a></li>
-        <li class="current"><a href="#">Blog</a></li>
+        <li class="current"><a href="../blog.html">Blog</a></li>
         <li><a href="../contact.html">Contact</a></li>
         <li><a href="../about.html">About Me</a></li>
       </ul>
@@ -94,7 +80,7 @@
     <div class="row">  
 
       <!-- col for articles-->
-      <div class="col-sm-8"> 
+      <div class="col-sm-9"> 
 
         <!--article -->
             <h2>Wed Jan 20, 2016</h2>
@@ -126,46 +112,10 @@
 
 
     <!-- col for right menu -->
-    <div class="col-sm-4" id="right_menu"> 
-      <div class="menu_item"><h3>More articles</h3></div>
+    <div class="col-sm-3" id="right_menu"> 
+      <h3>Recent Posts</h3>
 
-      <!-- menu item 1 -->
-      <div class="menu_item">
-        <a href="games.html"><figure><img src="images/kiddicraft.png"/></figure>
-        <h4>Designs That Last: Old-Timey Predecessors to 3 Popular Games</h4></a>
-      </div> <!-- /menu item 1 -->
-
-      <!-- menu item 1 -->
-      <div class="menu_item">
-        <a href="coffee.html"><figure><img src="images/flavorWheel.jpg"/></figure>
-        <h4>Color Wheel for Coffee</h4></a>
-      </div> <!-- /menu item 1 -->
-
-      <!-- menu item 2 -->
-      <div class="menu_item">
-        <a href="drinks.html"><figure><img src="images/straight_up.png"/></figure>
-        <h4>Drinking Vocabulary To Make You Sound Legit</h4></a>
-      </div> <!-- /menu item 2 -->
-
-      <!-- menu item 3 -->
-      <div class="menu_item">
-        <a href="quipu.html"><figure><img src="images/quipu.png"/></figure>
-        <h4>Who Needs A Spreadsheet When You Have Dye And Some Rope</h4></a>
-      </div> <!-- /menu item 3 -->
-
-    <!-- menu item 4 -->
-      <div class="menu_item">
-        <a href="rams.html"><figure><img src="images/audreyLg.png"/></figure>
-        <h4>A Letter To St. Louis On Losing Their Football Team</h4></a>
-      </div> <!-- /menu item -->
-
-      <!-- menu item 5 -->
-      <div class="menu_item">
-        <a href="greece.html"><figure><img src="images/greece_colorized.png"/></figure>
-        <h4>If the Ancient Greeks Are To Be Believed...</h4></a>
-      </div> <!-- /menu item -->
-      
-
+   <div id="sidemenu"></div>
     </div> <!-- /col for right menu-->
 
    </div> <!-- /row for blog content-->

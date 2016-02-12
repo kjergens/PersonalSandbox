@@ -10,7 +10,7 @@
   <!-- meta properties for Facebook-->
   <meta property="og:type"          content="article" />
   <meta property="og:site_name"      content="Katie In Brooklyn: A Blog About What We See" />
-   <meta property="og:title"         content="Bone up on Your Cocktail Vocabulary With These Visual Flashcards" />
+   <meta property="og:title"         content="Do You Know Your Cocktail Terms?" />
   <meta property="og:description"   content="Ever watch a movie character sidle up to a bar and order a drink 'straight up'? Here's a visual guide to show (a) that makes no sense and (b) the correct cocktail terms." />
   <meta property="og:url"           content="http://www.katieinbrooklyn.com/blog/drinks.html" />
   <meta property="og:image"         content="http://www.katieinbrooklyn.com/blog/images/straight_up.png"/>
@@ -24,9 +24,13 @@
   <link rel="stylesheet" type="text/css" href="../css/blog.css" />
   <link zhref="../css/pesticide.css" rel="stylesheet" type="text/css" />
 
-  <!-- JQuery
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    -->
+<!-- JQuery -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- custom scripts -->
+  <script src="../js/facebook.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/menu.js"></script>
 
 <style>
 figure img {
@@ -73,7 +77,7 @@ figure img {
         <li><a href="../index.html">Home</a></li>
         <li><a href="../resume.html">Resum&#233;</a></li>
         <li><a href="../portfolio.html">Portfolio</a></li>
-        <li class="current"><a href="#">Blog</a></li>
+        <li class="current"><a href="../blog.html">Blog</a></li>
         <li><a href="../contact.html">Contact</a></li>
         <li><a href="../about.html">About Me</a></li>
       </ul>
@@ -101,7 +105,7 @@ figure img {
     <div class="row">  
 
       <!-- col for articles-->
-      <div class="col-sm-8"> 
+      <div class="col-sm-9"> 
 
         <!--article -->
             <h2>Sat Jan 30, 2016</h2>
@@ -136,38 +140,9 @@ figure img {
 
 
     <!-- col for right menu -->
-    <div class="col-sm-4" id="right_menu"> 
-      <div class="menu_item"><h3>More articles</h3></div>
-
-      <!-- menu item 1 -->
-      <div class="menu_item">
-        <a href="coffee.html"><figure><img src="images/flavorWheel.jpg"/></figure>
-        <h4>Color Wheel for Coffee</h4></a>
-      </div> <!-- /menu item 1 -->
-
-      <!-- menu item 3 -->
-      <div class="menu_item">
-        <a href="quipu.html"><figure><img src="images/quipu.png"/></figure>
-        <h4>Who Needs A Spreadsheet When You Have Dye And Some Rope?</h4></a>
-      </div> <!-- /menu item 3 -->
-
-    <!-- menu item 4 -->
-      <div class="menu_item">
-        <a href="rams.html"><figure><img src="images/audreyLg.png"/></figure>
-        <h4>A Letter To St. Louis On Losing Their Football Team</h4></a>
-      </div> <!-- /menu item -->
-
-      <!-- menu item 5 -->
-      <div class="menu_item">
-        <a href="greece.html"><figure><img src="images/greece_colorized.png"/></figure>
-        <h4>If the Ancient Greeks Are To Be Believed...</h4></a>
-      </div> <!-- /menu item -->
-
-      <!-- menu item 2 -->
-      <div class="menu_item">
-        <a href="himba.html"><figure><img src="images/himbaPhoto1.png"/></figure>
-        <h4>Do You See What I See? Not If You Don't Have A Word For It</h4></a>
-      </div> <!-- /menu item 2 -->
+    <div class="col-sm-3" id="right_menu"> 
+      <h3>Recent Posts</h3>
+      <div id="sidemenu"></div>
       
 
     </div> <!-- /col for right menu-->
