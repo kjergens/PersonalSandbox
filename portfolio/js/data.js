@@ -2,10 +2,13 @@ var data =
     {
        menu: 
           [
-            {title: 'First Versions of 3 Popular Games',
-              link: 'games.html',
-               image: 'lego1949.png'},
-              {title: 'Drinking Vocabulary Flashcards',
+            {title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope',
+              link: 'quipu.html',
+               image: 'quipu.png'},
+            {title: 'It\'s Not Easy Seeing Green But Not Blue'  ,
+               link: 'himba.html',
+                image: 'himbaPhoto1.png'},
+              {title: 'Picture Flashcards: Drinking Terms',
               link: 'drinks.html',
                image: 'dirty.png'},
              {title: 'Color Wheel for Coffee',
@@ -17,9 +20,9 @@ var data =
              {title: 'The Ancient Greeks Saw Things Differently, Literally',
                link: 'greece.html',
                 image: 'greece.jpg'},
-             {title: 'If You Can\'t Say It You May Not See It' ,
-               link: 'himba.html',
-                image: 'himbaPhoto1.png'},
+                {title: 'First Versions of 3 Popular Games',
+              link: 'games.html',
+               image: 'lego1949.png'}
           ]
     };
 
