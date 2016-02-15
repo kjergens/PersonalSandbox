@@ -20,9 +20,12 @@ var data =
              {title: 'The Ancient Greeks Saw Things Differently, Literally',
                link: 'greece.html',
                 image: 'greece.jpg'},
-                {title: 'First Versions of 3 Popular Games',
+            {title: 'First Versions of 3 Popular Games',
               link: 'games.html',
-               image: 'lego1949.png'}
+               image: 'lego1949.png'},
+            {title: 'Think Shakespeare\'s Bedroom was Drab? Think Again',
+              link: 'shakes.html',
+               image: 'shakes/red_green_650x865.jpg'}
           ]
     };
 
