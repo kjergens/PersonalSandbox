@@ -5,7 +5,7 @@ var data =
             {title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope',
               link: 'quipu.html',
                image: 'quipu.png'},
-            {title: 'It\'s Not Easy Seeing Green But Not Blue'  ,
+            {title: 'Do You See What I See? If We Speak Different Languages, Maybe Not'  ,
                link: 'himba.html',
                 image: 'himbaPhoto1.png'},
               {title: 'Picture Flashcards: Drinking Terms',

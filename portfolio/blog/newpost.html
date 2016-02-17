@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>Katie Jergens</title>
+  <title>Katie In Brooklyn</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
@@ -23,6 +23,7 @@
   <link rel="stylesheet" type="text/css" href="../css/blog.css" />
   <link zhref="../css/pesticide.css" rel="stylesheet" type="text/css" />
 
+
   <!-- JQuery -->
   <script src="../js/jquery.min.js"></script>
 
@@ -30,6 +31,21 @@
   <script src="../js/facebook.js"></script>
   <script src="../js/data.js"></script>
   <script src="../js/menu.js"></script>
+
+ <!-- Twitter -->
+  <script>
+!function(d,s,id) {
+  var js,
+    fjs=d.getElementsByTagName(s)[0],
+    p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id)){
+      js=d.createElement(s);
+      js.id=id;
+      js.src=p+'://platform.twitter.com/widgets.js';
+      fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document, 'script', 'twitter-wjs');
+</script>
     
 </head>
 
@@ -59,19 +75,30 @@
 <!-- Body-->
 <div class="container">
   <div class="row">  <!-- social media links-->
-    <div class="col-sm-12">
+
+    <div class="col-sm-1"> <!-- twitter--> 
+      <br>
+        <div>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/newpost.html" data-via="KatieJergens">Tweet</a>
+      </div>
+    </div>
+
+    <div class="col-sm-2"> <!-- facebook-->
       <div class="fb-like"
             data-share="true"
             data-width="450"
             data-show-faces="true">
       </div>
     </div>
+    
+    
   </div> <!-- /social media row -->
 
   
   <div class="row">  <!-- article & side menu-->
     <div class="col-sm-9"> <!-- col for article-->
           <h2>xxx, 2016</h2> <!-- date -->
+
           <div class="blog_title_container"> <!-- title -->
             <div class="blog_title">xxx    
             </div>
