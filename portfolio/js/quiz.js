@@ -1,7 +1,10 @@
 $(document).ready(function () {
-document.getElementById('book1').addEventListener('click', 
-	function(){
-    	document.getElementById('book1').style.background="#fff";
-	}
-	);
+
+	$(".option1").click(function() {
+		var f = this;
+		document.getElementById("book1").style.opacity = 0;
+		this.style.background = "#444";
+	}); 
+
 });
+
