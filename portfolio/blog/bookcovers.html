@@ -24,30 +24,15 @@
   <link rel="stylesheet" type="text/css" href="../css/bookcover.css" />
   <link zhref="../css/pesticide.css" rel="stylesheet" type="text/css" />
 
-
   <!-- JQuery -->
   <script src="../js/jquery.min.js"></script>
 
   <!-- custom scripts -->
   <script src="../js/facebook.js"></script>
+  <script src="../js/twitter.js"></script>
   <script src="../js/data.js"></script>
   <script src="../js/menu.js"></script>
   <script src="../js/quiz.js"></script>
-
- <!-- Twitter -->
-  <script>
-!function(d,s,id) {
-  var js,
-    fjs=d.getElementsByTagName(s)[0],
-    p=/^http:/.test(d.location)?'http':'https';
-    if(!d.getElementById(id)){
-      js=d.createElement(s);
-      js.id=id;
-      js.src=p+'://platform.twitter.com/widgets.js';
-      fjs.parentNode.insertBefore(js,fjs);
-  }
-}(document, 'script', 'twitter-wjs');
-</script>
     
 </head>
 
@@ -83,7 +68,7 @@
 
       <div class="row">
           <div class="row">
-            <div class="col-sm-12" style="margin: 15px 0px 0px 15px">All about what we see.</div></div>
+            <div class="col-sm-12" style="margin: 15px 0px 0px 15px">A look at what we see.</div></div>
           <div class="col-sm-1"> <!-- twitter--> 
             <br>
               <div>
@@ -113,15 +98,17 @@
 
             <div id="quiz">
  
-              <div>
-                <div id="blackout"></div>
+              <div class="bookcover">
+                
                <img src="images/bookcovers/10-please-love-me-somebody-maud-johnson.jpg" />
+               <div class="blackout" id="book1"></div>
+
                </div>
 
 
               <ul id="options">
                 <li class="correct">Please Love Me...Somebody
-                <li>Boarding School 
+                <li>Boarding School Blues
                 <li>Forgive or Forget?
                 <li>Real Love
               </ul>

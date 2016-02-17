@@ -16,27 +16,23 @@
 	margin-bottom: 15px;
 	background-color: pink;
 	padding: 10px 15px;
-	position: relative;
-  transition-property: background-color, color;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+  	transition-property: background-color, color;
+  	transition-duration: 1s;
+  	transition-timing-function: ease-out;
+  	cursor: pointer;
 }
+
 
 #quiz li:hover {
 	transition-property: background-color, color;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
+  	transition-duration: 1s;
+  	transition-timing-function: ease-out;
 	background-color: red;
 }
 
-
-#quiz {
+.blackout {
 	position: absolute;
-}
-
-#blackout {
-	position: absolute;
-	top: 60px;
+	top: 250px;
 	left: 100px;
 	height: 100px;
 	width: 180px;

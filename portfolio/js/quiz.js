@@ -1,4 +1,7 @@
-var f = document.getElementById('blackout');
-document.addEventListener('click', function(ev){
-    f.style.transform = 'rotate(180deg)';
-},false);
+$(document).ready(function () {
+document.getElementById('book1').addEventListener('click', 
+	function(){
+    	document.getElementById('book1').style.background="#fff";
+	}
+	);
+});
