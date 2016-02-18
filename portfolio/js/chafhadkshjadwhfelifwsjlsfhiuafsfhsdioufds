@@ -1,18 +1,18 @@
-
 $(function () {
     var getMenuItem = function (itemData) {
-        var item = $("<div class=\"menu_item\">")  
-            .append("<a href=\"" + itemData.link + "\">" +
+        var item = $("<div class=\"menu_item\">" + 
+            "<a href=\"" + itemData.link + "\">" +
                 "<figure><img src=\"../blog/images/" + itemData.image +
                  "\"></figure>" +
                 " <div class=\"article_title\">" + 
                 itemData.title + 
                 "<div class=\"article_subtitle\">" +
                 itemData.subtitle +
-                "</div></div>");
-        item = item.append("</div>");
+                "</div></div>"); // /subarticle and /article
+        item = item.append("</div>"); // /menuitem 
         return item;
-    };
+    }
+}); // don't delete, close of function
 
 var $menu = $("#sidemenu");
     
@@ -20,5 +20,4 @@ $.each(data.menu, function () {
         $menu.append(
             getMenuItem(this)
         );
-    });
 });

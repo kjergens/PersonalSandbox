@@ -2,6 +2,14 @@
   Blog 
 */
 
+body {
+  background-color: #fdfdfd;
+}
+
+.main_article, .col-sm-9 {
+  background-color: #fff;
+}
+
 .blog_title_container {
   padding-top: 30px;
   padding-bottom: 15px;
@@ -51,8 +59,15 @@ img {
   Menu 
 */ 
 
+#menu_heading,  h3 {
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 20px 0px 0px 30px;
+}
+
 #sidemenu{
-  padding-left: 25px;
+  padding-left: 20px;
   border-left: 2px solid #bababa;
 }
 
