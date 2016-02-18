@@ -32,10 +32,10 @@
 
 .blackout {
 	position: absolute;
-	top: 250px;
+	top: 30%;
 	left: 100px;
-	height: 100px;
-	width: 180px;
+	height: 15%;
+	width: 30%;
 	background-color: #111;
 }
 

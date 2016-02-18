@@ -7,7 +7,7 @@ var data =
               link: 'quipu.html',
                image: 'quipu.png'},
             {title: 'Do You See What I See?',
-                subtitle: 'If you speak a different language, maybe not.',
+                subtitle: 'If you speak a different language, you might not.',
                link: 'himba.html',
                 image: 'himbaPhoto1.png'},
               {title: 'Visual Flashcards: Cocktails',
