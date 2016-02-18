@@ -1,7 +1,11 @@
 #quiz ul {
 	display: inline;
-	float: left;
 	list-style-type: none;
+}
+
+.options {
+	float: left;
+	margin-left: 40px;
 }
 
 #quiz img {
@@ -40,6 +44,13 @@
 }
 
 #book1 {
+	transition-property: opacity;
+	transition-duration: 1.5s;
+	transition-timing-function: ease-out;
+}
+
+#result1 {
+	opacity: 0;
 	transition-property: opacity;
 	transition-duration: 1s;
 	transition-timing-function: ease-out;
