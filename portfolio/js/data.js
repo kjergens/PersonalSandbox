@@ -22,7 +22,7 @@ var data =
               subtitle: '',
               link: 'rams.html',
                image: 'audrey.png'},
-             {title: 'The Ancient Greeks Saw Things Differently, Literally',
+             {title: 'Ancient Greeks Saw Things Differently, Literally',
              subtitle: '',
                link: 'greece.html',
                 image: 'greece.jpg'},

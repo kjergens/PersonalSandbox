@@ -1,19 +1,10 @@
-#quiz ul {
+.options {
 	display: inline;
 	list-style-type: none;
 }
 
-.options {
-	float: left;
-	margin-left: 40px;
-}
 
-#quiz img {
-	width: 50%;
-	float: left;
-}
-
-#quiz li {
+.options li {
 	list-style: none;
 	font-family: 'Arial', sans-serif;
 	font-size: 18px;
@@ -27,31 +18,55 @@
 }
 
 
-#quiz li:hover {
+.options li:hover {
 	transition-property: background-color, color;
-	transition-duration: .5s;
+	transition-duration: .4s;
 	transition-timing-function: ease-out;
 	background-color: red;
 }
 
-.blackout {
-	position: absolute;
-	top: 30%;
-	left: 100px;
-	height: 15%;
-	width: 30%;
-	background-color: #111;
+
+.bookcover img {  /* need to set width for media queries to work  */
+	width: 340px;
 }
 
-#book1 {
+.blackout {
+	background-color: #111;
+	position: relative;
+}
+
+.blackout {               /* this is when image is largest */
+		top: -470px;
+		height: 100px;
+		width: 334px;
+	}
+
+
+@media (min-width: 773px) {  /* this is when image is small */
+	.blackout {
+		top: -370px;
+		height: 100px;
+		width: 234px;
+	}
+}
+
+@media (min-width: 992px) { /* this is when image is medium */
+	.blackout {
+		top: -480px;
+		height: 90px;
+		width: 330px;
+	}
+}
+
+#blackout1, #blackout2 {
 	transition-property: opacity;
-	transition-duration: 1.5s;
+	transition-duration: 1s;
 	transition-timing-function: ease-out;
 }
 
-#result1 {
+#result1_container, #result2_container {
 	opacity: 0;
 	transition-property: opacity;
-	transition-duration: 1s;
+	transition-duration: .7s;
 	transition-timing-function: ease-out;
 }

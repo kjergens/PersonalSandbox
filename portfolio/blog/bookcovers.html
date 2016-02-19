@@ -97,35 +97,52 @@
           </div>
 
 
-            <div id="quiz">
+            <div class="row"> <!-- question1-->
 
-              <div class="bookcover">
-                
-               <img src="images/bookcovers/10-please-love-me-somebody-maud-johnson.jpg" />
-               <div class="blackout" id="book1"></div>
+              <div class="col-sm-1"><h1>1.</h1></div>
 
-               </div>
+              <div class="bookcover col-sm-6">
+                <img src="images/bookcovers/10-please-love-me-somebody-maud-johnson.jpg"/>
+                <div class="blackout" id="blackout1"></div>
+              </div> <!-- /bookcover-->
 
-
-              <div class="options options1">
-                <ul>
-                  <li class="option1" id="correct">Please Love Me...Somebody
+              <div class="col-sm-5">
+                <ul class="options options1">
+                  <li class="option1 correct" id="correct1">Please Love Me...Somebody
                   <li class="option1">Boarding School Blues
                   <li class="option1">Forgive or Forget?
                   <li class="option1">Real Love
                 </ul>
 
-                <div id="result1">
-                  <div id="score1"></div>
-                  <p>
-                  Is it me or is she out of his league?
-                  </p>
+                <div id="result1_container">
+                  <div id="result1"></div>
+                  <p>He's right there! Behind you!</p>
                 </div>
+              </div> <!-- /col-sm-5-->
+            </div> <!-- /row-->
 
+             <div class="row">
+
+              <div class="col-sm-1"><h1>2.</h1></div>
+
+              <div class="bookcover col-sm-6">
+                <img src="images/bookcovers/8-special-girl-dorothy-francis.jpg"/>
+                <div class="blackout" id="blackout2"></div>
               </div>
 
+              <div  class="col-sm-5">
+                <ul class="options options2">
+                  <li class="option2 correct" id="correct2">Special Girl
+                  <li class="option2">When To Say Yes
+                  <li class="option2">Am I Alone?
+                  <li class="option2">Worthy of Love
+                </ul>
 
-            </div>
+                <div id="result2_container">
+                  <div id="result2"></div>
+                </div>
+              </div> <!-- /col-sm-5-->
+            </div> <!-- /row-->
 
 
           <div class="fb-share-button" 
