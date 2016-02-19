@@ -12,16 +12,20 @@ Question 1
 		if (!option1_answered) {
 			document.getElementById("blackout1").style.opacity = 0;
 			document.getElementById("result1_container").style.opacity = 1;
-			document.getElementById("correct1").style.border = "6px solid green";
 
 			if (this.classList.contains("correct")) {
 				score++;
+				document.getElementById("correct1").style.background = "#b2d8b2";
+				document.getElementById("correct1").style.border = "6px solid #66b266";
 				document.getElementById("result1").innerHTML += "<h3>Correct!</h3>";
 			}
 			else {
-				this.style.border = "6px solid red";
+				document.getElementById("correct1").style.border = "6px solid #3a3a3a";
+				this.style.background = "#9a9a9a";
 				document.getElementById("result1").innerHTML += "<h3>Incorrect</h3>";
 			}
+			document.getElementById("score1").innerHTML += "<h4>Score: " + score + " out of 1</h4>";
+
 			option1_answered = true;
 		}
 	}); 
@@ -34,16 +38,20 @@ Question 2
 		if (!option2_answered) {
 			document.getElementById("blackout2").style.opacity = 0;
 			document.getElementById("result2_container").style.opacity = 1;
-			this.style.border = "6px solid red";
-			document.getElementById("correct2").style.border = "6px solid green";
 
 			if (this.classList.contains("correct")) {
 				score++;
+				document.getElementById("correct2").style.background = "#b2d8b2";
+				document.getElementById("correct2").style.border = "6px solid #66b266";
 				document.getElementById("result2").innerHTML += "<h3>Correct!</h3>";
 			}
 			else {
+				document.getElementById("correct2").style.border = "6px solid #3a3a3a";
+				this.style.background = "#9a9a9a";
 				document.getElementById("result2").innerHTML += "<h3>Incorrect</h3>";
 			}
+			document.getElementById("score2").innerHTML += "<h4>Score: " + score + " out of 1</h4>";
+
 			option2_answered = true;
 		}
 	}); 

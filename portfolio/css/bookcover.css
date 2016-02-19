@@ -8,11 +8,12 @@
 	list-style: none;
 	font-family: 'Arial', sans-serif;
 	font-size: 18px;
+	color: #131313;
 	margin-bottom: 15px;
-	background-color: pink;
+	background-color: #ebc662;
 	padding: 10px 15px;
 	transition-property: background-color, color;
-	transition-duration: .5s;
+	transition-duration: .75s;
 	transition-timing-function: ease-out;
 	cursor: pointer;
 }
@@ -22,39 +23,93 @@
 	transition-property: background-color, color;
 	transition-duration: .4s;
 	transition-timing-function: ease-out;
-	background-color: red;
+	background-color: #d5a21a; 
+	zcolor: #fff;
 }
 
 
-.bookcover img {  /* need to set width for media queries to work  */
-	width: 340px;
+.bookcover img, .blackout {  /* need to set width for media queries to work  */
+	max-width: 100%;
 }
+
 
 .blackout {
-	background-color: #111;
+	background-color: #e7623b; #550022;
 	position: relative;
+	height: 100px;
 }
 
-.blackout {               /* this is when image is largest */
-		top: -470px;
-		height: 100px;
-		width: 334px;
+@media (max-width: 425px) {  
+	.blackout {               
+		top: -250px;
+		height: 50px;
 	}
+}
 
+@media (min-width: 425px) {  
+	.blackout {               
+		top: -300px;
+	}
+}
 
-@media (min-width: 773px) {  /* this is when image is small */
-	.blackout {
+@media (min-width: 500px) {  
+	.blackout {               
 		top: -370px;
-		height: 100px;
-		width: 234px;
 	}
 }
 
-@media (min-width: 992px) { /* this is when image is medium */
+@media (min-width: 600px) {  
+	.blackout {               
+		top: -400px;
+	}
+}
+
+@media (min-width: 642px) {  /* iPhone */
+	.blackout {
+		top: -450px;
+	}
+}
+
+@media (min-width: 719px) { 
 	.blackout {
 		top: -480px;
-		height: 90px;
-		width: 330px;
+	}
+}
+
+
+@media (min-width: 740px) {  
+	.blackout {
+		top: -500px;
+	}
+}
+
+@media (min-width: 768px) {  /* Windows Phone */
+	.blackout {
+		top: -370px;
+	}
+}
+
+@media (min-width: 992px) { 
+	.blackout {
+		top: -490px;
+	}
+}
+
+@media (min-width: 1024px) { /* iPad */
+	.blackout {
+		top: -480px;
+	}
+}
+
+@media (min-width: 1200px) { 
+	.blackout {
+		top: -580px;
+	}
+}
+
+@media (min-width: 1280px) { /* small desktop, netbook */
+	.blackout {
+		top: -560px;
 	}
 }
 
@@ -69,4 +124,13 @@
 	transition-property: opacity;
 	transition-duration: .7s;
 	transition-timing-function: ease-out;
+}
+
+.score_container {   /* hack to match the h3 margins set in blog.css */
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+h3 {                 /* hack to match the h3 margins set in blog.css */
+	margin: 10px;
 }
