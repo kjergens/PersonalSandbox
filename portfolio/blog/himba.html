@@ -28,7 +28,9 @@
   <script src="../js/jquery.min.js"></script>
 
   <!-- custom scripts -->
+  <script src="../js/footer.js"></script>
   <script src="../js/facebook.js"></script>
+  <script src="../js/twitter.js"></script>
   <script src="../js/data.js"></script>
   <script src="../js/menu.js"></script>
 </head>
@@ -60,29 +62,15 @@
     </div> <!-- /header_container -->
     
 
-<!-- 
-  Body
--->
-	<div class="container">
-
-    <!-- social media links-->
-    <div class="row">  
-      <div class="col-sm-12">
-        <div class="fb-like"
-              data-share="true"
-              data-width="450"
-              data-show-faces="true">
-        </div>
-      </div>
-    </div> <!-- /row -->
-
-    <!-- blog content-->
-    <div class="row">  
-
-      <!-- col for articles-->
-      <div class="col-sm-9"> 
-
-        <!--article -->
+<!-- Body-->
+  <div class="container"><div class="row"><div class="col-sm-9"> 
+<!--social media-->
+        <span id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/himba.html">
+            Tweet</a></span>
+        <span class="fb-like" data-share="true" data-width="450" data-show-faces="false"></span> 
+<!-- article-->
+  <div class="row">  
+    <div class="col-sm-12"> 
             <h2>Wed Jan 20, 2016</h2>
             <div class="blog_title_container">
               <div class="blog_title">Do You See What I See? Possibly Not.</div>
@@ -105,32 +93,15 @@
 
              <p>These findings support the <a href="https://en.wikipedia.org/wiki/Linguistic_relativity">Lingustic Relativity</a> theory, which says that language influences the speaker's world view or cognition. While not air-tight proof that language influences color perception, I for one am inspired to learn more names for green.</p>
 
-           <!--/ article -->
-
-    </div> <!-- /col for article -->
-
-
-
-    <!-- col for right menu -->
-    <div class="col-sm-3" id="right_menu"> 
-      <h3>Recent Posts</h3>
-
-   <div id="sidemenu"></div>
-    </div> <!-- /col for right menu-->
-
-   </div> <!-- /row for blog content-->
-</div> <!-- /container for blog content -->
-
-  
-<!-----
- Footer
- ------>
-<div id="footer_container">
-  <br>
- <h4>katie.jergens@gmail.com</h4>
- <h4><a href="https://www.linkedin.com/in/katie-jergens-29695aa" target="blank">LinkedIn profile</a></h4>
-  <h4><a href="https://twitter.com/KatieJergens" target="blank">Twitter feed</a></h4>  
-</div><!--close footer_container--> 
-  
-  </body>
-</html>
+<!-- fb share -->
+      <div class="fb-share-button" 
+        data-href="http://www.katieinbrooklyn.com/blog/himba.html"  
+        data-layout="link">
+      </div>
+    </div></div> </div> 
+<!-- recent posts -->
+    <div class="col-sm-3" id="right_menu"> </div> 
+  </div></div> 
+<!-----Footer------>
+  <div id="footer_container"></div>
+</body></html>

@@ -28,7 +28,9 @@
   <script src="../js/jquery.min.js"></script>
 
   <!-- custom scripts -->
+  <script src="../js/footer.js"></script>
   <script src="../js/facebook.js"></script>
+  <script src="../js/twitter.js"></script>
   <script src="../js/data.js"></script>
   <script src="../js/menu.js"></script>
 </head>
@@ -60,23 +62,14 @@
     
 
 <!-- Body-->
-	<div class="container">
-
-    <div class="row">   <!-- social media links-->
-      <div class="col-sm-12">
-        <div class="fb-like"
-              data-share="true"
-              data-width="450"
-              data-show-faces="true">
-        </div>
-      </div>
-    </div> <!-- /row -->
+	<div class="container"><div class="row"><div class="col-sm-8"> 
+    <div id="tagline">A blog about the things we see.</div>
+            <span id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/index.html">
+              Tweet</a></span>
+        <span class="fb-like" data-share="true" data-width="450" data-show-faces="false"></span>
 
    
-    <div class="row">   <!-- blog content-->
-
-      
-      <div class="col-sm-7"> <!-- col for articles-->
+    <div class="row"><div class="col-sm-12">
 
   <div id="shakes">
   <h2>Thu Feb 11, 2016</h2>
@@ -87,7 +80,6 @@
   </div>
 
   <p>You might be surprised to see the Bard's house.</p>
-
     <figure><a href="shakes.html"><img src="images/shakes/red_green_650x865.jpg" alt="" /></a>
     </figure>
 
@@ -139,32 +131,15 @@
            
           </div>  <!-- /article -->
 
-    </div> <!-- /col for articles -->
+    </div></div></div>
 
 
 
-    <!-- col for right menu -->
-    <div class="col-sm-5" id="right_menu"> 
-      <h3>Recent Posts</h3>
-
-      <div id="sidemenu"></div>
-      
-
-    </div> <!-- /col for right menu-->
-
-   </div> <!-- /row for blog content-->
-</div> <!-- /container for blog content -->
-
-  
-<!-----
- Footer
- ------>
-<div id="footer_container">
-  <br>
- <h4>katie.jergens@gmail.com</h4>
- <h4><a href="https://www.linkedin.com/in/katie-jergens-29695aa" target="blank">LinkedIn profile</a></h4>
-  <h4><a href="https://twitter.com/KatieJergens" target="blank">Twitter feed</a></h4>  
-</div><!--close footer_container--> 
+<!-- recent posts -->
+    <div class="col-sm-4" id="right_menu"> </div>
+   </div> </div> 
+<!-----Footer------>
+  <div id="footer_container"></div>
   
   </body>
 </html>

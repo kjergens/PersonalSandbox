@@ -12,7 +12,7 @@
   <meta property="og:site_name"      content="Katie In Brooklyn: A Blog About What We See" />
    <meta property="og:title"         content="The Ancient Greeks Saw Things Differently, Literally" /> <!--title-->
   <meta property="og:description"   content="Back in school, if you had to read The Iliad you might have overlooked some odd passages regarding the colors of things: where it says the sky is bronze, the sea is the color of wine, and sheep are violet. Something got lost in translation, right?" /> <!--description-->
-  <meta property="og:url"           content="http://www.katieinbrooklyn.com/blog/xxx.html" /> <!--url-->
+  <meta property="og:url"           content="http://www.katieinbrooklyn.com/blog/greece.html" /> <!--url-->
   <meta property="og:image"         content="http://www.katieinbrooklyn.com/blog/images/greece.png"/>  <!--image-->
   <meta property="fb:app_id"        content="1559834101001985" />
 
@@ -28,15 +28,14 @@
   <script src="../js/jquery.min.js"></script>
 
   <!-- custom scripts -->
+  <script src="../js/footer.js"></script>
   <script src="../js/facebook.js"></script>
+  <script src="../js/twitter.js"></script>
   <script src="../js/data.js"></script>
   <script src="../js/menu.js"></script>
 </head>
 
-<body>
-<!--
-   Facebook sharing code
--->
+<body><div id="fb-root"></div> 
 
 <!-----
   Top Navigation
@@ -58,30 +57,15 @@
     </div> <!-- /header-->
     </div> <!-- /header_container -->
     
+<!-- main body -->
+<div class="container"><div class="row">  <div class="col-sm-9"> 
+<!-- share buttons -->
+      <span id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/greece.html">
+          Tweet</a></span>
+      <span class="fb-like" data-share="true" data-width="450" data-show-faces="false"></span>
 
-<!-- 
-  Body
--->
-	<div class="container">
-
-    <!-- social media links-->
-    <div class="row">  
-      <div class="col-sm-12">
-        <div class="fb-like"
-              data-share="true"
-              data-width="450"
-              data-show-faces="true">
-        </div>
-      </div>
-    </div> <!-- /row -->
-
-    <!-- blog content-->
-    <div class="row">  
-
-      <!-- col for articles-->
-      <div class="col-sm-9"> 
-
-        <!--article -->
+ <!-- article-->
+  <div class="row"><div class="col-sm-12">
             <h2>Mon Jan 18, 2016</h2>
             <div class="blog_title_container">
               <div class="blog_title">If the Ancient Greeks Are to Be Believed...</div>
@@ -105,38 +89,13 @@
         <figcaption style="margin-top:0px">How the same pasture might have looked to the Ancient Greeks.</figcaption>
         </figure>
 
-           <!--/ article -->
- 
-            <!-- FB share link-->
-            <br><br>
-            <div class="fb-share-button" data-href="http://www.katieinbrooklyn.com/blog/greece.html" data-layout="link">
-            </div>
-
-    </div> <!-- /col for article -->
-
-
-
-    <!-- col for right menu -->
-    <div class="col-sm-3" id="right_menu"> 
-
-      <h3>Recent Posts</h3>
-       <div id="sidemenu"></div>
-
-    </div> <!-- /col for right menu-->
-
-   </div> <!-- /row for blog content-->
-</div> <!-- /container for blog content -->
-
-  
-<!-----
- Footer
- ------>
-<div id="footer_container">
-  <br>
- <h4>katie.jergens@gmail.com</h4>
- <h4><a href="https://www.linkedin.com/in/katie-jergens-29695aa" target="blank">LinkedIn profile</a></h4>
-  <h4><a href="https://twitter.com/KatieJergens" target="blank">Twitter feed</a></h4>  
-</div><!--close footer_container--> 
-  
-  </body>
-</html>
+<!-- fb share -->
+      <div class="fb-share-button" data-href="http://www.katieinbrooklyn.com/blog/greece.html"  
+        data-layout="link"></div>
+    </div></div> </div> 
+<!-- recent posts -->
+    <div class="col-sm-3" id="right_menu"> </div> 
+  </div></div> 
+<!-----Footer------>
+  <div id="footer_container"></div>
+</body></html>

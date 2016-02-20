@@ -11,7 +11,8 @@
 	color: #131313;
 	margin-bottom: 15px;
 	background-color: #ebc662;
-	padding: 10px 15px;
+	padding: 15px 15px;
+	border-radius: 2px;
 	transition-property: background-color, color;
 	transition-duration: .75s;
 	transition-timing-function: ease-out;
@@ -30,13 +31,18 @@
 
 .bookcover img, .blackout {  /* need to set width for media queries to work  */
 	max-width: 100%;
+	width: 413px;
 }
 
 
 .blackout {
-	background-color: #e7623b; #550022;
+	background-color: #091232; #550022;
 	position: relative;
 	height: 100px;
+}
+
+.fat {
+	height: 150px;
 }
 
 @media (max-width: 425px) {  
@@ -44,11 +50,19 @@
 		top: -250px;
 		height: 50px;
 	}
+
+	.fat {
+		height: 100px;
+	}
 }
 
 @media (min-width: 425px) {  
 	.blackout {               
 		top: -300px;
+	}
+
+	.fat {
+		top: -320px;
 	}
 }
 
@@ -56,11 +70,19 @@
 	.blackout {               
 		top: -370px;
 	}
+
+	.fat {
+		top: -390px;
+	}
 }
 
 @media (min-width: 600px) {  
 	.blackout {               
 		top: -400px;
+	}
+
+	.fat {
+		top: -430px;
 	}
 }
 
@@ -68,11 +90,26 @@
 	.blackout {
 		top: -450px;
 	}
+
+	.fat {
+		top: -460;
+	}
+}
+
+
+@media (min-width: 680px) { 
+	.fat {
+		top: -500px;
+	}
 }
 
 @media (min-width: 719px) { 
 	.blackout {
 		top: -480px;
+	}
+
+	.fat {
+		top: -515px;
 	}
 }
 
@@ -80,6 +117,10 @@
 @media (min-width: 740px) {  
 	.blackout {
 		top: -500px;
+	}
+
+	.fat {
+		top: -515px;
 	}
 }
 
@@ -99,17 +140,31 @@
 	.blackout {
 		top: -480px;
 	}
+
+	.fat {
+		top: -515px;
+	}
 }
 
 @media (min-width: 1200px) { 
 	.blackout {
 		top: -580px;
 	}
+
+	.fat {
+		height: 150px;
+		top: -595px;
+	}
 }
 
 @media (min-width: 1280px) { /* small desktop, netbook */
 	.blackout {
 		top: -560px;
+	}
+
+	.fat {
+		height: 150px;
+		top: -595px;
 	}
 }
 
@@ -119,7 +174,7 @@
 	transition-timing-function: ease-out;
 }
 
-#result1_container, #result2_container {
+#result1_container, #result2_container, #result4_container {
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: .7s;

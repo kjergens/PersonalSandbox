@@ -12,16 +12,31 @@ body {
 
 #tagline {
   margin-top: 10px;
+  zmargin-left: 5px;
+  margin-bottom: 10px;
 }
 
-.blog_title_container {
-  padding-top: 30px;
+.date, #tagline {
+    font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+    line-height: 1.5em;
+    color: #222;
+    font-size: 14px;
+}
+
+.date {
+  margin-top: 20px;
+}
+
+
+.blog_title_container, .title {
+  padding-top: 10px;
   padding-bottom: 15px;
-  border-top: 2px solid #E7B83B;
+border-bottom: 2px solid #E7B83B;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.blog_title {
-  margin: 0px auto;
+.blog_title, .title  {
   font-size: 30px;
   color: #222;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -58,6 +73,9 @@ img {
   margin-bottom: 20px;
 } 
 
+#twitter iframe {
+  margin-bottom: -5px; /* hack to make it same parallel as fb button */
+}
 
 /*
   Menu 
