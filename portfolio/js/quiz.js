@@ -9,7 +9,7 @@ $(document).ready(function () {
 	var question4_answered = false;
 	var question5_answered = false;
 	var question6_answered = false;
-	var question7_answered = false;
+	var question_last_answered = false;
 
 	/*
 Call this function each time an answer is selected.
@@ -181,28 +181,27 @@ Question 6 - 12 changes to make
 	/*
 Question 7 - 12 changes to make
 */
-	$(".option7").click(function() {
+	$(".option_last").click(function() {
 
-		if (!question7_answered) {
-			question7_answered = true;
+		if (!question_last_answered) {
+			question_last_answered = true;
 			answered++;
-			document.getElementById("blackout7").style.opacity = 0;
-			document.getElementById("result7_container").style.opacity = 1;
+			document.getElementById("blackout_last").style.opacity = 0;
+			document.getElementById("result_last_container").style.opacity = 1;
 
 			if (this.classList.contains("correct")) {
 				score++;
-				document.getElementById("correct7").style.background = "#b2d8b2";
-				document.getElementById("correct7").style.border = "6px solid #66b266";
-				document.getElementById("result7").innerHTML += "<h3>Correct!</h3>";
+				document.getElementById("correct_last").style.background = "#b2d8b2";
+				document.getElementById("correct_last").style.border = "6px solid #66b266";
+				document.getElementById("result_last").innerHTML += "<h3>Correct!</h3>";
 			}
 			else {
-				document.getElementById("correct7").style.border = "6px solid #3a3a3a";
+				document.getElementById("correct_last").style.border = "6px solid #3a3a3a";
 				this.style.background = "#9a9a9a";
-				document.getElementById("result7").innerHTML += "<h3>Incorrect</h3>";
+				document.getElementById("result_last").innerHTML += "<h3>Incorrect</h3>";
 			}
-			document.getElementById("score7").innerHTML += "<h4>Score: " + score + " out of  " + answered + "</h4>";
-			
-			document.getElementById("score7").innerHTML += "<br><h1>Total: " + score + " out of " + answered + "</h1>";
+		
+			document.getElementById("score_last").innerHTML += "<br><h1>Total: " + score + " out of " + answered + "</h1>";
 
 		}
 	});
