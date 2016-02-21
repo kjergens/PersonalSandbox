@@ -31,10 +31,7 @@ body {
 
 p { 
   padding: 0 0 15px 0;
-  zline-height: 1.7em;
-  font-size: 16px;
-  zletter-spacing: -1px;
-  zfont-size: 100% 
+  font-size: 16px; 
 }
 
 img { 
@@ -85,16 +82,21 @@ ul {
 #header { 
   width: 960px;
   margin: 0px auto;
-  padding-top: 5px;
+  zpadding-top: 5px;
   zpadding-bottom: 20px;
   height: 80px;
 }
 
+#site_title {
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  font-size: 42px;
+  letter-spacing: -6px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+
 #site_title a { 
   color: #93CFEA; 
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 50px;
-  letter-spacing: -6px;
 }
 
 #name { 
@@ -110,6 +112,7 @@ ul#menu li.current a {
 } 
 
 ul#menu { 
+  padding-top: 5px;
   margin-top: 10px;
   float: right;
 }
@@ -124,7 +127,7 @@ ul#menu li a {
   font-size: 15px;
   color: #fff;
   letter-spacing: -2px;
-  padding-left: 10px;
+  padding-left: 12px;
   text-align: center;
 } 
 
