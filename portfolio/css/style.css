@@ -82,16 +82,13 @@ ul {
 #header { 
   width: 960px;
   margin: 0px auto;
-  zpadding-top: 5px;
-  zpadding-bottom: 20px;
-  height: 80px;
 }
 
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 42px;
   letter-spacing: -6px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 5px;
 }
 
@@ -115,6 +112,7 @@ ul#menu {
   padding-top: 5px;
   margin-top: 10px;
   float: right;
+  -webkit-padding-start: 0px;
 }
 
 ul#menu li, ul#subnav_menu li { 
@@ -134,6 +132,28 @@ ul#menu li a {
 ul#menu li a:hover { 
   color: #f2f2f2;
   text-decoration: underline;
+}
+
+@media(max-width:992px) {
+  #site_title{
+    padding-bottom: 0px;
+    } 
+
+    ul#menu {
+      margin-top: 0px;
+      padding-top: 0px;
+      float: left;
+    }
+
+    ul#menu li a { 
+      padding-left: 0px;
+      padding-right: 20px;
+      font-size: 13px;
+    }
+
+    ul {
+          -webkit-padding-start: 0px;
+    }
 }
 
 /*

@@ -1,9 +1,9 @@
 var header = "<div class=\"container\"><div class=\"row\">" +
-      "<div class=\"col-md-7 col-sm-12\" id=\"site_title\">" +
+      "<div class=\"col-md-6 col-sm-12\" id=\"site_title\">" +
         "<a href=\"index.html\">" +
         "<span id=\"name\">KATIE JERGENS</span> UX DESIGNER" +
       "</a></div>" +
-      "<div class=\"col-md-5 col-sm-12\"><ul id=\"menu\">" +
+      "<div class=\"col-md-6 col-sm-12\"><ul id=\"menu\">" +
         "<li><a href=\"../index.html\">Home</a></li>" +
         "<li><a href=\"../resume.html\">Resum&#233;</a></li>" +
         "<li><a href=\"../portfolio.html\">Portfolio</a></li>" +
