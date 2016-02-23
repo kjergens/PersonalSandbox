@@ -104,23 +104,23 @@ ul {
     Main menu/global nav
 */
   
-ul#menu li.current a { 
+ul#menu li.current a, ul#topmenu li.current a  { 
   text-decoration: underline;
 } 
 
-ul#menu { 
+ul#menu, #topmenu { 
   padding-top: 5px;
   margin-top: 10px;
   float: right;
   -webkit-padding-start: 0px;
 }
 
-ul#menu li, ul#subnav_menu li { 
+ul#menu li, ul#subnav_menu li, #topmenu li { 
   list-style: none;
   display: inline;
 }
 
-ul#menu li a { 
+ul#menu li a, ul#topmenu li a  { 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 15px;
   color: #fff;
@@ -129,7 +129,7 @@ ul#menu li a {
   text-align: center;
 } 
 
-ul#menu li a:hover { 
+ul#menu li a:hover, ul#topmenu li a:hover  { 
   color: #f2f2f2;
   text-decoration: underline;
 }
