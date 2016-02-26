@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Katie In Brooklyn</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+
+  <!-- meta properties for Facebook-->
+  <meta property="og:type"          content="article" />
+  <meta property="og:site_name"      content="Katie In Brooklyn" />
+   <meta property="og:title"         content="Create the Perfect Color Scheme Using Simple Math" /> <!--title-->
+  <meta property="og:description"   content="" /> <!--description-->
+  <meta property="og:url"           content="http://www.katieinbrooklyn.com/blog/colormath.html" /> <!--url-->
+  <meta property="og:image"         content="http://www.katieinbrooklyn.com/blog/images/chilled.png"/>  <!--image-->
+  <meta property="fb:app_id"        content="1559834101001985" />
+
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+
+  <!-- My stylesheets-->
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/blog.css" />
+  <link zhref="../css/pesticide.css" rel="stylesheet" type="text/css" />
+
+
+  <!-- JQuery -->
+  <script src="../js/jquery.min.js"></script>
+
+  <!-- custom scripts -->
+  <script src="../js/header.js"></script>
+  <script src="../js/footer.js"></script>
+  <script src="../js/facebook.js"></script>
+  <script src="../js/twitter.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/menu.js"></script>
+    
+</head>
+
+<body><div id="fb-root"></div> 
+
+<!-----Top Navigation------>
+<div id="header_container"></div> 
+    
+<!-- main body -->
+<div class="container"><div class="row">  <div class="col-sm-9"> 
+<!-- share buttons -->
+      <span id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/colormath.html">
+          Tweet</a></span>
+      <span class="fb-like" data-share="true" data-width="450" data-show-faces="false"></span>
+
+ <!-- article-->
+  <div class="row"><div class="col-sm-12">
+  <div class="date">Wed Feb 24, 2016</div> 
+  <div class="title">Create The Perfect Color Scheme With Simple Math</div>
+  <p>For whatever your project: a website, a graphic, interior design, or just picking out an outfit, there's a way to get an awesome color combination.
+  </p>
+
+  <p>First pick a color you like.</p>
+
+  <p> I'll pick this:</p>
+  <div style:"background-color: #444400; height: 20px; width: 100px;"></div>
+
+<p>
+Complementary
+A complementary color scheme is a two-color combination consisting of a base color (H0) and another color (H1) that is 180 degrees apart from H0 on the color wheel.
+
+formula: H1 = |(H0 + 180 degrees) - 360 degrees|
+
+
+Split Complementary
+A split-complementary color scheme is a three-color combination that consists of a base color (H0) and two colors (H1 and H2) that are 150 degrees and 210 degrees apart from H0 respectively.
+
+formula: H1 = |(H0 + 150 degrees) - 360 degrees|
+formula: H2 = |(H0 + 210 degrees) - 360 degrees|
+Triadic
+This is a three-color combination that consists of a base color (H0) and two colors (H1 and H2) that are 120 degrees and 240 degrees apart from H0 respectively.
+
+formula: H1 = |(H0 + 120 degrees) - 360 degrees|
+formula: H2 = |(H0 + 240 degrees) - 360 degrees|
+Tetradic
+A four-color combination that consists of a base color (H0) and three colors (H1, H2, and H3) that are 90 degrees, 180 degrees, and 270 degrees apart from H0 respectively.
+
+formula: H1 = |(H0 + 90 degrees) - 360 degrees|
+formula: H2 = |(H0 + 180 degrees) - 360 degrees|
+formula: H3 = |(H0 + 270 degrees) - 360 degrees|
+Analagous
+Analagous color schemes use a combination consisting of a base color (H0) and one or more adjacent colors (30 degrees apart) on the color wheel.
+
+formula: H1 = |(H0 + 30 degrees) - 360 degrees|
+formula: H2 = |(H0 + 60 degrees) - 360 degrees|
+formula: H3 = |(H0 + 90 degrees) - 360 degrees|
+Monochrome
+A Monochrome color scheme is is where all colors are derived from the base color and the hue value is not changed. Variations in shade or tint are achieved by changing the S-value and/or the B-value for your base color.
+</p>
+
+
+<!-- fb share -->
+      <div class="fb-share-button" data-href="http://www.katieinbrooklyn.com/blog/colormath.html"  
+        data-layout="link"></div>
+    </div></div> </div> 
+<!-- recent posts -->
+    <div class="col-sm-3" id="right_menu"> </div> 
+  </div></div> 
+<!-----Footer------>
+  <div id="footer_container"></div>
+</body></html>

@@ -2,7 +2,15 @@ var data =
     {
        menu: 
           [
-            {title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope?',
+            {title: 'The Importance of a Creative Blackout Hour',
+              subtitle: 'Sometimes you have to let your ideas go.',
+              link: 'blackout.html',
+               image: 'blackout_thumb.png'},
+            {title: 'Quiz: Guess the Titles of these \'80s Teen Romance Novels',
+              subtitle: 'They are incredible.',
+              link: 'bookcovers.html',
+               image: 'bookcovers/teaser.png'},
+               {title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope?',
               subtitle: '',
               link: 'quipu.html',
                image: 'quipu.png'},
