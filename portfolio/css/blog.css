@@ -81,7 +81,7 @@ img {
   Menu 
 */ 
 
-#menu_heading,  h3 {
+#menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 25px;
   font-weight: bolder;

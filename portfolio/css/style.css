@@ -19,18 +19,18 @@ COLOR PALETTE
    TODO: double check these
 */
 html { 
-  height: 100%;
+  zheight: 100%;
 }
 
 body { 
   font-family: Merriweather, serif;
   color: #3f3f3f;
-  margin: 0;
-  padding: 0;
+  zmargin: 0;
+  zpadding: 0;
 }
 
 p { 
-  padding: 0 0 15px 0;
+  zpadding: 0 0 15px 0;
   font-size: 16px; 
 }
 
@@ -40,7 +40,7 @@ img {
 }
 
 h2 {
-  font: normal 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.5em;
   color: #222;}
 
@@ -51,11 +51,11 @@ h2 {
   font-size: 28px;
 }
 
-h1, h2 {
+zh1, zh2 {
   margin: 20px 0px 2px;
 }
 
-h3 {
+zh3 {
   margin: 10px 0px 10px;
 }
 

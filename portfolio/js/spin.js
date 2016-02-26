@@ -5,10 +5,10 @@ jQuery.fn.rotate = function(degrees) {
                  '-moz-transform' : 'rotate('+ degrees +'deg)',
                  '-ms-transform' : 'rotate('+ degrees +'deg)',
                  'transform' : 'rotate('+ degrees +'deg)',
-							    '-webkit-transition-duration': '0.8s',
-							    '-moz-transition-duration': '0.8s',
-							    '-o-transition-duration': '0.8s',
-							    'transition-duration': '0.8s'});
+							    '-webkit-transition-duration': '0.9s',
+							    '-moz-transition-duration': '0.9s',
+							    '-o-transition-duration': '0.9s',
+							    'transition-duration': '0.9s'});
     return $(this);
 };
 
