@@ -1,4 +1,5 @@
-var rotation = 0;
+var tetradic_rotation = 0;
+var analogous_rotation = 0;
 
 jQuery.fn.rotate = function(degrees) {
     $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
@@ -14,9 +15,14 @@ jQuery.fn.rotate = function(degrees) {
 
 $(document).ready(function () {
 
-$('.rotate').click(function() {
-    rotation += 5;
-    $(this).rotate(rotation);
+$('#tetradic').click(function() {
+    tetradic_rotation += 5;
+    $(this).rotate(tetradic_rotation);
+});
+
+$('#analogous').click(function() {
+    analogous_rotation += 5;
+    $(this).rotate(analogous_rotation);
 });
 
 });

@@ -44,7 +44,7 @@
 <div id="header_container"></div> 
     
 <!-- main body -->
-<div class="container"><div class="row">  <div class="col-sm-9"> 
+<div class="container"><div class="row">  <div class="col-sm-10"> 
 <!-- share buttons -->
       <span id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/colormath.html">
           Tweet</a></span>
@@ -53,40 +53,52 @@
  <!-- article-->
   <div class="row"><div class="col-sm-12">
   <div class="date">Wed Feb 24, 2016</div> 
-  <div class="title">Create The Perfect Color Scheme With This Simple Interactive Tool (Part 1: 4-Color Scheme)</div>
-  <p>Whether for your webpage, your logo, or your bedroom, you might avoid colors for fear they won't "go". I say if it feels good do it, but to double-check your color selections here's a way to get a fail-proof color palette. </p>
+  <div class="title">Create The Perfect Color Scheme With This Simple Interactive Tool (Part 1)</div>
+  <p>Do these colors 'go'? For your webpage, logo or bedroom, you might be scared your color choices don't pass graphics muster. I say if it feels good do it, but for you perfectionists here's a way to get a fail-proof color palette. We'll start big: with a 4-color scheme.</p>
 
-  <p >We'll start big: with a 4-color scheme. First find yourself a colorwheel. The more hues the better. Then pick a color you like. </p>
+  <p>First, find a <a href="https://www.google.com/search?q=color+wheel&safe=active&espv=2&biw=1156&bih=670&site=webhp&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjKnP_6_5fLAhVHej4KHVsaBtcQ_AUIBigB">colorwheel</a>. The more hues the better. Then pick a color you like.</p>
 
-  <p>You're almost done! To get the rest of the colors, decide on one of 2 color schemes: <em>tetradic</em> (vibrant, contrasting) or <em>analogous</em> (similar, coherent). </p>
+  <p>You're almost done! To get the 3 remaining colors, decide on one of 2 color schemes: <em>tetradic</em> (vibrant, contrasting) or <em>analogous</em> (similar, coherent). </p>
 
-    <h3>Tetradic</h3>
-    <p> To fulfill your tetradic color scheme, grab every color 90 degree increments from your main color until you return back to the main. (So, 90, 180, and 270 degrees from the main color).</p>
+<div style="position: relative; height:1024px; cursor:pointer"> 
+     <h3>Tetradic</h3>
+    <p><em>Click to rotate</em></p>
 
-<div style="position: relative; height:1024pxpx; cursor:pointer"> 
   <figure style="position:absolute; margin:0px; cursor:pointer">
-  <img src="images/colorwheel.png"cursor:pointer  />
-  <figcaption><h3>Tetradic Colors</h3>
-A four-color combination that consists of a base color (H0) and three colors (H1, H2, and H3) that are 90 degrees, 180 degrees, and 270 degrees apart from H0 respectively.
-
-formula: H1 = |(H0 + 90 degrees) - 360 degrees|
-formula: H2 = |(H0 + 180 degrees) - 360 degrees|
-formula: H3 = |(H0 + 270 degrees) - 360 degrees|</figcaption>
+  <img src="images/colorwheel.png" style="cursor:pointer"/>
+  <figcaption>
+<p> <br><br>For a tetradic color scheme, grab colors in 90 degree increments until you return back to the main color. In other words, the colors at 90, 180, and 270 degrees from where you started. </p>
+</figcaption>
   </figure>
-  <img src="images/tetric_wings.png" id="tetric" cursor:pointer class="rotate" style="position:absolute;" />
+  <img src="images/tetric_wings.png" id="tetradic" class="rotate" style="position:absolute; cursor:pointer" />
+
 </div>
 
-<div style="position: relative; top: 1024px; left: 0; height:800px; cursor:pointer"> 
+<div style="position: relative; top: 0px; height:1024px; cursor:pointer"> 
+  <h3>Analogous</h3>
+  <p><em>Click to rotate</em></p>
   <figure style="position:absolute; margin:0px; cursor:pointer">
-  <img src="images/colorwheel.png"cursor:pointer  />
-  <figcaption><h3>Tetradic Colors</h3>
-A four-color combination that consists of a base color (H0) and three colors (H1, H2, and H3) that are 90 degrees, 180 degrees, and 270 degrees apart from H0 respectively.
+  <img src="images/colorwheel.png" style="cursor:pointer"  />
+  <figcaption>
+    <p><br><br>
+For analogous colors, grab colors at 30 degree increments until you have 4 total. In other words, the colors at 30, 60 and 90 degrees from where you started.</p>
+<p>For whichever scheme you used, save the RGB values using a color picker like <a href="http://www.colorzilla.com/chrome/">ColorZilla</a> or, on a Mac, the <em>Digital Color Meter</em> tool (in Applications/Utilities).</p>
 
-formula: H1 = |(H0 + 90 degrees) - 360 degrees|
-formula: H2 = |(H0 + 180 degrees) - 360 degrees|
-formula: H3 = |(H0 + 270 degrees) - 360 degrees|</figcaption>
+<h3>Creating a mood</h3>
+<p>Finally, personalize the color palette by playing with tints (white transparencies), tones (gray transparencies) and shades (black transparencies).</p><br>
+<img src="images/tetradic_palette.png" alt="" />
+<p><br>
+This tetradic color scheme is shown plain, covered in white at 30% opacity, covered in gray at 40% opacity, and covered in black at 20% opacity. </p>
+
+<h3>Using your colors</h3>
+<p>I like the richness of the dark shade. Here are those colors in an online tic-tac-toe game. What will you make?
+  <img src="images/tictactoe.png" alt="" />
+  <p>
+  Tetradic color scheme starting with the 4th yellow on the color wheel, with a 20% black shade.
+</p>
+</figcaption>
   </figure>
-  <img src="images/tetric_wings.png" id="tetric" cursor:pointer class="rotate" style="position:absolute;" />
+  <img src="images/analogous_wings.png" id="analogous" class="rotate" style="position:absolute;" />
 </div>
 
 <!-- fb share -->
@@ -94,7 +106,7 @@ formula: H3 = |(H0 + 270 degrees) - 360 degrees|</figcaption>
         data-layout="link"></div>
     </div></div> </div> 
 <!-- recent posts -->
-    <div class="col-sm-3" id="right_menu"> </div> 
+    <div class="col-sm-2" id="right_menu"> </div> 
   </div></div> 
 <!-----Footer------>
   <div id="footer_container"></div>
