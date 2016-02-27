@@ -2,10 +2,14 @@ var data =
     {
        menu: 
           [
-            {title: 'Create The Perfect Color Scheme With This Simple Interactive Tool (Part 1)',
-              subtitle: 'Create a beautiful color palette for your next project.',
+            {title: 'Create The Perfect Color Scheme (Part 2 of 2)',
+              subtitle: 'More tools to get smashing colors.',
+              link: 'colormathPt2.html',
+               image: 'triadic_thumb.png'},
+            {title: 'Create The Perfect Color Scheme (Part 1 of 2)',
+              subtitle: 'Interactive tools to get beautiful colors.',
               link: 'colormath.html',
-               image: 'tictactoe_thumb.png'},
+               image: 'tetradic_palette.png'},
             {title: 'The Importance of a Creative Blackout Hour',
               subtitle: 'Sometimes you have to let your ideas go.',
               link: 'blackout.html',
