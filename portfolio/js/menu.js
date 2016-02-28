@@ -21,10 +21,13 @@ var getMenuItem = function (itemData) {
         .append("<a href=\"" + itemData.link + "\">" +
             "<figure><img src=\"../blog/images/" + itemData.image +
              "\"></figure>" +
+             " <div class=\"article_title_container\">" + 
             " <div class=\"article_title\">" + 
             itemData.title + 
             "<div class=\"article_subtitle\">" +
-            itemData.subtitle +
+            itemData.subtitle + "</div>" +
+             "<div class=\"article_subtitle\">" +
+            //itemData.date  + "</div>" +
             "</div></div>");
     item = item.append("</div>");
     return item;
