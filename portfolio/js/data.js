@@ -6,7 +6,7 @@ var data =
               title: 'How To Make A Color Scheme, Part 2 of 2',
               subtitle: 'More tools to get smashing colors.',
               link: 'colormathPt2.html',
-              image: 'triadic_thumb.png',
+              image: 'thumb/howto_pt2.png',
               date: 'Feb 27, 2016'
             },
             {
@@ -20,7 +20,7 @@ var data =
               title: 'The Importance of a Creative Blackout Hour',
               subtitle: '',
               link: 'blackout.html',
-              image: 'thought_thumb.png',
+              image: 'thumb/thought_thumb.png',
               date: 'Feb 24, 2016'
             },
             {

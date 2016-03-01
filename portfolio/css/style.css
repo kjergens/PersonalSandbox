@@ -16,21 +16,13 @@ COLOR PALETTE
 
 /*
    Override HTML defaults
-   TODO: double check these
 */
-html { 
-  zheight: 100%;
-}
-
 body { 
   font-family: Merriweather, serif;
   color: #3f3f3f;
-  zmargin: 0;
-  zpadding: 0;
 }
 
 p { 
-  zpadding: 0 0 15px 0;
   font-size: 16px; 
 }
 
@@ -42,7 +34,8 @@ img {
 h2 {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.5em;
-  color: #222;}
+  color: #222;
+}
 
 .h2 {
   font-family: 'Merriweather', serif;
@@ -51,18 +44,10 @@ h2 {
   font-size: 28px;
 }
 
-zh1, zh2 {
-  margin: 20px 0px 2px;
+a { 
+  color: #4DB2dd; #0f3b99;
 }
 
-zh3 {
-  margin: 10px 0px 10px;
-}
-
-a, a:hover { 
-  text-decoration: none;
-  color: #0f3b99;
-}
 
 ul { 
   line-height: 1.75em;
