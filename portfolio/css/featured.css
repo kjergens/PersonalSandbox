@@ -1,0 +1,15 @@
+#tagline {
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  line-height: 1.5em;
+  color: #222;
+  font-size: 14px;
+  margin-top: 20px;/* put on same plane as Recent Posts */
+}
+
+.date {
+	margin-top: 0px;
+}
+
+figure {
+	text-align:left;
+}

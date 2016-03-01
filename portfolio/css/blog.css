@@ -2,28 +2,17 @@
   Blog 
 */
 
-body {
-  zbackground-color: #efefef;
-}
 
 .main_article, .col-sm-9 {
   background-color: #fff;
 }
 
-#tagline {
-  margin-top: 10px;
-  zmargin-left: 5px;
-  margin-bottom: 10px;
-}
 
-.date, #tagline {
+.date {
     font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
     line-height: 1.5em;
     color: #222;
     font-size: 14px;
-}
-
-.date {
   margin-top: 20px;
 }
 

@@ -1,29 +1,19 @@
-// build menu
-var getFeaturedItem = function (itemData) {
-    var item = $("<div class=\"featured\">")  
-        .append("<a href=\"" + itemData.link + "\">" +
-            " <h3>" + 
-            itemData.title + 
-            "</h3><p>" +
-            itemData.subtitle +
-            itemData.date +
-            "</p>" +
-            "<figure><img src=\"../blog/images/" + itemData.image +
-             "\"></figure>"
-            );
-    item = item.append("</div>");
-    return item;
-};
-
+// build index page 
 $(function () {
 
-    var $featuredmenu = $("#featured");
-
     // loop through data and build menu
-    $.each(data.featured, function () {
-            $featuredmenu.append(
-                getFeaturedItem(this)
-            );}
-    );
+    for (var i=0; i<=2; i++) {
+        $("#featured_articles").append("<div class='featured'><a href=\"" + data.menu[i].link + "\">" +
+            " <h3>" + 
+            data.menu[i].title + 
+            "</h3></a>" +
+            "<div class=\'date\'>" + data.menu[i].date + "</div>" +
+            "<p>" +
+            data.menu[i].subtitle +
+            "</p><a href=\"" + data.menu[i].link + "\">" +
+            "<figure><img src=\"../blog/images/" + data.menu[i].image +
+             "\"></figure></a></div>"
+            );
+    }
 
 });
