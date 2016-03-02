@@ -1,10 +1,10 @@
-.quizimg {
+.quizimg, .quizopts {
 	max-width: 100%;
 	position: relative;
 	top: 0px;
 }
 
-.quizimg img {
+.quizimg img, .options {
 	position: absolute;
 	top: 0px;
 	width: 100%;
@@ -15,7 +15,6 @@
 	display: inline;
 	list-style-type: none;
 }
-
 
 .options li {
 	list-style: none;
@@ -32,7 +31,6 @@
 	cursor: pointer;
 }
 
-
 .options li:hover {
 	transition-property: background-color, color;
 	transition-duration: .4s;
@@ -41,6 +39,23 @@
 	zcolor: #fff;
 }
 
+#nextbtn {
+	background-color: #0099bb;
+	width: 200px;
+	height: 70px;
+	position:absolute;
+	top: 300px;
+	opacity: 0; /*start off invisble*/
+}
+
+#nextbtn:hover {
+	background-color: #00aacc;
+}
+
+#nextbtn:after {
+	content: "Next";
+	padding: 50px;
+}
 
 .result_container {
 	opacity: 0;
