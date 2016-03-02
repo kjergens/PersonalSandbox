@@ -7,21 +7,24 @@ var data =
               subtitle: 'More tools to get smashing colors.',
               link: 'colormathPt2.html',
               image: 'thumb/howto_pt2.png',
-              date: 'Feb 27, 2016'
+              date: 'Feb 29, 2016',
+              blurb: 'More tools for creating the perfect color combinations.'
             },
             {
               title: 'How To Make A Color Scheme, Part 1 of 2',
               subtitle: 'Interactive tool included.',
               link: 'colormath.html',
               image: 'thumb/howto_pt1.png',
-              date: 'Feb 27, 2016'
+              date: 'Feb 29, 2016',
+              blurb: 'Be it your webpage, logo or bedroom, you might be scared your color choices don\'t pass graphics muster. Here is a tool for a fail-proof color palette.'
             },
             {
               title: 'The Importance of a Creative Blackout Hour',
               subtitle: '',
               link: 'blackout.html',
               image: 'thumb/thought_thumb.png',
-              date: 'Feb 24, 2016'
+              date: 'Feb 24, 2016',
+              blurb: 'When creativity strikes it\'s important to capture it, fast! But equally important is knowing when to let it go.'
             },
             {
               title: 'Quiz: Guess the Titles of these \'80s Teen Novels',

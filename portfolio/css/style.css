@@ -31,17 +31,10 @@ img {
   max-width: 960px;
 }
 
-h2 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  line-height: 1.5em;
+  line-height: 1.4em;
   color: #222;
-}
-
-.h2 {
-  font-family: 'Merriweather', serif;
-  line-height: 1.5em;
-  color: #222;
-  font-size: 28px;
 }
 
 a { 
@@ -61,6 +54,7 @@ ul {
 
 #header_container {
   background: #4DB4C6;
+  zborder-bottom: 10px solid #4DB4C6;
 }
 
 /* TODO: figure out why I can't set padding or margins around my name. */
