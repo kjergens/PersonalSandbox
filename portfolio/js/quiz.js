@@ -56,7 +56,7 @@ of each other so highest number on top and goes down.
 When you click an option, remove the blurry image to reveal the answer.
 */
 $(".option").click(function() {
-	$("#img_" + currentsetno + "_h").css("opacity", "0");
+	$("#img_" + currentsetno + "_h").css("display", "none");
 	$("#nextbtn").css("opacity", "1");
 }); 
 
@@ -68,8 +68,8 @@ $("#nextbtn").click(function() {
 	var currentoptions = $("#set_" + currentsetno);
 	var currentimg = $("#img_" + currentsetno + "_r");
 
-	currentimg.css("opacity", "0");
-	currentoptions.css("opacity", "0");
+	currentimg.css("display", "none");
+	currentoptions.css("display", "none");
 	$("#nextbtn").css("opacity", "0");
 	currentsetno--;
 }); 
