@@ -1,20 +1,34 @@
 // build index page 
 var show_featured = function() {
-    // loop through data and build menu
-    for (var i=0; i<=2; i++) {
-        $("#featured_articles").append("<div class='featured'>" +
+    // main, most recent article
+    var markup = "<div class='featured'>" +
             "<div class=\"featuredimg\">" +
-            "<a href=\"" + data.menu[i].link + "\">" +
-            "<figure><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
+            "<a href=\"" + data.menu[0].link + "\">" +
+            "<figure><img src=\"../blog/images/" + data.menu[0].image + "\"></figure>" +
             "</a></div>" +
-            "<div class=\"featuredhead\"><a href=\"" + data.menu[i].link + "\">" +
+            "<div class=\"featuredtext\"><a href=\"" + data.menu[0].link + "\">" +
+            " <h1>" + data.menu[0].title +  "</h1></a>" +
+            "<div class=\"date\">" + data.menu[0].date + "</div>" +
+            "<p>" + data.menu[0].blurb + "</p>" + 
+             "<p><a href=\"" + data.menu[0].link + "\">Read more.</a></p>" + 
+            "</div><div class=\"clearfix\"></div></div>";
+
+    // below the main, some featured recent articles.
+    for (var i=1; i<=2; i++) {
+        markup += "<div class='featuredmore'>" +
+            "<div><a href=\"" + data.menu[i].link + "\">" +
             " <h3>" + data.menu[i].title +  "</h3></a>" +
             "<div class=\"date\">" + data.menu[i].date + "</div>" +
             "<p>" + data.menu[i].blurb + "</p>" + 
              "<p><a href=\"" + data.menu[i].link + "\">Read more.</a></p>" + 
-            "</div><div class=\"clearfix\"></div></div>"
-            );
+                         "<div>" +
+            "<a href=\"" + data.menu[i].link + "\">" +
+            "<figure><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
+            "</a></div>" +
+            "</div><div class=\"clearfix\"></div></div>";
     }
+
+    $("#featured_articles").append(markup);
 };
 
 // build side menu, excluding main articles
@@ -29,7 +43,7 @@ var get_menu_item = function (itemData) {
             "<div class=\"article_subtitle\">" +
             itemData.subtitle + "</div>" +
              "<div class=\"article_subtitle\">" +
-            //itemData.date  + "</div>" +
+            itemData.date  + "</div>" +
             "</div></div>");
     item = item.append("</div>");
     return item;
