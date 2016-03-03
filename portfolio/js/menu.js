@@ -44,9 +44,9 @@ $(function () {
 
     // loop through data and build menu
     $.each(data.menu, function () {
-            $menu.append(
-                getMenuItem(this)
-            );}
+        $menu.append(
+            getMenuItem(this)
+        );}
     );
 
 });
