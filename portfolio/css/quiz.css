@@ -53,8 +53,8 @@ li.option:hover {
 	background-color: #0099bb;
 	width: 200px;
 	height: 70px;
-	position:relative;
 	display: none;
+	margin: 0px auto;
 	transition-property: display;
 	transition-duration: .5s;
 	transition-timing-function: ease-out;
@@ -64,7 +64,7 @@ li.option:hover {
 	background-color: #00aacc;
 }
 
-#nextbtn:after {
+#nextbtn:after {   /*the text */
 	content: "Next";
 	position: relative;
 	top:15px;

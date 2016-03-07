@@ -3,7 +3,7 @@ var data =
        menu: 
           [
             {
-              title: 'How To Make A Color Scheme, Part 2 of 2',
+              title: 'How To Make A Kick-Ass Color Scheme, Part 2 of 2',
               subtitle: 'More tools to get smashing colors.',
               link: 'colormathPt2.html',
               image: 'thumb/howto_pt2.png',
@@ -11,7 +11,7 @@ var data =
               blurb: 'More tools for creating the perfect color combinations.'
             },
             {
-              title: 'How To Make A Color Scheme, Part 1 of 2',
+              title: 'How To Make A Kick-Ass Color Scheme, Part 1 of 2',
               subtitle: 'Interactive tool included.',
               link: 'colormath.html',
               image: 'thumb/howto_pt1.png',

@@ -33,6 +33,16 @@ h3 a, h3 a:hover {
 	padding: 0px 40px;
 }
 
+.featuredmoreimg {
+	width: 55%;
+}
+
+.featuredthird{
+	float: left;
+	width: 33%;
+	padding: 0px 20px;
+}
+
 .featuredimg {
 	float: left;
 	width: 30%;

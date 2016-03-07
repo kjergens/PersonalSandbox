@@ -43,11 +43,12 @@ $(function () {
     shuffle(data.menu);
 
     // loop through data and build menu
-    $.each(data.menu, function () {
-        $menu.append(
-            getMenuItem(this)
-        );}
-    );
+    for (var i = 0; i<=3; i++) {
+         $menu.append(getMenuItem(data.menu[i]));
+    }
+
+    //$.each(data.menu, function () { $menu.append(getMenuItem(this));});
+    
 
 });
 

@@ -1,9 +1,11 @@
 var displayQuiz = function() {
 	var setno = 1;
 	var quizmarkup = "<div class=\"row\">";
+	var questionno = 1;
 
 	/* lay out the images */
-	quizmarkup += "<div class=\"quizimg col-sm-7\">";
+	quizmarkup += "<h4>Which is the real title?</h4>";
+	quizmarkup += "<div class=\"quizimg col-sm-6\">";
 
 	// loop through all question images and display them all one one top of the other
 	$.each(quiz, function () { 
@@ -14,26 +16,23 @@ var displayQuiz = function() {
 	quizmarkup += "</div>";
 
 	/* lay out the questions */
-	quizmarkup += "<div class=\"quizopts col-sm-5\">";
+	quizmarkup += "<div class=\"quizopts col-sm-6\">";
 
    // loop through all question sets and display them all one one top of the other
    	setno = 1; // reset setno, for the questions
-   	var displayno;
+   	
 	$.each(quiz, function () { 
-		displayno = quiz.length - setno + 1;
 		quizmarkup += "<div class=\"questionset\" id=\"set_" + setno + "\">"
-		quizmarkup += "<h4>" + displayno + ". Which is the real title?</h4>";
 		quizmarkup += "<ul>";
 		$.each(this.opts, function () {
 			quizmarkup += "<li class=\"option\">" + this.title + "</li>";});
 		quizmarkup += "</ul>";
 		setno++;
-		displayno++;
 	});
 
 	
-	quizmarkup += "</div></div>";
-	quizmarkup += "<div id=\"nextbtn\"></div>";
+	quizmarkup += "</div>";
+	quizmarkup += "<div id=\"nextbtn\"></div></div>";
 
 	$("#quiz").append(quizmarkup);
 }

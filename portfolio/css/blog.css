@@ -93,6 +93,7 @@ img {
 
 .menu_item:hover {
   opacity: .9;
+  border: 1px solid gray;
 }
 
 .menu_item figure {

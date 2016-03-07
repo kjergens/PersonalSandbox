@@ -7,17 +7,34 @@ var show_featured = function() {
             "<figure><img src=\"../blog/images/" + data.menu[0].image + "\"></figure>" +
             "</a></div>" +
             "<div class=\"featuredtext\"><a href=\"" + data.menu[0].link + "\">" +
-            " <h1>" + data.menu[0].title +  "</h1></a>" +
+            " <h2>" + data.menu[0].title +  "</h2></a>" +
             "<div class=\"date\">" + data.menu[0].date + "</div>" +
             "<p>" + data.menu[0].blurb + "</p>" + 
              "<p><a href=\"" + data.menu[0].link + "\">Read more.</a></p>" + 
             "</div><div class=\"clearfix\"></div></div>";
 
+    markup += "<div class=\"clearfix\"></div><h2>More articles</h2>";
+
     // below the main, some featured recent articles.
     for (var i=1; i<=2; i++) {
         markup += "<div class='featuredmore'>" +
             "<div><a href=\"" + data.menu[i].link + "\">" +
-            " <h3>" + data.menu[i].title +  "</h3></a>" +
+            " <h4>" + data.menu[i].title +  "</h4></a>" +
+            "<a href=\"" + data.menu[i].link + "\">" +
+            "<figure class='featuredmoreimg'><img src=\"../blog/images/" + data.menu[i].image + "\"></figure></a>" +
+            "<p>" + data.menu[i].blurb + "</p>" + 
+            "<div class=\"date\">" + data.menu[i].date + "</div>" +
+             "<p><a href=\"" + data.menu[i].link + "\">Read more.</a></p>" + 
+            "</div></div>";
+    }
+
+    markup += "<div class=\"clearfix\"></div>";
+
+    // below the main, some featured recent articles.
+    for (var i=3; i<=5; i++) {
+        markup += "<div class='featuredthird'>" +
+            "<div><a href=\"" + data.menu[i].link + "\">" +
+            " <h5>" + data.menu[i].title +  "</h5></a>" +
             "<div class=\"date\">" + data.menu[i].date + "</div>" +
             "<p>" + data.menu[i].blurb + "</p>" + 
              "<p><a href=\"" + data.menu[i].link + "\">Read more.</a></p>" + 
@@ -25,7 +42,7 @@ var show_featured = function() {
             "<a href=\"" + data.menu[i].link + "\">" +
             "<figure><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
             "</a></div>" +
-            "</div><div class=\"clearfix\"></div></div>";
+            "</div></div>";
     }
 
     $("#featured_articles").append(markup);
@@ -58,7 +75,7 @@ $(function () {
     $("#right_menu").append("<div id=\"menu_heading\">Recent Posts</div><div id=\"sidemenu\"></div>");
 
     // loop through data and add remaining items to menu
-    for (var i=3; i<=data.menu.length; i++) {
+    for (var i=4; i<=data.menu.length; i++) {
         $("#sidemenu").append(get_menu_item(data.menu[i]));
     }
 
