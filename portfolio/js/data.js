@@ -3,7 +3,15 @@ var data =
        menu: 
           [
             {
-              title: 'How To Make A Kick-Ass Color Scheme, Part 2 of 2',
+              title: 'Image Is Everything: The Pilot',
+              subtitle: 'Our image of a pilot is very specific - and that\'s on purpose.',
+              link: 'pilots.html',
+              image: 'thumb/air-mail-pilot-l-thumb.jpg',
+              date: 'Mar 9, 2016',
+              blurb: '"When they played poker they played all night. When they smoked they smoked too much. When they made love the complaints were rare."'
+            },
+            {
+              title: 'How To Make A Color Scheme, Part 2 of 2',
               subtitle: 'More tools to get smashing colors.',
               link: 'colormathPt2.html',
               image: 'thumb/howto_pt2.png',
@@ -11,7 +19,7 @@ var data =
               blurb: 'More tools for creating the perfect color combinations.'
             },
             {
-              title: 'How To Make A Kick-Ass Color Scheme, Part 1 of 2',
+              title: 'How To Make A Color Scheme, Part 1 of 2',
               subtitle: 'Interactive tool included.',
               link: 'colormath.html',
               image: 'thumb/howto_pt1.png',
@@ -31,7 +39,8 @@ var data =
               subtitle: 'They are incredible.',
               link: 'bookcovers.html',
               image: 'bookcovers/disappearing-teacher.png',
-              date: 'Feb 27, 2016'
+              date: 'Feb 27, 2016',
+              blurb: "They are incredible."
             },
             {
               title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope?',

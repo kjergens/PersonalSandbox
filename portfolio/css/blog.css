@@ -2,6 +2,9 @@
   Blog 
 */
 
+.fb_iframe_widget span {
+  display: inline;
+}
 
 .main_article, .col-sm-9 {
   background-color: #fff;
