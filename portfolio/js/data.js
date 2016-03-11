@@ -1,7 +1,14 @@
 var data = 
     {
        menu: 
-          [
+          [  {
+              title: 'Bugs, Brits, and Nobility: The Colored History of Red',
+              subtitle: 'The history of the color red starts with a bug in Mexico.',
+              link: 'red.html',
+              image: 'thumb/red.jpg',
+              date: 'Mar 12, 2016',
+              blurb: 'The history of the color red as more than an natural occurance but harvested to make red clothes, curtains and paint starts with a bug in Mexico.'
+            },
             {
               title: 'Image Is Everything: The Pilot',
               subtitle: 'Our image of a pilot is very specific - and that\'s on purpose.',
