@@ -3,7 +3,7 @@ var data =
        menu: 
           [  {
               title: 'Bugs, Brits, and Nobility: The Colored History of Red',
-              subtitle: 'The history of the color red starts with a bug in Mexico.',
+              subtitle: 'It starts with a bug in Mexico.',
               link: 'red.html',
               image: 'thumb/red.jpg',
               date: 'Mar 12, 2016',
