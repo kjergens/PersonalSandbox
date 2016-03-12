@@ -13,22 +13,21 @@ var show_featured = function() {
              "<p><a href=\"" + data.menu[0].link + "\">Read more.</a></p>" + 
             "</div><div class=\"clearfix\"></div></div>";
 
-    markup += "<div class=\"clearfix\"></div><h2>More articles</h2>";
-
-    // below the main, some featured recent articles.
+    // below the main, some more articles.
+    markup += "<h3 id=\"morearticles\">More articles</h3><div class=\"more\">";
     for (var i=1; i<=3; i++) {
-        markup += "<div class='featuredmore'>" +
-            "<a href=\"" + data.menu[i].link + "\">" +
-            " <h4>" + data.menu[i].title +  "</h4></a>" +
-            "<p>" + data.menu[i].blurb + "</p>" + 
-            "<a href=\"" + data.menu[i].link + "\">" +
+        markup += "<a href=\"" + data.menu[i].link + "\">" +
+        "<div class='featuredmore'>" +
+            " <h4>" + data.menu[i].title +  "</h4>" +
             "<figure class='featuredmoreimg'><img src=\"../blog/images/" + data.menu[i].image + "\"></figure></a>" +
             "<div class=\"date\">" + data.menu[i].date + "</div>" +
+            "<p>" + data.menu[i].blurb + "</p>" + 
+            "<a href=\"" + data.menu[i].link + "\">" +
              "<p><a href=\"" + data.menu[i].link + "\">Read more.</a></p>" + 
-            "</div>";
+            "</div></a>";
     }
 
-    markup += "<div class=\"clearfix\"></div>";
+    markup += "</div><div class=\"clearfix\"></div>"; // clear the floats
 
     $("#featured_articles").append(markup);
 };

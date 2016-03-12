@@ -12,6 +12,8 @@ COLOR PALETTE
 #222222 // header font
 #0f3b99 // blue a hover
 
+
+
 *************************/
 
 /*
@@ -38,7 +40,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a { 
-  color: #4DB2dd; #0f3b99;
+  color: #142afa; #1a2afa; #0f3b99;
+}
+
+a:hover {
+  ztext-decoration: none;
+  color: #142afa; f3b128;
 }
 
 
@@ -53,9 +60,12 @@ ul {
 */
 
 #header_container {
-  background: #4DB4C6;
-  zborder-bottom: 10px solid #4DB4C6;
+  zbackground: #4DB4C6;
+  border-bottom: 1px solid #e5e5e5; #f6b628; #c0e73b; 
+  zborder-top: 5px solid #e5e5e5; #f6b628; #c0e73b; 
 }
+
+
 
 /* TODO: figure out why I can't set padding or margins around my name. */
 #header { 
@@ -63,20 +73,22 @@ ul {
   margin: 0px auto;
 }
 
+
+
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 42px;
+  font-size: 38px;
   letter-spacing: -6px;
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   padding-top: 5px;
 }
 
 #site_title a { 
-  color: #93CFEA; 
+  color: #46b7fa; #0050fa; #4ec2fa; #1a2afa; #E7B83B; #f6f726; 
 }
 
 #name { 
-  color: #fff; 
+  color: #f3b128; #f6b628; #1a2afa; #e7623b; 
 }
 
 /*
@@ -102,14 +114,14 @@ ul#menu li, ul#subnav_menu li, #topmenu li {
 ul#menu li a, ul#topmenu li a  { 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 15px;
-  color: #fff;
+  color: #46b7fa; #4ec2fa;
   letter-spacing: -2px;
   padding-left: 12px;
   text-align: center;
 } 
 
 ul#menu li a:hover, ul#topmenu li a:hover  { 
-  color: #f2f2f2;
+  color: #142afa; #f6b628;
   text-decoration: underline;
 }
 

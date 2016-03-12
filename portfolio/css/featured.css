@@ -29,16 +29,31 @@ h3 a, h3 a:hover {
 
 .featuredmore {
 	float: left;
-	width: 33%;
-	padding-left: 10px;
+	width: 33.33%;
+	padding: 0px 20px 0px 20px;
+	border-left: 1px solid #bfbfbf;
+	border-right: 1px solid #bfbfbf;
 }
+
+.featuredmore:first-of-type {
+	padding: 0px 20px 0px 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.featuredmore:last-of-type {
+	padding: 0px 0px 0px 20px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
 
 .featuredmore p {
 	font-size: 14px;
 }
 
 .featuredmoreimg {
-	width: 55%;
+	width: 75%;
 }
 
 .featuredthird{
