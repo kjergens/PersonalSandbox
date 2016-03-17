@@ -43,7 +43,7 @@ $(function () {
     shuffle(data.menu);
 
     // loop through data and build menu
-    for (var i = 0; i<=3; i++) {
+    for (var i = 0; i<=5; i++) {
          $menu.append(getMenuItem(data.menu[i]));
     }
 

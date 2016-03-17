@@ -7,7 +7,7 @@ var show_featured = function() {
             "<figure><img src=\"../blog/images/" + data.menu[0].image + "\"></figure>" +
             "</a></div>" +
             "<div class=\"featuredtext\"><a href=\"" + data.menu[0].link + "\">" +
-            " <h2>" + data.menu[0].title +  "</h2></a>" +
+            " <h1>" + data.menu[0].title +  "</h1></a>" +
             "<div class=\"date\">" + data.menu[0].date + "</div>" +
             "<p>" + data.menu[0].blurb + "</p>" + 
              "<p><a href=\"" + data.menu[0].link + "\">Read more.</a></p>" + 
@@ -18,8 +18,9 @@ var show_featured = function() {
     for (var i=1; i<=3; i++) {
         markup += "<a href=\"" + data.menu[i].link + "\">" +
         "<div class='featuredmore'>" +
+        "<figure class='featuredmoreimg'><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
             " <h4>" + data.menu[i].title +  "</h4>" +
-            "<figure class='featuredmoreimg'><img src=\"../blog/images/" + data.menu[i].image + "\"></figure></a>" +
+            
             "<div class=\"date\">" + data.menu[i].date + "</div>" +
             "<p>" + data.menu[i].blurb + "</p>" + 
             "<a href=\"" + data.menu[i].link + "\">" +

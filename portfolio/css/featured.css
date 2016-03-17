@@ -1,10 +1,4 @@
-#tagline {
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  line-height: 1.5em;
-  color: #222;
-  font-size: 14px;
-  margin-top: 20px;/* put on same plane as Recent Posts */
-}
+
 
 .date {
 	margin-top: 0px;
@@ -22,28 +16,34 @@ h3 a, h3 a:hover {
 }
 
 .featured {
-	border-bottom: 5px solid #f1f1f1;
+	zborder-bottom: 5px solid #f1f1f1;
 	margin: 20px 0px;
 	padding: 0px 0px 30px;
+}
+
+h3#morearticles {
+	border-top: 2px solid #f3b128;
+	color: #f3b128;
+	padding: 16px 0px;
 }
 
 .featuredmore {
 	float: left;
 	width: 33.33%;
 	padding: 0px 20px 0px 20px;
-	border-left: 1px solid #bfbfbf;
-	border-right: 1px solid #bfbfbf;
+	border-left: 0px solid #bfbfbf;
+	border-right: 0px solid #bfbfbf;
 }
 
 .featuredmore:first-of-type {
-	padding: 0px 20px 0px 0px;
+	padding: 0px 40px 0px 0px;
 	border-left: 0px;
-	border-right: 0px;
+	zborder-right: 1px solid #bfbfbf;
 }
 
 .featuredmore:last-of-type {
-	padding: 0px 0px 0px 20px;
-	border-left: 0px;
+	padding: 0px 0px 0px 40px;
+	zborder-left:  1px solid #bfbfbf;
 	border-right: 0px;
 }
 
@@ -53,7 +53,8 @@ h3 a, h3 a:hover {
 }
 
 .featuredmoreimg {
-	width: 75%;
+	width: 100%;
+	margin-bottom: 10px;
 }
 
 .featuredthird{
@@ -78,6 +79,14 @@ h3 a, h3 a:hover {
 	vertical-align: text-top;
 }
 
+@-moz-document url-prefix() {  /* hack to deal with ff not know max-width */
+  img {
+     max-width: 220px;
+  }
 
+  .menu_item img {
+    max-width: 140px;
+  }
+}
 
 

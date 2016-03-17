@@ -2,16 +2,16 @@ var data =
     {
        menu: 
           [  {
-              title: 'Bugs, Brits, and Nobility: The Colored History of Red',
+              title: 'Brits, Bugs and Nobility: The Colorful History of Red',
               subtitle: 'It starts with a bug in Mexico.',
               link: 'red.html',
               image: 'thumb/red.jpg',
-              date: 'Mar 12, 2016',
-              blurb: 'The history of the color red as more than an natural occurance but harvested to make red clothes, curtains and paint starts with a bug in Mexico.'
+              date: 'Mar 13, 2016',
+              blurb: 'The story of red clothes starts with a bug in Mexico.'
             },
             {
               title: 'Image Is Everything: The Pilot',
-              subtitle: 'Our image of a pilot is very specific - and that\'s on purpose.',
+              subtitle: 'The evolving image of the airplane pilot.',
               link: 'pilots.html',
               image: 'thumb/air-mail-pilot-l-thumb.jpg',
               date: 'Mar 9, 2016',
@@ -57,15 +57,15 @@ var data =
               date: 'Jan 27, 2016'
             },
             {
-              title: 'Do You See What I See?',
-              subtitle: 'If you speak a different language, you might not.',
+              title: 'Language And Sight',
+              subtitle: 'If we speak a different language, we might see differently.',
               link: 'himba.html',
               image: 'himbaPhoto1.png',
               date: 'Jan 20, 2016'
             },
             {
-              title: 'Graphic: Bartender Terms',
-              subtitle: 'The best ways to order a drink.',
+              title: 'Bartender Terms',
+              subtitle: 'Correct ways to order a drink.',
               link: 'drinks.html',
               image: 'dirty.png',
               date: 'Jan 30, 2016'
@@ -78,21 +78,21 @@ var data =
               date: 'Jan 26, 2016'
             },
             {
-              title: 'A Letter To St. Louis On Losing Their Football Team',
+              title: 'Letter To St. Louis On Losing Their Football Team',
               subtitle: 'In short: Don\'t worry!',
               link: 'rams.html',
               image: 'audrey.png',
               date: 'Jan 19, 2016'
             },
             {
-              title: 'Seeing Like An Ancient Greek',
+              title: 'If the Ancient Greeks Are to Be Believed...',
               subtitle: 'Their sky was ... bronze?',
               link: 'greece.html',
               image: 'greece.jpg',
               date: 'Jan 18, 2016'
             },
             {
-              title: 'Early Versions of 3 Popular Games & Toys',
+              title: 'Early Versions of 3 Popular Games',
               subtitle: '',
               link: 'games.html',
               image: 'life1963.png',
@@ -104,38 +104,6 @@ var data =
               link: 'shakes.html',
               image: 'shakes/red_green_650x865.jpg',
               date: 'Feb 11, 2016'
-            }
-          ],
-      featured: 
-          [
-            {
-              title: 'Create The Perfect Color Scheme (Part 2 of 2)',
-              subtitle: 'More tools to get smashing colors.',
-              link: 'colormathPt2.html',
-              image: 'triadic_thumb.png',
-              date: 'Feb 27, 2016'
-             },
-
-            {
-              title: 'Create The Perfect Color Scheme (Part 1 of 2)',
-              subtitle: 'Interactive tools to get beautiful colors.',
-              link: 'colormath.html',
-              image: 'tetradic_palette.png',
-              date: 'Feb 27, 2016'
-            },
-            {
-              title: 'The Importance of a Creative Blackout Hour',
-              subtitle: 'Sometimes you have to let your ideas go.',
-              link: 'blackout.html',
-              image: 'blackout_thumb.png',
-              date: 'Feb 27, 2016'
-            },
-            {
-              title: 'Quiz: Guess the Titles of these \'80s Teen Romance Novels',
-              subtitle: 'They are incredible.',
-              link: 'bookcovers.html',
-              image: 'bookcovers/teaser.png',
-              date: 'Feb 27, 2016'
             }
           ]
     };
