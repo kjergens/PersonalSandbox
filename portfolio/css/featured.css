@@ -31,25 +31,20 @@ h3#morearticles {
 	float: left;
 	width: 33.33%;
 	padding: 0px 20px 0px 20px;
-	border-left: 0px solid #bfbfbf;
-	border-right: 0px solid #bfbfbf;
 }
 
 .featuredmore:first-of-type {
 	padding: 0px 40px 0px 0px;
-	border-left: 0px;
-	zborder-right: 1px solid #bfbfbf;
 }
 
 .featuredmore:last-of-type {
 	padding: 0px 0px 0px 40px;
-	zborder-left:  1px solid #bfbfbf;
-	border-right: 0px;
 }
 
 
 .featuredmore p {
 	font-size: 14px;
+	color: #3b3b3b;
 }
 
 .featuredmoreimg {
@@ -65,17 +60,17 @@ h3#morearticles {
 
 .featuredimg {
 	float: left;
-	width: 30%;
+	width: 35%;
 	vertical-align: text-top;
 	margin-top: 22px; /*match h3 margin-top*/
 	overflow: hidden;
-	height: 200px;
+	zheight: 200px;
 	margin-right: 30px; /*space between pic and text*/
 }
 
 .featuredtext {
 	float: left;
-	width: 65%;
+	width: 60%;
 	vertical-align: text-top;
 }
 

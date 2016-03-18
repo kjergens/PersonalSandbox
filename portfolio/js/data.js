@@ -10,8 +10,8 @@ var data =
               blurb: 'The story of red clothes starts with a bug in Mexico.'
             },
             {
-              title: 'Image Is Everything: The Pilot',
-              subtitle: 'The evolving image of the airplane pilot.',
+              title: 'The Evolving Image of the Airplane Pilot',
+              subtitle: '',
               link: 'pilots.html',
               image: 'thumb/air-mail-pilot-l-thumb.jpg',
               date: 'Mar 9, 2016',
@@ -57,8 +57,8 @@ var data =
               date: 'Jan 27, 2016'
             },
             {
-              title: 'Language And Sight',
-              subtitle: 'If we speak a different language, we might see differently.',
+              title: 'Is My Blue Your Blue?',
+              subtitle: 'That might depend on your language.',
               link: 'himba.html',
               image: 'himbaPhoto1.png',
               date: 'Jan 20, 2016'
@@ -93,7 +93,7 @@ var data =
             },
             {
               title: 'Early Versions of 3 Popular Games',
-              subtitle: '',
+              subtitle: 'Some familiar games have long histories.',
               link: 'games.html',
               image: 'life1963.png',
               date: 'Feb 7, 2016'

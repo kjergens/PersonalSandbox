@@ -45,7 +45,7 @@ var get_menu_item = function (itemData) {
             "<div class=\"article_subtitle\">" +
             itemData.subtitle + "</div>" +
              "<div class=\"article_subtitle\">" +
-            itemData.date  + "</div>" +
+            "</div>" +
             "</div></div>");
     item = item.append("</div>");
     return item;
