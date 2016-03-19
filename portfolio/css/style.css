@@ -60,15 +60,6 @@ ul {
 }
 
 
-
-/* TODO: figure out why I can't set padding or margins around my name. */
-#header { 
-  width: 960px;
-  margin: 0px auto;
-}
-
-
-
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 38px;
@@ -149,14 +140,8 @@ ul#menu li a:hover, ul#topmenu li a:hover  {
   padding: 10px 0px;
 }
 
-ul#subnav_menu {   /* center the menu */
-  width: 960px;
-  margin: 0px auto;
-}
-
 ul#subnav_menu li a { 
   padding-right: 35px;
-  text-align: left;
   font-size: 12.5px;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   color: #6b6b6b;

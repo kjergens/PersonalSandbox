@@ -9,8 +9,9 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
 
-  <!--Bootstrap-->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+    <!-- Bootstrap-->
+ <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+
 
   <!--My stylesheets-->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -22,7 +23,7 @@
   <script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
   <script type="text/javascript" src="js/slideshow.js"></script>
   <script type="text/javascript" src="js/footer.js"></script>
-
+ <script type="text/javascript" src="js/pheader.js"></script>
 </head>
 
 <body>
@@ -33,33 +34,14 @@
  Top Navigation
 
  ------>
-  <div id="header_container">
-    <div id="header">
-      <span id="site_title">
-        <a href="index.html">
-        <span id="name">KATIE JERGENS</span> UX DESIGNER
-      </a></span>
-      <ul id="topmenu">
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resum&#233;</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog/index.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li class="last"><a href="about.html">About Me</a></li>
-      </ul>
-    </div> <!-- /header-->
-    </div> <!-- /header_container -->
+  <div id="header_container"></div> <!-- /header_container -->
 
    
     
 	<div class="container">	
 	  <div id="image_container">	
       <!-- start gallery HTML containers -->
-<!-------------------------------
-
-  Thumbnails
-
-  -------------------------------->
+<!-------------------Thumbnails-------------------------------->
   <div class="navigation-container ">
     <div class="navigation">
         <div id="thumbs">
@@ -120,11 +102,7 @@
       </div> <!-- /navigation-->
     </div> <!-- /navigation-container -->
 
-<!-------------------------------
-
-  Slides
-
-  -------------------------------->
+<!----------------Slides------------------>
   <div class="content">
     <div class="slideshow-container">
       <div id="loading" class="loader"></div>
