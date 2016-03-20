@@ -52,9 +52,8 @@ ul {
 }
 
 /* 
-    Site banner
+  Header
 */
-
 #header_container {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -106,7 +105,7 @@ ul#menu li a, ul#topmenu li a  {
 } 
 
 ul#menu li a:hover, ul#topmenu li a:hover  { 
-  color: #142afa; #f6b628;
+  color: #f3b128; #142afa; #f6b628;
   text-decoration: underline;
 }
 
@@ -130,79 +129,6 @@ ul#menu li a:hover, ul#topmenu li a:hover  {
     ul {
           -webkit-padding-start: 0px;
     }
-}
-
-/*
-    Portfolio navigation (Data Viz, etc.)
-*/
-#subnav_container {
-  background: #F0EDF2;
-  padding: 10px 0px;
-}
-
-ul#subnav_menu li a { 
-  padding-right: 35px;
-  font-size: 12.5px;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  color: #6b6b6b;
-} 
-
-ul#subnav_menu li a:hover { 
-  color: #888;
-}
-
-.page_title {
-  font-size: 32px;
-  color: #222;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  margin: 20px 0px;
-}
-  
-/* 
-    Portfolio body
-*/
-
-.category_title_container {
-  padding-top: 20px;
-  padding-bottom: 15px;
-  border-top: 2px solid #f3b128;
-  margin-top: 50px;
-}
-
-.category_title_container:first-of-type {
-  border-top: 0px;
-  padding-top: 0px;
-  margin-top: 0px;
-}
-
-.category_title {
-  font-size: 26px;
-  color: #222;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-}
-
-.portfolio img {
-  max-width: 100%;
-}
-
-.portfolio figure {
-    border: 1px solid #F0EDF2;
-    display: flex;
-}
-
-figcaption {
-  font-size: 14px;
-  background-color: #f7f7f7; 
-  padding: 15px;
-  text-align: left;
-}
-
-/* About me and Contact title specific
-   TODO: use category_title, like in blog
-   */
-#aboutme, #contact {
-  padding-top: 30px;
-  padding-left: 40px;
 }
 
 
