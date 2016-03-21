@@ -37,6 +37,10 @@ ul#subnav_menu li a:hover {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   margin: 20px 0px;
 }
+
+p {
+  margin: 10px 5px;
+}
   
 /* 
     Portfolio body
