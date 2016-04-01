@@ -2,30 +2,33 @@
 var show_featured = function() {
     // main, most recent article
     var markup = "<div class='featured'>" +
-            "<div class=\"featuredimg\">" +
             "<a href=\"" + data.menu[0].link + "\">" +
-            "<figure><img src=\"../blog/images/" + data.menu[0].image + "\"></figure>" +
-            "</a></div>" +
-            "<div class=\"featuredtext\"><a href=\"" + data.menu[0].link + "\">" +
-            " <h1>" + data.menu[0].title +  "</h1></a>" +
-            "<div class=\"date\">" + data.menu[0].date + "</div>" +
-            "<p>" + data.menu[0].blurb + "</p>" + 
-             "<p><a href=\"" + data.menu[0].link + "\">Read more.</a></p>" + 
-            "</div><div class=\"clearfix\"></div></div>";
+           "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].image + "\"></figure>" +
+           "</a>" +
+            "<a href=\"" + data.menu[0].link + "\">" +
+            "<div id='headline'>" +
+            "<div class='title'>" + data.menu[0].title + "</div>" +
+            "</a>" +
+            "<div class='date'>" + data.menu[0].date + "</div>" +
+            "<p class='blurb'>" + data.menu[0].blurb + 
+           "<a href=\"" + data.menu[0].link + "\">... Read more.</a>" + "</p>" +
+            "</div></div>";
 
     // below the main, some more articles.
     markup += "<h3 id=\"morearticles\">More articles</h3><div class=\"more\">";
+
+    // row 1
     for (var i=1; i<=3; i++) {
         markup += "<a href=\"" + data.menu[i].link + "\">" +
         "<div class='featuredmore'>" +
-        "<figure class='featuredmoreimg'><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
-            " <h4>" + data.menu[i].title +  "</h4>" +
-            
-            "<div class=\"date\">" + data.menu[i].date + "</div>" +
-            "<p>" + data.menu[i].blurb + "</p>" + 
-            "<a href=\"" + data.menu[i].link + "\">" +
-             "<p><a href=\"" + data.menu[i].link + "\">Read more.</a></p>" + 
-            "</div></a>";
+        "<div class='featuredmoreimg'>" +
+        "<figure><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
+        "</div>" +
+        " <h4>" + data.menu[i].title +  "</h4>" +
+        "<div class=\"date\">" + data.menu[i].date + "</div>" +
+        "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
+        "<a href=\"" + data.menu[i].link + "\">... Read more.</a>" + 
+        "</div></a>";
     }
 
     markup += "</div><div class=\"clearfix\"></div>"; // clear the floats

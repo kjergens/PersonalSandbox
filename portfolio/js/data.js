@@ -2,20 +2,36 @@ var data =
     {
        menu: 
           [  {
-              title: 'Brits, Bugs and Nobility: The Colorful History of Red',
+              title: 'The Most Expensive Dye in the World',
+              subtitle: 'It has a secret ingredient.',
+              link: 'tyrian.html',
+              image: 'thumb/tyrian.png',
+              date: 'Apr 1, 2016',
+              blurb: 'Royal purple - also known as Tyrian purple after the city Tyre - holds the record as the world\'s most expensive dye. It\'s because of snails. Actually, it\'s because of snail mucus.'
+            },
+            {
+              title: 'Graphical History of the Bicycle',
+              subtitle: '',
+              link: 'bikes.html',
+              image: 'thumb/bikes.png',
+              date: 'Mar 28, 2016',
+              blurb: 'See how bike design changed with the times.'
+            },
+            {
+              title: 'The Origins of Regal Red',
               subtitle: 'It starts with a bug in Mexico.',
               link: 'red.html',
               image: 'thumb/red.jpg',
               date: 'Mar 13, 2016',
-              blurb: 'The story of red clothes starts with a bug in Mexico.'
+              blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'The Evolving Image of the Airplane Pilot',
+              title: 'Engineering an Image: The Pilot',
               subtitle: '',
               link: 'pilots.html',
-              image: 'thumb/air-mail-pilot-l-thumb.jpg',
+              image: 'thumb/pilots.jpg',
               date: 'Mar 9, 2016',
-              blurb: '"When they played poker they played all night. When they smoked they smoked too much. When they made love the complaints were rare."'
+              blurb: '"When they played poker they played all night. When they smoked'
             },
             {
               title: 'How To Make A Color Scheme, Part 2 of 2',
@@ -42,10 +58,10 @@ var data =
               blurb: 'When creativity strikes it\'s important to capture it, fast! But equally important is knowing when to let it go.'
             },
             {
-              title: 'Quiz: Guess the Titles of these \'80s Teen Novels',
+              title: 'Quiz: Guess the Titles of \'80s Teen Romance Novels',
               subtitle: 'They are incredible.',
               link: 'bookcovers.html',
-              image: 'bookcovers/disappearing-teacher.png',
+              image: 'thumb/books.png',
               date: 'Feb 27, 2016',
               blurb: "They are incredible."
             },

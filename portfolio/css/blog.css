@@ -5,12 +5,32 @@ p {
   margin: 20px 0px;
 }
 
+figure {
+  margin: 20px auto;
+  display: table;
+}
+
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  zbackground: #fdfdfd;  /* can't have this for colorwheel*/
+  padding: 5px 0px 0px 0px;
+  color: #666;
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+    
+}
+
+
+img {
+  max-width: 100%;
+}
+
 #tagline {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.5em;
   color: #46b7fa;
   font-size: 14px;
-  margin: 15px 0px 10px 0px;
+  margin: 15px 0px 30px 0px;
 }
 
 .fb_iframe_widget span {
@@ -29,36 +49,13 @@ p {
 }
 
 
-.blog_title_container, .title {
-  margin-top: 10px;
-}
-
-.blog_title, .title  {
+.title {
   font-size: 38px;
   font-weight: bolder;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
-figure {
-  text-align:center;
-  margin: 10px auto;
-  display: table;
-}
 
-figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  background: #fdfdfd;
-  padding: 5px 0px 0px 0px;
-  color: #666;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-    
-}
-
-
-img {
-  max-width: 100%;
-}
 
 .img_border img {
   border: 3px solid white;
@@ -76,62 +73,56 @@ img {
   margin-bottom: -5px; /* hack to make it same parallel as fb button */
 }
 
-/*
-  Menu 
-*/ 
+/*  Side Menu */ 
 
 #menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 80px;
   padding: 2px 5px;
   background-color: #f3b128;
   color: #fff;
-  margin-bottom: -20px;
+  margin-top: 130px;
 }
 
 #sidemenu{
-  padding-left: 80px;
+  padding: 5px;
+  background-color: #fcfbfa; 
 }
 
 .menu_item {
-  margin: 32px 0px 32px;
-  border: 1px solid #efefef;
+  margin: 0px 0px 22px;
+  border: 1px solid #e9e9e9;
   position: relative;
   top: 0px;
-  min-height: 150px;
-  max-height: 180px;
+  height: 170px;
+  background-color: #fff;
 }
 
 .menu_item:hover {
   box-shadow: 0px 0px 0px 1px; 
+  opacity: .8;
 }
 
 .menu_item figure {
   overflow: hidden;
-  max-height: 170px;
-  display: block;
-  margin: 0px;
-  border: 0px;
-  width: 100%;
-}
-
-.menu_item img {
-  min-width: 100%;
+  height: 165px;
+  display: block;  /* overfolw hidden not work unless this is block */
+  margin: 0px;     /* overfolw hidden not work unles margin is 0 */
 }
 
 .article_title_container {
   background-color: #fff;
   padding: 5px 7px;
-  width: 100%;
   position: absolute;
+  width: 100%;
   bottom: 0px;
+  border: 1px solid #efefef;
 }
 
 
 .article_title {
-  zcolor: #3f3f3f;  /* override hyperlink color */
+  color: #3f3f3f;  /* override hyperlink color */
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  /* use header font */
   font-size: 16px;
   font-weight: bolder;
@@ -141,21 +132,41 @@ img {
   font-size: 12px;
   font-weight: lighter;
   margin-top: 2px;
-  margin-bottom:2px; 
   color: #666; /* override hyperlink color */
   font-family: Merriweather, serif;
 }
 
 
 
-@-moz-document url-prefix() {  /* hack to deal with ff not know max-width */
+@-moz-document url-prefix() {  /* hack to deal with FF not know max-width */
+  
   img {
-     max-width: 520px;
+     max-width: 612px;   /* if 640 (iPhone) or larger */
+    }
+
+
+   @media (min-width: 718px) {  
+    img {
+     max-width: 720px;
+    }
+
+   @media (min-width: 992px) {  
+    img {
+     max-width: 620px;
+    }
+
+  @media (min-width: 1240px) {  /* if 1280 (sm. desktop) or larger */
+    img {
+     max-width: 750px;
+    }
   }
 
+ 
   .menu_item img {
     max-width: 140px;
   }
 }
+
+
 
 

@@ -1,44 +1,70 @@
+.featured {
+	position: relative;
+	height: 400px;
+	overflow-y: hidden;
+}
 
+.featured #headline {
+	position: absolute;
+	bottom: 0px;
+	background: #fff;
+	width: 100%;
+}
+
+.featuredimg {
+	width: 100%;
+  position: absolute;
+}
+
+.featuredimg img {
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.feature .date {
+	position: absolute;
+}
 
 .date {
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-bottom: 5px;
 	color: #989898;
+	display: block;
 }
 
 figure {
 	margin: 0px;
 }
 
-h3 a, h3 a:hover {
+a>.title , h3 a, h3 a:hover, .blurb {         /* get rid of hyperlink blue */
 	color: #3f3f3f;
 	text-decoration: none;
 }
 
-.featured {
-	zborder-bottom: 5px solid #f1f1f1;
-	margin: 20px 0px;
-	padding: 0px 0px 30px;
+p.blurb {
+	display: inline;
 }
 
 h3#morearticles {
-	border-top: 2px solid #f3b128;
+	border-bottom: 2px solid #f3b128;
 	color: #f3b128;
-	padding: 16px 0px;
+	padding: 16px 0px 5px;
+	margin-bottom: 25px;
 }
 
-.featuredmore {
+.featuredmore {               /* row of articles */
 	float: left;
 	width: 33.33%;
-	padding: 0px 20px 0px 20px;
+	padding: 0px 25px 0px 25px;   /* the middle article gets padding on each side*/
 }
 
-.featuredmore:first-of-type {
-	padding: 0px 40px 0px 0px;
+
+.featuredmore:last-of-type {    /* last column don't pad right border */
+	padding: 0px 0px 0px 25px;
 }
 
-.featuredmore:last-of-type {
-	padding: 0px 0px 0px 40px;
+.featuredmore:first-of-type {  /* first column don't pad left border */
+	padding: 0px 25px 0px 0px;
 }
 
 
@@ -48,31 +74,10 @@ h3#morearticles {
 }
 
 .featuredmoreimg {
-	width: 100%;
-	margin-bottom: 10px;
-}
-
-.featuredthird{
-	float: left;
-	width: 33%;
-	padding: 0px 20px;
-}
-
-.featuredimg {
-	float: left;
-	width: 35%;
-	vertical-align: text-top;
-	margin-top: 22px; /*match h3 margin-top*/
+	height: 120px;
 	overflow: hidden;
-	zheight: 200px;
-	margin-right: 30px; /*space between pic and text*/
 }
 
-.featuredtext {
-	float: left;
-	width: 60%;
-	vertical-align: text-top;
-}
 
 @-moz-document url-prefix() {  /* hack to deal with ff not know max-width */
   img {
@@ -84,4 +89,6 @@ h3#morearticles {
   }
 }
 
-
+#menu_heading {
+	margin-top: 0px;
+}

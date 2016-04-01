@@ -47,16 +47,8 @@ p {
 */
 
 .category_title_container {
-  padding-top: 20px;
-  padding-bottom: 15px;
-  border-top: 2px solid #f3b128;
-  margin-top: 50px;
-}
-
-.category_title_container:first-of-type {
-  border-top: 0px;
-  padding-top: 0px;
-  margin-top: 0px;
+  border-bottom: 2px solid #f3b128;
+  margin-bottom: 15px;
 }
 
 .category_title {
@@ -77,6 +69,10 @@ figure {
 .section {
   background-color: #e9e9e9; 
   margin-bottom: 20px;
+}
+
+.category_body {
+  margin-bottom: 120px;
 }
 
 .figure {

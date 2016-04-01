@@ -9,12 +9,11 @@ COLOR PALETTE
 #bfbfbf // gray
 #3f3f3f // paragraph font 
 #222222 // header font
+#fcfbfa; // side menu background
 
 *************************/
 
-/*
-   Override HTML defaults
-*/
+/* Override HTML defaults */
 body { 
   font-family: Merriweather, serif;
   color: #3f3f3f;
@@ -24,100 +23,74 @@ p {
   font-size: 16px; 
 }
 
-img { 
-  border: 0;
-  max-width: 960px;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.4em;
   color: #222;
 }
 
-a { 
-  color: #142afa;
-}
-
-a:hover {
+a, a:hover {
   text-decoration: none;
   color: #142afa;
 }
 
 
-ul { 
-  line-height: 1.75em;
-  font-style: normal;
-  font-size: 100%;
-}
-
-/* 
-  Header
-*/
+/* Header */
 #header_container {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 25px solid #e2e1e1;;
+  box-shadow: 0px 0.5px 6px .5px;
+  padding: 5px 0px 5px;      /* some breathing room before the gray bar */
 }
 
 
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 38px;
-  letter-spacing: -6px;
-  padding-bottom: 2px;
-  padding-top: 5px;
+  font-size: 34px;
+  letter-spacing: -5px;
 }
 
-#site_title a { 
-  color: #46b7fa;
-}
-
-#name { 
+#name {                /* my name color */
   color: #f3b128; 
 }
 
-/*
-    Main menu/global nav
-*/
-  
-ul#menu li.current a, ul#topmenu li.current a  { 
-  text-decoration: underline;
-} 
-
-ul#menu, #topmenu { 
-  padding-top: 5px;
-  margin-top: 10px;
-  float: right;
-  -webkit-padding-start: 0px;
+#site_title a {        /* UX DESIGNER color */
+  color: #46b7fa;
 }
 
-ul#menu li, ul#subnav_menu li, #topmenu li { 
+
+/*   Main menu/global nav */
+ul#menu { 
+  float: right;
+  margin-top: 7px; /* compensate for the site title having auto-line spacing */
+}
+
+ul#menu li, ul#subnav_menu li { 
   list-style: none;
   display: inline;
 }
 
-ul#menu li a, ul#topmenu li a  { 
+ul#menu li a { 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 15px;
-  color: #46b7fa; #4ec2fa;
-  letter-spacing: -2px;
-  padding-left: 12px;
+  color: #46b7fa; 
+  letter-spacing: -1px;
+  padding-left: 15px;
   text-align: center;
 } 
 
-ul#menu li a:hover, ul#topmenu li a:hover  { 
-  color: #f3b128; #142afa; #f6b628;
+ul#menu li a:hover { 
+  color: #f3b128; 
   text-decoration: underline;
 }
 
-@media(max-width:992px) {
-  #site_title{
-    padding-bottom: 0px;
-    } 
+ul#menu li.current a { 
+  text-decoration: underline;
+} 
 
+@media(max-width:992px) {   /* when navlinks go to next line, float left */
     ul#menu {
-      margin-top: 0px;
-      padding-top: 0px;
       float: left;
+      -webkit-padding-start: 0px;
     }
 
     ul#menu li a { 
@@ -125,17 +98,10 @@ ul#menu li a:hover, ul#topmenu li a:hover  {
       padding-right: 20px;
       font-size: 13px;
     }
-
-    ul {
-          -webkit-padding-start: 0px;
-    }
 }
 
 
-
-/* 
-  Footer
-*/
+/*  Footer */
 #footer_container {
   border-top: 1px solid #ccc;
   background-color: #efefef;
