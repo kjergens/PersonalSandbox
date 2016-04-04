@@ -5,7 +5,7 @@ var data =
               title: 'The Most Expensive Dye in the World',
               subtitle: 'It has a secret ingredient.',
               link: 'tyrian.html',
-              image: 'thumb/tyrian.png',
+              image: 'tyrian/tyrian_purple_murex_shells.jpg',
               date: 'Apr 1, 2016',
               blurb: 'Royal purple - also known as Tyrian purple after the city Tyre - holds the record as the world\'s most expensive dye. It\'s because of snails. Actually, it\'s because of snail mucus.'
             },
@@ -26,7 +26,7 @@ var data =
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Engineering an Image: The Pilot',
+              title: 'Evolving Images: The Pilot',
               subtitle: '',
               link: 'pilots.html',
               image: 'thumb/pilots.jpg',
@@ -34,18 +34,18 @@ var data =
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How To Make A Color Scheme, Part 2 of 2',
+              title: 'How To Make A Color Scheme, Part 2',
               subtitle: 'More tools to get smashing colors.',
               link: 'colormathPt2.html',
-              image: 'thumb/howto_pt2.png',
+              image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
               blurb: 'More tools for creating the perfect color combinations.'
             },
             {
-              title: 'How To Make A Color Scheme, Part 1 of 2',
+              title: 'How To Make A Color Scheme, Part 1',
               subtitle: 'Interactive tool included.',
               link: 'colormath.html',
-              image: 'thumb/howto_pt1.png',
+              image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
               blurb: 'Be it your webpage, logo or bedroom, you might be scared your color choices don\'t pass graphics muster. Here is a tool for a fail-proof color palette.'
             },
@@ -58,7 +58,7 @@ var data =
               blurb: 'When creativity strikes it\'s important to capture it, fast! But equally important is knowing when to let it go.'
             },
             {
-              title: 'Quiz: Guess the Titles of \'80s Teen Romance Novels',
+              title: 'Quiz: Guess the Titles of These \'80s Teen Romance Novels',
               subtitle: 'They are incredible.',
               link: 'bookcovers.html',
               image: 'thumb/books.png',
@@ -69,28 +69,28 @@ var data =
               title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope?',
               subtitle: '',
               link: 'quipu.html',
-              image: 'quipu.png',
+              image: 'quipu/quipu.png',
               date: 'Jan 27, 2016'
             },
             {
-              title: 'Is My Blue Your Blue?',
+              title: 'Is Your Blue My Blue?',
               subtitle: 'That might depend on your language.',
               link: 'himba.html',
-              image: 'himbaPhoto1.png',
+              image: 'himba/himbaPhoto1.png',
               date: 'Jan 20, 2016'
             },
             {
-              title: 'Bartender Terms',
+              title: 'Diary of Cocktail Terms',
               subtitle: 'Correct ways to order a drink.',
               link: 'drinks.html',
-              image: 'dirty.png',
+              image: 'thumb/drinks.png',
               date: 'Jan 30, 2016'
             },
             {
-              title: 'Color Wheel for Coffee',
+              title: 'Coffee Color Wheel',
               subtitle: 'A visual aid for describing taste.',
               link: 'coffee.html',
-              image: 'flavorWheel.jpg',
+              image: 'thumb/coffee.png',
               date: 'Jan 26, 2016'
             },
             {
@@ -108,10 +108,10 @@ var data =
               date: 'Jan 18, 2016'
             },
             {
-              title: 'Early Versions of 3 Popular Games',
+              title: 'Original Versions of 3 Popular Games',
               subtitle: 'Some familiar games have long histories.',
               link: 'games.html',
-              image: 'life1963.png',
+              image: 'thumb/games.png',
               date: 'Feb 7, 2016'
             },
             {

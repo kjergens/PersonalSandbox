@@ -1,9 +1,6 @@
 /*
   Blog 
 */
-p {
-  margin: 20px 0px;
-}
 
 figure {
   margin: 20px auto;
@@ -19,7 +16,6 @@ figcaption {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
     
 }
-
 
 img {
   max-width: 100%;
