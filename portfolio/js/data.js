@@ -2,7 +2,7 @@ var data =
     {
        menu: 
           [  {
-              title: 'The Most Expensive Dye in the World',
+              title: 'Origin of The Most Expensive Dye',
               subtitle: 'It has a secret ingredient.',
               link: 'tyrian.html',
               image: 'tyrian/tyrian_purple_murex_shells.jpg',
@@ -27,7 +27,7 @@ var data =
             },
             {
               title: 'Evolving Images: The Pilot',
-              subtitle: '',
+              subtitle: 'How the profession changed over time.',
               link: 'pilots.html',
               image: 'thumb/pilots.jpg',
               date: 'Mar 9, 2016',
@@ -41,15 +41,7 @@ var data =
               date: 'Feb 29, 2016',
               blurb: 'More tools for creating the perfect color combinations.'
             },
-            {
-              title: 'How To Make A Color Scheme, Part 1',
-              subtitle: 'Interactive tool included.',
-              link: 'colormath.html',
-              image: 'thumb/colorscheme.png',
-              date: 'Feb 29, 2016',
-              blurb: 'Be it your webpage, logo or bedroom, you might be scared your color choices don\'t pass graphics muster. Here is a tool for a fail-proof color palette.'
-            },
-            {
+             {
               title: 'The Importance of a Creative Blackout Hour',
               subtitle: '',
               link: 'blackout.html',
@@ -59,11 +51,19 @@ var data =
             },
             {
               title: 'Quiz: Guess the Titles of These \'80s Teen Romance Novels',
-              subtitle: 'They are incredible.',
+              subtitle: '',
               link: 'bookcovers.html',
               image: 'thumb/books.png',
               date: 'Feb 27, 2016',
               blurb: "They are incredible."
+            },
+            {
+              title: 'How To Make A Color Scheme, Part 1',
+              subtitle: 'Interactive tool included.',
+              link: 'colormath.html',
+              image: 'thumb/colorscheme.png',
+              date: 'Feb 29, 2016',
+              blurb: 'Be it your webpage, logo or bedroom, you might be scared your color choices don\'t pass graphics muster. Here is a tool for a fail-proof color palette.'
             },
             {
               title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope?',

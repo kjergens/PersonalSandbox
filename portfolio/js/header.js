@@ -10,7 +10,9 @@ var header = "<div class=\"container\"><div class=\"row\">" +
         "<li class=\"current\"><a href=\"index.html\">Blog</a></li>" +
         "<li><a href=\"../contact.html\">Contact</a></li>" +
         "<li><a href=\"../about.html\">About Me</a></li>" +
-      "</ul></div></div></div></div> ";
+      "</ul></div></div>" +
+      "<p id=\"tagline\">Short articles about the things we see.</p>" +
+      "</div></div> ";
 
 $(document).ready(function(){
 	document.getElementById("header_container").innerHTML = header;

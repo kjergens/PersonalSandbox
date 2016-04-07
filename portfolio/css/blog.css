@@ -1,6 +1,17 @@
 /*
   Blog 
-*/
+/**********************
+
+COLOR PALETTE
+#f3b128 // gold
+#46b7fa  // blue in title
+#142afa  // link blue 
+#bfbfbf // gray
+#3f3f3f // paragraph font 
+#222222 // header font
+#fcfbfa; // side menu background
+
+*************************/
 
 figure {
   margin: 20px auto;
@@ -23,17 +34,18 @@ img {
 
 #tagline {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  line-height: 1.5em;
+  zline-height: 1.5em;
   color: #46b7fa;
   font-size: 14px;
-  margin: 15px 0px 30px 0px;
+  zmargin: 15px 0px 20px 0px;
+  letter-spacing: .2em;
 }
 
 .fb_iframe_widget span {
   display: inline;
 }
 
-.main_article, .col-sm-9 {
+.main_article, .col-md-9 {
   background-color: #fff;
 }
 
@@ -50,8 +62,6 @@ img {
   font-weight: bolder;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
-
-
 
 .img_border img {
   border: 3px solid white;
@@ -78,20 +88,20 @@ img {
   padding: 2px 5px;
   background-color: #f3b128;
   color: #fff;
-  margin-top: 130px;
+  zmargin-top: 130px;
 }
 
 #sidemenu{
   padding: 5px;
-  background-color: #fcfbfa; 
+  background-color: #fff; #f1eee8; #fcfbfa; 
 }
 
 .menu_item {
-  margin: 0px 0px 22px;
+  margin: 0px 0px 5px;
   border: 1px solid #e9e9e9;
   position: relative;
   top: 0px;
-  height: 170px;
+  height: 160px;
   background-color: #fff;
 }
 
@@ -102,7 +112,7 @@ img {
 
 .menu_item figure {
   overflow: hidden;
-  height: 165px;
+  height: 155px;
   display: block;  /* overfolw hidden not work unless this is block */
   margin: 0px;     /* overfolw hidden not work unles margin is 0 */
 }

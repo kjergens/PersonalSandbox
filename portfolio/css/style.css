@@ -9,7 +9,7 @@ COLOR PALETTE
 #bfbfbf // gray
 #3f3f3f // paragraph font 
 #222222 // header font
-#fcfbfa; // side menu background
+#f1eee8; // side menu background
 
 *************************/
 
@@ -17,6 +17,7 @@ COLOR PALETTE
 body { 
   font-family: Merriweather, serif;
   color: #3f3f3f;
+  background-color: #f1eee8;
 }
 
 p { 
@@ -39,9 +40,10 @@ a, a:hover {
 
 /* Header */
 #header_container {
-  border-bottom: 25px solid #e2e1e1;;
+  zborder-bottom: 25px solid #f1eee8;
   box-shadow: 0px 0.5px 6px .5px;
   padding: 5px 0px 5px;      /* some breathing room before the gray bar */
+  background-color: #fff;
 }
 
 

@@ -8,12 +8,14 @@ On load, put the text editor in focus and load previous entries.
 window.onload = function () {
 	document.getElementById('text_editor').focus();
 
-	//var d = new Date();
-	//writeToFile("\'}, \'" + d + "\' : { entry: \'");
+	var d = new Date();
+	writeToFile("\'}, \'" + d + "\' : { entry: \'");
 	readEntries();
 }
 
-
+/*
+	Show/hide Peek button
+*/
 var peekToggle = function () {
 	var p = document.getElementById('peek-btn');
 
@@ -30,6 +32,10 @@ var peekToggle = function () {
 	}
 }
 
+
+/*
+	?
+*/
 function getChar(event) {
 	var c = null; 
   if (event.which == null) {
@@ -43,7 +49,9 @@ function getChar(event) {
 
 
 
-
+/*
+	Save text.
+*/
 var savedata = function (event) {
 
 	txt = document.getElementById('text_editor');
@@ -114,7 +122,7 @@ var writeToFile = function(entry) {
 	  xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
 	}
 
-	//xmlhttp.open("POST","../savedata.php",true);
-	//xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-	//xmlhttp.send("entry=" + entry);
+	xmlhttp.open("POST","savedata.php",true);
+	xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+	xmlhttp.send("entry=" + entry);
 }

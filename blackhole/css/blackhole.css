@@ -24,19 +24,18 @@ body {
 }
 
 #text_editor {
-	width: 60%;
-	resize: none;
+	width: 200px;
+	margin: 0px auto;
 	background-color: black;
 	font-size: 150px;
 	font-weight: lighter;
-	text-align: right;
-	overflow: none;
-	margin: 50px 0px 0px 0px;
+	text-align: center;
 	border: 0px solid #333;
 	padding: 20px;
 	color: #000;
-  text-shadow: 0px 0px 0px #fff;
+  text-shadow: 1px 0px 0px #fff;
   -webkit-text-fill-color: transparent;
+  background-color: red;
 }
 
 #text_editor:focus, #peek-btn:focus {
