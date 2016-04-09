@@ -40,17 +40,16 @@ var show_featured = function() {
 var get_menu_item = function (itemData) {
     var item = $("<div class=\"menu_item\">")  
         .append("<a href=\"" + itemData.link + "\">" +
-            "<figure><img src=\"../blog/images/" + itemData.image +
-             "\"></figure>" +
+            "<div class=\"thumb_container\">" + 
+            "<img src=\"../blog/images/" + itemData.image +
+             "\"></div>" +
              " <div class=\"article_title_container\">" + 
             " <div class=\"article_title\">" + 
             itemData.title + 
             "<div class=\"article_subtitle\">" +
             itemData.subtitle + "</div>" +
-             "<div class=\"article_subtitle\">" +
-            "</div>" +
-            "</div></div>");
-    item = item.append("</div>");
+            "</div></div></a>");
+    item = item.append("</div><div class=\"clearfix\"></div>");
     return item;
 };
 

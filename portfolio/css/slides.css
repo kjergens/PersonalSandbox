@@ -7,7 +7,7 @@
 }
 .bss-slides figure{
   position: absolute;
-  top: -40px;
+  top: -20px;
   width: 100%;
 }
 .bss-slides figure:first-child{
@@ -48,7 +48,7 @@
   position: absolute;
   background: #000;
   background: rgba(0,0,0, .6);
-  top: 50%;
+  top: 60%;
   z-index: 4;
   font-size: 2em;
   margin-top: -1.2em;

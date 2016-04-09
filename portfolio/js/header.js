@@ -11,7 +11,7 @@ var header = "<div class=\"container\"><div class=\"row\">" +
         "<li><a href=\"../contact.html\">Contact</a></li>" +
         "<li><a href=\"../about.html\">About Me</a></li>" +
       "</ul></div></div>" +
-      "<p id=\"tagline\">Short articles about the things we see.</p>" +
+      "<p id=\"tag\">Short articles about the things we see.</p>" +
       "</div></div> ";
 
 $(document).ready(function(){

@@ -2,10 +2,11 @@ var data =
     {
        menu: 
           [  {
-              title: 'Origin of The Most Expensive Dye',
-              subtitle: 'It has a secret ingredient.',
+              title: 'What Made Purple The Royal Color?',
+              subtitle: 'All those snails did.',
               link: 'tyrian.html',
-              image: 'tyrian/tyrian_purple_murex_shells.jpg',
+              big_image: 'tyrian/tyrian_purple_murex_shells.jpg',
+              image: 'tyrian/eII.jpg',
               date: 'Apr 1, 2016',
               blurb: 'Royal purple - also known as Tyrian purple after the city Tyre - holds the record as the world\'s most expensive dye. It\'s because of snails. Actually, it\'s because of snail mucus.'
             },
@@ -18,7 +19,7 @@ var data =
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'The Origins of Regal Red',
+              title: 'The Story Behind Regal Red',
               subtitle: 'It starts with a bug in Mexico.',
               link: 'red.html',
               image: 'thumb/red.jpg',
@@ -26,16 +27,16 @@ var data =
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Evolving Images: The Pilot',
-              subtitle: 'How the profession changed over time.',
+              title: 'Professional Image: The Pilot',
+              subtitle: 'It changed over time, by design.',
               link: 'pilots.html',
               image: 'thumb/pilots.jpg',
               date: 'Mar 9, 2016',
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How To Make A Color Scheme, Part 2',
-              subtitle: 'More tools to get smashing colors.',
+              title: 'How To Make A Color Scheme, Pt 2',
+              subtitle: 'Using just two or three colors.',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
@@ -58,8 +59,8 @@ var data =
               blurb: "They are incredible."
             },
             {
-              title: 'How To Make A Color Scheme, Part 1',
-              subtitle: 'Interactive tool included.',
+              title: 'Making A Color Scheme Pt 1',
+              subtitle: 'Four-color schemes. Tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
@@ -73,10 +74,10 @@ var data =
               date: 'Jan 27, 2016'
             },
             {
-              title: 'Is Your Blue My Blue?',
-              subtitle: 'That might depend on your language.',
+              title: 'Is My Blue Your Blue?',
+              subtitle: 'That could depend on our languages.',
               link: 'himba.html',
-              image: 'himba/himbaPhoto1.png',
+              image: 'thumb/himba.png',
               date: 'Jan 20, 2016'
             },
             {
@@ -95,27 +96,27 @@ var data =
             },
             {
               title: 'Letter To St. Louis On Losing Their Football Team',
-              subtitle: 'In short: Don\'t worry!',
+              subtitle: '',
               link: 'rams.html',
               image: 'audrey.png',
               date: 'Jan 19, 2016'
             },
             {
               title: 'If the Ancient Greeks Are to Be Believed...',
-              subtitle: 'Their sky was ... bronze?',
+              subtitle: 'They saw the world quite differently.',
               link: 'greece.html',
-              image: 'greece.jpg',
+              image: 'thumb/greece.png',
               date: 'Jan 18, 2016'
             },
             {
-              title: 'Original Versions of 3 Popular Games',
-              subtitle: 'Some familiar games have long histories.',
+              title: 'Predecessors to 3 Popular Games',
+              subtitle: 'Some familiar games \"borrowed\" their designs.',
               link: 'games.html',
               image: 'thumb/games.png',
               date: 'Feb 7, 2016'
             },
             {
-              title: 'Think Shakespeare\'s Bedroom was Drab?',
+              title: 'Think Shakespeare\'s Room was Drab?',
               subtitle: 'Think again.',
               link: 'shakes.html',
               image: 'shakes/red_green_650x865.jpg',
