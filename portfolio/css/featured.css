@@ -21,6 +21,11 @@
 	overflow-y: hidden;
 }
 
+.featuredmore img {
+	margin: 0px 40px;
+	text-align: center;
+}
+
 .feature .date {
 	position: absolute;
 }
@@ -55,27 +60,14 @@ h3#morearticles {
 .featuredmore {               /* row of articles */
 	float: left;
 	width: 33.33%;
-	padding: 0px 25px 0px 25px;   /* the middle article gets padding on each side*/
-}
-
-
-.featuredmore:last-of-type {    /* last column don't pad right border */
-	padding: 0px 0px 0px 25px;
-}
-
-.featuredmore:first-of-type {  /* first column don't pad left border */
-	padding: 0px 25px 0px 0px;
+	padding: 0px 25px 0px 25px;   
+	margin-bottom: 50px;
 }
 
 
 .featuredmore p {
 	font-size: 14px;
 	color: #3b3b3b;
-}
-
-.featuredmoreimg {
-	height: 120px;
-	overflow: hidden;
 }
 
 

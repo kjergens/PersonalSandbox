@@ -13,6 +13,10 @@ COLOR PALETTE
 
 *************************/
 
+#tagline + .row {
+  margin-top: 20px;
+}
+
 figure {
   margin: 20px auto;
   display: table;
@@ -58,7 +62,7 @@ img {
   display: inline;
 }
 
-.col-sm-9, .col-md-9 {
+.col-sm-9, .col-md-9, .col-sm-8, .col-md-8 {
   background-color: #fff;
 }
 
@@ -71,6 +75,7 @@ img {
 
 
 .title {
+  margin-top: 20px;
   font-size: 38px;
   font-weight: bolder;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -144,7 +149,7 @@ img {
   color: #3f3f3f;  /* override hyperlink color */
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  /* use header font */
   font-size: 14px;
-  font-weight: bolder;
+  -webkit-text-stroke: 0.35px
 }
 
 .article_subtitle {

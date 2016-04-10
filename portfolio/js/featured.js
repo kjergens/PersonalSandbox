@@ -3,7 +3,7 @@ var show_featured = function() {
     // main, most recent article
     var markup = "<div class='featured'>" +
             "<a href=\"" + data.menu[0].link + "\">" +
-           "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].image + "\"></figure>" +
+           "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
            "</a>" +
             "<a href=\"" + data.menu[0].link + "\">" +
             "<div id='headline'>" +
@@ -21,9 +21,21 @@ var show_featured = function() {
     for (var i=1; i<=3; i++) {
         markup += "<a href=\"" + data.menu[i].link + "\">" +
         "<div class='featuredmore'>" +
-        "<div class='featuredmoreimg'>" +
-        "<figure><img src=\"../blog/images/" + data.menu[i].image + "\"></figure>" +
-        "</div>" +
+        "<img src=\"../blog/images/" + data.menu[i].image + "\">" +
+        " <h4>" + data.menu[i].title +  "</h4>" +
+        "<div class=\"date\">" + data.menu[i].date + "</div>" +
+        "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
+        "<a href=\"" + data.menu[i].link + "\">... Read more.</a>" + 
+        "</div></a>";
+    }
+
+    markup += "</div><div class=\"clearfix\"></div>"; // clear the floats
+
+    // row 2
+    for (var i=4; i<=6; i++) {
+        markup += "<a href=\"" + data.menu[i].link + "\">" +
+        "<div class='featuredmore'>" +
+        "<img src=\"../blog/images/" + data.menu[i].image + "\">" +
         " <h4>" + data.menu[i].title +  "</h4>" +
         "<div class=\"date\">" + data.menu[i].date + "</div>" +
         "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
@@ -62,7 +74,7 @@ $(function () {
     $("#right_menu").append("<div id=\"menu_heading\">Recent Posts</div><div id=\"sidemenu\"></div>");
 
     // loop through data and add remaining items to menu
-    for (var i=4; i<=data.menu.length; i++) {
+    for (var i=7; i<=data.menu.length; i++) {
         $("#sidemenu").append(get_menu_item(data.menu[i]));
     }
 

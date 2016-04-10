@@ -2,16 +2,16 @@ var data =
     {
        menu: 
           [  {
-              title: 'What Made Purple The Royal Color?',
-              subtitle: 'All those snails did.',
+              title: 'What Made The Color Purple Royal?',
+              subtitle: 'It was all those snails.',
               link: 'tyrian.html',
-              big_image: 'tyrian/tyrian_purple_murex_shells.jpg',
-              image: 'tyrian/eII.jpg',
+              big_image: 'tyrian/eII.jpg',
+              image: 'thumb/tyrian.png',
               date: 'Apr 1, 2016',
               blurb: 'Royal purple - also known as Tyrian purple after the city Tyre - holds the record as the world\'s most expensive dye. It\'s because of snails. Actually, it\'s because of snail mucus.'
             },
             {
-              title: 'Graphical History of the Bicycle',
+              title: 'Evolution of the Bicycle',
               subtitle: '',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
@@ -19,10 +19,10 @@ var data =
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'The Story Behind Regal Red',
+              title: 'The Story Behind The Red Coat',
               subtitle: 'It starts with a bug in Mexico.',
               link: 'red.html',
-              image: 'thumb/red.jpg',
+              image: 'thumb/red.png',
               date: 'Mar 13, 2016',
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
@@ -30,12 +30,12 @@ var data =
               title: 'Professional Image: The Pilot',
               subtitle: 'It changed over time, by design.',
               link: 'pilots.html',
-              image: 'thumb/pilots.jpg',
+              image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How To Make A Color Scheme, Pt 2',
+              title: 'Making A Color Scheme Pt 2',
               subtitle: 'Using just two or three colors.',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
@@ -70,7 +70,7 @@ var data =
               title: 'Who Needs A Spreadsheet When You Have Dye And Some Rope?',
               subtitle: '',
               link: 'quipu.html',
-              image: 'quipu/quipu.png',
+              image: 'thumb/quipu.png',
               date: 'Jan 27, 2016'
             },
             {
@@ -82,7 +82,7 @@ var data =
             },
             {
               title: 'Diary of Cocktail Terms',
-              subtitle: 'Correct ways to order a drink.',
+              subtitle: 'Colorful reminders for ordering drinks.',
               link: 'drinks.html',
               image: 'thumb/drinks.png',
               date: 'Jan 30, 2016'
@@ -98,7 +98,7 @@ var data =
               title: 'Letter To St. Louis On Losing Their Football Team',
               subtitle: '',
               link: 'rams.html',
-              image: 'audrey.png',
+              image: 'thumb/rams.png',
               date: 'Jan 19, 2016'
             },
             {
@@ -116,10 +116,10 @@ var data =
               date: 'Feb 7, 2016'
             },
             {
-              title: 'Think Shakespeare\'s Room was Drab?',
+              title: 'Think Shakespeare\'s House was Drab?',
               subtitle: 'Think again.',
               link: 'shakes.html',
-              image: 'shakes/red_green_650x865.jpg',
+              image: 'thumb/shakes.png',
               date: 'Feb 11, 2016'
             }
           ]

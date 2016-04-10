@@ -89,6 +89,7 @@ ul#menu li a:hover {
 
 ul#menu li.current a { 
   text-decoration: underline;
+  color: #f3b128; 
 } 
 
 @media(max-width:992px) {   /* when navlinks go to next line, float left */
