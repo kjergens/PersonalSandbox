@@ -13,9 +13,7 @@ COLOR PALETTE
 
 *************************/
 
-#tagline + .row {
-  margin-top: 20px;
-}
+
 
 figure {
   margin: 20px auto;
@@ -56,6 +54,10 @@ img {
 
 .col-md-9:before, .col-sm-9:before {            /* temporary until I delete them all */
   content:<br><br>;
+}
+
+#tagline + .row {      /* temporary until I delete them all */
+  margin-top: 20px;
 }
 
 .fb_iframe_widget span {
@@ -153,7 +155,7 @@ img {
 }
 
 .article_subtitle {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: lighter;
   margin-top: 2px;
   color: #666; /* override hyperlink color */

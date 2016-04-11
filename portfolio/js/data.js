@@ -2,6 +2,15 @@ var data =
     {
        menu: 
           [  {
+              title: 'Evolving Professions: The Accountant',
+              subtitle: 'They were heros.',
+              link: 'accountants.html',
+              big_image: 'thumb/accounting_big.png',
+              image: 'thumb/accounting.png',
+              date: 'Apr 10, 2016',
+              blurb: 'In the beginning, accountants were seen as moral heros, people doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
+             },
+            {
               title: 'What Made The Color Purple Royal?',
               subtitle: 'It was all those snails.',
               link: 'tyrian.html',
@@ -27,7 +36,7 @@ var data =
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Professional Image: The Pilot',
+              title: 'Evolving Professions: The Pilot',
               subtitle: 'It changed over time, by design.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
