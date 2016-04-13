@@ -50,6 +50,8 @@ a, a:hover {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 34px;
   letter-spacing: -5px;
+  float: left;
+  margin-right: 30px; /* never touch the menud */
 }
 
 #name, .name {                /* my name color */
@@ -64,7 +66,7 @@ a, a:hover {
 /*   Main menu/global nav */
 ul#menu { 
   float: right;
-  margin-top: 7px; /* compensate for the site title having auto-line spacing */
+  margin-top: 6px; /* compensate for the site title having auto-line spacing */
 }
 
 ul#menu li, ul#subnav_menu li { 
@@ -123,7 +125,6 @@ ul#menu li.current a {
 #footer_container a:hover { 
   color: #888;
 }
-
 
 
 

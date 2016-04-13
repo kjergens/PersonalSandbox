@@ -13,13 +13,9 @@ COLOR PALETTE
 
 *************************/
 
-#site_title {
-  letter-spacing: -2px;
-}
-
 p {
   margin: 20px auto;
-  width: 90%; 
+  width: 95%; 
 }
 
 figure {
@@ -30,11 +26,10 @@ figure {
 figcaption {
   display: table-caption;
   caption-side: bottom;
-  zbackground: #fdfdfd;  /* can't have this for colorwheel*/
+  background: #fdfdfd;  /* can't have this for colorwheel*/
   padding: 2px 0px 0px 0px;
   color: #666;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-    
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  
 }
 
 .citation {
@@ -85,7 +80,7 @@ img {
 
 .title {
   margin-top: 20px;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: bolder;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
@@ -106,9 +101,22 @@ img {
   margin-bottom: -5px; /* hack to make it same parallel as fb button */
 }
 
-/*  Side Menu */ 
+/*  Side Menus */ 
+#popular{
+  margin-bottom: 30px;
+}
 
-#menu_heading {
+#right_menu {
+  position: relative;
+}
+
+#menu_container {
+  position: absolute;
+  top: 60%;
+}
+
+
+.menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -131,18 +139,17 @@ img {
 
 .thumb_container {
   float: left;
-  overflow-y: hidden;
-  width: 40%;
+  overflow: hidden;
+  width: 133px;
+  height: 105px;
 }
 
 
 .article_title_container {
   background-color: #fff;
-  padding: 3px 3px 3px 8px;
-  width: 60%;
+  padding: 5px 3px 3px 8px;
+  max-width: 215px;
   float: left;
-  overflow: hidden;
-  zheight: 105px;
 }
 
 .clearfix {
@@ -152,7 +159,7 @@ img {
 .article_title {
   color: #3f3f3f;  /* override hyperlink color */
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  /* use header font */
-  font-size: 13px;
+  font-size: 14px;
   -webkit-text-stroke: 0.35px;
   line-height: 1.3em;
 }
@@ -166,19 +173,11 @@ img {
   line-height: 1.3em;
 }
 
-@media (max-width: 1200px) { /* TODO: figure out in between width*/
-  .menu_item{
-    height: 68px;
-    overflow: hidden;
+@media (max-width: 1200px) {
+  .article_title_container {
+    max-width: 155px; 
   }
-
-  .article_title {
-    font-size: 12px;
-  }
-
-  .article_subtitle {
-    font-size: 10px
-  }
+   
 }
 
 @media (max-width: 992px) {     /* Get rid of the excess padding when the */

@@ -70,6 +70,34 @@ $(function () {
     //display featured articles in main body
     show_featured();
 
+        // menu container
+    $("#right_menu").append("<div id=\"menu_container\"></div>"); // wrap the menus in a container
+
+    // popular menu
+    $("#menu_container").append("<div id=\"popular\"></div>");
+    var $popularmenu = $("#popular");
+
+    $popularmenu.append("<div class=\"menu_heading\">Most Popular</div>");
+    //shuffle(data.popular);
+    // loop through data and build menu
+    for (var i = 0; i<=2; i++) {
+         $popularmenu.append(get_menu_item(data.popular[i]));
+    } 
+
+    // recent menu
+    $("#menu_container").append("<div id=\"sidemenu\"></div>");
+    var $menu = $("#sidemenu");
+
+    $menu.append("<div class=\"menu_heading\">Recent Articles</div>");
+
+    //shuffle(data.menu);
+
+    // loop through data and build menu
+    for (var i = 0; i<=4; i++) {
+         $menu.append(get_menu_item(data.menu[i]));
+    }  
+
+/*
     // create side menu
     $("#right_menu").append("<div id=\"menu_heading\">Recent Posts</div><div id=\"sidemenu\"></div>");
 
@@ -77,5 +105,6 @@ $(function () {
     for (var i=7; i<=data.menu.length; i++) {
         $("#sidemenu").append(get_menu_item(data.menu[i]));
     }
+    */
 
 });
