@@ -13,7 +13,14 @@ COLOR PALETTE
 
 *************************/
 
+#site_title {
+  letter-spacing: -2px;
+}
 
+p {
+  margin: 20px auto;
+  width: 90%; 
+}
 
 figure {
   margin: 20px auto;
@@ -44,8 +51,8 @@ img {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   color: #46b7fa;
   font-size: 14px;
-  letter-spacing: .2em;
-  margin: 5px 0px 15px;
+  zletter-spacing: .2em;
+  margin: 2px 0px 10px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -124,34 +131,30 @@ img {
 
 .thumb_container {
   float: left;
-  width: 50%;
-  overflow: hidden;
-  height: 105px;
+  overflow-y: hidden;
+  width: 40%;
 }
 
-.thumb_container img {
-  max-width: none;
-}
 
 .article_title_container {
   background-color: #fff;
   padding: 3px 3px 3px 8px;
-  width: 50%;
+  width: 60%;
   float: left;
   overflow: hidden;
-  height: 105px;
+  zheight: 105px;
 }
 
 .clearfix {
-  zoverflow: auto;
   clear: both;
 }
 
 .article_title {
   color: #3f3f3f;  /* override hyperlink color */
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  /* use header font */
-  font-size: 14px;
-  -webkit-text-stroke: 0.35px
+  font-size: 13px;
+  -webkit-text-stroke: 0.35px;
+  line-height: 1.3em;
 }
 
 .article_subtitle {
@@ -160,8 +163,54 @@ img {
   margin-top: 2px;
   color: #666; /* override hyperlink color */
   font-family: Merriweather, serif;
+  line-height: 1.3em;
 }
 
+@media (max-width: 1200px) { /* TODO: figure out in between width*/
+  .menu_item{
+    height: 68px;
+    overflow: hidden;
+  }
+
+  .article_title {
+    font-size: 12px;
+  }
+
+  .article_subtitle {
+    font-size: 10px
+  }
+}
+
+@media (max-width: 992px) {     /* Get rid of the excess padding when the */
+  #right_menu {                   /* menu is below the article */
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+
+  .menu_item {
+    height: 105px;
+    overflow-y: hidden; 
+  }
+
+  .thumb_container {
+     width: 133px;
+  }
+
+  .article_title_container {
+    width: none;
+    padding: 15px;
+  }
+
+  .article_title {
+    font-size: 16px;
+  }
+
+  .article_subtitle {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
 
 
 @-moz-document url-prefix() {  /* hack to deal with FF not know max-width */
@@ -187,10 +236,6 @@ img {
     }
   }
 
- 
-  .menu_item img {
-    max-width: 140px;
-  }
 }
 
 

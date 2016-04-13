@@ -2,8 +2,8 @@ var data =
     {
        menu: 
           [  {
-              title: 'Evolving Professions: The Accountant',
-              subtitle: 'They were heros.',
+              title: 'Professional Image: The Accountant',
+              subtitle: 'How we\'ve viewed them over time.',
               link: 'accountants.html',
               big_image: 'thumb/accounting_big.png',
               image: 'thumb/accounting.png',
@@ -11,8 +11,8 @@ var data =
               blurb: 'In the beginning, accountants were seen as moral heros, people doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
              },
             {
-              title: 'What Made The Color Purple Royal?',
-              subtitle: 'It was all those snails.',
+              title: 'What Made Purple Royal?',
+              subtitle: 'All those snails, that\'s what.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
               image: 'thumb/tyrian.png',
@@ -21,7 +21,7 @@ var data =
             },
             {
               title: 'Evolution of the Bicycle',
-              subtitle: '',
+              subtitle: 'Illustrated timeline of bike designs',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
@@ -36,7 +36,7 @@ var data =
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Evolving Professions: The Pilot',
+              title: 'Professional Image: The Pilot',
               subtitle: 'It changed over time, by design.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
@@ -112,20 +112,20 @@ var data =
             },
             {
               title: 'If the Ancient Greeks Are to Be Believed...',
-              subtitle: 'They saw the world quite differently.',
+              subtitle: 'They saw things differently.',
               link: 'greece.html',
               image: 'thumb/greece.png',
               date: 'Jan 18, 2016'
             },
             {
               title: 'Predecessors to 3 Popular Games',
-              subtitle: 'Some familiar games \"borrowed\" their designs.',
+              subtitle: 'Famous games \"borrowed\" their designs.',
               link: 'games.html',
               image: 'thumb/games.png',
               date: 'Feb 7, 2016'
             },
             {
-              title: 'Think Shakespeare\'s House was Drab?',
+              title: 'Think Shakespeare\'s Room was Drab?',
               subtitle: 'Think again.',
               link: 'shakes.html',
               image: 'thumb/shakes.png',

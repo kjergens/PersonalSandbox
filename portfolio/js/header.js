@@ -1,7 +1,7 @@
 var header = "<div class=\"container\"><div class=\"row\">" +
       "<div class=\"col-md-6 col-sm-12\" id=\"site_title\">" +
         "<a href=\"index.html\">" +
-        "<span id=\"name\">KATIE JERGENS</span> UX DESIGNER" +
+        "<span class=\"name\">katie</span>in<span class=\"name\">brooklyn</span>" +
       "</a></div>" +
       "<div class=\"col-md-6 col-sm-12\"><ul id=\"menu\">" +
         "<li><a href=\"../index.html\">Home</a></li>" +
