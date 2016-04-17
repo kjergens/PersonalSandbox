@@ -7,10 +7,10 @@
 
 
 .featuredimg img, .featuredmore img {
-	width: 100%;
+	zwidth: 100%;
 	zoverflow-y: hidden;
 	zmargin: 0px 40px;
-	ztext-align: center;
+	margin: 0px auto;
 }
 
 .feature .date {
