@@ -9,7 +9,7 @@ COLOR PALETTE
 #bfbfbf // gray
 #3f3f3f // paragraph font 
 #222222 // header font
-#f1eee8; // side menu background
+#f1eee8; // body background
 
 *************************/
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.4em;
   zfont-weight: 800;
-  color: #222;
+  color: #484745;
 }
 
 a, a:hover {

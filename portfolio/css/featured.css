@@ -1,5 +1,5 @@
 .featured .title {
-	background-color: #3a3a3a;
+	background-color: #484745; #3a3a3a;
 	margin-top: 0px;
 	padding: 10px;
 	color: #fff;
@@ -22,6 +22,7 @@
 	margin-bottom: 5px;
 	color: #989898;
 	display: block;
+	font-weight: normal;
 }
 
 figure {

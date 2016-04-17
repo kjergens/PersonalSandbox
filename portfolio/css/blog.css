@@ -9,9 +9,13 @@ COLOR PALETTE
 #bfbfbf // gray
 #3f3f3f // paragraph font 
 #222222 // header font
-#fcfbfa; // side menu background
+#f1eee8; // body background
 
 *************************/
+
+body {
+  background-color: #f1eee8;
+}
 
 p {
   margin: 20px auto;
@@ -104,7 +108,7 @@ img {
 
 /*  Side Menus */ 
 #popular{
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 #right_menu {
@@ -130,6 +134,7 @@ img {
 .menu_item {
   margin: 5px 0px 5px;
   background-color: #fff;
+  border: 1px solid #fcfbfa;
 }
 
 .menu_item:hover {
