@@ -15,7 +15,7 @@ COLOR PALETTE
 
 p {
   margin: 20px auto;
-  width: 95%; 
+  max-width: 600px; 
 }
 
 figure {
@@ -48,6 +48,7 @@ img {
   font-size: 14px;
   zletter-spacing: .2em;
   margin: 2px 0px 10px;
+  font-weight: bold;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -80,8 +81,8 @@ img {
 
 .title {
   margin-top: 20px;
-  font-size: 40px;
-  font-weight: bolder;
+  font-size: 32px;
+  font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
@@ -118,7 +119,7 @@ img {
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   padding: 2px 5px;
   background-color: #f3b128;
@@ -132,8 +133,8 @@ img {
 }
 
 .menu_item:hover {
-  box-shadow: 0px 0px 0px 1px; 
-  opacity: .8;
+  zbox-shadow: 0px 0px 0px 1px; 
+  opacity: .85;
 }
 
 

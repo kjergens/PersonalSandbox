@@ -36,9 +36,9 @@ div.loader, div.slideshow a.advance-link, div.caption-container {
 div.slideshow-container {
   position: relative;
   clear: both;
-  float: left;
   height: 553px;
-  margin: 0 0 30px 20px;}
+  margin: 0px auto;
+}
 
 div.slideshow-container img {
   float: left;}

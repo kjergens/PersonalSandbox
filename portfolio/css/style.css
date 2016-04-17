@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700|Merriweather);
 
 /**********************
 
@@ -29,6 +29,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   line-height: 1.4em;
+  zfont-weight: 800;
   color: #222;
 }
 
@@ -40,18 +41,22 @@ a, a:hover {
 
 /* Header */
 #header_container {
-  box-shadow: 0px 0.5px 6px .5px;
+  zbox-shadow: 0px 0.5px 6px .5px;
   padding: 5px 0px 5px;      /* some breathing room before the gray bar */
   background-color: #fff;
+  border-bottom: 1px solid #ccc;
 }
 
 
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 34px;
-  letter-spacing: -5px;
+  font-weight: 800;
+  letter-spacing: -3px;
   float: left;
   margin-right: 30px; /* never touch the menud */
+  ztext-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+
 }
 
 #name, .name {                /* my name color */
@@ -60,7 +65,7 @@ a, a:hover {
 
 #site_title a {        /* UX DESIGNER color */
   color: #46b7fa;
-}
+ }
 
 
 /*   Main menu/global nav */
@@ -77,6 +82,7 @@ ul#menu li, ul#subnav_menu li {
 ul#menu li a { 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 15px;
+  font-weight: bold;
   color: #46b7fa; 
   letter-spacing: -1px;
   padding-left: 15px;

@@ -16,7 +16,8 @@ COLOR PALETTE
     Portfolio navigation (Data Viz, etc.)
 */
 #subnav_container {
-  background: #F0EDF2;
+  zbackground: #F0EDF2;
+  background-color: #3a3a3a;
   padding: 10px 0px;
 }
 
@@ -53,6 +54,7 @@ p {
 
 .category_title {
   font-size: 26px;
+  font-weight: bold;
   color: #222;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
