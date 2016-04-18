@@ -70,6 +70,10 @@ h3#morearticles {
   .menu_item img {
     max-width: 140px;
   }
+
+  .featured img {
+  	max-width:610px;
+  	overflow: hidden;
 }
 
 #menu_heading {
