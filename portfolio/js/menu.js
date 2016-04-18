@@ -41,7 +41,7 @@ $(function () {
     $("#menu_container").append("<div id=\"popular\"></div>");
     var $popularmenu = $("#popular");
 
-    $popularmenu.append("<div class=\"menu_heading\">Most Popular</div>");
+    $popularmenu.append("<div class=\"menu_heading\">Most popular</div>");
     shuffle(data.popular);
     // loop through data and build menu
     for (var i = 0; i<=2; i++) {
@@ -52,7 +52,7 @@ $(function () {
     $("#menu_container").append("<div id=\"sidemenu\"></div>");
     var $menu = $("#sidemenu");
 
-    $menu.append("<br><br><div class=\"menu_heading\">More Articles</div>");
+    $menu.append("<br><br><div class=\"menu_heading\">More articles</div>");
 
     shuffle(data.menu);
 

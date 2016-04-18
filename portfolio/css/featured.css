@@ -1,12 +1,8 @@
 .featured .title {
-	background-color: #403f3e; #484745; #3a3a3a;
+	background-color: #403f3e;
 	margin-top: 0px;
 	padding: 10px;
 	color: #fff;
-}
-
-.main_article {
-	padding: 0px;
 }
 
 .featuredimg img, .featuredmore img {
@@ -17,7 +13,7 @@
 	position: absolute;
 }
 
-.date {
+.featured .date {
 	position: relative;
 	top: -18px;
 	background-color: #fff;
@@ -42,13 +38,13 @@ p .blurb {
 
 
 h3#morearticles {
-	zborder-bottom: 2px solid #f3b128;
-	zbackground-color: #f3b128;
-	color: #403f3e; #f3b128;
-	padding: 0px 5px;
-	margin: 35px 15px 20px;
+	background-color: #f3b128;
+	color: #fff; #f3b128;
+	padding: 2px 5px;
+	margin-bottom: 25px;
 	font-size: 18px;
 	font-weight: bold;
+	display: inline-block;
 }
 
 .featuredmore {               /* row of articles */

@@ -25,7 +25,7 @@ var show_featured = function() {
         " <h4>" + data.menu[i].title +  "</h4>" +
         "<div class=\"date\">" + data.menu[i].date + "</div>" +
         "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
-        "<a href=\"" + data.menu[i].link + "\">... Read more.</a>" + 
+        "<a href=\"" + data.menu[i].link + "\">Read more.</a>" + 
         "</div></a>";
     }
 
@@ -39,7 +39,7 @@ var show_featured = function() {
         " <h4>" + data.menu[i].title +  "</h4>" +
         "<div class=\"date\">" + data.menu[i].date + "</div>" +
         "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
-        "<a href=\"" + data.menu[i].link + "\">... Read more.</a>" + 
+        "<a href=\"" + data.menu[i].link + "\">Read more.</a>" + 
         "</div></a>";
     }
 
@@ -77,7 +77,7 @@ $(function () {
     $("#menu_container").append("<div id=\"popular\"></div>");
     var $popularmenu = $("#popular");
 
-    $popularmenu.append("<div class=\"menu_heading\">Most Popular</div>");
+    $popularmenu.append("<div class=\"menu_heading\">Most popular</div>");
     //shuffle(data.popular);
     // loop through data and build menu
     for (var i = 0; i<=2; i++) {
@@ -88,7 +88,7 @@ $(function () {
     $("#menu_container").append("<div id=\"sidemenu\"></div>");
     var $menu = $("#sidemenu");
 
-    $menu.append("<div class=\"menu_heading\">Recent Articles</div>");
+    $menu.append("<div class=\"menu_heading\">Recent articles</div>");
 
     //shuffle(data.menu);
 

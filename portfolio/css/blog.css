@@ -52,9 +52,10 @@ img {
   color: #fff;
   font-size: 14px;
   zletter-spacing: .2em;
-  margin: 0px 0px 5px;
-  font-weight: 600;
-  padding-left: 5px;
+  margin: 2px 0px 10px;
+  padding: 0px 5px;
+  font-weight: bold;
+  display: inline-block;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -130,6 +131,7 @@ img {
   padding: 2px 5px;
   background-color: #f3b128;
   color: #fff;
+  display: inline-block;
 }
 
 
