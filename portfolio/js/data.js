@@ -2,7 +2,7 @@ var data =
     {
        menu: 
           [  {
-              title: 'Professional Image: The Accountant',
+              title: 'Image at Work: The Accountant',
               subtitle: 'How we\'ve viewed them over time.',
               link: 'accountants.html',
               big_image: 'thumb/accounting_big.png',
@@ -36,7 +36,7 @@ var data =
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Professional Image: The Pilot',
+              title: 'Image at Work: The Pilot',
               subtitle: 'It changed over time, by design.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',

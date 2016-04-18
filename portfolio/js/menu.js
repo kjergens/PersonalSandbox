@@ -52,7 +52,7 @@ $(function () {
     $("#menu_container").append("<div id=\"sidemenu\"></div>");
     var $menu = $("#sidemenu");
 
-    $menu.append("<div class=\"menu_heading\">Recent Articles</div>");
+    $menu.append("<br><br><div class=\"menu_heading\">More Articles</div>");
 
     shuffle(data.menu);
 

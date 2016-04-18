@@ -14,9 +14,9 @@
 	font-size: 18px;
 	color: #131313;
 	margin-bottom: 15px;
-	background-color: #ffd65a; #ebc662;
+	background-color: #3892c8;
+	color: #fff;
 	padding: 15px 15px;
-	zborder-radius: 2px;
 	transition-property: background-color, color;
 	transition-duration: .75s;
 	transition-timing-function: ease-out;
@@ -28,7 +28,7 @@
 	transition-property: background-color, color;
 	transition-duration: .4s;
 	transition-timing-function: ease-out;
-	background-color: #d5a21a; 
+	background-color: #46b7fa; 
 	zcolor: #fff;
 }
 
@@ -40,7 +40,7 @@
 
 
 .blackout {
-	background-color: #0030c0; #091232; #550022;
+	background-color: #f3b128; 
 	position: relative;
 	height: 100px;
 	top: -250px;
@@ -146,12 +146,12 @@
 
 @media (min-width: 1200px) { 
 	.blackout {
-		top: -500px;
+		top: -510px;
 	}
 
 	.fat {
 		height: 150px;
-		top: -535px;
+		top: -540px;
 	}
 }
 

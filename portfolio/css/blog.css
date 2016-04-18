@@ -9,13 +9,17 @@ COLOR PALETTE
 #bfbfbf // gray
 #3f3f3f // paragraph font 
 #222222 // header font
-#fcfbfa; // side menu background
+#f1eee8; // body background
 
 *************************/
 
+body {
+  background-color: #f1eee8;
+}
+
 p {
   margin: 20px auto;
-  width: 95%; 
+  max-width: 600px; 
 }
 
 figure {
@@ -44,10 +48,13 @@ img {
 
 #tag{
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  color: #46b7fa;
+  background-color: #46b7fa;
+  color: #fff;
   font-size: 14px;
   zletter-spacing: .2em;
-  margin: 2px 0px 10px;
+  margin: 0px 0px 5px;
+  font-weight: 600;
+  padding-left: 5px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -80,8 +87,8 @@ img {
 
 .title {
   margin-top: 20px;
-  font-size: 40px;
-  font-weight: bolder;
+  font-size: 32px;
+  font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
@@ -103,7 +110,7 @@ img {
 
 /*  Side Menus */ 
 #popular{
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 #right_menu {
@@ -118,7 +125,7 @@ img {
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   padding: 2px 5px;
   background-color: #f3b128;
@@ -129,11 +136,12 @@ img {
 .menu_item {
   margin: 5px 0px 5px;
   background-color: #fff;
+  border: 1px solid #fcfbfa;
 }
 
 .menu_item:hover {
-  box-shadow: 0px 0px 0px 1px; 
-  opacity: .8;
+  zbox-shadow: 0px 0px 0px 1px; 
+  opacity: .85;
 }
 
 

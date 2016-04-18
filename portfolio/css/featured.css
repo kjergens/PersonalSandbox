@@ -1,29 +1,16 @@
-.featured {
-	position: relative;
-	height: 400px;
-	overflow-y: hidden;
+.featured .title {
+	background-color: #403f3e; #484745; #3a3a3a;
+	margin-top: 0px;
+	padding: 10px;
+	color: #fff;
 }
 
-.featured #headline {
-	position: absolute;
-	bottom: 0px;
-	background: #fff;
-	width: 100%;
+.main_article {
+	padding: 0px;
 }
 
-.featuredimg {
-	width: 100%;
-  position: absolute;
-}
-
-.featuredimg img {
-	width: 100%;
-	overflow-y: hidden;
-}
-
-.featuredmore img {
-	margin: 0px 40px;
-	text-align: center;
+.featuredimg img, .featuredmore img {
+	margin: 0px auto;
 }
 
 .feature .date {
@@ -31,10 +18,13 @@
 }
 
 .date {
-	margin-top: 10px;
-	margin-bottom: 5px;
+	position: relative;
+	top: -18px;
+	background-color: #fff;
+	padding: 2px 4px;
 	color: #989898;
-	display: block;
+	display: inline;
+	font-weight: normal;
 }
 
 figure {
@@ -46,15 +36,19 @@ a>.title , h3 a, h3 a:hover, .blurb {         /* get rid of hyperlink blue */
 	text-decoration: none;
 }
 
-p.blurb {
-	display: inline;
+p .blurb {
+	margin: 0px auto;
 }
 
+
 h3#morearticles {
-	border-bottom: 2px solid #f3b128;
-	color: #f3b128;
-	padding: 16px 0px 5px;
-	margin-bottom: 25px;
+	zborder-bottom: 2px solid #f3b128;
+	zbackground-color: #f3b128;
+	color: #403f3e; #f3b128;
+	padding: 0px 5px;
+	margin: 35px 15px 20px;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .featuredmore {               /* row of articles */
@@ -62,6 +56,7 @@ h3#morearticles {
 	width: 33.33%;
 	padding: 0px 25px 0px 25px;   
 	margin-bottom: 50px;
+	font-weight: bold;
 }
 
 
