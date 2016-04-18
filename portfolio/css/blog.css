@@ -114,15 +114,6 @@ img {
   margin-bottom: 100px;
 }
 
-#right_menu {
-  position: relative;
-}
-
-#menu_container {
-  position: absolute;
-  top: 60%;
-}
-
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -158,7 +149,7 @@ img {
 .article_title_container {
   background-color: #fff;
   padding: 5px 3px 3px 8px;
-  max-width: 215px;
+  max-width: 155px;
   float: left;
 }
 
@@ -183,12 +174,6 @@ img {
   line-height: 1.3em;
 }
 
-@media (max-width: 1200px) {
-  .article_title_container {
-    max-width: 155px; 
-  }
-   
-}
 
 @media (max-width: 992px) {     /* Get rid of the excess padding when the */
   #right_menu {                   /* menu is below the article */
@@ -207,7 +192,7 @@ img {
   }
 
   .article_title_container {
-    width: none;
+    max-width: none;
     padding: 15px;
   }
 
