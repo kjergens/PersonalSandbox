@@ -17,7 +17,7 @@ COLOR PALETTE
 body { 
   font-family: Merriweather, serif;
   color: #3f3f3f;
-  background-color: #f1eee8;
+  zbackground-color: #f1eee8;
 }
 
 p { 
@@ -41,10 +41,8 @@ a, a:hover {
 
 /* Header */
 #header_container {
-  zbox-shadow: 0px 0.5px 6px .5px;
-  padding: 5px 0px 5px;      /* some breathing room before the gray bar */
+  padding: 5px 0px;      /* some breathing room */
   background-color: #fff;
-  border-bottom: 1px solid #ccc;
 }
 
 
@@ -55,8 +53,6 @@ a, a:hover {
   letter-spacing: -3px;
   float: left;
   margin-right: 30px; /* never touch the menud */
-  ztext-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-
 }
 
 #name, .name {                /* my name color */

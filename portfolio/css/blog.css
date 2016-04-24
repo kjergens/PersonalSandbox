@@ -3,7 +3,7 @@
 /**********************
 
 COLOR PALETTE
-#f3b128 // gold
+#f3b128 // orange
 #46b7fa  // blue in title
 #142afa  // link blue 
 #bfbfbf // gray
@@ -13,9 +13,6 @@ COLOR PALETTE
 
 *************************/
 
-body {
-  background-color: #f1eee8;
-}
 
 p {
   margin: 20px auto;
@@ -51,11 +48,10 @@ img {
   background-color: #46b7fa;
   color: #fff;
   font-size: 14px;
-  zletter-spacing: .2em;
-  margin: 2px 0px 10px;
+  zmargin: 2px 0px 10px;
   padding: 0px 5px;
   font-weight: bold;
-  display: inline-block;
+  zdisplay: inline-block;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -87,8 +83,8 @@ img {
 
 
 .title {
-  margin-top: 20px;
-  font-size: 32px;
+  font-size: 40px;
+  letter-spacing: -4px;
   font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
@@ -117,12 +113,12 @@ img {
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
-  padding: 2px 5px;
+  padding: 2px 4px;
   background-color: #f3b128;
   color: #fff;
-  display: inline-block;
+  zdisplay: inline-block;
 }
 
 
@@ -133,7 +129,6 @@ img {
 }
 
 .menu_item:hover {
-  zbox-shadow: 0px 0px 0px 1px; 
   opacity: .85;
 }
 

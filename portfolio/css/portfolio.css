@@ -16,12 +16,17 @@ COLOR PALETTE
     Portfolio navigation (Data Viz, etc.)
 */
 #subnav_container {
-  background-color: #605f5c;
-  padding: 10px 0px 5px;
+  background-color: #46b7fa; #605f5c;
+}
+
+#header_container {
+  border-bottom: 0px solid #ccc;
 }
 
 ul#subnav_menu {
-  padding: 0px;
+  padding: 4px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 ul#subnav_menu li a { 
@@ -33,7 +38,7 @@ ul#subnav_menu li a {
 } 
 
 ul#subnav_menu li a:hover { 
-  color: #d8d6d0;
+  color: #ffffee;
 }
 
 .page_title {

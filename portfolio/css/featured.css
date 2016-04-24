@@ -1,8 +1,8 @@
 .featured .title {
-	background-color: #403f3e;
+	zbackground-color: #f3b128; #403f3e;
 	margin-top: 0px;
-	padding: 10px;
-	color: #fff;
+	zpadding: 10px;
+	zcolor: #fff;
 }
 
 .featuredimg img, .featuredmore img {
@@ -38,13 +38,13 @@ p .blurb {
 
 
 h3#morearticles {
-	background-color: #f3b128;
-	color: #fff; #f3b128;
-	padding: 2px 5px;
-	margin-bottom: 25px;
-	font-size: 18px;
+	zbackground-color: #f3b128;
+	zcolor: #fff; #f3b128;
+	padding: 2px 4px;
+	margin-top: 55px;
+	font-size: 14px;
 	font-weight: bold;
-	display: inline-block;
+	zdisplay: none;
 }
 
 .featuredmore {               /* row of articles */
