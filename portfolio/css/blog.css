@@ -13,6 +13,9 @@ COLOR PALETTE
 
 *************************/
 
+body {
+  background-color: #fff;
+}
 
 p {
   margin: 20px auto;
@@ -107,6 +110,7 @@ img {
 
 /*  Side Menus */ 
 #popular{
+  margin-top: 630px;
   margin-bottom: 100px;
 }
 
