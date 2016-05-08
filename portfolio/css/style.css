@@ -39,20 +39,21 @@ a, a:hover {
 
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 800;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   float: left;
   margin: 0px 30px 25px 0px;
-}
-
-#name, .name {                /* my name color */
-  color: #CD3300; D7653F;009ACD; #f3b128; 
 }
 
 #site_title a {        /* UX DESIGNER color */
   color: #CD3300; 46b7fa;
  }
+
+#name, .name {                /* my name color */
+}
+
+
 
 
 /*   Main menu/global nav */

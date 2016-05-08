@@ -62,7 +62,7 @@ img {
   display: inline;
 }
 
-.col-sm-9, .col-md-9, .col-sm-8, .col-md-8 {
+.col-sm-9, .col-md-9, .col-sm-8, .col-md-8 { /* article body */
   background-color: #fff;
 }
 
@@ -83,7 +83,7 @@ img {
 }
 
 .img_border img {
-  border: 3px solid white;
+  border: 1px solid white;
 }
 
 .fb-like {
@@ -96,11 +96,6 @@ img {
 
 #twitter iframe {
   margin-bottom: -5px; /* hack to make it same parallel as fb button */
-}
-
-/*  Side Menus */ 
-#popular{
-  zmargin-bottom: 100px;
 }
 
 
@@ -117,7 +112,6 @@ img {
 .menu_item {
   margin: 3px 0px 3px;
   background-color: #e2e8ea; f9fafa; F2F5F7;
-  zborder: 1px solid #fcfbfa;
 }
 
 .menu_item:hover {
@@ -139,7 +133,6 @@ img {
   max-width: 155px;
   height: 105px;
   float: left;
-  zbackground: #f1eee8;
 }
 
 .clearfix {

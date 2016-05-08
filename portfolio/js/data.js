@@ -44,8 +44,8 @@ var data =
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How to Create A Color Scheme, Part 2 of 2',
-              subtitle: 'Simplifying with 3-color and 2-color schemes.',
+              title: 'How to Create 2 or 3-Color Schemes',
+              subtitle: 'Interactive tools included.',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
@@ -68,8 +68,8 @@ var data =
               blurb: "They are incredible."
             },
             {
-              title: 'How to Create A Color Scheme, Part 1 of 2',
-              subtitle: '4-color schemes. Interactive tool included.',
+              title: 'How to Create Four-Color Schemes',
+              subtitle: 'Interactive tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
@@ -179,8 +179,8 @@ var data =
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'How to Create a Color Scheme, Part 1 of 2',
-              subtitle: '4-color schemes. Intereactive tool included.',
+              title: 'How to Create Four-Color Schemes',
+              subtitle: 'Intereactive tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
