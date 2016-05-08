@@ -2,6 +2,15 @@ var data =
     {
        menu: 
           [  {
+              title: '',
+              subtitle: '',
+              link: 'pink.html',
+              big_image: 'pink/title.png',
+              image: '',
+              date: 'May 9, 2016',
+              blurb: ''
+             },
+             {
               title: 'Public Image: The Accountant',
               subtitle: 'From hero to scoundrel.',
               link: 'accountants.html',

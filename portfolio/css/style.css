@@ -33,7 +33,7 @@ a, a:hover {
 /* Header */
 #header_container {
   background-color: #fff;
-  padding-top: 15px
+  padding-top: 10px
 }
 
 
@@ -43,7 +43,7 @@ a, a:hover {
   font-weight: 800;
   letter-spacing: -2px;
   float: left;
-  margin: 0px 30px 25px 0px;
+  margin: 0px 10px 25px 0px;
 }
 
 #site_title a {        /* UX DESIGNER color */
@@ -82,7 +82,7 @@ ul#menu li a:hover, ul#menu li.current a {
   color: #bfbfbf; f3b128; 
 } 
 
-@media(max-width:992px) {   /* when navlinks go to next line, float left */
+@media(max-width:609px) {   /* when navlinks go to next line, float left */
     ul#menu {
       float: left;
       -webkit-padding-start: 0px;

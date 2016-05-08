@@ -3,7 +3,7 @@
 	margin: 0px auto;
 }
 
-.featured .date {
+.zfeatured .date {
 	background-color: #fff;
 	margin: 2px 4px;
 	color: #989898;
@@ -14,8 +14,8 @@ figure {
 	margin: 0px;
 }
 
-p .blurb {
-	margin: 0px auto;
+.blurb {
+	max-width: 900px;
 }
 
 
