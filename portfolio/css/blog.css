@@ -1,24 +1,17 @@
-/*
-  Blog 
+
 /**********************
 
 COLOR PALETTE
-#f3b128 // orange
-#46b7fa  // blue in title
-#142afa  // link blue 
-#bfbfbf // gray
-#3f3f3f // paragraph font 
-#222222 // header font
-#f1eee8; // body background
+
 
 *************************/
 
 body {
-  background-color: #fff;
+  zbackground-color: #fff;
 }
 
 p {
-  margin: 20px auto;
+  margin: 10px auto;
   max-width: 600px; 
 }
 
@@ -30,7 +23,6 @@ figure {
 figcaption {
   display: table-caption;
   caption-side: bottom;
-  background: #fdfdfd;  /* can't have this for colorwheel*/
   padding: 2px 0px 0px 0px;
   color: #666;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  
@@ -48,13 +40,10 @@ img {
 
 #tag{
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  background-color: #46b7fa;
+  background-color: #009ACD; 46b7fa;
   color: #fff;
   font-size: 14px;
-  zmargin: 2px 0px 10px;
-  padding: 0px 5px;
-  font-weight: bold;
-  zdisplay: inline-block;
+  padding: 20px 0px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -86,8 +75,9 @@ img {
 
 
 .title {
+  margin-top: 10px;
   font-size: 40px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
@@ -110,8 +100,7 @@ img {
 
 /*  Side Menus */ 
 #popular{
-  margin-top: 630px;
-  margin-bottom: 100px;
+  zmargin-bottom: 100px;
 }
 
 
@@ -120,36 +109,37 @@ img {
   font-size: 14px;
   font-weight: bold;
   padding: 2px 4px;
-  background-color: #f3b128;
+  background-color: #009ACD; f3b128;
   color: #fff;
-  zdisplay: inline-block;
 }
 
 
 .menu_item {
-  margin: 5px 0px 5px;
-  background-color: #fff;
-  border: 1px solid #fcfbfa;
+  margin: 3px 0px 3px;
+  background-color: #e2e8ea; f9fafa; F2F5F7;
+  zborder: 1px solid #fcfbfa;
 }
 
 .menu_item:hover {
-  opacity: .85;
+  opacity: .95;
 }
 
 
 .thumb_container {
   float: left;
   overflow: hidden;
-  width: 133px;
+  min-width: 133px;
+  zwidth:100%;
   height: 105px;
 }
 
 
 .article_title_container {
-  background-color: #fff;
   padding: 5px 3px 3px 8px;
   max-width: 155px;
+  height: 105px;
   float: left;
+  zbackground: #f1eee8;
 }
 
 .clearfix {

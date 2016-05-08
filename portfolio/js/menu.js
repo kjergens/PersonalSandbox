@@ -44,7 +44,7 @@ $(function () {
     $popularmenu.append("<div class=\"menu_heading\">Most popular</div>");
     shuffle(data.popular);
     // loop through data and build menu
-    for (var i = 0; i<=2; i++) {
+    for (var i = 0; i<4; i++) {
          $popularmenu.append(getMenuItem(data.popular[i]));
     } 
 
@@ -57,7 +57,7 @@ $(function () {
     shuffle(data.menu);
 
     // loop through data and build menu
-    for (var i = 0; i<=4; i++) {
+    for (var i = 0; i<4; i++) {
          $menu.append(getMenuItem(data.menu[i]));
     }  
 

@@ -1,35 +1,17 @@
-.featured .title {
-	zbackground-color: #f3b128; #403f3e;
-	margin-top: 0px;
-	zpadding: 10px;
-	zcolor: #fff;
-}
 
 .featuredimg img, .featuredmore img {
 	margin: 0px auto;
 }
 
-.feature .date {
-	position: absolute;
-}
-
 .featured .date {
-	position: relative;
-	top: -18px;
 	background-color: #fff;
-	padding: 2px 4px;
+	margin: 2px 4px;
 	color: #989898;
-	display: inline;
 	font-weight: normal;
 }
 
 figure {
 	margin: 0px;
-}
-
-a>.title , h3 a, h3 a:hover, .blurb {         /* get rid of hyperlink blue */
-	color: #3f3f3f;
-	text-decoration: none;
 }
 
 p .blurb {
@@ -38,13 +20,12 @@ p .blurb {
 
 
 h3#morearticles {
-	zbackground-color: #f3b128;
-	zcolor: #fff; #f3b128;
-	padding: 2px 4px;
+	zpadding: 2px 4px;
 	margin-top: 55px;
-	font-size: 14px;
-	font-weight: bold;
-	zdisplay: none;
+	font-size: 20px;
+	letter-spacing: -2px;
+	font-weight: 600;
+	zborder-bottom: 2px solid #484745;
 }
 
 .featuredmore {               /* row of articles */

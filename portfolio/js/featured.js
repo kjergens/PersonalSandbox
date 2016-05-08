@@ -2,20 +2,20 @@
 var show_featured = function() {
     // main, most recent article
     var markup = "<div class='featured'>" +
-    "<a href=\"" + data.menu[0].link + "\">" +
-           // "<div id='headline'>" +
-            "<div class='title'>" + data.menu[0].title + "</div>" +
-            "</a>" +
+            "<div class='date'>" + data.menu[0].date + "</div>" +
             "<a href=\"" + data.menu[0].link + "\">" +
            "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
            "</a>" +
-            "<div class='date'>" + data.menu[0].date + "</div>" +
+            "<a href=\"" + data.menu[0].link + "\">" +
+           // "<div id='headline'>" +
+            "<div class='title'>" + data.menu[0].title + "</div>" +
+            "</a>" +
             "<p class='blurb'>" + data.menu[0].blurb + 
            "<a href=\"" + data.menu[0].link + "\">... Read more.</a>" + "</p>" +
             "</div>";
 
     // below the main, some more articles.
-    markup += "<h3 id=\"morearticles\">More articles</h3><div class=\"more\">";
+    markup += "<h3 id=\"morearticles\">Recent articles</h3><div class=\"more\">";
 
     // row 1
     for (var i=1; i<=3; i++) {
@@ -80,7 +80,7 @@ $(function () {
     $popularmenu.append("<div class=\"menu_heading\">Most popular</div>");
     //shuffle(data.popular);
     // loop through data and build menu
-    for (var i = 0; i<=2; i++) {
+    for (var i = 0; i<4; i++) {
          $popularmenu.append(get_menu_item(data.popular[i]));
     } 
 
@@ -88,12 +88,12 @@ $(function () {
     $("#menu_container").append("<div id=\"sidemenu\"></div>");
     var $menu = $("#sidemenu");
 
-    $menu.append("<div class=\"menu_heading\">Recent articles</div>");
+    $menu.append("<br><br><div class=\"menu_heading\">More articles</div>");
 
     //shuffle(data.menu);
 
     // loop through data and build menu
-    for (var i = 0; i<=4; i++) {
+    for (var i = 0; i<4; i++) {
          $menu.append(get_menu_item(data.menu[i]));
     }  
 
