@@ -16,15 +16,11 @@ COLOR PALETTE
     Portfolio navigation (Data Viz, etc.)
 */
 #subnav_container {
-  background-color: #46b7fa; #605f5c;
-}
-
-#header_container {
-  border-bottom: 0px solid #ccc;
+  background-color: #009ACD; 46b7fa; #605f5c;
 }
 
 ul#subnav_menu {
-  padding: 4px 0px;
+  padding: 20px 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -32,13 +28,13 @@ ul#subnav_menu {
 ul#subnav_menu li a { 
   padding-right: 35px;
   padding-left: 0px;
-  font-size: 12.5px;
+  font-size: 14px;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   color: #fff;
 } 
 
 ul#subnav_menu li a:hover { 
-  color: #ffffee;
+  color: #ccdefe;
 }
 
 .page_title {
@@ -56,20 +52,16 @@ p {
     Portfolio body
 */
 
-.category_title_container {
-  border-bottom: 2px solid #f3b128;
-  margin-bottom: 15px;
-}
 
 .category_title {
-  font-size: 26px;
+  font-size: 40px;
+  letter-spacing: -3px;
   font-weight: bold;
-  color: #484745;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
 h5 {
-  font-weight: bold;
+  zfont-weight: bold;
 }
 
 img {
@@ -82,7 +74,7 @@ figure {
 }
 
 .section {
-  background-color: #d8d6d0; 
+  background-color: #e2e8ea; d8d6d0; 
   margin-bottom: 20px;
 }
 

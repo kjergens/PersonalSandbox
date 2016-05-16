@@ -1,21 +1,17 @@
-/*
-  Blog 
+
 /**********************
 
 COLOR PALETTE
-#f3b128 // orange
-#46b7fa  // blue in title
-#142afa  // link blue 
-#bfbfbf // gray
-#3f3f3f // paragraph font 
-#222222 // header font
-#f1eee8; // body background
+
 
 *************************/
 
+body {
+  zbackground-color: #fff;
+}
 
 p {
-  margin: 20px auto;
+  margin: 10px auto;
   max-width: 600px; 
 }
 
@@ -27,7 +23,6 @@ figure {
 figcaption {
   display: table-caption;
   caption-side: bottom;
-  background: #fdfdfd;  /* can't have this for colorwheel*/
   padding: 2px 0px 0px 0px;
   color: #666;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  
@@ -45,13 +40,11 @@ img {
 
 #tag{
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  background-color: #46b7fa;
+  background-color: #009ACD; 46b7fa;
   color: #fff;
   font-size: 14px;
-  zmargin: 2px 0px 10px;
-  padding: 0px 5px;
-  font-weight: bold;
-  zdisplay: inline-block;
+  padding: 20px 0px;
+  margin-top: 10px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -70,8 +63,9 @@ img {
   display: inline;
 }
 
-.col-sm-9, .col-md-9, .col-sm-8, .col-md-8 {
+.col-sm-9, .col-md-9, .col-sm-8, .col-md-8 { /* article body */
   background-color: #fff;
+  padding-top: 20px;
 }
 
 
@@ -79,18 +73,21 @@ img {
     font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
     color: #bfbfbf;
     font-size: 14px;
+    margin: 10px 0px;
 }
 
 
 .title {
+  margin-top: 10px;
   font-size: 40px;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
+  line-height: 1.1em;
   font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
 }
 
 .img_border img {
-  border: 3px solid white;
+  border: 1px solid white;
 }
 
 .fb-like {
@@ -105,46 +102,40 @@ img {
   margin-bottom: -5px; /* hack to make it same parallel as fb button */
 }
 
-/*  Side Menus */ 
-#popular{
-  margin-bottom: 100px;
-}
-
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
   padding: 2px 4px;
-  background-color: #f3b128;
+  background-color: #009ACD; f3b128;
   color: #fff;
-  zdisplay: inline-block;
 }
 
 
 .menu_item {
-  margin: 5px 0px 5px;
-  background-color: #fff;
-  border: 1px solid #fcfbfa;
+  margin: 3px 0px 3px;
+  background-color: #e2e8ea; f9fafa; F2F5F7;
 }
 
 .menu_item:hover {
-  opacity: .85;
+  opacity: .95;
 }
 
 
 .thumb_container {
   float: left;
   overflow: hidden;
-  width: 133px;
+  min-width: 133px;
+  zwidth:100%;
   height: 105px;
 }
 
 
 .article_title_container {
-  background-color: #fff;
   padding: 5px 3px 3px 8px;
-  max-width: 155px;
+  max-width: 220px;
+  height: 105px;
   float: left;
 }
 
@@ -168,6 +159,12 @@ img {
   font-family: Merriweather, serif;
   line-height: 1.3em;
 }
+
+@media (max-width: 1199px) { 
+  .article_title_container {
+    max-width: 150px;
+  }
+  }
 
 
 @media (max-width: 992px) {     /* Get rid of the excess padding when the */

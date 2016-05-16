@@ -2,17 +2,26 @@ var data =
     {
        menu: 
           [  {
-              title: 'Image at Work: The Accountant',
-              subtitle: 'How we\'ve viewed them over time.',
+              title: 'The Genderization of Pink',
+              subtitle: '',
+              link: 'pink.html',
+              big_image: 'pink/title.png',
+              image: '',
+              date: 'May 9, 2016',
+              blurb: ''
+             },
+             {
+              title: 'Public Image: The Accountant',
+              subtitle: 'From hero to scoundrel.',
               link: 'accountants.html',
               big_image: 'thumb/accounting_big.png',
               image: 'thumb/accounting.png',
               date: 'Apr 10, 2016',
-              blurb: 'In the beginning, accountants were seen as moral heros, people doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
+              blurb: 'In the beginning, accountants were moral agents, doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
              },
             {
-              title: 'What Made Purple Royal?',
-              subtitle: 'All those snails, that\'s what.',
+              title: 'How Purple Became the Color of Royalty',
+              subtitle: 'It has to do with snails.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
               image: 'thumb/tyrian.png',
@@ -21,14 +30,14 @@ var data =
             },
             {
               title: 'Evolution of the Bicycle',
-              subtitle: 'Illustrated timeline of bike designs',
+              subtitle: '',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'The Story Behind The Red Coat',
+              title: 'The Story Behind The Red in the British Red Coat',
               subtitle: 'It starts with a bug in Mexico.',
               link: 'red.html',
               image: 'thumb/red.png',
@@ -36,16 +45,16 @@ var data =
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Image at Work: The Pilot',
-              subtitle: 'It changed over time, by design.',
+              title: 'Engineering an Image: The Pilot',
+              subtitle: 'From maverick to socialite to protector.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'Making A Color Scheme Pt 2',
-              subtitle: 'Using just two or three colors.',
+              title: 'How to Create a Two-Color or Three-Color Scheme',
+              subtitle: 'Interactive tools included.',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
@@ -68,8 +77,8 @@ var data =
               blurb: "They are incredible."
             },
             {
-              title: 'Making A Color Scheme Pt 1',
-              subtitle: 'Four-color schemes. Tool included.',
+              title: 'How to Create Four-Color Schemes',
+              subtitle: 'Interactive tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
@@ -97,7 +106,7 @@ var data =
               date: 'Jan 30, 2016'
             },
             {
-              title: 'Coffee Color Wheel',
+              title: 'Color Wheel for Coffee',
               subtitle: 'A visual aid for describing taste.',
               link: 'coffee.html',
               image: 'thumb/coffee.png',
@@ -172,15 +181,15 @@ var data =
             },
             {
               title: 'Evolution of the Bicycle',
-              subtitle: 'Illustrated timeline of bike designs',
+              subtitle: '',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'Making A Color Scheme Pt 1',
-              subtitle: 'Four-color schemes. Tool included.',
+              title: 'How to Create Four-Color Schemes',
+              subtitle: 'Intereactive tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',

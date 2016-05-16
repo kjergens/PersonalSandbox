@@ -3,71 +3,79 @@
 /**********************
 
 COLOR PALETTE
-#f3b128 // gold
-#46b7fa  // blue in title
-#142afa  // link blue 
-#bfbfbf // gray
-#3f3f3f // paragraph font 
-#222222 // header font
-#f1eee8; // body background
+
+Branding
+#CD3300; - red. site text title.
+#009ACD; - blue. complementary color. for menu backgrounds and logos.
+
+Hyperlinks
+#2758DC; - hyperlink blue.
+
+Text (Blacks and Grays)
+#414f55; - all headers h1, h2, h3, h4
+#414f55; - all non-header text
+#bfbfbf; - active menu item gray
+#efefef; - footer background gray, <hr>, borders, underlines
+#333; - footer hyperlink
+#888; - footer hyperlink hover
+
 
 *************************/
 
 /* Override HTML defaults */
 body { 
   font-family: Merriweather, serif;
-  color: #3f3f3f;
-  zbackground-color: #f1eee8;
+  color: #414f55; #3f3f3f;
+  zbackground-color: #eef1f2; e2e8ea; #f1eee8;
 }
 
 p { 
   font-size: 16px; 
-  zmargin: 20px auto;
-  zwidth: 90%; 
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  line-height: 1.4em;
-  zfont-weight: 800;
-  color: #484745;
+  line-height: 1.2em;
+  color: #414f55;
 }
 
 a, a:hover {
   text-decoration: none;
-  color: #142afa;
+  color: #2758DC;
 }
 
 
 /* Header */
 #header_container {
-  padding: 5px 0px;      /* some breathing room */
   background-color: #fff;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 34px;
+  font-size: 18px;
   font-weight: 800;
-  letter-spacing: -3px;
+  letter-spacing: -2px;
   float: left;
-  margin-right: 30px; /* never touch the menud */
-}
-
-#name, .name {                /* my name color */
-  color: #f3b128; 
+  margin: 0px 10px 25px 0px;
 }
 
 #site_title a {        /* UX DESIGNER color */
-  color: #46b7fa;
+  color: #CD3300; 46b7fa;
  }
 
+.logo_separator {
+  background-color: #009ACD;
+  zwidth: 10px;
+  margin: 0px 5px 0px 7px;
+  zborder: 10px solid #009ACD;
+}
 
 /*   Main menu/global nav */
 ul#menu { 
   float: right;
-  margin-top: 6px; /* compensate for the site title having auto-line spacing */
 }
 
 ul#menu li, ul#subnav_menu li { 
@@ -77,25 +85,21 @@ ul#menu li, ul#subnav_menu li {
 
 ul#menu li a { 
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 13.5px;
   font-weight: bold;
-  color: #46b7fa; 
+  color: #CD3300; 46b7fa; 
   letter-spacing: -1px;
   padding-left: 15px;
   text-align: center;
 } 
 
-ul#menu li a:hover { 
-  color: #f3b128; 
-  text-decoration: underline;
-}
 
-ul#menu li.current a { 
-  text-decoration: underline;
-  color: #f3b128; 
+ul#menu li a:hover, ul#menu li.current a { 
+  text-decoration: none;
+  color: #bfbfbf; f3b128; 
 } 
 
-@media(max-width:992px) {   /* when navlinks go to next line, float left */
+@media(max-width:609px) {   /* when navlinks go to next line, float left */
     ul#menu {
       float: left;
       -webkit-padding-start: 0px;
@@ -111,6 +115,7 @@ ul#menu li.current a {
 
 /*  Footer */
 #footer_container {
+  margin-top: 150px;
   border-top: 1px solid #ccc;
   background-color: #efefef;
   font: bold 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;

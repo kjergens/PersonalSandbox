@@ -1,25 +1,14 @@
-.featured .title {
-	zbackground-color: #f3b128; #403f3e;
-	margin-top: 0px;
-	zpadding: 10px;
-	zcolor: #fff;
-}
 
-.featuredimg img, .featuredmore img {
+.featuredimg img {
 	margin: 0px auto;
 }
 
-.feature .date {
-	position: absolute;
-}
 
-.featured .date {
-	position: relative;
-	top: -18px;
+
+.zfeatured .date {
 	background-color: #fff;
-	padding: 2px 4px;
+	margin: 2px 4px;
 	color: #989898;
-	display: inline;
 	font-weight: normal;
 }
 
@@ -27,31 +16,24 @@ figure {
 	margin: 0px;
 }
 
-a>.title , h3 a, h3 a:hover, .blurb {         /* get rid of hyperlink blue */
-	color: #3f3f3f;
-	text-decoration: none;
-}
-
-p .blurb {
-	margin: 0px auto;
+.blurb {
+	max-width: 900px;
 }
 
 
 h3#morearticles {
-	zbackground-color: #f3b128;
-	zcolor: #fff; #f3b128;
-	padding: 2px 4px;
+	zpadding: 2px 4px;
 	margin-top: 55px;
-	font-size: 14px;
-	font-weight: bold;
-	zdisplay: none;
+	font-size: 20px;
+	letter-spacing: -2px;
+	font-weight: 600;
 }
 
 .featuredmore {               /* row of articles */
 	float: left;
 	width: 33.33%;
-	padding: 0px 25px 0px 25px;   
-	margin-bottom: 50px;
+	padding: 0px 15px 0px 15px;   
+	margin-top: 10px;
 	font-weight: bold;
 }
 
@@ -61,6 +43,10 @@ h3#morearticles {
 	color: #3b3b3b;
 }
 
+
+.featuredmore img {
+	margin: 0px 30px;  /* hack until I get wider images */
+}
 
 @-moz-document url-prefix() {  /* hack to deal with ff not know max-width */
   img {
