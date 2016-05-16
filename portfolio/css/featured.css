@@ -1,7 +1,9 @@
 
-.featuredimg img, .featuredmore img {
+.featuredimg img {
 	margin: 0px auto;
 }
+
+
 
 .zfeatured .date {
 	background-color: #fff;
@@ -25,14 +27,13 @@ h3#morearticles {
 	font-size: 20px;
 	letter-spacing: -2px;
 	font-weight: 600;
-	zborder-bottom: 2px solid #484745;
 }
 
 .featuredmore {               /* row of articles */
 	float: left;
 	width: 33.33%;
-	padding: 0px 25px 0px 25px;   
-	margin-bottom: 50px;
+	padding: 0px 15px 0px 15px;   
+	margin-top: 10px;
 	font-weight: bold;
 }
 
@@ -42,6 +43,10 @@ h3#morearticles {
 	color: #3b3b3b;
 }
 
+
+.featuredmore img {
+	margin: 0px 30px;  /* hack until I get wider images */
+}
 
 @-moz-document url-prefix() {  /* hack to deal with ff not know max-width */
   img {

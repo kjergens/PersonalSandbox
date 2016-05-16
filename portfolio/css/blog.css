@@ -44,6 +44,7 @@ img {
   color: #fff;
   font-size: 14px;
   padding: 20px 0px;
+  margin-top: 10px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -133,7 +134,7 @@ img {
 
 .article_title_container {
   padding: 5px 3px 3px 8px;
-  max-width: 155px;
+  max-width: 220px;
   height: 105px;
   float: left;
 }
@@ -158,6 +159,12 @@ img {
   font-family: Merriweather, serif;
   line-height: 1.3em;
 }
+
+@media (max-width: 1199px) { 
+  .article_title_container {
+    max-width: 150px;
+  }
+  }
 
 
 @media (max-width: 992px) {     /* Get rid of the excess padding when the */

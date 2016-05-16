@@ -8,14 +8,14 @@ var show_featured = function() {
            "</a>" +
             "<a href=\"" + data.menu[0].link + "\">" +
            // "<div id='headline'>" +
-            "<div class='title'>" + data.menu[0].title + "</div>" +
+            //"<div class='title'>" + data.menu[0].title + "</div>" +
             "</a>" +
             "<p class='blurb'>" + data.menu[0].blurb + 
-           "<a href=\"" + data.menu[0].link + "\">... Read more.</a>" + "</p>" +
+           "<a href=\"" + data.menu[0].link + "\">Read more.</a>" + "</p>" +
             "</div>";
 
     // below the main, some more articles.
-    markup += "<h3 id=\"morearticles\">Recent articles</h3><div class=\"more\">";
+    markup += "<hr><h3 id=\"morearticles\">Recent articles</h3>";
 
     // row 1
     for (var i=1; i<=3; i++) {
@@ -29,7 +29,7 @@ var show_featured = function() {
         "</div></a>";
     }
 
-    markup += "</div><div class=\"clearfix\"></div>"; // clear the floats
+    markup += "</div><div class=\"clearfix\"></div><hr>"; // clear the floats
 
     // row 2
     for (var i=4; i<=6; i++) {

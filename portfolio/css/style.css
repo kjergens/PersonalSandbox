@@ -4,6 +4,21 @@
 
 COLOR PALETTE
 
+Branding
+#CD3300; - red. site text title.
+#009ACD; - blue. complementary color. for menu backgrounds and logos.
+
+Hyperlinks
+#2758DC; - hyperlink blue.
+
+Text (Blacks and Grays)
+#414f55; - all headers h1, h2, h3, h4
+#414f55; - all non-header text
+#bfbfbf; - active menu item gray
+#efefef; - footer background gray, <hr>, borders, underlines
+#333; - footer hyperlink
+#888; - footer hyperlink hover
+
 
 *************************/
 
@@ -11,7 +26,7 @@ COLOR PALETTE
 body { 
   font-family: Merriweather, serif;
   color: #414f55; #3f3f3f;
-  background-color: #eef1f2; e2e8ea; #f1eee8;
+  zbackground-color: #eef1f2; e2e8ea; #f1eee8;
 }
 
 p { 
@@ -33,7 +48,8 @@ a, a:hover {
 /* Header */
 #header_container {
   background-color: #fff;
-  padding-top: 10px
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 
@@ -50,11 +66,12 @@ a, a:hover {
   color: #CD3300; 46b7fa;
  }
 
-#name, .name {                /* my name color */
+.logo_separator {
+  background-color: #009ACD;
+  zwidth: 10px;
+  margin: 0px 5px 0px 7px;
+  zborder: 10px solid #009ACD;
 }
-
-
-
 
 /*   Main menu/global nav */
 ul#menu { 
@@ -98,6 +115,7 @@ ul#menu li a:hover, ul#menu li.current a {
 
 /*  Footer */
 #footer_container {
+  margin-top: 150px;
   border-top: 1px solid #ccc;
   background-color: #efefef;
   font: bold 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;

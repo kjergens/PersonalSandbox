@@ -2,7 +2,7 @@ var data =
     {
        menu: 
           [  {
-              title: '',
+              title: 'The Genderization of Pink',
               subtitle: '',
               link: 'pink.html',
               big_image: 'pink/title.png',
@@ -53,7 +53,7 @@ var data =
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How to Create 2 or 3-Color Schemes',
+              title: 'How to Create a Two-Color or Three-Color Scheme',
               subtitle: 'Interactive tools included.',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
