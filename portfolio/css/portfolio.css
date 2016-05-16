@@ -1,22 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans);
-
-/**********************
-
-COLOR PALETTE
-#f3b128 // gold
-#46b7fa  // blue in title
-#142afa  // link blue 
-#bfbfbf // gray
-#3f3f3f // paragraph font 
-#222222 // header font
-
-*************************/
-
 /*
     Portfolio navigation (Data Viz, etc.)
 */
 #subnav_container {
-  background-color: #009ACD; 46b7fa; #605f5c;
+  background-color: #009ACD; 
 }
 
 ul#subnav_menu {
@@ -52,16 +38,19 @@ p {
     Portfolio body
 */
 
-
-.category_title {
+.category_title_container {
   font-size: 40px;
   letter-spacing: -3px;
   font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+  margin-top: 70px;
 }
 
-h5 {
-  zfont-weight: bold;
+
+h5 {    /* To highlight "Example: project name" */
+  display: inline-block;
+  background-color: #efefef;
+  padding: 10px;
 }
 
 img {
@@ -71,15 +60,27 @@ img {
 figure {
     border: 1px solid #F0EDF2;
     display: flex;
+    position: relative;
 }
 
-.section {
-  background-color: #e2e8ea; d8d6d0; 
+.section {  /* Gives background to figcaption with no margins or padding */
+  background-color: #f5f3f1; d8d6d0; 
   margin-bottom: 20px;
 }
 
-.category_body {
+.category_body { 
   margin-bottom: 120px;
+}
+
+.before {
+  display: inline-block;
+  background-color: #666;
+  padding: 8px 15px;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  left: -1px;
+  opacity: .9;
 }
 
 .figure {

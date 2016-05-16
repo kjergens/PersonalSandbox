@@ -9,7 +9,9 @@ var header = "<div class=\"container\"><div class=\"row\">" +
       "</ul>" + 
        "<div id=\"site_title\">" +
         "<a href=\"index.html\">" +
-        "KATIE JERGENS<span class=\"logo_separator\"></span>UX DESIGNER" +
+        "<span class=\"name\">KATIE JERGENS</span>" +
+        "<span class=\"logo_separator\">&nbsp;</span>" +
+        "<span class=\"name\">UX DESIGNER</span>" +
       "</a></div>" +
       "<div class=\"clearfix\"></div>" +
       "</div></div> ";

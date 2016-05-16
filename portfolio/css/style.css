@@ -1,32 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700|Merriweather);
 
-/**********************
-
-COLOR PALETTE
-
-Branding
-#CD3300; - red. site text title.
-#009ACD; - blue. complementary color. for menu backgrounds and logos.
-
-Hyperlinks
-#2758DC; - hyperlink blue.
-
-Text (Blacks and Grays)
-#414f55; - all headers h1, h2, h3, h4
-#414f55; - all non-header text
-#bfbfbf; - active menu item gray
-#efefef; - footer background gray, <hr>, borders, underlines
-#333; - footer hyperlink
-#888; - footer hyperlink hover
-
-
-*************************/
 
 /* Override HTML defaults */
 body { 
   font-family: Merriweather, serif;
-  color: #414f55; #3f3f3f;
-  zbackground-color: #eef1f2; e2e8ea; #f1eee8;
+  color: #414f55; 
 }
 
 p { 
@@ -60,17 +38,20 @@ a, a:hover {
   letter-spacing: -2px;
   float: left;
   margin: 0px 10px 25px 0px;
+  position: relative;
+  
 }
 
 #site_title a {        /* UX DESIGNER color */
-  color: #CD3300; 46b7fa;
+  color: #CD3300; 
  }
 
+
 .logo_separator {
-  background-color: #009ACD;
-  zwidth: 10px;
-  margin: 0px 5px 0px 7px;
-  zborder: 10px solid #009ACD;
+  background-color: #eae6e2;
+  margin: 0px 2px 0px 5px;
+  font-size: 16px;
+
 }
 
 /*   Main menu/global nav */
@@ -96,7 +77,7 @@ ul#menu li a {
 
 ul#menu li a:hover, ul#menu li.current a { 
   text-decoration: none;
-  color: #bfbfbf; f3b128; 
+  color: #999; f3b128; 
 } 
 
 @media(max-width:609px) {   /* when navlinks go to next line, float left */
@@ -112,6 +93,11 @@ ul#menu li a:hover, ul#menu li.current a {
     }
 }
 
+.figcaption {
+  color: #767676;
+}
+
+
 
 /*  Footer */
 #footer_container {
@@ -126,11 +112,11 @@ ul#menu li a:hover, ul#menu li.current a {
 }  
 
 #footer_container a { 
-  color: #333;
+  color: #414f55;
 }
 
 #footer_container a:hover { 
-  color: #888;
+  color: #999;
 }
 
 

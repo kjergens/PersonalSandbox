@@ -2,7 +2,6 @@
 var show_featured = function() {
     // main, most recent article
     var markup = "<div class='featured'>" +
-            "<div class='date'>" + data.menu[0].date + "</div>" +
             "<a href=\"" + data.menu[0].link + "\">" +
            "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
            "</a>" +
@@ -12,6 +11,7 @@ var show_featured = function() {
             "</a>" +
             "<p class='blurb'>" + data.menu[0].blurb + 
            "<a href=\"" + data.menu[0].link + "\">Read more.</a>" + "</p>" +
+             "<div class='date'>" + data.menu[0].date + "</div>" +
             "</div>";
 
     // below the main, some more articles.
