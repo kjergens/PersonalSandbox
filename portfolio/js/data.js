@@ -6,7 +6,7 @@ var data =
               subtitle: '',
               link: 'pink.html',
               big_image: 'pink/title.png',
-              image: '',
+              image: 'thumb/pink.png',
               date: 'May 9, 2016',
               blurb: ''
              },
@@ -20,7 +20,7 @@ var data =
               blurb: 'In the beginning, accountants were moral agents, doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
              },
             {
-              title: 'How Purple Became the Color of Royalty',
+              title: 'Why Purple Is Royal',
               subtitle: 'It has to do with snails.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',

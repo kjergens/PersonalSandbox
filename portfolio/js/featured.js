@@ -93,7 +93,7 @@ $(function () {
     //shuffle(data.menu);
 
     // loop through data and build menu
-    for (var i = 0; i<4; i++) {
+    for (var i = 0; i<data.menu.length; i++) {
          $menu.append(get_menu_item(data.menu[i]));
     }  
 
