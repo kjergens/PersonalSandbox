@@ -20,7 +20,7 @@ var data =
               blurb: 'In the beginning, accountants were moral agents, doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
              },
             {
-              title: 'Why Purple Is Royal',
+              title: 'How Purple Became Royal',
               subtitle: 'It has to do with snails.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
