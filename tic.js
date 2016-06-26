@@ -39,7 +39,7 @@ $(document).ready(function() {
 						greenScore++;
 					}
 
-					$("#summary").html("<h2>" + color + " wins</h2><h3>Pink:" + pinkScore + "</h3><h3>Green: " + greenScore + "</h3>");
+					$("#summary").html("<h2>" + color + " wins</h2><h3>Pink: " + pinkScore + "</h3><h3>Green: " + greenScore + "</h3>");
 					reset();
 				};
 			}
