@@ -51,8 +51,7 @@ $(document).ready(function() {
 
 	/*********************
 	 * Reset board.
-	 ********************
-	 */
+	 *********************/
 	function reset() {
 		turnsTaken=0;
 		$(".square").removeClass("Pink");
