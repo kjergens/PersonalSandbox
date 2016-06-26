@@ -1,6 +1,3 @@
-# kjergens.github.io
-
-
 #Black hole
 Online text editor
 
