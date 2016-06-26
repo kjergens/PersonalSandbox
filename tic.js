@@ -6,9 +6,8 @@ $(document).ready(function() {
 	var greenScore=0;
 
 	/*********************
-		* Blank square on-click action
-		********************
-	 */
+ * Blank square on-click action
+	******************** */
 	$(".blank").click(function(){
 
 		// If it still has "blank" class it's not filled yet.
