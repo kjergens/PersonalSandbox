@@ -1,12 +1,15 @@
 $(document).ready(function() {
 
-	var isPinkTurn = true;
+	var isPlayerOneTurn = true;
 	var turnsTaken = 0;
-	var pinkScore=0;
-	var greenScore=0;
+	var playerOneScore = 0;
+	var playerTwoScore = 0;
+	var playerOneTurnsRemaining = 5;
+	var playerTwoTurnsRemaining = 4;
+
 
 	/*********************
- * Blank square on-click action
+	 * Blank square on-click action
 	******************** */
 	$(".blank").click(function(){
 
@@ -16,11 +19,12 @@ $(document).ready(function() {
 
 			// Fill in square
 			var color = "";
-			if (isPinkTurn) {
-				color = "Pink";
+
+			if (isPlayerOneTurn) {
+				color = "pink";
 			}
 			else {
-				color = "Green";
+				color = "green";
 			}
 
 			$(this).removeClass("blank");
@@ -31,21 +35,28 @@ $(document).ready(function() {
 			turnsTaken++;
 			if (turnsTaken >= 5) {
 				if (checkWinner(color)) {
+
+					var winner = "";
 					
-					if (isPinkTurn) {
-						pinkScore++;
+					if (isPlayerOneTurn) {
+						playerOneScore++;
+						winner = "Player One";
 					}
 					else {
-						greenScore++;
+						playerTwoScore++;
+						winner = "Player Two";
 					}
 
-					$("#summary").html("<h2>" + color + " wins</h2><h3>Pink: " + pinkScore + "</h3><h3>Green: " + greenScore + "</h3>");
+					$("#mininotice").html("Winner:");
+					$("#summary").html(winner);
+					$("#numturns").html(playerOneScore +  " " + playerTwoScore);
+
 					reset();
 				};
 			}
 
 			// Switch turns
-			isPinkTurn = !isPinkTurn;
+			isPlayerOneTurn = !isPlayerOneTurn;
 		}
 	});
 
@@ -54,62 +65,72 @@ $(document).ready(function() {
 	 *********************/
 	function reset() {
 		turnsTaken=0;
-		$(".square").removeClass("Pink");
-		$(".square").removeClass("Green");
+		var currentPlayer = "";
+
+		if (isPlayerOneTurn) {
+			currentPlayer = "Player One";
+		}
+		else {
+			currentPlayer = "Player Two";
+		}
+
+		$(".square").removeClass("pink");
+		$(".square").removeClass("green");
 		$(".square").addClass("blank");
+
+		//$("#summary").html(currentPlayer + "\'s turn.");
+		
 	}
 
 	/*********************
 	 * Check winner.
-	 ********************
-	 */
-		function checkWinner(color) {
+	 *********************/
+	function checkWinner(color) {
 
-			if ( ($("#tl").hasClass(color) && 
-				$("#tm").hasClass(color) && 
-				$("#tr").hasClass(color)) 
-				||
-				($("#ml").hasClass(color) && 
-				$("#mm").hasClass(color) && 
-				$("#mr").hasClass(color))
-				|| 
-				($("#bl").hasClass(color) && 
-				$("#bm").hasClass(color) && 
-				$("#br").hasClass(color)) 
-				||
-				($("#tl").hasClass(color) && 
-				$("#ml").hasClass(color) && 
-				$("#bl").hasClass(color)) 
-				||
-				($("#tm").hasClass(color) && 
-				$("#mm").hasClass(color) && 
-				$("#bm").hasClass(color)) 
-				||
-				($("#tl").hasClass(color) && 
-				$("#ml").hasClass(color) && 
-				$("#bl").hasClass(color)) 
-				||
-				($("#tr").hasClass(color) && 
-				$("#mm").hasClass(color) && 
-				$("#bl").hasClass(color)) 
-				||
-				($("#tl").hasClass(color) && 
-				$("#mm").hasClass(color) && 
-				$("#br").hasClass(color)) 
-				)
-			{
-				return true;
-			}	
-			else {
-				return false;
-			}		
-		};
+		if ( ($("#tl").hasClass(color) && 
+			$("#tm").hasClass(color) && 
+			$("#tr").hasClass(color)) 
+			||
+			($("#ml").hasClass(color) && 
+			$("#mm").hasClass(color) && 
+			$("#mr").hasClass(color))
+			|| 
+			($("#bl").hasClass(color) && 
+			$("#bm").hasClass(color) && 
+			$("#br").hasClass(color)) 
+			||
+			($("#tl").hasClass(color) && 
+			$("#ml").hasClass(color) && 
+			$("#bl").hasClass(color)) 
+			||
+			($("#tm").hasClass(color) && 
+			$("#mm").hasClass(color) && 
+			$("#bm").hasClass(color)) 
+			||
+			($("#tl").hasClass(color) && 
+			$("#ml").hasClass(color) && 
+			$("#bl").hasClass(color)) 
+			||
+			($("#tr").hasClass(color) && 
+			$("#mm").hasClass(color) && 
+			$("#bl").hasClass(color)) 
+			||
+			($("#tl").hasClass(color) && 
+			$("#mm").hasClass(color) && 
+			$("#br").hasClass(color)) 
+			)
+		{
+			return true;
+		}	
+		else {
+			return false;
+		}		
+	};
 
 	/*********************
-	 * Wire Reset button event
-	 ********************
-	 */
-		$("#reset").click(function(){
-			reset();
-		});
+ 	* Wire Reset button event
+ 	*********************/
+	$("#reset").click(function(){
+		reset();
 	});
+});
