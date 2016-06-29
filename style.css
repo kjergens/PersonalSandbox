@@ -45,7 +45,7 @@
 }
 
 .score {
-	padding: 10px;
+	padding: 15px;
 	margin: 20px 0px;
 	width: 49.5%;
 }
@@ -62,11 +62,8 @@
 	cursor: default;
 	color: white;
 	font-size: 20px;
-	box-shadow: none;
 	border: 0px;
 	text-align: center;
-	display: block;
-	margin-bottom: 12px;
 }
 
 #reset {

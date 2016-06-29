@@ -92,39 +92,39 @@ $(document).ready(function() {
 	/*********************
 	 * Check winner.
 	 *********************/
-	function checkWinner(currentPlayer) {
+	function checkWinner(player) {
 
-		if ( ($("#tl").hasClass(currentPlayer) && 
-			$("#tm").hasClass(currentPlayer) && 
-			$("#tr").hasClass(currentPlayer)) 
+		if ( ($("#tl").hasClass(player) && 
+			$("#tm").hasClass(player) && 
+			$("#tr").hasClass(player)) 
 			||
-			($("#ml").hasClass(currentPlayer) && 
-			$("#mm").hasClass(currentPlayer) && 
-			$("#mr").hasClass(currentPlayer))
+			($("#ml").hasClass(player) && 
+			$("#mm").hasClass(player) && 
+			$("#mr").hasClass(player))
 			|| 
-			($("#bl").hasClass(currentPlayer) && 
-			$("#bm").hasClass(currentPlayer) && 
-			$("#br").hasClass(currentPlayer)) 
+			($("#bl").hasClass(player) && 
+			$("#bm").hasClass(player) && 
+			$("#br").hasClass(player)) 
 			||
-			($("#tl").hasClass(currentPlayer) && 
-			$("#ml").hasClass(currentPlayer) && 
-			$("#bl").hasClass(currentPlayer)) 
+			($("#tl").hasClass(player) && 
+			$("#ml").hasClass(player) && 
+			$("#bl").hasClass(player)) 
 			||
-			($("#tm").hasClass(currentPlayer) && 
-			$("#mm").hasClass(currentPlayer) && 
-			$("#bm").hasClass(currentPlayer)) 
+			($("#tm").hasClass(player) && 
+			$("#mm").hasClass(player) && 
+			$("#bm").hasClass(player)) 
 			||
-			($("#tr").hasClass(currentPlayer) && 
-			$("#mr").hasClass(currentPlayer) && 
-			$("#br").hasClass(currentPlayer)) 
+			($("#tr").hasClass(player) && 
+			$("#mr").hasClass(player) && 
+			$("#br").hasClass(player)) 
 			||
-			($("#tr").hasClass(currentPlayer) && 
-			$("#mm").hasClass(currentPlayer) && 
-			$("#bl").hasClass(currentPlayer)) 
+			($("#tr").hasClass(player) && 
+			$("#mm").hasClass(player) && 
+			$("#bl").hasClass(player)) 
 			||
-			($("#tl").hasClass(currentPlayer) && 
-			$("#mm").hasClass(currentPlayer) && 
-			$("#br").hasClass(currentPlayer)) 
+			($("#tl").hasClass(player) && 
+			$("#mm").hasClass(player) && 
+			$("#br").hasClass(player)) 
 			)
 		{
 			return true;
