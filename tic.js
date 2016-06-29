@@ -21,10 +21,10 @@ $(document).ready(function() {
 			var color = "";
 
 			if (isPlayerOneTurn) {
-				color = "pink";
+				color = "player1";
 			}
 			else {
-				color = "green";
+				color = "player2";
 			}
 
 			$(this).removeClass("blank");
@@ -47,10 +47,14 @@ $(document).ready(function() {
 						winner = "Player Two";
 					}
 					
-					$("#player1").html("Player One: " + playerOneScore);
-					$("#player2").html("Player Two: " + playerTwoScore);
+					$("#player1").html(playerOneScore);
+					$("#player2").html(playerTwoScore);
 
 					reset();
+
+					if (!$("#reset").hasClass("active")) {
+						$("#reset").addClass("active");
+					}
 				}
 				else if (turnsTaken==9) {
 					reset();
@@ -76,8 +80,8 @@ $(document).ready(function() {
 			currentPlayer = "Player Two";
 		}
 
-		$(".square").removeClass("pink");
-		$(".square").removeClass("green");
+		$(".square").removeClass("player1");
+		$(".square").removeClass("player2");
 		$(".square").addClass("blank");
 		
 	}
@@ -107,9 +111,9 @@ $(document).ready(function() {
 			$("#mm").hasClass(color) && 
 			$("#bm").hasClass(color)) 
 			||
-			($("#tl").hasClass(color) && 
-			$("#ml").hasClass(color) && 
-			$("#bl").hasClass(color)) 
+			($("#tr").hasClass(color) && 
+			$("#mr").hasClass(color) && 
+			$("#br").hasClass(color)) 
 			||
 			($("#tr").hasClass(color) && 
 			$("#mm").hasClass(color) && 
@@ -134,7 +138,8 @@ $(document).ready(function() {
 		reset();
 		playerOneScore = 0;
 	 	playerTwoScore = 0;
-		$("#player1").html("Player One: " + playerOneScore);
-		$("#player2").html("Player Two: " + playerTwoScore);
+		$("#player1").html(playerOneScore);
+		$("#player2").html(playerTwoScore);
+		$("#reset").removeClass("active");
 	});
 });

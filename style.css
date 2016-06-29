@@ -1,19 +1,6 @@
-.header_container {
-}
-
 .page-header{
 	font-size: 48px;
-}
-
-.score_container {
-	margin-bottom: 40px;
-}
-
-.score {
-	float: left;
-	color: #9a9a9a;
-	font-size: 12px;
-	margin-right: 20px;
+	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 .board {
@@ -21,13 +8,13 @@
 	margin: 0px auto;
 	width: 405px;
 	padding-left: 3px; /* compensate for extra right padding */
-
 }
 
 .square {
 	height: 125px;
 	width: 130px;
 	display: inline-block;
+	margin-right: 1px;
 }
 
 .blank {
@@ -39,37 +26,59 @@
 	opacity: .5;
 }
 
-.pink {
+.player1 {
 	background-color: #db3485;
-	
 }
 
-.green {
+.player2 {
 	background-color: #85d710; 
-	
 }
 
-.reset_container {
-	margin-top: 50px;
-	margin-bottom: 50px;
+.button_container {
+	width: 95%;
+	margin: 0px auto;
+}
+
+.score {
+	padding: 10px;
+	margin: 20px 0px;
+	width: 49.5%;
+}
+
+#player1 {
+	float: left;
+}
+
+#player2 {
+	float: right;
+}
+
+.score, #reset {
+	cursor: default;
+	color: white;
+	font-size: 20px;
+	box-shadow: none;
+	border: 0px;
+	text-align: center;
+	display: block;
+	margin-bottom: 12px;
 }
 
 #reset {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: #0f85db; 
-	color: white;
-	font-size: 20px;
-	box-shadow: none;
-	border: 0px;
-	width: 300px;
-	text-align: center;
+	width: 100%;
+	clear: both;
 	margin: 0px auto;
-	display: block;
 }
 
-button:hover{
+.active:hover{
 	opacity: .8;
+}
+
+.active {
+	background-color: #0f85db; 
+	cursor: pointer;
 }
 
 zdiv {
