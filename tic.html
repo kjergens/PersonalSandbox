@@ -3,57 +3,47 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-<script src='tic.js'></script>
+	<script src='tic.js'></script>
 
 </head>
 <body>
 	<div class="container">
 
-		<div class="page-header">
-  		<h1>Tic Tac Toe</h1>
-		</div>
-
-		<div class="row">
-			<div class="col-sm-7">
-				<div class="board">
-					<div class="square blank" id="tl"></div>
-					<div class="square blank" id="tm"></div>
-					<div class="square blank" id="tr"></div>
-					<br>
-					<div class="square blank" id="ml"></div>
-					<div class="square blank" id="mm"></div>
-					<div class="square blank" id="mr"></div>
-					<br>
-					<div class="square blank" id="bl"></div>
-					<div class="square blank" id="bm"></div>
-					<div class="square blank" id="br"></div>
-					<br>
-					<div class="reset_container">
-					<button id="reset">Reset</button>
-					</div>
+		<div class="board">
+			<div class="header_container">
+				<div class="page-header">Tic Tac Toe</div>
+				<div class="score_container">
+					<div class="score" id="player1">Player One: 0</div>
+					<div class="score" id="player2">Player Two: 0</div>
 				</div>
 			</div>
-			<div class="col-sm-5">
-				<div class="notice">
-					<div class="h3" id="mininotice"></div>
-					<div class="h2" id="summary">Player One starts</div>
-				</div>
-				<div class="h3" id="numturns"></div>
+			<br>
+			<div class="square blank" id="tl"></div>
+			<div class="square blank" id="tm"></div>
+			<div class="square blank" id="tr"></div>
+			<br>
+			<div class="square blank" id="ml"></div>
+			<div class="square blank" id="mm"></div>
+			<div class="square blank" id="mr"></div>
+			<br>
+			<div class="square blank" id="bl"></div>
+			<div class="square blank" id="bm"></div>
+			<div class="square blank" id="br"></div>
+				
+			<div class="reset_container">
+				<button id="reset">Reset</button>
 			</div>
-		</div>
-	</div>
-
-
+		</div>	
 	</div> <!-- end container-->
 </body>
 </html>

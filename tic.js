@@ -46,13 +46,15 @@ $(document).ready(function() {
 						playerTwoScore++;
 						winner = "Player Two";
 					}
-
-					$("#mininotice").html("Winner:");
-					$("#summary").html(winner);
-					$("#numturns").html(playerOneScore +  " " + playerTwoScore);
+					
+					$("#player1").html("Player One: " + playerOneScore);
+					$("#player2").html("Player Two: " + playerTwoScore);
 
 					reset();
-				};
+				}
+				else if (turnsTaken==9) {
+					reset();
+				} 
 			}
 
 			// Switch turns
@@ -77,8 +79,6 @@ $(document).ready(function() {
 		$(".square").removeClass("pink");
 		$(".square").removeClass("green");
 		$(".square").addClass("blank");
-
-		//$("#summary").html(currentPlayer + "\'s turn.");
 		
 	}
 
@@ -132,5 +132,9 @@ $(document).ready(function() {
  	*********************/
 	$("#reset").click(function(){
 		reset();
+		playerOneScore = 0;
+	 	playerTwoScore = 0;
+		$("#player1").html("Player One: " + playerOneScore);
+		$("#player2").html("Player Two: " + playerTwoScore);
 	});
 });
