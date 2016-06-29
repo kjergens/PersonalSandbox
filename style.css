@@ -1,6 +1,8 @@
 .page-header{
 	font-size: 48px;
 	font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+	text-align: center;
+	padding-right: 3px; /* compensate for extra left padding */
 }
 
 .board {
@@ -20,6 +22,7 @@
 .blank {
 	background-color: #e9e9e9;
 	cursor: pointer;
+	transition-duration: 200ms;
 }
 
 .blank:hover{
@@ -28,10 +31,12 @@
 
 .player1 {
 	background-color: #db3485;
+	transition-duration: 200ms;
 }
 
 .player2 {
 	background-color: #85d710; 
+	transition-duration: 200ms;
 }
 
 .button_container {
@@ -79,6 +84,11 @@
 .active {
 	background-color: #0f85db; 
 	cursor: pointer;
+}
+
+.focus {
+	text-decoration: underline;
+	transition-duration: 200ms;
 }
 
 zdiv {

@@ -4,8 +4,7 @@ $(document).ready(function() {
 	var turnsTaken = 0;
 	var playerOneScore = 0;
 	var playerTwoScore = 0;
-	var playerOneTurnsRemaining = 5;
-	var playerTwoTurnsRemaining = 4;
+	var nextPlayer = "";
 
 
 	/*********************
@@ -18,23 +17,25 @@ $(document).ready(function() {
 		if ($(this).hasClass("blank") ) {
 
 			// Fill in square
-			var color = "";
+			var currentPlayer = "";
 
 			if (isPlayerOneTurn) {
-				color = "player1";
+				currentPlayer = "player1";
+				nextPlayer = "player2";
 			}
 			else {
-				color = "player2";
+				currentPlayer = "player2";
+				nextPlayer = "player1";
 			}
 
 			$(this).removeClass("blank");
-			$(this).addClass(color);
+			$(this).addClass(currentPlayer);
 
 			// Only check for winner after 5 turns. 
 			//   Game can't be won in fewer.
 			turnsTaken++;
 			if (turnsTaken >= 5) {
-				if (checkWinner(color)) {
+				if (checkWinner(currentPlayer)) {
 
 					var winner = "";
 					
@@ -63,6 +64,8 @@ $(document).ready(function() {
 
 			// Switch turns
 			isPlayerOneTurn = !isPlayerOneTurn;
+			$("#" + currentPlayer).removeClass("focus");
+			$("#" + nextPlayer).addClass("focus");
 		}
 	});
 
@@ -89,39 +92,39 @@ $(document).ready(function() {
 	/*********************
 	 * Check winner.
 	 *********************/
-	function checkWinner(color) {
+	function checkWinner(currentPlayer) {
 
-		if ( ($("#tl").hasClass(color) && 
-			$("#tm").hasClass(color) && 
-			$("#tr").hasClass(color)) 
+		if ( ($("#tl").hasClass(currentPlayer) && 
+			$("#tm").hasClass(currentPlayer) && 
+			$("#tr").hasClass(currentPlayer)) 
 			||
-			($("#ml").hasClass(color) && 
-			$("#mm").hasClass(color) && 
-			$("#mr").hasClass(color))
+			($("#ml").hasClass(currentPlayer) && 
+			$("#mm").hasClass(currentPlayer) && 
+			$("#mr").hasClass(currentPlayer))
 			|| 
-			($("#bl").hasClass(color) && 
-			$("#bm").hasClass(color) && 
-			$("#br").hasClass(color)) 
+			($("#bl").hasClass(currentPlayer) && 
+			$("#bm").hasClass(currentPlayer) && 
+			$("#br").hasClass(currentPlayer)) 
 			||
-			($("#tl").hasClass(color) && 
-			$("#ml").hasClass(color) && 
-			$("#bl").hasClass(color)) 
+			($("#tl").hasClass(currentPlayer) && 
+			$("#ml").hasClass(currentPlayer) && 
+			$("#bl").hasClass(currentPlayer)) 
 			||
-			($("#tm").hasClass(color) && 
-			$("#mm").hasClass(color) && 
-			$("#bm").hasClass(color)) 
+			($("#tm").hasClass(currentPlayer) && 
+			$("#mm").hasClass(currentPlayer) && 
+			$("#bm").hasClass(currentPlayer)) 
 			||
-			($("#tr").hasClass(color) && 
-			$("#mr").hasClass(color) && 
-			$("#br").hasClass(color)) 
+			($("#tr").hasClass(currentPlayer) && 
+			$("#mr").hasClass(currentPlayer) && 
+			$("#br").hasClass(currentPlayer)) 
 			||
-			($("#tr").hasClass(color) && 
-			$("#mm").hasClass(color) && 
-			$("#bl").hasClass(color)) 
+			($("#tr").hasClass(currentPlayer) && 
+			$("#mm").hasClass(currentPlayer) && 
+			$("#bl").hasClass(currentPlayer)) 
 			||
-			($("#tl").hasClass(color) && 
-			$("#mm").hasClass(color) && 
-			$("#br").hasClass(color)) 
+			($("#tl").hasClass(currentPlayer) && 
+			$("#mm").hasClass(currentPlayer) && 
+			$("#br").hasClass(currentPlayer)) 
 			)
 		{
 			return true;
