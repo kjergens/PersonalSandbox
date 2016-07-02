@@ -68,16 +68,17 @@ ul#menu li a {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 13.5px;
   font-weight: bold;
-  color: #CD3300; 46b7fa; 
+  color: #CD3300;
   letter-spacing: -1px;
-  padding-left: 15px;
+  margin-left: 15px;
   text-align: center;
 } 
 
 
 ul#menu li a:hover, ul#menu li.current a { 
-  text-decoration: none;
-  color: #999; f3b128; 
+  border-bottom: 5px solid #CD3300;
+  transition-duration: 300ms; 
+  transition-timing-function: ease-out;
 } 
 
 @media(max-width:609px) {   /* when navlinks go to next line, float left */

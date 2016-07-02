@@ -10,7 +10,7 @@ var show_featured = function() {
             //"<div class='title'>" + data.menu[0].title + "</div>" +
             "</a>" +
             "<p class='blurb'>" + data.menu[0].blurb + 
-           "<a href=\"" + data.menu[0].link + "\">Read more.</a>" + "</p>" +
+           "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +
              "<div class='date'>" + data.menu[0].date + "</div>" +
             "</div>";
 
@@ -29,7 +29,7 @@ var show_featured = function() {
         "</div></a>";
     }
 
-    markup += "</div><div class=\"clearfix\"></div><hr>"; // clear the floats
+    markup += "</div><div class=\"clearfix\"></div><br><br><br>"; // clear the floats
 
     // row 2
     for (var i=4; i<=6; i++) {

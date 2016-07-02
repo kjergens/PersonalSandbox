@@ -4,20 +4,13 @@
 }
 
 
-
-.zfeatured .date {
-	background-color: #fff;
-	margin: 2px 4px;
-	color: #989898;
-	font-weight: normal;
-}
-
 figure {
 	margin: 0px;
 }
 
 .blurb {
 	max-width: 900px;
+	margin: 10px 0px;
 }
 
 
@@ -43,9 +36,16 @@ h3#morearticles {
 	color: #3b3b3b;
 }
 
+.featuredmore {
+	border-right: 1px solid #f7f7f7;
+}
 
 .featuredmore img {
 	margin: 0px 30px;  /* hack until I get wider images */
+}
+
+.date {
+	float: none;
 }
 
 @-moz-document url-prefix() {  /* hack to deal with ff not know max-width */

@@ -1,18 +1,18 @@
 var data = 
     {
        menu: 
-          [  {
-              title: 'The Genderization of Pink',
-              subtitle: '',
+          [ {
+              title: 'How Pink Got Girly',
+              subtitle: 'and if it\'s a good thing',
               link: 'pink.html',
-              big_image: 'pink/title.png',
+              big_image: 'thumb/pink_big.png',
               image: 'thumb/pink.png',
-              date: 'May 9, 2016',
-              blurb: ''
+              date: 'Jul 2, 2016',
+              blurb: 'Pink wasn\'t always a girls\' color. So what happened?'
              },
              {
-              title: 'Public Image: The Accountant',
-              subtitle: 'From hero to scoundrel.',
+              title: 'Designing an Image: The Accountant',
+              subtitle: 'From apprentice to professional.',
               link: 'accountants.html',
               big_image: 'thumb/accounting_big.png',
               image: 'thumb/accounting.png',
@@ -20,8 +20,8 @@ var data =
               blurb: 'In the beginning, accountants were moral agents, doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
              },
             {
-              title: 'How Purple Became Royal',
-              subtitle: 'It has to do with snails.',
+              title: 'How Purple Got Royal',
+              subtitle: 'Purple owes its status to snails.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
               image: 'thumb/tyrian.png',
@@ -29,7 +29,7 @@ var data =
               blurb: 'Royal purple - also known as Tyrian purple after the city Tyre - holds the record as the world\'s most expensive dye. It\'s because of snails. Actually, it\'s because of snail mucus.'
             },
             {
-              title: 'Evolution of the Bicycle',
+              title: 'Graphical History of the Bicycle',
               subtitle: '',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
@@ -37,24 +37,24 @@ var data =
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'The Story Behind The Red in the British Red Coat',
-              subtitle: 'It starts with a bug in Mexico.',
+              title: 'How the Red Coat Got Its Red',
+              subtitle: 'From a bug.',
               link: 'red.html',
               image: 'thumb/red.png',
               date: 'Mar 13, 2016',
               blurb: 'The story of red dye starts with a bug in Mexico.'
             },
             {
-              title: 'Engineering an Image: The Pilot',
-              subtitle: 'From maverick to socialite to protector.',
+              title: 'Designing an Image: The Pilot',
+              subtitle: 'From rough rider to protector.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How to Create a Two-Color or Three-Color Scheme',
-              subtitle: 'Interactive tools included.',
+              title: 'How to Create a Color Scheme with 2 or 3 Colors',
+              subtitle: 'Intereactive tool included.',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
@@ -69,7 +69,7 @@ var data =
               blurb: 'When creativity strikes it\'s important to capture it, fast! But equally important is knowing when to let it go.'
             },
             {
-              title: 'Quiz: Guess the Titles of These \'80s Teen Romance Novels',
+              title: 'Quiz: Can You Guess the Titles of These \'80s Teen Romance Novels?',
               subtitle: '',
               link: 'bookcovers.html',
               image: 'thumb/books.png',
@@ -77,7 +77,7 @@ var data =
               blurb: "They are incredible."
             },
             {
-              title: 'How to Create Four-Color Schemes',
+              title: 'How to Create a Color Scheme with 4 Colors',
               subtitle: 'Interactive tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
@@ -151,7 +151,7 @@ var data =
               date: 'Feb 11, 2016'
             }, 
              {
-              title: 'Quiz: Guess the Titles of These \'80s Teen Romance Novels',
+              title: 'Quiz: Can You Guess the Titles of These \'80s Teen Romance Novels?',
               subtitle: '',
               link: 'bookcovers.html',
               image: 'thumb/books.png',
@@ -180,7 +180,7 @@ var data =
               date: 'Jan 20, 2016'
             },
             {
-              title: 'Evolution of the Bicycle',
+              title: 'Graphical History of the Bicycle',
               subtitle: '',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
@@ -188,7 +188,7 @@ var data =
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'How to Create Four-Color Schemes',
+              title: 'How to Create a Color Scheme with 4 Colors',
               subtitle: 'Intereactive tool included.',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',

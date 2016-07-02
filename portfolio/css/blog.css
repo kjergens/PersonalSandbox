@@ -1,27 +1,71 @@
+.title {
+  padding: 10px 0px 10px 0px;
+  font-size: 48px;
+  letter-spacing: -3px;
+  line-height: 1.1em;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+}
+
+.byline {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 10px 0px 5px 0px;
+  margin-bottom: 40px;
+}
+
+#right_menu{
+  left: 25px; /* create some space between article and menu for scrolling */
+}
+
+.date {
+    font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
+    color: #bfbfbf;
+    font-size: 14px;
+    float: left;
+    margin-right: 15px; 
+}
+
+#twitter, .fb-like  {
+  float: right;
+}
+
+#twitter{
+  margin-right: 5px;
+}
+
+.fb-share-button {
+  margin: 20px 0px;
+} 
+
+p, .byline {
+  max-width: 590px; 
+}
 
 p {
-  margin: 10px auto;
-  max-width: 600px; 
+  margin: 0px 0px 40px 0px;
 }
 
 figure {
-  margin: 20px auto;
-  display: table;
+  margin: 20px;
+  text-align: center;
 }
 
 figcaption {
-  display: table-caption;
-  caption-side: bottom;
-  padding: 2px 0px 0px 0px;
-  color: #666;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  
+  color: #666; 
+  text-align: left;
 }
 
-.figcaption {
+.citation {
+  font-size: 10px;
+  color: #888;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 img {
   max-width: 100%;
+  margin: 0px auto;
 }
 
 #tag{
@@ -45,51 +89,10 @@ img {
   margin-top: 20px;
 }
 
-.fb_iframe_widget span {
-  display: inline;
-}
-
-.col-sm-9, .col-md-9, .col-sm-8, .col-md-8 { /* article body */
-  background-color: #fff;
-  padding-top: 20px;
-}
-
-
-.date {
-    font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-    color: #bfbfbf;
-    font-size: 14px;
-    margin: 10px 0px;
-}
-
-
-.title {
-  padding: 0px 0px 20px 0px;
-  margin-bottom: 20px;
-  font-size: 48px;
-  letter-spacing: -3px;
-  line-height: 1.1em;
-  font-weight: bold;
-  font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  border-bottom: 1px solid #e9e9e9;
-}
 
 .img_border img {
   border: 1px solid white;
 }
-
-.fb-like {
-  margin-top: 20px;
-}
-
-.fb-share-button {
-  margin-bottom: 20px;
-} 
-
-#twitter iframe {
-  margin-bottom: -5px; /* hack to make it same parallel as fb button */
-}
-
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -115,7 +118,6 @@ img {
   float: left;
   overflow: hidden;
   min-width: 133px;
-  zwidth:100%;
   height: 105px;
 }
 
