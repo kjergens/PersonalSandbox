@@ -6,8 +6,8 @@ var show_featured = function() {
            "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
            "</a>" +
             "<a href=\"" + data.menu[0].link + "\">" +
-           // "<div id='headline'>" +
-            //"<div class='title'>" + data.menu[0].title + "</div>" +
+           "<div id='headline'>" +
+            "<div class='title'>" + data.menu[0].title + "</div>" +
             "</a>" +
             "<p class='blurb'>" + data.menu[0].blurb + 
            "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +

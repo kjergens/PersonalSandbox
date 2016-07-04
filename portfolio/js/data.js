@@ -2,13 +2,13 @@ var data =
     {
        menu: 
           [ {
-              title: 'Giant Step Closer to Elusive Pure Blue',
-              subtitle: '',
+              title: 'A Giant Step Closer to Elusive Pure Blue',
+              subtitle: 'Move over cobalt',
               link: 'blue.html',
               big_image: '../images/blue/pigments.png',
               image: 'thumb/blue.png',
-              date: 'Jul 3, 2016',
-              blurb: 'Move over Cadmium and Cobalt. There\'s a new blue in town. It doesn\'t fade, it reflects UV rays, is non-toxic and everybody\'s into it.'
+              date: 'Jul 4, 2016',
+              blurb: 'Move over cerulean and cobalt. There\'s a new blue in town. It doesn\'t fade, it reflects infrared light, is non-toxic and everybody\'s into it.'
              },
              {
               title: 'Designing an Image: The Accountant',
