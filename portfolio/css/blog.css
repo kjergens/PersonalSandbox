@@ -38,12 +38,18 @@
   margin: 20px 0px;
 } 
 
-p, .byline {
+a:hover h4, a:hover .title{
+  text-decoration: underline;
+
+}
+
+p, .byline, li {
   max-width: 590px; 
+  font-size: 17px;
 }
 
 p {
-  margin: 0px 0px 40px 0px;
+  margin: 10px 0px 40px 0px;
 }
 
 figure {

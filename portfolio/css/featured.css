@@ -32,7 +32,7 @@ h3#morearticles {
 
 
 .featuredmore p {
-	font-size: 14px;
+	font-size: 15px;
 	color: #3b3b3b;
 }
 
@@ -42,6 +42,10 @@ h3#morearticles {
 
 .featuredmore img {
 	margin: 0px 30px;  /* hack until I get wider images */
+}
+
+.featuredmore img:hover {
+	opacity: .8;
 }
 
 .date {
