@@ -47,19 +47,20 @@ p {
 }
 
 figure {
-  margin: 20px;
+  margin: 20px 0px;
   text-align: center;
 }
 
 figcaption {
   color: #666; 
+  font-family: sans-serif;
   text-align: left;
+  margin-top: 5px;
 }
 
 .citation {
   font-size: 10px;
   color: #888;
-  margin-bottom: 5px;
   text-align: left;
 }
 

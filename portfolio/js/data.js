@@ -2,13 +2,13 @@ var data =
     {
        menu: 
           [ {
-              title: 'How Pink Got Girly',
-              subtitle: 'and if it\'s a good thing',
-              link: 'pink.html',
-              big_image: 'thumb/pink_big.png',
-              image: 'thumb/pink.png',
-              date: 'Jul 2, 2016',
-              blurb: 'Pink wasn\'t always a girls\' color. So what happened?'
+              title: 'Giant Step Closer to Elusive Pure Blue',
+              subtitle: '',
+              link: 'blue.html',
+              big_image: '../images/blue/pigments.png',
+              image: 'thumb/blue.png',
+              date: 'Jul 3, 2016',
+              blurb: 'Move over Cadmium and Cobalt. There\'s a new blue in town. It doesn\'t fade, it reflects UV rays, is non-toxic and everybody\'s into it.'
              },
              {
               title: 'Designing an Image: The Accountant',
@@ -21,7 +21,7 @@ var data =
              },
             {
               title: 'How Purple Got Royal',
-              subtitle: 'Purple owes its status to snails.',
+              subtitle: 'It owes its status to snails.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
               image: 'thumb/tyrian.png',
@@ -30,7 +30,7 @@ var data =
             },
             {
               title: 'Graphical History of the Bicycle',
-              subtitle: '',
+              subtitle: 'From 1810 to 1920.',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
@@ -38,7 +38,7 @@ var data =
             },
             {
               title: 'How the Red Coat Got Its Red',
-              subtitle: 'From a bug.',
+              subtitle: 'Psst: it\'s from a bug.',
               link: 'red.html',
               image: 'thumb/red.png',
               date: 'Mar 13, 2016',
@@ -46,15 +46,15 @@ var data =
             },
             {
               title: 'Designing an Image: The Pilot',
-              subtitle: 'From rough rider to protector.',
+              subtitle: 'From Rough Rider to Officer and Gentleman.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
               blurb: '"When they played poker they played all night. When they smoked'
             },
             {
-              title: 'How to Create a Color Scheme with 2 or 3 Colors',
-              subtitle: 'Intereactive tool included.',
+              title: 'How to Create a Color Scheme: 2 or 3 Colors',
+              subtitle: 'Intereactive tool included',
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
@@ -77,8 +77,8 @@ var data =
               blurb: "They are incredible."
             },
             {
-              title: 'How to Create a Color Scheme with 4 Colors',
-              subtitle: 'Interactive tool included.',
+              title: 'How to Create a Color Scheme: 4 Colors',
+              subtitle: 'Interactive tool included',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
@@ -181,15 +181,15 @@ var data =
             },
             {
               title: 'Graphical History of the Bicycle',
-              subtitle: '',
+              subtitle: 'From 1810 to 1920.',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
               blurb: 'See how bike design changed with the times.'
             },
             {
-              title: 'How to Create a Color Scheme with 4 Colors',
-              subtitle: 'Intereactive tool included.',
+              title: 'How to Create a Color Scheme: 4 Colors',
+              subtitle: 'Intereactive tool included',
               link: 'colormath.html',
               image: 'thumb/colorscheme.png',
               date: 'Feb 29, 2016',
