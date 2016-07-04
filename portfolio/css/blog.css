@@ -31,6 +31,7 @@
 }
 
 #twitter{
+  margin-top: 5px;
   margin-right: 5px;
 }
 
@@ -141,7 +142,7 @@ img {
 }
 
 .article_title {
-  color: #414f55; #3f3f3f;  /* override hyperlink color */
+  color: #414f55; /* override hyperlink color */
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  /* use header font */
   font-size: 14px;
   -webkit-text-stroke: 0.35px;
