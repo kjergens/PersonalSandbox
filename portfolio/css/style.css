@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700|Merriweather);
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:400,800,700|Merriweather');
 
 
 /* Override HTML defaults */
@@ -24,7 +24,7 @@ a, a:hover {
 
 
 /* Header */
-#header_container {
+#zheader_container {
   background-color: #fff;
   padding-top: 25px;
   padding-bottom: 10px;
@@ -36,13 +36,15 @@ a, a:hover {
   font-size: 18px;
   font-weight: 800;
   letter-spacing: -2px;
-  float: left;
-  margin: 0px 10px 25px 0px;
-  position: relative;
+ x float: left;
+ x margin: 0px 10px 25px 0px;
+ x position: relative;
+  color: #CD3300;
+  cursor: pointer;
   
 }
 
-#site_title a {        /* UX DESIGNER color */
+z#site_title a, .navbar-brand {        /* UX DESIGNER color */
   color: #CD3300; 
  }
 
@@ -56,7 +58,7 @@ a, a:hover {
 
 /*   Main menu/global nav */
 ul#menu { 
-  float: right;
+  zfloat: right;
 }
 
 ul#menu li, ul#subnav_menu li { 
@@ -70,18 +72,19 @@ ul#menu li a {
   font-weight: bold;
   color: #CD3300;
   letter-spacing: -1px;
-  margin-left: 15px;
+  z margin-left: 15px;
   text-align: center;
 } 
 
 
-ul#menu li a:hover, ul#menu li.current a { 
+ul#menu li a:hover, ul#menu li.current a, .active a { 
   border-bottom: 5px solid #CD3300;
   transition-duration: 300ms; 
   transition-timing-function: ease-out;
+  cursor: pointer;
 } 
 
-@media(max-width:609px) {   /* when navlinks go to next line, float left */
+xmedia(max-width:609px) {   /* when navlinks go to next line, float left */
     ul#menu {
       float: left;
       -webkit-padding-start: 0px;

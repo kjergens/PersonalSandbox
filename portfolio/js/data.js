@@ -46,7 +46,7 @@ var data =
             },
             {
               title: 'Designing an Image: The Pilot',
-              subtitle: 'From Rough Rider to Officer and Gentleman.',
+              subtitle: 'From Rough Rider to Gentleman.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
@@ -99,7 +99,7 @@ var data =
               date: 'Jan 20, 2016'
             },
             {
-              title: 'Diary of Cocktail Terms',
+              title: 'Cocktail Flashcards',
               subtitle: 'Colorful reminders for ordering drinks.',
               link: 'drinks.html',
               image: 'thumb/drinks.png',
@@ -128,7 +128,7 @@ var data =
             },
             {
               title: 'Predecessors to 3 Popular Games',
-              subtitle: 'Famous games \"borrowed\" their designs.',
+              subtitle: 'Some of our favorite games are knock-offs.',
               link: 'games.html',
               image: 'thumb/games.png',
               date: 'Feb 7, 2016'

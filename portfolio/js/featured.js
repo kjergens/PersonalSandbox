@@ -2,20 +2,25 @@
 var show_featured = function() {
     // main, most recent article
     var markup = "<div class='featured'>" +
-            "<a href=\"" + data.menu[0].link + "\">" +
-           "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
-           "</a>" +
-            "<a href=\"" + data.menu[0].link + "\">" +
-           "<div id='headline'>" +
-            "<div class='title'>" + data.menu[0].title + "</div>" +
-            "</a>" +
-            "<p class='blurb'>" + data.menu[0].blurb + 
-           "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +
-             "<div class='date'>" + data.menu[0].date + "</div>" +
-            "</div>";
+    '<div class="byline">' +
+    "<div class='date'>" + data.menu[0].date + "</div>" +
+    '</div>' + // end byline
+    "<a href=\"" + data.menu[0].link + "\">" +
+   "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
+   "</a>" +
+    "<a href=\"" + data.menu[0].link + "\">" +
+   "<div id='headline'>" +
+    "<div class='title'>" + data.menu[0].title + "</div>" +
+    "</a>" +
+    "<p class='blurb'>" + data.menu[0].blurb + 
+   "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +
+   '<div id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/index.html">Tweet</a></div>' +
+    '<div class="fb-like" data-share="true" data-width="240" data-show-faces="false"></div>' +
+    '<div class="clearfix"></div>' +
+    "</div>";
 
     // below the main, some more articles.
-    markup += "<hr><h3 id=\"morearticles\">Recent articles</h3>";
+    markup += "<h3 id=\"morearticles\">Recent articles</h3>";
 
     // row 1
     for (var i=1; i<=3; i++) {
@@ -96,15 +101,5 @@ $(function () {
     for (var i = 0; i<data.menu.length; i++) {
          $menu.append(get_menu_item(data.menu[i]));
     }  
-
-/*
-    // create side menu
-    $("#right_menu").append("<div id=\"menu_heading\">Recent Posts</div><div id=\"sidemenu\"></div>");
-
-    // loop through data and add remaining items to menu
-    for (var i=7; i<=data.menu.length; i++) {
-        $("#sidemenu").append(get_menu_item(data.menu[i]));
-    }
-    */
 
 });

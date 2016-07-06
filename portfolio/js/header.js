@@ -1,23 +1,35 @@
-var header = "<div class=\"container\"><div class=\"row\">" +
-      "<ul id=\"menu\">" +
-        "<li><a href=\"../index.html\">Home</a></li>" +
-        "<li><a href=\"../resume.html\">Resum&#233;</a></li>" +
-        "<li><a href=\"../portfolio.html\">Portfolio</a></li>" +
-        "<li class=\"current\"><a href=\"index.html\">Blog</a></li>" +
-        "<li><a href=\"../contact.html\">Contact</a></li>" +
-        "<li><a href=\"../about.html\">About Me</a></li>" +
-      "</ul>" +
-       "<div id=\"site_title\">" +
-        "<a href=\"index.html\">" +
-        "<span class=\"name\">KATIE JERGENS</span>" +
-        "<span class=\"logo_separator\">&nbsp;</span>" +
-        "<span class=\"name\">UX DESIGNER</span>" +
-      "</a></div>" +
-      "</div></div> " +
-      "<div class=\"clearfix\"></div>" +
-      "<div id=\"tag\"><div class=\"container\">" +
-      "<div class=\"row\" >Short articles about the things we see.</div></div></div>";
+var nav = '<nav class="navbar navbar-default" > \
+  <div class="container-fluid"> \
+   <!-- Brand and toggle get grouped for better mobile display --> \
+    <div class="navbar-header"> \
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> \
+        <span class="sr-only">Toggle navigation</span> \
+        <span class="icon-bar"></span> \
+        <span class="icon-bar"></span> \
+        <span class="icon-bar"></span> \
+      </button> \
+ <a class="navbar-brand" id="site_title" href="index.html"><span class=\"name\">KATIE JERGENS</span><span class=\"logo_separator\">&nbsp;</span><span class=\"name\">UX DESIGNER</span></a> \
+    </div> \
+    <!-- Collect the nav links, forms, and other content for toggling --> \
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> \
+      <ul class="nav navbar-nav navbar-right" id="menu"> \
+        <li class="active"><a href="index.html">Home</a></li> \
+        <li><a href="../portfolio.html">Portfolio</a></li> \
+        <li><a href="../resume.html">Resume</a></li> \
+        <li><a href="../about.html">About Me</a></li> \
+        <li><a href="../contact.html">Contact</a></li> \
+      </ul> \
+    </div><!-- /.navbar-collapse --> \
+    <div class=\"row\" id="tag">Short articles about the things we see.</div> \
+  </div><!-- /.container-fluid --> \
+</nav>';
+
+
 
 $(document).ready(function(){
-	document.getElementById("header_container").innerHTML = header;
+  document.getElementById("header_container").innerHTML = nav;
 });
+
+
+
+

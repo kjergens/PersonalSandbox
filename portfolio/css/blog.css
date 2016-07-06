@@ -31,7 +31,6 @@
 }
 
 #twitter{
-  margin-top: 5px;
   margin-right: 5px;
 }
 
@@ -44,17 +43,19 @@ a:hover h4, a:hover .title{
 
 }
 
-p, .byline, li {
-  max-width: 590px; 
+p, li, .article {
+  zmax-width: 590px; 
   font-size: 17px;
 }
+
+
 
 p {
   margin: 10px 0px 40px 0px;
 }
 
 figure {
-  margin: 20px 0px;
+  margin: 20px auto 40px;
   text-align: center;
 }
 
@@ -73,7 +74,6 @@ figcaption {
 
 img {
   max-width: 100%;
-  margin: 0px auto;
 }
 
 #tag{
@@ -81,8 +81,8 @@ img {
   background-color: #009ACD; 
   color: #fff;
   font-size: 14px;
-  padding: 20px 0px;
-  margin-top: 10px;
+  padding: 20px 15px;
+ x margin-top: 10px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -113,12 +113,13 @@ img {
 
 
 .menu_item {
-  margin: 3px 0px 3px;
-  background-color: #f5f3f1; 
+  background-color: #fff; #f5f3f1; 
+  border-bottom: 1px solid #ebebeb;
+  border-left: 1px solid #ebebeb;
 }
 
 .menu_item:hover {
-  opacity: .95;
+  opacity: .9;
 }
 
 
@@ -164,12 +165,19 @@ img {
   }
   }
 
+@media (min-width: 992px) {
+ .article {
+  max-width: 590px; 
+}
+}
+
 
 @media (max-width: 992px) {     /* Get rid of the excess padding when the */
   #right_menu {                   /* menu is below the article */
     padding-right: 0px;
     padding-left: 0px;
     margin-top: 20px;
+    left: 0px;
   }
 
   .menu_item {
@@ -194,6 +202,7 @@ img {
     font-size: 13px;
     margin-top: 5px;
   }
+
 }
 
 
