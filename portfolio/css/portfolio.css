@@ -7,7 +7,7 @@
 
 ul#subnav_menu {
   padding: 20px 0px;
-  margin-top: 0px;
+  margin-top: -20px;
   margin-bottom: 0px;
 }
 
@@ -98,28 +98,6 @@ figure {
 }
 
 
-
-
-/* 
-  Footer
-*/
-#footer_container {
-  border-top: 1px solid #ccc;
-  background-color: #efefef;
-  font: bold 100% 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  height: 300px;
-  letter-spacing: -1px;
-  padding: 26px 0 10px 0;
-  text-align: center; 
-}  
-
-#footer_container a { 
-  color: #333;
-}
-
-#footer_container a:hover { 
-  color: #888;
-}
 
 
 

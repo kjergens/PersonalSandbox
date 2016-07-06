@@ -22,32 +22,15 @@ a, a:hover {
   color: #2758DC;
 }
 
-
-/* Header */
-#zheader_container {
-  background-color: #fff;
-  padding-top: 25px;
-  padding-bottom: 10px;
-}
-
-
 #site_title {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: -2px;
- x float: left;
- x margin: 0px 10px 25px 0px;
- x position: relative;
   color: #CD3300;
   cursor: pointer;
   
 }
-
-z#site_title a, .navbar-brand {        /* UX DESIGNER color */
-  color: #CD3300; 
- }
-
 
 .logo_separator {
   background-color: #eae6e2;
@@ -56,10 +39,6 @@ z#site_title a, .navbar-brand {        /* UX DESIGNER color */
 
 }
 
-/*   Main menu/global nav */
-ul#menu { 
-  zfloat: right;
-}
 
 ul#menu li, ul#subnav_menu li { 
   list-style: none;
@@ -72,7 +51,6 @@ ul#menu li a {
   font-weight: bold;
   color: #CD3300;
   letter-spacing: -1px;
-  z margin-left: 15px;
   text-align: center;
 } 
 
