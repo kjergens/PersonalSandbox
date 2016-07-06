@@ -43,8 +43,7 @@ a:hover h4, a:hover .title{
 
 }
 
-p, li, .article {
-  zmax-width: 590px; 
+p, .article {
   font-size: 17px;
 }
 

@@ -2,25 +2,37 @@
     Portfolio navigation (Data Viz, etc.)
 */
 #subnav_container {
-  background-color: #009ACD; 
-}
-
-ul#subnav_menu {
-  padding: 20px 0px;
   margin-top: -20px;
-  margin-bottom: 0px;
 }
 
-ul#subnav_menu li a { 
-  padding-right: 35px;
-  padding-left: 0px;
-  font-size: 14px;
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0px; 
+  border-bottom-left-radius: 0px; 
+}
+
+.list-group-item:first-child {
+  border-top-right-radius: 0px; 
+  border-top-left-radius: 0px; 
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+  color: #fff;
+  background-color: #009ACD;
+  transition-duration: 500ms;
+}
+
+.list-group-item {
+  list-style-type: none;
+  line-height: 28px;
+  font-size: 17px;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   color: #fff;
-} 
+}
 
-ul#subnav_menu li a:hover { 
-  color: #ccdefe;
+#infoarch, #subnav_menu li {
+  transition-duration: 2000ms;
 }
 
 .page_title {
@@ -43,7 +55,7 @@ p {
   letter-spacing: -3px;
   font-weight: bold;
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 

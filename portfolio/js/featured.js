@@ -1,17 +1,15 @@
 // build index page 
 var show_featured = function() {
     // main, most recent article
-    var markup = "<div class='featured'>" +
-    '<div class="byline">' +
-    "<div class='date'>" + data.menu[0].date + "</div>" +
-    '</div>' + // end byline
+    var markup = "<div class='featured'><br><br>" +
     "<a href=\"" + data.menu[0].link + "\">" +
    "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
    "</a>" +
     "<a href=\"" + data.menu[0].link + "\">" +
    "<div id='headline'>" +
     "<div class='title'>" + data.menu[0].title + "</div>" +
-    "</a>" +
+    "</a><br>" +
+    "<div class='date'>" + data.menu[0].date + "</div><br>" +
     "<p class='blurb'>" + data.menu[0].blurb + 
    "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +
    '<div id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/index.html">Tweet</a></div>' +
@@ -103,3 +101,4 @@ $(function () {
     }  
 
 });
+
