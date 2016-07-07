@@ -1,3 +1,7 @@
+#site_title {
+  margin-bottom: 5px; /* hack so it doesn't move when hover and underline */
+}
+
 .title {
   padding: 10px 0px 10px 0px;
   font-size: 48px;
@@ -69,10 +73,6 @@ figcaption {
   font-size: 10px;
   color: #888;
   text-align: left;
-}
-
-img {
-  max-width: 100%;
 }
 
 #tag{
