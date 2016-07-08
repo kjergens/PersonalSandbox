@@ -17,7 +17,7 @@ var data =
               big_image: 'thumb/accounting_big.png',
               image: 'thumb/accounting.png',
               date: 'Apr 10, 2016',
-              blurb: 'In the beginning, accountants were moral agents, doing God\'s work and making society better. Given the recent clashes between ethics and accounting, this might sound strange. But it makes sense when you consider what came before.'
+              blurb: 'Early on, accountants were regarded as heros, doing God\'s work and making society better. It makes sense when you consider what came before.'
              },
             {
               title: 'How Purple Got Royal',
@@ -26,7 +26,7 @@ var data =
               big_image: 'tyrian/eII.jpg',
               image: 'thumb/tyrian.png',
               date: 'Apr 1, 2016',
-              blurb: 'Royal purple - also known as Tyrian purple after the city Tyre - holds the record as the world\'s most expensive dye. It\'s because of snails. Actually, it\'s because of snail mucus.'
+              blurb: 'Royal purple holds the record as the world\'s most expensive dye. It\'s because of a very slimy ingredient.'
             },
             {
               title: 'Graphical History of the Bicycle',
@@ -34,7 +34,7 @@ var data =
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
-              blurb: 'See how bike design changed with the times.'
+              blurb: 'See bike designs from 1810 to 1920.'
             },
             {
               title: 'How the Red Coat Got Its Red',
@@ -50,7 +50,7 @@ var data =
               link: 'pilots.html',
               image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
-              blurb: '"When they played poker they played all night. When they smoked'
+              blurb: '"When they played poker they played all night. When they smoked they...'
             },
             {
               title: 'How to Create a Color Scheme: 2 or 3 Colors',
@@ -58,7 +58,7 @@ var data =
               link: 'colormathPt2.html',
               image: 'thumb/colorscheme2.png',
               date: 'Feb 29, 2016',
-              blurb: 'More tools for creating the perfect color combinations.'
+              blurb: 'More tools for creating color combinations with impact.'
             },
              {
               title: 'The Importance of a Creative Blackout Hour',

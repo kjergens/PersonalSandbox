@@ -47,26 +47,9 @@ a:hover h4, a:hover .title{
 
 }
 
-p, .article {
-  font-size: 17px;
-}
-
-
-
-p {
-  margin: 10px 0px 40px 0px;
-}
-
 figure {
-  margin: 20px auto 40px;
   text-align: center;
-}
-
-figcaption {
-  color: #666; 
-  font-family: sans-serif;
-  text-align: left;
-  margin-top: 5px;
+  margin: 20px auto 40px;
 }
 
 .citation {
@@ -96,10 +79,6 @@ figcaption {
   margin-top: 20px;
 }
 
-
-.img_border img {
-  border: 1px solid white;
-}
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -135,10 +114,6 @@ figcaption {
   max-width: 220px;
   height: 105px;
   float: left;
-}
-
-.clearfix {
-  clear: both;
 }
 
 .article_title {

@@ -1,39 +1,38 @@
-.byline {
-  border-top: 0px;
-  zborder-bottom: 0px solid #ebebeb;
-}
-
-
-.featuredimg img {
-	margin: 0px auto 10px;
-}
-
-
-figure {
-	margin: 0px;
-}
-
-.blurb {
-	max-width: 900px;
-	margin: 10px 0px 40px;
-}
-
-
 h3#morearticles {
 	border-top: 1px solid #ebebeb;
 	margin-top: 15px;
-	padding-top: 30px;
-	padding-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 20px;
 	letter-spacing: -2px;
 	font-weight: 600;
 }
 
-.featuredmore {               /* row of articles */
+figure {
+	margin: 0p;
+}
+
+.featuredmore {               /* each featured article */
 	float: left;
 	width: 33.33%;
-	padding: 0px 15px 0px 15px;   
-	margin-top: 10px;
+	padding: 0px 11px 0px; 
+	border-right: 1px solid #f7f7f7;
+}
+
+.featuredmore p {
+	font-size: 16px;  
+}
+
+.featuredmore img {
+	margin: 0px 0px 10px;  
+}
+
+.featuredmore img:hover {
+	opacity: .8;
+}
+
+p {
+	margin: 10px 0px 1px;
 }
 
 .date {
@@ -50,26 +49,6 @@ h3#morearticles {
 } 
 
 
-.featuredmore p {
-	font-size: 15px;
-	color: #3b3b3b;
-}
-
-.featuredmore {
-	border-right: 1px solid #f7f7f7;
-}
-
-.featuredmore img {
-	margin: 0px 30px;  /* hack until I get wider images */
-}
-
-.featuredmore img:hover {
-	opacity: .8;
-}
-
-.date {
-	zfloat: none;
-}
 
 @-moz-document url-prefix() {  /* hack to deal with ff not know max-width */
   img {

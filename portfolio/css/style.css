@@ -8,7 +8,8 @@ body {
 }
 
 p { 
-  font-size: 16px; 
+  font-size: 17px; 
+  margin: 10px 0px 40px 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -28,14 +29,20 @@ img {
 
 
 figcaption {
-  color: #666; 
+  color: #767676;
   font-family: sans-serif;
   text-align: left;
+  display: table-caption;
+  caption-side: bottom;
 }
 
 figure {
-  margin: 20px auto 40px;
-  text-align: center;
+  margin: 10px 0px 40px;
+  display: table;
+}
+
+.clearfix {
+  clear: both;
 }
 
 
@@ -85,10 +92,6 @@ ul#menu li a {
   text-align: center;
 } 
 
-
-.figcaption {
-  color: #767676;
-}
 
 
 /*  Footer */

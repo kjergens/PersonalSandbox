@@ -1,20 +1,18 @@
 // build index page 
 var show_featured = function() {
     // main, most recent article
-    var markup = "<div class='featured'><br><br>" +
+    var markup = "<div class='featured'>" +
     "<a href=\"" + data.menu[0].link + "\">" +
-   "<figure class='featuredimg'><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
-   "</a>" +
-    "<a href=\"" + data.menu[0].link + "\">" +
-   "<div id='headline'>" +
+   "<figure><img src=\"../blog/images/" + data.menu[0].big_image + "\"></figure>" +
     "<div class='title'>" + data.menu[0].title + "</div>" +
-    "</a><br>" +
+    "</a>" +
     "<div class='date'>" + data.menu[0].date + "</div><br>" +
-    "<p class='blurb'>" + data.menu[0].blurb + 
-   "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +
-   '<div id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/index.html">Tweet</a></div>' +
+    '<div id="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.katieinbrooklyn.com/blog/index.html">Tweet</a></div>' +
     '<div class="fb-like" data-share="true" data-width="240" data-show-faces="false"></div>' +
     '<div class="clearfix"></div>' +
+    "<p>" + data.menu[0].blurb + 
+   "<a href=\"" + data.menu[0].link + "\"> Read more.</a>" + "</p>" +
+
     "</div>";
 
     // below the main, some more articles.
@@ -22,31 +20,31 @@ var show_featured = function() {
 
     // row 1
     for (var i=1; i<=3; i++) {
-        markup += "<a href=\"" + data.menu[i].link + "\">" +
-        "<div class='featuredmore'>" +
-        "<img src=\"../blog/images/" + data.menu[i].image + "\">" +
+        markup += "<div class='featuredmore'>" +
+        "<a href=\"" + data.menu[i].link + "\">" +
         " <h4>" + data.menu[i].title +  "</h4>" +
+        "<img src=\"../blog/images/" + data.menu[i].image + "\"></a>" +
         "<div class=\"date\">" + data.menu[i].date + "</div>" +
-        "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
-        "<a href=\"" + data.menu[i].link + "\">Read more.</a>" + 
+        "<p>" + data.menu[i].blurb + 
+        "<a href=\"" + data.menu[i].link + "\"> Read more.</a>" + "</p>" +
         "</div></a>";
     }
 
-    markup += "</div><div class=\"clearfix\"></div><br><br><br>"; // clear the floats
+    markup += "<div class=\"clearfix\"></div><hr>"; // clear the floats
 
     // row 2
     for (var i=4; i<=6; i++) {
-        markup += "<a href=\"" + data.menu[i].link + "\">" +
-        "<div class='featuredmore'>" +
-        "<img src=\"../blog/images/" + data.menu[i].image + "\">" +
+        markup += "<div class='featuredmore'>" +
+        "<a href=\"" + data.menu[i].link + "\">" +
         " <h4>" + data.menu[i].title +  "</h4>" +
+        "<img src=\"../blog/images/" + data.menu[i].image + "\"></a>" +
         "<div class=\"date\">" + data.menu[i].date + "</div>" +
-        "<p class=\"blurb\">" + data.menu[i].blurb + "</p>" +
-        "<a href=\"" + data.menu[i].link + "\">Read more.</a>" + 
+        "<p>" + data.menu[i].blurb + 
+        "<a href=\"" + data.menu[i].link + "\"> Read more.</a></p>" + 
         "</div></a>";
     }
 
-    markup += "</div><div class=\"clearfix\"></div>"; // clear the floats
+    markup += "<div class=\"clearfix\"></div>"; // clear the floats
 
     $("#featured_articles").append(markup);
 };
@@ -96,7 +94,7 @@ $(function () {
     //shuffle(data.menu);
 
     // loop through data and build menu
-    for (var i = 0; i<data.menu.length; i++) {
+    for (var i = 7; i<data.menu.length; i++) {
          $menu.append(get_menu_item(data.menu[i]));
     }  
 

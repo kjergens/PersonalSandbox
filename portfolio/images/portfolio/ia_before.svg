@@ -1,135 +1,135 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1024px" height="324px" viewBox="0 0 1024 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+<svg width="1114px" height="324px" viewBox="0 0 1114 324" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #FFFFFF;">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
     <title>ia_before</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="ia_before" sketch:type="MSArtboardGroup">
-            <g id="lines" sketch:type="MSLayerGroup" transform="translate(-117.000000, 78.000000)" stroke="#979797" stroke-width="3" stroke-linecap="square">
-                <path d="M176.5,13.5 L531.519989,13.5" id="Line-Copy-14" sketch:type="MSShapeGroup"></path>
-                <path d="M669.5,13.5 L1024.51999,13.5" id="Line-Copy-15" sketch:type="MSShapeGroup"></path>
-                <path d="M959.5,101.5 L1113.51999,101.5" id="Line-Copy-16" sketch:type="MSShapeGroup"></path>
-                <path d="M139.5,101.5 L293.519989,101.5" id="Line-Copy-17" sketch:type="MSShapeGroup"></path>
-                <path d="M351.5,0.5 L351.5,12.5" id="Line-Copy-14" sketch:type="MSShapeGroup"></path>
-                <path d="M175.5,14.5 L175.5,26.5" id="Line-Copy-28" sketch:type="MSShapeGroup"></path>
-                <path d="M245.5,14.5 L245.5,26.5" id="Line-Copy-29" sketch:type="MSShapeGroup"></path>
-                <path d="M334.5,14.5 L334.5,26.5" id="Line-Copy-30" sketch:type="MSShapeGroup"></path>
-                <path d="M394.5,14.5 L394.5,26.5" id="Line-Copy-31" sketch:type="MSShapeGroup"></path>
-                <path d="M474.5,14.5 L474.5,26.5" id="Line-Copy-32" sketch:type="MSShapeGroup"></path>
-                <path d="M533.5,14.5 L533.5,26.5" id="Line-Copy-33" sketch:type="MSShapeGroup"></path>
-                <path d="M668.5,14.5 L668.5,26.5" id="Line-Copy-39" sketch:type="MSShapeGroup"></path>
-                <path d="M736.5,14.5 L736.5,26.5" id="Line-Copy-38" sketch:type="MSShapeGroup"></path>
-                <path d="M825.5,14.5 L825.5,26.5" id="Line-Copy-37" sketch:type="MSShapeGroup"></path>
-                <path d="M885.5,14.5 L885.5,26.5" id="Line-Copy-36" sketch:type="MSShapeGroup"></path>
-                <path d="M965.5,14.5 L965.5,26.5" id="Line-Copy-35" sketch:type="MSShapeGroup"></path>
-                <path d="M1025.5,14.5 L1025.5,26.5" id="Line-Copy-34" sketch:type="MSShapeGroup"></path>
-                <path d="M843.5,1.5 L843.5,13.5" id="Line-Copy-18" sketch:type="MSShapeGroup"></path>
-                <path d="M1033.5,86.5 L1033.5,98.5" id="Line-Copy-19" sketch:type="MSShapeGroup"></path>
-                <path d="M476.5,81.5 L476.5,116.5" id="Line-Copy-20" sketch:type="MSShapeGroup"></path>
-                <path d="M175.5,86.5 L175.5,98.5" id="Line-Copy-21" sketch:type="MSShapeGroup"></path>
-                <path d="M139.5,102.5 L139.5,114.5" id="Line-Copy-22" sketch:type="MSShapeGroup"></path>
-                <path d="M212.5,102.5 L212.5,114.5" id="Line-Copy-23" sketch:type="MSShapeGroup"></path>
-                <path d="M295.5,102.5 L295.5,114.5" id="Line-Copy-24" sketch:type="MSShapeGroup"></path>
-                <path d="M959.5,102.5 L959.5,114.5" id="Line-Copy-27" sketch:type="MSShapeGroup"></path>
-                <path d="M1033.5,102.5 L1033.5,114.5" id="Line-Copy-26" sketch:type="MSShapeGroup"></path>
-                <path d="M1115.5,102.5 L1115.5,114.5" id="Line-Copy-25" sketch:type="MSShapeGroup"></path>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ia_before">
+            <g id="lines" transform="translate(-68.000000, 114.000000)" stroke="#979797" stroke-width="3" stroke-linecap="square">
+                <path d="M176.5,13.5 L531.519989,13.5" id="Line-Copy-14"></path>
+                <path d="M669.5,13.5 L1024.51999,13.5" id="Line-Copy-15"></path>
+                <path d="M959.5,101.5 L1113.51999,101.5" id="Line-Copy-16"></path>
+                <path d="M139.5,101.5 L293.519989,101.5" id="Line-Copy-17"></path>
+                <path d="M351.5,0.5 L351.5,12.5" id="Line-Copy-14"></path>
+                <path d="M175.5,14.5 L175.5,26.5" id="Line-Copy-28"></path>
+                <path d="M245.5,14.5 L245.5,26.5" id="Line-Copy-29"></path>
+                <path d="M334.5,14.5 L334.5,26.5" id="Line-Copy-30"></path>
+                <path d="M394.5,14.5 L394.5,26.5" id="Line-Copy-31"></path>
+                <path d="M474.5,14.5 L474.5,26.5" id="Line-Copy-32"></path>
+                <path d="M533.5,14.5 L533.5,26.5" id="Line-Copy-33"></path>
+                <path d="M668.5,14.5 L668.5,26.5" id="Line-Copy-39"></path>
+                <path d="M736.5,14.5 L736.5,26.5" id="Line-Copy-38"></path>
+                <path d="M825.5,14.5 L825.5,26.5" id="Line-Copy-37"></path>
+                <path d="M885.5,14.5 L885.5,26.5" id="Line-Copy-36"></path>
+                <path d="M965.5,14.5 L965.5,26.5" id="Line-Copy-35"></path>
+                <path d="M1025.5,14.5 L1025.5,26.5" id="Line-Copy-34"></path>
+                <path d="M843.5,1.5 L843.5,13.5" id="Line-Copy-18"></path>
+                <path d="M1033.5,86.5 L1033.5,98.5" id="Line-Copy-19"></path>
+                <path d="M476.5,81.5 L476.5,116.5" id="Line-Copy-20"></path>
+                <path d="M175.5,86.5 L175.5,98.5" id="Line-Copy-21"></path>
+                <path d="M139.5,102.5 L139.5,114.5" id="Line-Copy-22"></path>
+                <path d="M212.5,102.5 L212.5,114.5" id="Line-Copy-23"></path>
+                <path d="M295.5,102.5 L295.5,114.5" id="Line-Copy-24"></path>
+                <path d="M959.5,102.5 L959.5,114.5" id="Line-Copy-27"></path>
+                <path d="M1033.5,102.5 L1033.5,114.5" id="Line-Copy-26"></path>
+                <path d="M1115.5,102.5 L1115.5,114.5" id="Line-Copy-25"></path>
             </g>
-            <g id="boxes" sketch:type="MSLayerGroup" transform="translate(3.000000, 40.000000)" fill="#5BADC3">
-                <rect id="Rectangle-1-Copy-11" sketch:type="MSShapeGroup" x="210" y="0" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-31" sketch:type="MSShapeGroup" x="703" y="3" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-30" sketch:type="MSShapeGroup" x="330" y="173" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-12" sketch:type="MSShapeGroup" x="32" y="82" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-13" sketch:type="MSShapeGroup" x="107" y="83" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-14" sketch:type="MSShapeGroup" x="180" y="83" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-17" sketch:type="MSShapeGroup" x="255" y="82" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-16" sketch:type="MSShapeGroup" x="330" y="83" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-15" sketch:type="MSShapeGroup" x="403" y="83" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-26" sketch:type="MSShapeGroup" x="0" y="172" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-25" sketch:type="MSShapeGroup" x="75" y="173" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-24" sketch:type="MSShapeGroup" x="148" y="173" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-29" sketch:type="MSShapeGroup" x="808" y="172" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-28" sketch:type="MSShapeGroup" x="888" y="173" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-27" sketch:type="MSShapeGroup" x="967" y="173" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-23" sketch:type="MSShapeGroup" x="518" y="84" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-22" sketch:type="MSShapeGroup" x="593" y="85" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-21" sketch:type="MSShapeGroup" x="666" y="85" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-20" sketch:type="MSShapeGroup" x="741" y="84" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-19" sketch:type="MSShapeGroup" x="816" y="85" width="47" height="37"></rect>
-                <rect id="Rectangle-1-Copy-18" sketch:type="MSShapeGroup" x="889" y="85" width="47" height="37"></rect>
+            <g id="boxes" transform="translate(52.000000, 76.000000)" fill="#5BADC3">
+                <rect id="Rectangle-1-Copy-11" x="210" y="0" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-31" x="703" y="3" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-30" x="330" y="173" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-12" x="32" y="82" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-13" x="107" y="83" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-14" x="180" y="83" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-17" x="255" y="82" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-16" x="330" y="83" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-15" x="403" y="83" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-26" x="0" y="172" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-25" x="75" y="173" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-24" x="148" y="173" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-29" x="808" y="172" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-28" x="888" y="173" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-27" x="967" y="173" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-23" x="518" y="84" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-22" x="593" y="85" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-21" x="666" y="85" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-20" x="741" y="84" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-19" x="816" y="85" width="47" height="37"></rect>
+                <rect id="Rectangle-1-Copy-18" x="889" y="85" width="47" height="37"></rect>
             </g>
-            <g id="labels" sketch:type="MSLayerGroup" transform="translate(-29.000000, 21.000000)">
-                <text id="New--Assmt" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+            <g id="labels" transform="translate(20.000000, 57.000000)">
+                <text id="New--Assmt" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="817.13701" y="184">New  Assmt</tspan>
                 </text>
-                <text id="L-M" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="L-M" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="38.6800098" y="185">L M</tspan>
                 </text>
-                <text id="L-M-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="L-M-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="146.68001" y="95">L M</tspan>
                 </text>
-                <text id="Overview" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Overview" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="58.7610098" y="95">Overview</tspan>
                 </text>
-                <text id="Matrix" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Matrix" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="108.14801" y="185">Matrix</tspan>
                 </text>
-                <text id="Matrix-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Matrix-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="216.14801" y="96">Matrix</tspan>
                 </text>
-                <text id="Scoring-Tool" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Scoring-Tool" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="163.04501" y="185">Scoring Tool</tspan>
                 </text>
-                <text id="Scoring-Tool-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Scoring-Tool-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="346.04501" y="185">Scoring Tool</tspan>
                 </text>
-                <text id="Asgnmts" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Asgnmts" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="359.13301" y="96">Asgnmts</tspan>
                 </text>
-                <text id="Assessments" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Assessments" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="423.27301" y="96">Assessments</tspan>
                 </text>
-                <text id="Assessments-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Assessments-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="717.27301" y="15">Assessments</tspan>
                 </text>
-                <text id="Resources" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Resources" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="275.63801" y="96">Resources</tspan>
                 </text>
-                <text id="L-M-Copy-2" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="L-M-Copy-2" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="557.68001" y="95">L M</tspan>
                 </text>
-                <text id="Matrix-Copy-2" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Matrix-Copy-2" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="627.14801" y="96">Matrix</tspan>
                 </text>
-                <text id="Asgnmts-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Asgnmts-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="770.13301" y="96">Asgnmts</tspan>
                 </text>
-                <text id="Assmts" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Assmts" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="846.50801" y="96">Assmts</tspan>
                 </text>
-                <text id="My-Content" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="My-Content" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="920.29201" y="97">My Content</tspan>
                 </text>
-                <text id="Resources-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="Resources-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="686.63801" y="96">Resources</tspan>
                 </text>
-                <text id="New--Item-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="New--Item-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="911.556" y="185">New  Item</tspan>
                 </text>
-                <text id="New--Psg" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
+                <text id="New--Psg" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" letter-spacing="-0.0700000003" fill="#4A4A4A">
                     <tspan x="989.72501" y="186">New  Psg</tspan>
                 </text>
-                <text id="Beacon-Home-Copy" sketch:type="MSTextLayer" font-family="Helvetica Neue" font-size="14" font-weight="normal" sketch:alignment="middle" line-spacing="35" fill="#4A4A4A">
+                <text id="Beacon-Home-Copy" font-family="HelveticaNeue, Helvetica Neue" font-size="14" font-weight="normal" line-spacing="35" fill="#4A4A4A">
                     <tspan x="224.27" y="13">Beacon Home</tspan>
                 </text>
                 <g id="arrows" transform="translate(67.000000, 39.000000)" stroke="#4A4A4A" stroke-linecap="square" fill="#D8D8D8">
-                    <path d="M0.5,146.5 L78.5,86.5" id="Line" sketch:type="MSShapeGroup"></path>
+                    <path d="M0.5,146.5 L78.5,86.5" id="Line"></path>
                     <path id="Line-decoration-1" d="M78.5,86.5 L68.1105286,90.7070042 L71.7687932,95.4627482 L78.5,86.5 Z"></path>
-                    <path d="M80.5,150.5 L158.5,90.5" id="Line-Copy-4" sketch:type="MSShapeGroup"></path>
+                    <path d="M80.5,150.5 L158.5,90.5" id="Line-Copy-4"></path>
                     <path id="Line-Copy-4-decoration-1" d="M158.5,90.5 L148.110529,94.7070042 L151.768793,99.4627482 L158.5,90.5 Z"></path>
-                    <path d="M404.5,64.5 L670.5,0.5" id="Line-Copy-6" sketch:type="MSShapeGroup"></path>
+                    <path d="M404.5,64.5 L670.5,0.5" id="Line-Copy-6"></path>
                     <path id="Line-Copy-6-decoration-1" d="M670.5,0.5 L659.297874,0.10963619 L660.70143,5.94316279 L670.5,0.5 Z"></path>
-                    <path d="M159.5,169.5 L297.5,169.5" id="Line-Copy-5" sketch:type="MSShapeGroup"></path>
+                    <path d="M159.5,169.5 L297.5,169.5" id="Line-Copy-5"></path>
                     <path id="Line-Copy-5-decoration-1" d="M297.5,169.5 L286.7,166.5 L286.7,172.5 L297.5,169.5 Z"></path>
                 </g>
             </g>
