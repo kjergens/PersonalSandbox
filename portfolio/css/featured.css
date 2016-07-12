@@ -1,11 +1,11 @@
 h3#morearticles {
-	border-top: 1px solid #ebebeb;
-	margin-top: 15px;
+	border-top: 2px solid #ebebeb;
+	margin-top: 30px;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 20px;
+	zpadding-bottom: 10px;
+	zfont-size: 20px;
 	letter-spacing: -2px;
-	font-weight: 600;
+	zfont-weight: 600;
 }
 
 figure {
@@ -48,6 +48,9 @@ p {
   margin: 0px 0px;
 } 
 
+#right_menu {
+  top: 0px;
+}
 
 
 @-moz-document url-prefix() {  /* hack to deal with ff not know max-width */

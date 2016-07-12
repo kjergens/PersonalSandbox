@@ -18,9 +18,7 @@
   margin-bottom: 40px;
 }
 
-#right_menu{
-  left: 25px; /* create some space between article and menu for scrolling */
-}
+
 
 .date {
     font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
@@ -78,22 +76,30 @@ figure {
 #tagline + .row {      /* temporary until I delete them all */
   margin-top: 20px;
 }
+  
 
+#right_menu {
+  position: relative;
+  top: 175px;
+  left: 30px;
+}
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
   padding: 2px 4px;
-  background-color: #009ACD; f3b128;
-  color: #fff;
+  zbackground-color: #009ACD; f3b128;
+  zcolor: #CD3300;
+  border-top: 10px solid #CD3300;
 }
 
 
 .menu_item {
-  background-color: #fff; #f5f3f1; 
-  border-bottom: 1px solid #ebebeb;
+  background-color: white; 
+  border-top: 1px solid #ebebeb;
   border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
 }
 
 .menu_item:hover {

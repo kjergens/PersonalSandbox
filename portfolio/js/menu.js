@@ -38,6 +38,7 @@ $(function () {
     $("#right_menu").append("<div id=\"menu_container\"></div>"); // wrap the menus in a container
 
     // popular menu
+    /*
     $("#menu_container").append("<div id=\"popular\"></div>");
     var $popularmenu = $("#popular");
 
@@ -47,12 +48,13 @@ $(function () {
     for (var i = 0; i<4; i++) {
          $popularmenu.append(getMenuItem(data.popular[i]));
     } 
+    */
 
     // recent menu
     $("#menu_container").append("<div id=\"sidemenu\"></div>");
     var $menu = $("#sidemenu");
 
-    $menu.append("<br><br><div class=\"menu_heading\">More articles</div>");
+    $menu.append("<div class=\"menu_heading\">More articles</div>");
 
     shuffle(data.menu);
 

@@ -2,8 +2,17 @@ var data =
     {
        menu: 
           [ {
+              title: 'What Do Babies See?',
+              subtitle: '',
+              link: 'babies.html',
+              big_image: '../images/babies/baby.png',
+              image: '../images/babies/babythumb.png',
+              date: 'Jul 9, 2016',
+              blurb: ''
+              },
+             {
               title: 'A Giant Step Closer to Elusive Pure Blue',
-              subtitle: 'Move over cobalt',
+              subtitle: 'Move over cobalt.',
               link: 'blue.html',
               big_image: '../images/blue/pigments.png',
               image: 'thumb/blue.png',
@@ -20,13 +29,13 @@ var data =
               blurb: 'Early on, accountants were regarded as heros, doing God\'s work and making society better. It makes sense when you consider what came before.'
              },
             {
-              title: 'How Purple Got Royal',
-              subtitle: 'It owes its status to snails.',
+              title: 'The World\'s Most Expensive Dye',
+              subtitle: '',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
-              image: 'thumb/tyrian.png',
+              image: 'tyrian/thumb.png',
               date: 'Apr 1, 2016',
-              blurb: 'Royal purple holds the record as the world\'s most expensive dye. It\'s because of a very slimy ingredient.'
+              blurb: 'Imperial purple holds the record as the world\'s most expensive dye. It\'s because of a very slimy ingredient.'
             },
             {
               title: 'Graphical History of the Bicycle',
@@ -127,8 +136,8 @@ var data =
               date: 'Jan 18, 2016'
             },
             {
-              title: 'Predecessors to 3 Popular Games',
-              subtitle: 'Some of our favorite games are knock-offs.',
+              title: 'Popular Games and Toys That Are Knock-Offs Of Old Designs',
+              subtitle: 'See the originals',
               link: 'games.html',
               image: 'thumb/games.png',
               date: 'Feb 7, 2016'
