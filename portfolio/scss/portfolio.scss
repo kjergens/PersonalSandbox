@@ -1,0 +1,94 @@
+@import '../partials/variables'; // colors, fonts, etc.
+
+/*
+    Portfolio menu (Data Viz, etc.)
+*/
+#subnav_container {
+  margin-top: -20px;
+}
+
+.list-group-item {
+  list-style-type: none;
+  line-height: 28px;
+  font-size: 17px;
+  font-family: $titlefont;
+  background-color: $blue;
+  &:first-child {
+    border-top-right-radius: 0px; 
+    border-top-left-radius: 0px; 
+  };
+  &:last-child {
+    border-bottom-right-radius: 0px; 
+    border-bottom-left-radius: 0px; 
+  }
+}
+
+a.list-group-item {
+  color: white;
+  &:hover,
+  &:focus {
+    color: $graytext;
+    background-color: white;
+    transition-duration: 500ms;
+  }
+}
+
+
+ 
+/* 
+    Portfolio body
+*/
+
+.category_title {
+  font-size: 40px;
+  letter-spacing: -3px;
+  font-weight: bold;
+  font-family: $titlefont;
+  margin: 40px 0px 20px;
+  display: inline-block;
+  border-bottom: 10px solid $red;
+  &:first-child {
+    margin: 20px 0px;
+  }
+}
+
+
+figure {
+    position: relative;
+}
+
+img {
+  max-width: 550px;
+  vertical-align: top;
+  border: 1px solid #efefef;
+}
+
+.thumb {
+  max-width: 200px;
+  margin-right: 10px;
+  
+}
+
+figcaption {
+  background-color: $grayback;
+  padding: 5px 10px;
+}
+
+
+.before {
+  display: inline-block;
+  background-color: #333;
+  padding: 8px 15px;
+  color: #fff;
+  position: absolute;
+  top: -10px;
+  opacity: .8;
+}
+
+
+
+
+
+
+
+  
