@@ -38,12 +38,12 @@ var data =
               blurb: 'Imperial purple holds the record as the world\'s most expensive dye. It\'s because of a very slimy ingredient.'
             },
             {
-              title: 'Graphical History of the Bicycle',
-              subtitle: 'From 1810 to 1920.',
+              title: '200 Years of the Bicycle',
+              subtitle: 'From 1810 to 2015.',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',
-              blurb: 'See bike designs from 1810 to 1920.'
+              blurb: 'Bike designs from 1810 to 2015.'
             },
             {
               title: 'How the Red Coat Got Its Red',
@@ -189,8 +189,8 @@ var data =
               date: 'Jan 20, 2016'
             },
             {
-              title: 'Graphical History of the Bicycle',
-              subtitle: 'From 1810 to 1920.',
+              title: '200 Years of of the Bicycle',
+              subtitle: 'From 1810 to 2015.',
               link: 'bikes.html',
               image: 'thumb/bikes.png',
               date: 'Mar 28, 2016',

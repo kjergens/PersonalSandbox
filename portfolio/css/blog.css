@@ -50,6 +50,7 @@ figure {
   margin: 20px auto 40px;
 }
 
+
 .citation {
   font-size: 10px;
   color: #888;
@@ -89,8 +90,6 @@ figure {
   font-size: 14px;
   font-weight: bold;
   padding: 2px 4px;
-  zbackground-color: #009ACD; f3b128;
-  zcolor: #CD3300;
   border-top: 10px solid #CD3300;
 }
 
