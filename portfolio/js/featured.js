@@ -1,3 +1,21 @@
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+}
+
+
 // build index page 
 var show_featured = function() {
     // main, most recent article
@@ -79,7 +97,7 @@ $(function () {
     var $popularmenu = $("#popular");
 
     $popularmenu.append("<div class=\"menu_heading\">Most popular</div>");
-    //shuffle(data.popular);
+    shuffle(data.popular);
     // loop through data and build menu
     for (var i = 0; i<4; i++) {
          $popularmenu.append(get_menu_item(data.popular[i]));

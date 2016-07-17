@@ -2,13 +2,22 @@ var data =
     {
        menu: 
           [ {
-              title: 'What Do Babies See?',
+              title: '5 Keys to Getting Smarter',
               subtitle: '',
+              link: 'smart.html',
+              big_image: '../images/smart/bigimage.png',
+              image: '',
+              date: 'Jul 16, 2016',
+              blurb: 'Scientific American recently published a study on how to increase your intelligence. It concluded that there are five keys to getting smarter. Here is a summary of those findings.'
+              },
+            {
+              title: 'What Do Babies See?',
+              subtitle: 'See what a baby sees in the first year of life.',
               link: 'babies.html',
               big_image: '../images/babies/baby.png',
               image: '../images/babies/babythumb.png',
               date: 'Jul 9, 2016',
-              blurb: ''
+              blurb: 'See what a baby sees in the first year of life.'
               },
              {
               title: 'A Giant Step Closer to Elusive Pure Blue',
