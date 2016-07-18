@@ -3,16 +3,16 @@ var data =
        menu: 
           [ {
               title: '5 Keys to Getting Smarter',
-              subtitle: '',
+              subtitle: 'Illustrations of the steps to smart.',
               link: 'smart.html',
               big_image: '../images/smart/bigimage.png',
-              image: '',
+              image: '../images/smart/thumb.png',
               date: 'Jul 16, 2016',
               blurb: 'Scientific American recently published a study on how to increase your intelligence. It concluded that there are five keys to getting smarter. Here is a summary of those findings.'
               },
             {
               title: 'What Do Babies See?',
-              subtitle: 'See what a baby sees in the first year of life.',
+              subtitle: 'The first year of life is a busy time for babies\'s vision.',
               link: 'babies.html',
               big_image: '../images/babies/baby.png',
               image: '../images/babies/babythumb.png',
@@ -55,7 +55,7 @@ var data =
               blurb: 'Bike designs from 1810 to 2015.'
             },
             {
-              title: 'How the Red Coat Got Its Red',
+              title: 'How the Red Coat Got Red',
               subtitle: 'Psst: it\'s from a bug.',
               link: 'red.html',
               image: 'thumb/red.png',
@@ -64,7 +64,7 @@ var data =
             },
             {
               title: 'Designing an Image: The Pilot',
-              subtitle: 'From Rough Rider to Gentleman.',
+              subtitle: 'From Rough Rider to Officer.',
               link: 'pilots.html',
               image: 'thumb/pilots.png',
               date: 'Mar 9, 2016',
@@ -111,7 +111,7 @@ var data =
             },
             {
               title: 'Is My Blue Your Blue?',
-              subtitle: 'That could depend on our languages.',
+              subtitle: 'That could depend on our language.',
               link: 'himba.html',
               image: 'thumb/himba.png',
               date: 'Jan 20, 2016'
@@ -132,7 +132,7 @@ var data =
             },
             {
               title: 'Letter To St. Louis On Losing Their Football Team',
-              subtitle: '',
+              subtitle: 'It\'s fine!',
               link: 'rams.html',
               image: 'thumb/rams.png',
               date: 'Jan 19, 2016'
@@ -145,8 +145,8 @@ var data =
               date: 'Jan 18, 2016'
             },
             {
-              title: 'Popular Games and Toys That Are Knock-Offs Of Old Designs',
-              subtitle: 'See the originals',
+              title: 'Popular Games and Toys That Are Knock-Offs',
+              subtitle: 'See the original designs and the stories of how they got copied.',
               link: 'games.html',
               image: 'thumb/games.png',
               date: 'Feb 7, 2016'
@@ -192,7 +192,7 @@ var data =
             },
             {
               title: 'Is My Blue Your Blue?',
-              subtitle: 'That could depend on our languages.',
+              subtitle: 'That could depend on our language.',
               link: 'himba.html',
               image: 'thumb/himba.png',
               date: 'Jan 20, 2016'
