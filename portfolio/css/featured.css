@@ -1,11 +1,11 @@
 h3#morearticles {
-	border-top: 2px solid #ebebeb;
-	margin-top: 30px;
+	border-top: 10px solid #CD3300;
+	border-bottom: 1px solid #ebebeb;
+	margin: 30px 0px 10px;
 	padding-top: 10px;
-	zpadding-bottom: 10px;
-	zfont-size: 20px;
+	padding-bottom: 5px;
 	letter-spacing: -2px;
-	zfont-weight: 600;
+	font-weight: 600;
 }
 
 figure {
@@ -48,7 +48,7 @@ p {
   margin: 0px 0px;
 } 
 
-#right_menu {
+.col-md-4#right_menu {
   top: 0px;
 }
 

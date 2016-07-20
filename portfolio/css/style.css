@@ -121,8 +121,8 @@ ul#menu li a {
   height: 40px;
   width: 40px;
   position: fixed;
-  bottom: 40px;
-  right: 10px;
+  top: 40px;
+  right: 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   overflow: hidden;

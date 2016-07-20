@@ -1,18 +1,29 @@
 var data = 
     {
        menu: 
-          [ {
+          [ 
+
+           {
+              title: 'How Old is the U.S. Constitution Compared to Other Countries\'? [Infographic]',
+              subtitle: '',
+              link: 'constitutions.html',
+              big_image: '../images/constitutions/big.svg',
+              image: '../images/constitutions/thumb.svg',
+              date: 'Jul 20, 2016',
+              blurb: ''
+             },
+          {
               title: '5 Keys to Getting Smarter',
               subtitle: 'Illustrations of the steps to smart.',
               link: 'smart.html',
               big_image: '../images/smart/bigimage.png',
               image: '../images/smart/thumb.png',
               date: 'Jul 16, 2016',
-              blurb: 'Scientific American recently published a study on how to increase your intelligence. It concluded that there are five keys to getting smarter. Here is a summary of those findings.'
+              blurb: 'Scientific American recently published a study on how to increase your intelligence. It concluded that there are five keys to increasing fluidity ... '
               },
             {
               title: 'What Do Babies See?',
-              subtitle: 'The first year of life is a busy time for babies\'s vision.',
+              subtitle: 'The first year of life is a busy time for a baby\'s vision.',
               link: 'babies.html',
               big_image: '../images/babies/baby.png',
               image: '../images/babies/babythumb.png',
@@ -38,8 +49,8 @@ var data =
               blurb: 'Early on, accountants were regarded as heros, doing God\'s work and making society better. It makes sense when you consider what came before.'
              },
             {
-              title: 'The World\'s Most Expensive Dye',
-              subtitle: '',
+              title: 'Worth It\'s Weight in Gold',
+              subtitle: 'A dye only royalty can afford.',
               link: 'tyrian.html',
               big_image: 'tyrian/eII.jpg',
               image: 'tyrian/thumb.png',
@@ -161,6 +172,24 @@ var data =
           ],
       popular: 
           [ 
+          {
+              title: '5 Keys to Getting Smarter',
+              subtitle: 'Illustrations of the steps to smart.',
+              link: 'smart.html',
+              big_image: '../images/smart/bigimage.png',
+              image: '../images/smart/thumb.png',
+              date: 'Jul 16, 2016',
+              blurb: 'Scientific American recently published a study on how to increase your intelligence. It concluded that there are five keys to increasing fluidity ... '
+              },
+             {
+              title: 'What Do Babies See?',
+              subtitle: 'The first year of life is a busy time for a baby\'s vision.',
+              link: 'babies.html',
+              big_image: '../images/babies/baby.png',
+              image: '../images/babies/babythumb.png',
+              date: 'Jul 9, 2016',
+              blurb: 'See what a baby sees in the first year of life.'
+              },
             {
               title: 'Think Shakespeare\'s Room was Drab?',
               subtitle: 'Think again.',

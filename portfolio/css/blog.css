@@ -63,7 +63,6 @@ figure {
   color: #fff;
   font-size: 14px;
   padding: 20px 15px;
- x margin-top: 10px;
 }
 
 #tagline {            /* temporary until I delete them all */
@@ -79,26 +78,33 @@ figure {
 }
   
 
-#right_menu {
+.col-md-4#right_menu {
   position: relative;
-  top: 175px;
-  left: 30px;
+  ztop: 800px;
+  left: 120px;
+  width: 320px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .menu_heading {
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;
   font-size: 14px;
   font-weight: bold;
-  padding: 2px 4px;
+  padding: 2px 4px 0px;
+  margin-bottom: -10px;
   border-top: 10px solid #CD3300;
 }
 
 
 .menu_item {
-  background-color: #fbf8f8; 
   border-top: 1px solid #ebebeb;
-  border-left: 1px solid #ebebeb;
-  border-right: 1px solid #ebebeb;
+  margin: 15px 0px;
+  padding: 20px 0px 10px;
+}
+
+a.menu_item:first-child {
+  border-top: 0px;
 }
 
 .menu_item:hover {
@@ -109,19 +115,26 @@ figure {
 .thumb_container {
   float: left;
   overflow: hidden;
-  min-width: 133px;
+  width: 133px;
   height: 105px;
 }
 
 
 .article_title_container {
-  padding: 5px 3px 3px 8px;
-  max-width: 220px;
+  padding: 0px 3px 3px 8px;
   height: 105px;
   float: left;
+  width: 175px; 220px;
+}
+
+.col-md-12 {
+  .article_title_container {
+    max-width: none;
+  }
 }
 
 .article_title {
+
   color: #414f55; /* override hyperlink color */
   font-family: 'Merriweather Sans', 'Open Sans', Helvetica, sans-serif;  /* use header font */
   font-size: 14px;
@@ -144,19 +157,21 @@ figure {
   }
   }
 
-@media (min-width: 992px) {
- .article {
-  max-width: 590px; 
-}
-}
 
 
 @media (max-width: 992px) {     /* Get rid of the excess padding when the */
-  #right_menu {                   /* menu is below the article */
+  .col-md-4#right_menu {                   /* menu is below the article */
     padding-right: 0px;
     padding-left: 0px;
     margin-top: 20px;
+    right:0px;
     left: 0px;
+    top: 0px;
+    width: 100%;
+  }
+
+  .article_title_container {
+    width: 250px;
   }
 
   .menu_item {
@@ -171,10 +186,6 @@ figure {
   .article_title_container {
     max-width: none;
     padding: 15px;
-  }
-
-  .article_title {
-    font-size: 16px;
   }
 
   .article_subtitle {

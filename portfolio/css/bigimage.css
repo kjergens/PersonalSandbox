@@ -6,3 +6,14 @@ figure {
 img {
   max-width: 112%;
 }
+
+
+.col-md-4#right_menu {
+	zright: -75px;
+}
+
+@media (max-width: 992px) { 
+	.col-md-4#right_menu {
+		zleft: 0px;
+	}
+}

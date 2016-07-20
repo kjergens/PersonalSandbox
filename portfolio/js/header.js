@@ -15,7 +15,7 @@ var nav = '<nav class="navbar navbar-default" > \
       <ul class="nav navbar-nav navbar-right" id="menu"> \
         <li><a href="index.html">Home</a></li> \
         <li><a href="../portfolio.html">Portfolio</a></li> \
-        <li><a href="../resume.html">Resume</a></li> \
+        <li><a href="../resume.html">Resum&eacute;</a></li> \
         <li><a href="../about.html">About Me</a></li> \
         <li><a href="../contact.html">Contact</a></li> \
       </ul> \

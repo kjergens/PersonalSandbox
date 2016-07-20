@@ -32,23 +32,29 @@ var getMenuItem = function (itemData) {
     return item;
 };
 
+
+// add one article to menu
+var addMenuItem = function (itemData) {
+    var item = $('<a href="' + itemData.link + '">')  
+        .append("<div class=\"menu_item\">" +
+            "<div class=\"thumb_container\">" + 
+            "<img src=\"../blog/images/" + itemData.image +
+             "\"></div>" +
+             " <div class=\"article_title_container\">" + 
+            " <div class=\"article_title\">" + 
+            itemData.title + 
+            "<div class=\"article_subtitle\">" +
+            itemData.subtitle + "</div>" +
+            "</div></div>");
+    item = item.append("</div><div class=\"clearfix\"></div>");
+    return item;
+};
+
+
 $(function () {
 
     // menu container
     $("#right_menu").append("<div id=\"menu_container\"></div>"); // wrap the menus in a container
-
-    // popular menu
-    /*
-    $("#menu_container").append("<div id=\"popular\"></div>");
-    var $popularmenu = $("#popular");
-
-    $popularmenu.append("<div class=\"menu_heading\">Most popular</div>");
-    shuffle(data.popular);
-    // loop through data and build menu
-    for (var i = 0; i<4; i++) {
-         $popularmenu.append(getMenuItem(data.popular[i]));
-    } 
-    */
 
     // recent menu
     $("#menu_container").append("<div id=\"sidemenu\"></div>");
@@ -60,7 +66,7 @@ $(function () {
 
     // loop through data and build menu
     for (var i = 0; i<5; i++) {
-         $menu.append(getMenuItem(data.menu[i]));
+         $menu.append(addMenuItem(data.menu[i]));
     }  
 
 
